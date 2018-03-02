@@ -1,0 +1,132 @@
+﻿.detailblock{
+    .artikelwrapper{
+        .artsidecontainer { 
+            font-size: .9rem;
+            line-height: 1.2rem;
+        }
+    }
+    .granska_rubrik{
+      border-bottom:10px solid $black;
+      color: $orange;
+      font-weight:100;
+      padding-bottom:.5rem;
+    }
+    .arrRubrikblock{
+      margin-top:3rem;
+      margin-bottom:1rem;
+      h2{
+        font-size:1.3rem;
+        margin-left:.5rem;
+      }
+    }
+}
+
+.kk_aj_granskablock{
+    background-color: $snow;
+    padding:1rem;
+    #kk_aj_arrangorstod{
+        background-color:$white;
+    }
+    .errorborder{
+        border:1px solid $alert-color;
+    }
+   
+}
+.top-bar-section .dropdown li ul li{
+    width:300px;
+    a{  
+        max-width: 300px;
+        white-space:normal;
+        overflow-wrap: break-word!important;
+        word-wrap:break-word!important;      
+    }
+ }
+
+ #addarrtab-3 {
+     .granska_rubrik {
+          border-bottom: 10px solid #000000;
+          color: #f77136;
+          font-weight: 100;
+          padding-bottom: .5rem; 
+     }
+    .arrRubrikblock {
+      margin-top: 3rem;
+      margin-bottom: 1rem; 
+      h2 {
+        font-size: 1.3rem;
+        margin-left: .5rem; 
+      }
+    }
+ }
+
+
+@media print {
+.kk_aj_mainFreetextSearchblock, .kk_aj_mainsearchblock, .kk_aj_filterblock, .kk_aj_filterRubrikBlock, .kk_aj_arr_item_buttonblock{display: none!important;}
+.kk_aj_superProductListBlock{background: none;}    
+.kk_aj_arr_item_contentblock{
+    min-height:0px!important;
+}   
+.menybreadcrumb, .footencol, .granska_Dela,#myBtn, nav{display: none!important;}
+.granskaFaktaMainblock{float:right;}
+.artsidecontainer {padding-bottom:0px;margin-bottom:0px!important;}
+.detailblock, .arrRubrikblock{padding-top:0rem; margin-top:0rem!important;}
+h3{margin:0px;}
+.right{float:left!important;}
+ a[href]:after {
+    content: none !important;
+  }
+  .large-1 {
+    width: 8.33333%;
+  }
+
+  .large-2 {
+    width: 16.66667%;
+  }
+
+  .small-3 {
+    width: 25%;
+  }
+
+  .medium-4 {
+    width: 33.33333%;
+  }
+
+  .large-5 {
+    width: 41.66667%;
+  }
+
+  .large-6 {
+    width: 50%;
+  }
+
+  .large-7 {
+    width: 58.33333%;
+  }
+
+  .medium-8 {
+    width: 66.66667%;
+  }
+
+  .small-9 {
+    width: 75%;
+  }
+
+  .large-10 {
+    width: 83.33333%;
+  }
+
+  .large-11 {
+    width: 91.66667%;
+  }
+
+  .small-12 {
+    width: 100%;
+  }
+  .ModDnnmodulekkajPublikproductlistC{
+      font-size:.8rem!important;
+      h1{font-size:1.5rem!important;}
+      h2{font-size:1.3rem!important;}
+      h3{font-size:1.1rem!important;}     
+
+  }
+}

@@ -1,0 +1,561 @@
+    <div class="row kk_aj_arritem konstform_6" rel="2017-10-11 13:56:17">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/107_tiger2_big.jpg" alt="Kliv in i litteraturens värld 1" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="107">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">DEn ska starta här Kliv in i litteraturens värld 1</h2>
+              <h3>Hur kan vi uppmuntra elevers skrivutveckling?</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="107">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="79">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Musik</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 6- 10 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_5" rel="2017-10-11 13:39:59">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/106_/Portals/0/kulturkatalogenArrImages/106_zakochting-tshirt_h_0.jpg"
+              alt="Serier i skolan" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="106">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Serier i skolan</h2>
+              <h3>inspiration och tillvägagångssätt inom ämnesöverskridande arbetssätt.</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="106">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="80">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Litteratur, berättande, skrivande</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 6- 12 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_6" rel="2017-10-11 13:38:10">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/111_Spock-jpgg.jpg"
+              alt="Stök inspirerar ungdomar till att avancera i Musiksverige" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="111">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Stök inspirerar ungdomar till att avancera i Musiksverige</h2>
+              <h3>Låtskrivarverkstad, Musikproduktion &amp; Artisteri Workshops</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="111">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="83">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Musik</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 10- 19 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_4" rel="2017-10-11 13:10:48">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/119_artsbg.png" alt="test" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="119">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">test</h2>
+              <h3>test</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="119">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="78">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Konst, form och design</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 6- 12 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_1" rel="2017-10-11 11:31:43">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/118_alf-aj.jpg" alt="teestar" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="118">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">teestar</h2>
+              <h3>testat</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="118">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="78">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Arkitektur och design</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 6- 12 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_2" rel="2017-10-10 08:21:02">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/110_jelnek_h_0.jpg" alt="Ingen är en ö" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="110">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Ingen är en ö</h2>
+              <h3>- en dansföreställning om hjälp</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="110">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="82">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Dans</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 10- 19 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_9" rel="2017-10-10 08:05:52">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/109_sagostund_h_0.jpg" alt="UTVECKLA SAGOSTUNDEN" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="109">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">UTVECKLA SAGOSTUNDEN</h2>
+              <h3>- kurs för dig som arbetar med barn</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="109">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="81">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Slöjd</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 2- 8 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_7" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="/Portals/0/kulturkatalogenArrImages/108_forfattarfoto_h_2.jpg" alt="Kliv in i litteraturens värld 2" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan" rel="108">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Kliv in i litteraturens värld 2</h2>
+              <h3>Möjligheter och fallgropar vid respons på elevers texter</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a href="" class="button right small round" rel="108">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns" rel="80">
+            <h4>dev Kulturkatalogen</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Natur- och kulturarv</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 6- 10 år</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_1" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/dscf2239_h_0.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Vem kan du älska? denna visas</h2>
+              <h3>Det handlar om heder. En tät berättelse om längtan efter frihet, syskonkärlek, svek och lojalitet.</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class="row">
+              <div class="small-12">
+                <a class="button right small round">Läs mer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns">
+            <h4>Teater Tropos</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Dans</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 13-16 år</h4>
+          </div>
+          <p class="like">5 Likes</p>
+          <p class="like">8 Likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_2" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/kiv_h_0.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Lägg till i minneslistan">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Fågelskrämman denna visas</h2>
+              <h3>Underrubrik som kan vara ganska lång</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class=""></div>
+            <a class="button right small round">Läs mer</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns">
+            <h4>Malte Knapp - Cirkus</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Konst, from, design, Teater</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 10-12 år</h4>
+          </div>
+          <p class="like">15 Likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_2" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/imgp0139_h_0.jpg?itok=jDcDC3fe"
+              alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista" title="Arrangemanget finns i minneslistan">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Fågelskrämman denna då</h2>
+              <h3>Underrubrik som kan vara ganska lång</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class=""></div>
+            <a class="button right small round">Läs mer</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns">
+            <h4>Malte Knapp - Cirkus</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Konst, from, design, Teater</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 10-12 år</h4>
+          </div>
+          <p class="like">5 Likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_1" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <div class="row kk_aj_arr_item_thumbnail_color">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_thumbnail_img">
+              <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/barnhem_h_0.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12">
+            <a href="#" class="kk_aj_arr_item_minneslista minnesadded" title="Arrangemanget finns i minneslistan">Minneslista</a>
+          </div>
+        </div>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Fågelskrämman eller denna konstform1</h2>
+              <h3>Underrubrik som kan vara ganska lång</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class=""></div>
+            <a class="button right small round">Läs mer</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns">
+            <h4>Malte Knapp - Cirkus</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Konst, from, design, Teater</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 0-10 år</h4>
+          </div>
+          <p class="like">5 Likes</p>
+        </div>
+      </div>
+    </div>
+    <div class="row kk_aj_arritem konstform_4" rel="2017-10-10 08:02:00">
+      <div class="small-3 columns kk_aj_arr_item_thumbnail">
+        <a href="#" class="kk_aj_arr_item_thumbnail_img">
+          <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/bardo3_h.jpg" alt="" />
+        </a>
+      </div>
+      <div class="small-9 columns">
+        <div class="row">
+          <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+            <a href="#">
+              <h2 class="kk_aj_title">Othello test nr 1</h2>
+              <h3>Vem är bärare av sanningen? Hur sann är den kollektiva sanningen? Hur blir en lögn en vedertagen
+              sanning?</h3>
+            </a>
+          </div>
+          <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+            <div class=""></div>
+            <a class="button right small round">Läs mer</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="kk_aj_arr_item_Utovare small-4 columns">
+            <h4>Malte Knapp - Cirkus</h4>
+          </div>
+          <div class="kk_aj_arr_item_konstform small-4 columns">
+            <h4>Konst, from, design, Teater</h4>
+          </div>
+          <div class="kk_aj_arr_item_age small-4 columns age">
+            <h4>Ålder 10-12 år</h4>
+          </div>
+          <p class="like">5 Likes</p>
+        </div>
+      </div>
+    </div>

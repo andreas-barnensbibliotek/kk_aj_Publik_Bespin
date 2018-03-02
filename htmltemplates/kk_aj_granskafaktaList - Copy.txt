@@ -1,0 +1,15 @@
+﻿<!-- item loop START -->
+<h3>Fakta</h3>
+{{#each Faktalist}}
+	{{#if FaktaValue}}
+		<div class="row">
+			<div class="small-12 medium-5 columns faktalabel">     
+				{{Faktarubrik}}
+			</div>
+			<div class="small-12 medium-7 columns">     
+				{{FaktaValue}}
+			</div>
+		</div>
+	{{/if}}        
+{{/each}}
+<!-- item loop STOP -->

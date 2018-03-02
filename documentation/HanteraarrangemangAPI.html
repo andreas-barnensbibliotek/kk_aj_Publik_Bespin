@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>kulturkatalogen 1.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+<h1>Brytpunkter</h1>
+
+Brytpunkter är tillfällen då arrangemang som är godkända blir publicerade. 
+Dessa är uppdelade i en huvudbrytpunkt och brytpunkter.
+
+Vid inträffande av huvudbrytpunkt arkiveras alla godkända arrangemang (föregående period) och publiceras alla godkända ej publicerade arrangemang (Innevarande period)
+Exempel: Vid huvudbrytpunkt om år/period är 2017, arkiveras alla godkända arrangemang som också är publicerade perioden 2016, dessutom publiceras alla godkända och ej publicerade arrangemang för perioden 2017.
+
+Vid brytpunkt sker endast en publicering alla godkända ej publicerade arrangemang (innevarande period)
+Exempel: Vid brytpunkt om år/period är 2017 publiceras alla godkända och ej publicerade arrangemang för perioden 2017
+    
+    Detta händer när man kör api-anropet:
+    Brytpunkt:
+    localhost:60485/Api_v2/updatearrangemang/pubbrytpunkt/id/1/uid/1/val/2019-12-01/devkey/alf
+    Huvudbrypunkt:
+    localhost:60485/Api_v2/updatearrangemang/pubhuvudbrytpunkt/id/1/uid/1/val/2019-12-01/devkey/alf
+    
+    BRYTPUNKTER api dokumentation
+    ' cmdtyp = pubhuvudbrytpunkt eller pubbrytpunkt, val= datum aktuell period/år (innevarande år dvs ex 2017-05-13 = perion/år 2017)
+    ' vid val av period använd formatet 20XX-XX-XX vid angivande av datum. använd gärna första dagen dvs 01
+    ' {{Domainnamn/ipadress:xxxx}}/Api_v2/{{cmdtyp}}/pubbrytpunkt/id/1/uid/1/val/{{val}}/devkey/alf
+    ' Vid huvudbrytpunkt om år/period är 2017 arkiveras alla godkända och publicerade 2016 och publiceras alla godkända ej publicerade 2017)
+    ' Vid brytpunkt om år/period är 2017 publiceras alla godkända ej publicerade 2017
+    ' localhost:60485/Api_v2/updatearrangemang/pubhuvudbrytpunkt/id/1/uid/1/val/2019-12-01/devkey/alf
+    ' localhost:60485/Api_v2/updatearrangemang/pubbrytpunkt/id/1/uid/1/val/2019-12-01/devkey/alf
+    
+    Domänadressen till kulturkatalogens api är: kulturkatalog.kivdev.se:8080
+
+
+
+</body>
+</html>

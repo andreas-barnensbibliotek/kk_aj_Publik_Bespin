@@ -1,0 +1,28 @@
+﻿<!-- item loop START -->
+
+{{#each MediaList}}
+	<li>
+		<div class="row">
+			<div class="medium-4 columns">
+				{{#iffilm MediaTyp MediaUrl}}{{/iffilm}} 
+			</div>
+			<div class="medium-8 columns">
+				<div class="row">
+					<div class="small-12 columns">
+						<h2>{{mediaTitle}}</h2>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<label>{{mediaBeskrivning}}</label>
+						<label>                                                    
+							<a href="{{mediaLink}}">gå till: {{mediaTitle}}</a>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</li>
+{{/each}}
+<!-- item loop STOP -->

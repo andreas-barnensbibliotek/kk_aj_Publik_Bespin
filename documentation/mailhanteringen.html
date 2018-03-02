@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>kulturkatalogen 1.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+<h1>Mailhantering</h1>
+
+vid nytt arrangemang skickas mail till utövaren som postat arrangemanget och till konsulenten som har hand om konstarten som arrangemanget är registrerad som 
+
+Debug
+När man vill testa mailfuktionen eller göra tester utan att skicka mail ändra då i Apiets web.config
+
+  <ul>
+	<li> key="SMTPServerip" value="213.180.79.56" </br>(Ipadress till mailservern SMTP) </li>
+    <li> key="htmltemplatesrc" value="D:\websites\kulturkatalogenAPI\kulturkatalogenAPI_v1\kulturkatalogenAPI_v1\htmltemplate\" </br>(url/path till htmlmallarna (txt) på servern</li>
+    <li> key="maildebugMode" value="True" </br>(DEBUGMODE PÅ/AV (kör i debugmode eller skarp. False = "Mail skickas "SKARPT" till arrangören av arrangemanget och till konsulenten för konstarten kopplad till arrangemanget) 
+	True= "Katalogen är i debugmode" inga mail går SKARPT utan går till toMailadressdebug adressen om mailToDebugMode=true. i annat fall går INGA mail ALLS till någon motagare"
+	</li> 
+	<li> key="mailToDebugMode" value="True" </br>( Skicka mail till debugmailadressen (True) eller skicka inte mail alls (False)</li>   
+    <li> key="fromMailadress" value="info@kulturkatalogenvast.org" </br>(Avsändaradressen i alla mail ( öven mail som går skarpt)) </li>    
+    <li> key="toMailadressdebug" value="yvonne.jagersjo@kulturivast.se" </br>(debugmailadressen dit alla mail skickas när kulturkatalogen är i maildebugMode=True och mailToDebugMode=True annars används inte denna</li>      
+	<li> key="serverurl" value="http://kulturkatalog.kivdev.se" </br>(serverns domännamn för användning vid sparande av filer fysiskt på servern</li>  
+  </ul>
+  
+  
+  
+  <p>kod för att sända mail:</p>
+ <code> 
+Private Sub sendmailet()</br>
+    If ConfigurationManager.AppSettings("maildebugMode") = "False" Then</br>
+        mailsmtpsend()</br>
+    Else 'debug is true</br>
+        _status = "Mail in debugmode. "</br>
+
+        If ConfigurationManager.AppSettings("mailToDebugMode") = "True" Then</br>
+            _mailTill = ConfigurationManager.AppSettings("toMailadressdebug")</br>
+            If Not String.IsNullOrEmpty(_mailTill) Then</br>
+                mailsmtpsend()</br>
+                _status &= "(maildebugMode=true and mailToDebugMode =True) mail har skickats till:" & _mailTill</br>
+            Else</br>
+                _status = "Fel (maildebugMode=true and toMailadressdebug =True) i debugMailadressen!"</br>
+            End If</br>
+        Else</br>
+			_status &= "(maildebugMode=False) inget mail har skickats!"</br>
+        End If</br>
+    End If
+     </br>
+End Sub</br>
+</code>
+
+</body>
+</html>

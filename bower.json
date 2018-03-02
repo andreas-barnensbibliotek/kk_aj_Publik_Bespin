@@ -1,0 +1,25 @@
+{
+  "name": "kk_aj_kulturkataalogen",
+  "description": "Version 2.0",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andreas Josefsson <andreas@barnensbibliotek.se>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://github.com/andreas-barnensbibliotek/kk_aj_Publik_Bespin",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "^5.5.3"
+  },
+  "keywords": [
+    "version",
+    "2"
+  ]
+}

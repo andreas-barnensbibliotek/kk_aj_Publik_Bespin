@@ -1,0 +1,30 @@
+﻿<!-- item loop START -->
+{{#each exempelitemlist}}
+	<li>
+		<div class="row">
+			<div class="medium-4 columns">
+				{{#iffilm MediaTyp MediaUrl}}{{/iffilm}} 
+			</div>
+			<div class="medium-8 columns">
+				<div class="row">
+					<div class="small-11 columns">
+						<h2>{{mediaTitle}}</h2>
+					</div>
+					<div class="small-1 columns kk_aj_">
+						<a href="#" class="kk_aj_tabortexempel" rel="{{mediaTitle}}"><i aria-hidden="true" class="fa fa-times"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<label>{{mediaBeskrivning}}</label>
+						<label>                                                    
+							<a href="{{mediaLink}}" class="not-active">Länk till: {{mediaTitle}}</a>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</li>
+{{/each}}
+<!-- item loop STOP -->

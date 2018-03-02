@@ -1,0 +1,184 @@
+{
+	"Rubrik": $('#arr_rubrik').val(),
+	"UnderRubrik": $('#arr_underrubrik').val(),
+	"Innehall":  $('#arr_presentation').val(),
+	"Arrangemangtyp": $('input[name=arr_radioValArrtyp]:checked').val(),
+	"Konstform": $('input[name=arr_radioValkontstform]:checked').val(),
+	"Faktalist": [{
+		"Faktaid": 0,
+		"FaktaTypID": $('#arr_antalmedverkande').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#arr_antalmedverkande').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_laromedel]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_laromedel]:checked').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('#formBuildTimeId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formBuildTimeId').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('#formDemolishTimeId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formDemolishTimeId').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('#formVenueWidthId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formVenueWidthId').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('#formVenueDepthId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formVenueDepthId').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('#formVenueHeightId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formVenueHeightId').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_ljud]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_ljud]:checked').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_ljus]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_ljus]:checked').val(),
+	}, {
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_morklaggning]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_morklaggning]:checked').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formCarriersId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formCarriersId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formElectricityId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formElectricityId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formVenueRequiermentsId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formVenueRequiermentsId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formMaxAudienceId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formMaxAudienceId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formMaxParticipantsId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formMaxParticipantsId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#kk_aj_yearspan').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#kk_aj_yearspan').html().replace(/år/g,'').split(" ").join("").split("-")[0];
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#kk_aj_yearspan').attr('rev'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#kk_aj_yearspan').html().replace(/år/g,'').split(" ").join("").split("-")[1];
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#formMaxShowsId').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#formMaxShowsId').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#kk_aj_speltid').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#kk_aj_speltid').html().replace(/min/g,''),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#arr_ekonomikostnad').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#arr_ekonomikostnad').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_resor]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_resor]:checked').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_logi]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_logi]:checked').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('input[name=arr_Traktamente]:checked').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('input[name=arr_Traktamente]:checked').val(),
+	},	{
+		"Faktaid": 0,
+		"FaktaTypID": $('#arr_resorovrigt').attr('rel'),
+		"Faktarubrik": "" ,
+		"FaktaValue": $('#arr_resorovrigt').val(),
+	}],
+	"MediaList": [{
+		"MediaID": "0",
+		"MediaUrl": $('#arr_Exempelbild').val(),
+		"MediaFilename": $('#arr_antalmedverkande').val(),
+		"MediaSize": $('#arr_antalmedverkande').val(),
+		"MediaAlt": "",
+		"MediaFoto": ",
+		"MediaTyp": $('input[name=arr_ExempelTyp]:checked').val(),
+		"MediaVald": null,
+		"mediaTitle": $('#arr_ExempelRubrik').val(),,
+		"mediaBeskrivning": $('#arr_Exempelbeskrivning').val(),
+		"mediaLink": $('#arr_ExempelUrl').val(),,
+		"sortering": ""
+	}, {
+		"MediaID": "0",
+		"MediaUrl": "https://c.s-microsoft.com/sv-se/CMSImages/Hero_Holiday_HomePage_1920x650.jpg?version=822407e1-396b-e8e7-d880-9a4f6ad58bb7",
+		"MediaFilename": "Hero_Holiday_HomePage_1920x650.jpg",
+		"MediaSize": "1mb",
+		"MediaAlt": "Office365",
+		"MediaFoto": "andreas",
+		"MediaTyp": "1",
+		"MediaVald": null,
+		"mediaTitle": "Office 365 kurs",
+		"mediaBeskrivning": "Detta är en kurs som jag gick till sammans med min otroligt smarte kollega!",
+		"mediaLink": "https://products.office.com/sv-se/",
+		"sortering": "0"
+	}],
+	"Username": "",
+	"MainImage": {
+		"MediaID": 0,
+		"MediaUrl": $('#arr_presentationsbild').val(),
+		"MediaFilename": "",
+		"MediaSize": $('#arr_sizefoto').val(),
+		"MediaAlt": $('#arr_altfoto').val(),
+		"MediaFoto": $('#arr_fotograf').val(),
+		"MediaTyp": "",
+		"MediaVald": "nej",
+		"mediaTitle": "",
+		"mediaBeskrivning": "",
+		"mediaLink": "",
+		"sortering": "0"
+	},
+	"Utovare": "0",
+	"UtovareData": {
+		"UtovarID": "0",
+		"Organisation": $('#utovare_aktor_grupp').val() ,
+		"Fornamn": $('#utovare_fornamn').val() ,
+		"Efternamn": $('#utovare_efternamn').val() ,
+		"Telefon": $('#utovare_telefonnr').val() ,
+		"Adress": $('#utovare_adress').val() ,
+		"Postnr": $('#utovare_postnummer').val() ,
+		"Ort": $('#utovare_ort').val() ,
+		"Epost": $('#utovare_epost').val() ,
+		"Kommun": $('#utovare_kommun').val() ,
+		"Weburl": $('#utovare_orghemsida').val()
+	}
+}

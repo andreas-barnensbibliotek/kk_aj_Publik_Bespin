@@ -1,0 +1,116 @@
+﻿#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f77136; /* Set a background color */
+    color: $white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 16px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Menu Styles */
+
+.third-level-menu
+{
+    z-index:9999;
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    > li{
+        height: auto;
+        background: $white;
+        &:hover { 
+            z-index:9999; 
+            background:  $smoke; 
+        }
+    }
+}
+
+.second-level-menu
+{
+    z-index: 9999;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background:$vapor;
+    > li{
+        position: relative;
+        height: 34px;
+        background:  $vapor ;
+        &:hover {
+            z-index:9999;
+            background:  $smoke; 
+        }
+    }
+}
+
+.top-level-menu
+{
+    z-index:9999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a{
+        border:1px #ccc solid;
+         color: $black;
+        text-decoration: none;
+        padding: 0 0 0 10px;    
+        /* Make the link cover the entire list item-container */
+        display: block;
+        line-height: 34px;
+        &:hover { color: #000000; }
+    }
+    > li{
+        position: relative;
+        float: left;
+        height: 34px;
+        width: 120px;
+        background: $white;
+        &:hover {
+            z-index:9999; 
+            background:  $smoke;             
+        }
+    }
+   
+}
+.top-level-menu li:hover > ul
+{
+    /* On hover, display the next level's menu */
+    display: inline;
+}
+
+.motivlabel{
+    color: #777777;
+    font-size: 0.625rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 8px 0.9375rem 2px;
+    text-transform: uppercase;
+    &:hover{background: $white!important;}
+}
+.motiv_alt{
+    padding:.5rem;
+}
+/*.top-level-menu a.godkandlabel{color:#00a65a;}
+.top-level-menu a.nekalabel{color:#dd4b39;}
+.top-level-menu a.ovrigtlabel{color:#f39c12;}*/

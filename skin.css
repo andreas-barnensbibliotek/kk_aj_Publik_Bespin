@@ -1,0 +1,24 @@
+/*
+Responsive Template Name: RS-1200 Prototype 8
+File: Main CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+@import url(public/css/kk_aj_PublicCSS.css);
+/*@import url(public/css/kiv/kiv.header.css);
+@import url(public/css/kiv/kiv.frontpage.css);
+@import url(public/css/kiv/kiv.menu.css);
+@import url(public/css/kiv/kiv.footer.css);*/
+@import url(public/css/fonts/font-awesome.min.css);
+@import url(public/css/fonts/ionicons.min.css);
+    
+
+
+/* If you want to add your own css code, please do it in the custom.css file
+@import url(layout/styles/custom.css); */
+
+/* Remove this before using the template 
+
+@import url(layout/styles/demo-only.css);*/

@@ -1,0 +1,85 @@
+﻿.mega-menu {
+    background-color: $black;
+    color:$white; 
+   
+    margin-top:2rem;
+
+    .logoblock{
+        padding-top:3rem;
+        padding-bottom:2rem;
+    }
+	.button {
+		background: transparent;
+		color: $white;
+        margin:0px;
+	}
+	.categories {
+		@include side-nav;
+		li a {
+			color: $white;
+			&:hover {
+				color: black;
+			}
+           &:not(.button){
+               color:  $black;
+               &:hover {
+				color: black;
+			}
+           }
+		}
+	}
+    .menyrightblock{
+        background-color: #f77136;  
+        li{
+            a{
+                 &:hover
+                {
+                    background-color: #fff;
+                    color: #f77136 !important;
+                }
+            }
+        }
+        button, .button {
+            padding-left:0px;
+            padding-right: 0px;
+            @media #{$small-only} {
+                font-size:.8rem;
+            }
+        }
+    } 
+	.contact {
+		@include side-nav;
+	}
+	i {
+		padding-right: .5rem;
+	}
+    h2{
+        margin-left:1rem;
+        color:$white;
+    }
+    .mega-menu-content{
+        color:#808080;
+        h4{
+          font-weight: bold;
+        }
+        .faktureringtjanster{
+            p{
+                margin-bottom:0px;
+            }
+            ul{
+                list-style: none; 
+                margin-left:0px; 
+                ul{
+                    list-style: none; margin-left:1rem;
+                   }        
+                li{
+                    a{
+                        list-style: none;  
+                        padding-left: 0px; 
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

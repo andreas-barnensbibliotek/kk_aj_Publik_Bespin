@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>testar</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+<body class="">
+
+    <div>
+        <input type="text" id="arrid" />
+
+        <label for="fileUpload">filer</label>
+            Select File to Upload: <input id="fileUpload" type="file" />
+
+            <input id="btnUploadFile" type="button" value="Upload File" />
+    </div>
+    <script type="text/javascript">
+jQuery(document).ready(function ($) {
+
+$('#btnUploadFile').on('click', function () {
+
+    var data = new FormData();
+    
+    var files = $("#fileUpload").get(0).files;
+    data.append("arrid", $('#arrid').val());
+    // Add the uploaded image content to the form data collection
+    if (files.length > 0) {
+        data.append("UploadedImage", files[0]);
+    }
+
+    // Make Ajax request with the contentType = false, and procesDate = false
+    var ajaxRequest = $.ajax({
+        type: "POST",
+        url: "http://localhost:60485/Api/uploadmedia/devkey/alf",
+        contentType: false,
+        processData: false,
+        data: data
+    });
+
+    ajaxRequest.done(function (xhr, textStatus) {
+        console.log("111.här nui");
+    });
+});
+});
+    </script>
+</body>
+
+
+   
+
+
+</html>
+
+<!--Public Function PostValue(devkey As String) As HttpResponseMessage
+
+
+        Dim test As String = HttpContext.Current.Request("arrid")
+        If HttpContext.Current.Request.Files.AllKeys.Any() Then
+            ' Get the uploaded image from the Files collection
+            Dim httpPostedFile = HttpContext.Current.Request.Files("UploadedImage")
+
+            If httpPostedFile IsNot Nothing Then
+                ' Validate the uploaded image(optional)
+                Dim testar As String = "D:\slask\" & Path.GetFileName(httpPostedFile.FileName)
+
+                ' Get the complete file path
+                'Dim fileSavePath = Path.Combine(HttpContext.Current.Server.MapPath("~/UploadedFiles"), httpPostedFile.FileName)
+                Dim fileSavePath = Path.Combine("D:\slask", testar)
+
+                ' Save the uploaded file to "UploadedFiles" folder
+                httpPostedFile.SaveAs(fileSavePath)
+            End If
+        End If
+
+        Dim response = New HttpResponseMessage(HttpStatusCode.Created)
+        Return response
+    End Function-->

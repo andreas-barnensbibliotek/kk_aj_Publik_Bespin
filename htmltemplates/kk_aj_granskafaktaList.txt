@@ -1,0 +1,60 @@
+﻿
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 1}}
+<div class="artsidecontainer granska_Fakta_mainblock">
+         <h3>Fakta</h3>  
+	{{#each Faktalist}}	 
+		{{#faktatyp Faktaid Faktarubrik FaktaValue}}	
+		{{/faktatyp}} 	      
+	{{/each}}
+</div> 
+{{/faktatypvisas}}
+<!-- item loop STOP -->
+
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 2}}
+<div class="artsidecontainer granska_lokal_mainblock">
+	<h3>Lokal</h3>  
+	{{#each Faktalist}}	 
+		{{#lokaltyp Faktaid Faktarubrik FaktaValue FaktaTypID}}		      
+		{{/lokaltyp}} 	      
+	{{/each}}
+</div> 
+{{/faktatypvisas}}
+<!-- item loop STOP -->
+
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 3}}
+<div class="artsidecontainer granska_Publik_mainblock">
+	<h3>Publik</h3>  
+	{{#each Faktalist}}	 
+		{{#publiktyp Faktaid Faktarubrik FaktaValue}}		      
+		{{/publiktyp}} 	      
+	{{/each}}
+</div>
+{{/faktatypvisas}}
+<!-- item loop STOP --> 
+
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 4}}
+<div class="artsidecontainer granska_Ekonomi_mainblock">
+	<h3>Kostnad/Pris</h3>  
+	{{#each Faktalist}}	 
+		{{#ekonomityp Faktaid Faktarubrik FaktaValue FaktaTypID}}		      
+		{{/ekonomityp}} 	      
+	{{/each}}
+</div>
+{{/faktatypvisas}}
+<!-- item loop STOP --> 
+
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 5}}
+<div class="artsidecontainer granska_Ovrigt_mainblock">
+	<h3>Övrigt</h3>  
+	{{#each Faktalist}}	 
+		{{#ovrigttyp Faktaid Faktarubrik FaktaValue FaktaTypID}}		      
+		{{/ovrigttyp}} 	      
+	{{/each}}
+</div>
+{{/faktatypvisas}}
+<!-- item loop STOP --> 

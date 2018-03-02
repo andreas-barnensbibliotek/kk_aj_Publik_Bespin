@@ -1,0 +1,49 @@
+﻿<!-- item loop START -->
+{{#each kk_aj_admin.ansokningarlista.ansokningar}}
+{{#if ansokningid}}
+
+	<div class="row kk_aj_arritem S_AR_{{ansokningtypid}} S_KF_{{ansokningkonstformid}}" rel="{{ansokningdate}}" >
+		<div class="small-3 columns kk_aj_arr_item_thumbnail">
+			<div class="row kk_aj_arr_item_thumbnail_color">
+				<div class="small-12">
+					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}" class="kk_aj_arr_item_thumbnail_img">
+						<img src="/Portals/0/kulturkatalogenArrImages/{{ansokningid}}_{{ansokningMediaImage.MediaUrl}}" alt="{{ansokningtitle}}">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12">
+					<a href="#" class="kk_aj_arr_item_minneslista {{ansokningstatus}}" title="Lägg till i minneslistan" rel="{{ansokningid}}">{{#inMemList ansokningstatus}}{{/inMemList}} Minneslista</a>
+                </div>
+			</div>
+		</div>
+		<div class="small-9 columns ">
+			<div class="row">
+				<div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
+					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}">
+						<h2 class="kk_aj_title">{{ansokningtitle}}</h2>
+						<h3>{{ansokningsubtitle}}</h3>
+					</a>
+				</div>
+				<div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+					<div class="row">
+						<div class="small-12">
+							<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}" class="button right small round " rel="{{ansokningid}}">Läs mer</a>
+						</div>
+					</div>                               
+				</div>
+			</div>
+			<div class="row">
+				<div class="kk_aj_arr_item_Utovare small-4 columns" rel="{{ansokningUtovarid}}"><h4>{{ansokningutovare}}</h4></div>
+				<div class="kk_aj_arr_item_konstform small-4 columns"><h4>{{ansokningkonstform}}</h4></div>							
+				{{#showyearspan ansokningAgespan}}{{/showyearspan}}
+												
+			</div>
+			<div  class="kk_aj_filtervalues S_BB_p{{ansokningFilterfakta.Bokningsbar}} S_ML_{{ansokningFilterfakta.Morklaggning}} S_TH_{{ansokningFilterfakta.Takhojd}} S_ST">{{ansokningFilterfakta.Speltid}}</div><div class="S_KO">{{ansokningFilterfakta.Kostnad}}</div>
+		</div>
+	</div>
+	
+{{else}}
+	{{/if}}
+{{/each}}
+<!-- item loop STOP -->
