@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* version v0.0.2 */
-@import url(css/kiv/kiv.footer.css);
 @import "http://develop-v1.kulturivast.se/sites/all/themes/kivnew/fonts/foundation-icons/foundation-icons.css";
 /* line 431, bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
@@ -9238,6 +9237,77 @@ ul.multiColumn {
   margin-bottom: 0px;
   color: #FFFFFF; }
 
+/* line 158, _dev/devsass/devScss/Komponenter/_footer.scss */
+footer.footer {
+  background: #4cff00;
+  padding-bottom: 38px; }
+
+/* line 163, _dev/devsass/devScss/Komponenter/_footer.scss */
+.footer .annonsrow img {
+  min-width: 220px;
+  max-width: 220px; }
+
+/* line 168, _dev/devsass/devScss/Komponenter/_footer.scss */
+footer.footer.annonsfot {
+  background: #fff;
+  margin: 0 !important;
+  padding: 0; }
+
+/* line 174, _dev/devsass/devScss/Komponenter/_footer.scss */
+.footer .footdelare {
+  margin-top: 5rem; }
+
+/* line 178, _dev/devsass/devScss/Komponenter/_footer.scss */
+.footer .footdelare .foot-kivlogo-container img {
+  max-width: 160px; }
+
+/* line 182, _dev/devsass/devScss/Komponenter/_footer.scss */
+.footer .footdelare .foot-kivlogo-container {
+  height: 83px; }
+
+/* line 186, _dev/devsass/devScss/Komponenter/_footer.scss */
+.footer .footdelare .socialiconlist img {
+  max-width: 48px; }
+
+/* line 190, _dev/devsass/devScss/Komponenter/_footer.scss */
+.foot-lank {
+  text-align: left; }
+
+/* line 194, _dev/devsass/devScss/Komponenter/_footer.scss */
+.foot-lank.last {
+  margin-bottom: 35px; }
+
+/* line 198, _dev/devsass/devScss/Komponenter/_footer.scss */
+.foot-lank a {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  overflow: hidden;
+  display: inline-block;
+  width: 330px; }
+
+/* line 209, _dev/devsass/devScss/Komponenter/_footer.scss */
+.foot-lank a:hover {
+  text-decoration: underline; }
+
+/* line 213, _dev/devsass/devScss/Komponenter/_footer.scss */
+.foot-lank-pil {
+  float: right;
+  margin-left: 10px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -19px -120px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 224, _dev/devsass/devScss/Komponenter/_footer.scss */
+  .foot-lank-pil {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
 /* line 1, _dev/devsass/devScss/Komponenter/_breadcrumb.scss */
 .filterbreadcrumbbox {
   margin-top: 1.5rem; }
@@ -11022,12 +11092,11 @@ img .flip {
   height: 26px;
   padding-top: 0.1rem;
   padding-left: .5rem;
-  background-color: #f77136;
   /*color: $jumbo !important;*/
-  color: #FFFFFF !important; }
+  color: #000000 !important; }
   /* line 6, _dev/devsass/devScss/Komponenter/_menybreadcrumb.scss */
   .menybreadcrumb a {
-    color: #FFFFFF !important;
+    color: #000000 !important;
     /*color: $jumbo !important;*/
     padding-right: 2px;
     padding-left: 2px;
@@ -11035,7 +11104,6 @@ img .flip {
     font-size: 0.8125rem; }
     /* line 11, _dev/devsass/devScss/Komponenter/_menybreadcrumb.scss */
     .menybreadcrumb a:hover {
-      color: #FFFFFF !important;
       text-decoration: underline; }
   /* line 19, _dev/devsass/devScss/Komponenter/_menybreadcrumb.scss */
   .menybreadcrumb .mbc_navlinklist li {
@@ -11875,17 +11943,17 @@ img .flip {
   margin-bottom: 0px; }
 
 /* line 143, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
+.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
   visibility: hidden;
   /* Makes input not-clickable */
   position: absolute; }
   /* line 147, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-  .valbaraRadiobuttons label > input:checked + img, .ArrangemangtypBlock label > input:checked + img, .kontformBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + img {
+  .valbaraRadiobuttons label > input:checked + img, .ArrangemangtypBlock label > input:checked + img, .kontformBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + img {
     border: 0px solid #f00;
     background-image: url("http://kulturkatalog.kivdev.se/DesktopModules/kk_aj_Publik_ArrangemangForm/images/kulturpedagogiskaprojekt_invert.png"); }
 
 /* line 154, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-.valbaraRadiobuttons label + img, .ArrangemangtypBlock label + img, .kontformBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + img {
+.valbaraRadiobuttons label + img, .ArrangemangtypBlock label + img, .kontformBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + img {
   /* IMAGE STYLES */
   cursor: pointer;
   border: 0px solid transparent; }
@@ -12310,48 +12378,105 @@ input[type=radio] + label {
   -webkit-appearance: none;
   background-position-x: 95%; }
 
-/* line 31, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 28, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kk_aj_mainLogoheaderblock {
+  height: 289px; }
+  /* line 31, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainLogoheaderblock .kk_aj_searchHeader {
+    margin-top: 60px; }
+    /* line 33, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainLogoheaderblock .kk_aj_searchHeader h1 {
+      font-size: 5.5rem;
+      font-weight: lighter; }
+  /* line 38, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainLogoheaderblock ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0px; }
+    /* line 44, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainLogoheaderblock ul li {
+      margin-right: 1rem; }
+
+/* line 51, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader {
   margin-top: 3rem;
   margin-bottom: 2rem; }
-  /* line 32, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 53, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader h1 {
     font-size: 3.5rem;
     padding-bottom: 1.5rem; }
   @media only screen and (max-width: 40em) {
-    /* line 34, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 55, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader h1 {
       font-size: 2.5rem;
       padding-bottom: 1.5rem; } }
-  /* line 36, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 57, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader p {
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
     @media only screen and (min-width: 40.0625em) {
-      /* line 36, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 57, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader p {
         padding-left: 2.6rem;
         padding-right: 2.6rem; } }
   @media only screen and (min-width: 40.0625em) {
-    /* line 31, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 51, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader {
       margin-top: 6rem;
       margin-bottom: 2rem; } }
 
-/* line 52, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 75, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainFreetextSearchblock .kk_aj_freetextSearch {
   -webkit-border-radius: 10px 0px 0px 10px !important;
           border-radius: 10px 0px 0px 10px !important;
   margin-right: 0px;
   padding-right: 0px; }
 
-/* line 57, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.kk_aj_mainFreetextSearchblock .kk_aj_btnfreetextSearch {
-  -webkit-border-radius: 0px 10px 10px 0px !important;
-          border-radius: 0px 10px 10px 0px !important;
-  color: #fff !important; }
+/* line 87, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kk_aj_mainInfotextblock {
+  background: #3a8280;
+  color: #fff;
+  padding-bottom: 70px; }
+  /* line 91, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainInfotextblock h2 {
+    font-size: 2.2rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-weight: bold; }
 
-/* line 63, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 100, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kk_aj_mainFreetextSearchblock {
+  background: #ebeae6;
+  padding-bottom: 70px; }
+  /* line 103, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainFreetextSearchblock h2 {
+    font-size: 2.2rem;
+    margin-top: 60px;
+    margin-bottom: 40px; }
+
+/* line 109, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kk_aj_mainsearchblock {
+  background: #b1a06b;
+  padding-bottom: 70px; }
+  /* line 112, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainsearchblock h2 {
+    font-size: 2.2rem;
+    margin-top: 60px;
+    margin-bottom: 40px; }
+
+/* line 119, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_superProductListBlock {
   /*background: url(http://kulturkatalog.kivdev.se/portals/0/kulturkatalogenArrImages/kulturkatalogen/bak_kulturkatalogen.jpg);
     background-size: 100% auto;
@@ -12360,139 +12485,74 @@ input[type=radio] + label {
   /*Sök form --------------------------------------*/
   /* END Sök form ---------------------------------*/
   /*produktlista ----------------------------------*/ }
-  /* line 67, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 123, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .row {
     margin: 0rem !important; }
-  /* line 70, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 126, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .kk_aj_coloredblocks {
     margin-top: 2rem;
     background: #f77136; }
-    /* line 73, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 129, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_coloredblocks h2 {
       color: #FFFFFF; }
-  /* line 79, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 135, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .kk_aj_mainsearchblock {
-    padding-top: 4rem; }
-    /* line 82, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    padding-bottom: 2rem; }
+    /* line 138, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainsearchblock .ui-state-active {
       background: #fff !important;
       border-color: #f77136 !important; }
-    /* line 83, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 139, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock {
       margin-top: 1rem;
-      /* mainblock globals */
-      /*END button*/
-      /*END button-group*/ }
-      /* line 85, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* mainblock globals */ }
+      /* line 141, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock #kk_aj_slider-range2 {
+        margin: 1rem !important; }
+      /* line 142, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock #kk_aj_yearspan2 {
-        padding-top: .4rem; }
+        padding-top: .4rem;
+        margin-top: 1rem; }
       @media only screen and (min-width: 64.0625em) {
-        /* line 83, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 139, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock {
           margin-top: 4rem; } }
-      /* line 90, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button {
-        margin-bottom: 0.6rem;
-        max-height: 60px; }
-        /* line 93, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button.round {
-          -webkit-border-radius: 6px;
-                  border-radius: 6px; }
-        /* line 96, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button.small {
-          padding-left: .2rem;
-          padding-right: .2rem; }
-        /* line 100, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button.secondary {
-          background-color: #efeded; }
-          /* line 102, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-          .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button.secondary:hover {
-            background-color: #f77136;
-            opacity: 0.6;
-            color: #FFFFFF; }
-      /* line 111, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button-group #val_formDesign {
-        padding-left: 1rem;
-        padding-right: 1rem; }
-      /* line 114, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .button-group.even-2 li .button {
-        width: 94%;
-        padding: .6rem; }
-      /* line 123, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset {
-        /*#kk_aj_yearspan{
-                    margin-top: 0.5rem;
-                    background-color:#f77136; 
-                    color:#fff; 
-                    float:right;
-                    padding-left:1rem; 
-                    padding-right:1rem;
-                    padding-top:.5rem;
-                    padding-bottom:.5rem; 
-                    font-size: 0.9rem;
-                }*/ }
-        /* line 124, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset legend {
-          margin-bottom: 0.5rem; }
-        /* line 133, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset.arralder {
-          padding: 0 1.7rem; }
-          /* line 135, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-          .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset.arralder .ui-widget-header {
-            background: #f77136 !important; }
-        /* line 150, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset #kk_aj_yearspan {
-          margin-top: 0.5rem;
-          _background-color: #f77136;
-          color: #000;
-          float: right;
-          padding-left: 1rem;
-          padding-right: .2rem;
-          padding-top: .0rem;
-          padding-bottom: .5rem;
-          font-size: 0.9rem; }
-    /* line 166, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-    .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock {
-      margin-top: 2rem;
-      margin-bottom: 4rem;
-      /*END button*/ }
-      @media only screen and (max-width: 40em) {
-        /* line 166, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock {
-          margin-bottom: 2rem; } }
-      /* line 172, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        width: 30%; }
-        @media only screen and (max-width: 40em) {
-          /* line 172, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-          .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button {
-            width: 40%;
-            margin-left: 0.5rem;
-            margin-right: .5rem;
-            padding-left: .1rem;
-            padding-right: .1rem; } }
-        /* line 184, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button.round {
-          -webkit-border-radius: 6px;
-                  border-radius: 6px; }
-        /* line 187, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button.small {
-          padding-left: .2rem;
-          padding-right: .2rem; }
-        /* line 191, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button.info {
-          color: #FFFFFF; }
-        /* line 195, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-        .kk_aj_superProductListBlock .kk_aj_mainsearchblock .kk_aj_searchbuttonblock .button .kk_aj_searchRensaformbutton:hover {
-          background: #EEEEEE !important; }
+    /* line 156, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformbutton {
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      background: #ccc;
+      margin-bottom: .5rem;
+      height: 45px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: left;
+      padding: .5rem; }
+  /* line 171, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_superProductListBlock .kk_aj_searchbuttonblock {
+    margin-bottom: 4rem; }
   @media only screen and (max-width: 40em) {
-    /* line 208, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 182, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_filterRubrikBlock h3 {
       font-size: 0.9375rem;
       font-weight: bold; } }
-  /* line 212, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 186, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .kk_aj_filterRubrikBlock .jplist-drop-down {
     font-size: 14px;
     line-height: 1;
@@ -12502,61 +12562,61 @@ input[type=radio] + label {
     border-color: #e6e6e6;
     border-style: solid;
     height: 30px; }
-  /* line 221, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 195, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .kk_aj_filterRubrikBlock .jplist-select {
     margin: 0px;
     padding: 0px; }
-  /* line 227, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 201, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_superProductListBlock .kk_aj_mainproductlistblock {
     /*START Produktlistningen sökresultat-----------*/
     /*STOPP Produktlistningen sökresultat ----------*/ }
-    /* line 229, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 203, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock {
       margin-bottom: 1rem;
       padding-right: 2.5rem !important;
       /* START Filter tillvänster --------------------*/
       /* STOPP Filter tillvänster -------------------*/ }
-      /* line 234, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 208, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock h4 {
         margin-top: 1rem;
         margin-bottom: .1rem; }
-      /* line 238, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 212, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock .jplist-range-slider {
         width: 160px;
         margin-top: 0px;
         margin-left: .5rem; }
-        /* line 242, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 216, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock .jplist-range-slider .value {
           margin: 0px;
           margin-top: .5rem; }
-      /* line 248, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 222, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock .kk_aj_searchfilterblock {
         margin-left: .5rem; }
-      /* line 251, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 225, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_filterblock .resetbox {
         margin-top: 1rem; }
-    /* line 257, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 231, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .like {
       display: none; }
-    /* line 260, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 234, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
       margin: 0px;
       padding: 0px;
       padding-left: .5rem; }
-    /* line 272, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 246, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_filtervalues {
       display: none; }
-    /* line 273, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 247, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .S_KO {
       display: none; }
-    /* line 274, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 248, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem {
       border: 1px solid transparent;
       border-top: 1px solid #EEEEEE;
       padding-top: 1rem;
       margin-bottom: 1rem !important;
       text-align: left; }
-      /* line 281, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 255, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem:hover {
         /*background-color:$white;                                    
                          border-color: $orange;*/
@@ -12568,84 +12628,84 @@ input[type=radio] + label {
         -webkit-animation: rainbow 18s ease infinite;
         -z-animation: rainbow 18s ease infinite;
         animation: rainbow 18s ease infinite; }
-      /* line 298, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 272, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail {
         display: block;
         min-height: 100%;
         padding: .1rem;
         text-align: center; }
         @media only screen and (min-width: 40.0625em) {
-          /* line 298, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 272, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail {
             __padding-right: 0px;
             text-align: center; } }
-        /* line 308, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 282, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail img {
           max-height: 150px; }
-        /* line 309, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 283, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_thumbnail_color {
           background-color: #F6F6F6;
           /*background-color:transparent;*/ }
-        /* line 313, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 287, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_thumbnail_img {
           width: 100%;
           height: 100%; }
-        /* line 317, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 291, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista {
           text-decoration: none;
           color: #888888;
           font-size: small; }
-          /* line 320, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 294, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista.minnesadded {
             color: #43AC6A; }
-          /* line 323, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 297, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista:hover {
             text-decoration: underline; }
-      /* line 328, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 302, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock {
         min-height: 8.2rem; }
         @media only screen and (max-width: 40em) {
-          /* line 328, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 302, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock {
             min-height: 4.2rem; } }
-        /* line 333, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 307, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock h2 {
           font-size: 1.25rem;
           color: #000000;
           font-weight: bold; }
-        /* line 338, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 312, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock h3 {
           font-size: 1.0625rem; }
-        /* line 341, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 315, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock h4 {
           font-size: 0.625rem; }
-      /* line 346, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 320, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .button {
         border: 1px solid transparent;
         background-color: #f77136;
         color: #FFFFFF; }
         @media only screen and (max-width: 40em) {
-          /* line 346, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 320, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .button {
             padding: .5rem .7rem; } }
-        /* line 353, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 327, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .button.round {
           -webkit-border-radius: 0px;
                   border-radius: 0px;
           /*6px;*/ }
-        /* line 356, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 330, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .button:hover {
           background-color: #FFFFFF;
           border: 1px solid #f77136;
           color: #f77136; }
-      /* line 366, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 340, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .inminneslist {
         color: #43AC6A !important; }
-    /* line 373, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 347, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productPagerblock {
       border-top: 1px solid #EEEEEE;
       padding-bottom: 1rem; }
-      /* line 376, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 350, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_superProductListBlock .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productPagerblock .jplist-panel {
         display: table;
         margin: 0 auto; }
@@ -12667,64 +12727,69 @@ input[type=radio] + label {
     background-position: 0% 82%; } }
 
 /*Multifunktioner*/
-/* line 415, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.centerfields, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset.arrkonstform, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock fieldset.arrpublik {
+/* line 389, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.centerfields {
   text-align: center; }
 
-/* line 419, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.valbaraRadiobuttons .vald, .ArrangemangtypBlock .vald, .kontformBlock .vald, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock .vald {
+/* line 393, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.valbaraRadiobuttons .vald, .ArrangemangtypBlock .vald, .kontformBlock .vald, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock .vald, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock .vald {
   color: #FFFFFF !important;
   background: #f77136 !important; }
 
-/* line 424, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
+/* line 398, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
   visibility: hidden;
   /* Makes input not-clickable */
   position: absolute; }
-  /* line 428, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-  .valbaraRadiobuttons label > input:checked + span, .ArrangemangtypBlock label > input:checked + span, .kontformBlock label > input:checked + span, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + span {
+  /* line 402, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .valbaraRadiobuttons label > input:checked + span, .ArrangemangtypBlock label > input:checked + span, .kontformBlock label > input:checked + span, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input:checked + span, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + span {
     color: #FFFFFF;
     background: #f77136 !important; }
 
-/* line 436, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.valbaraRadiobuttons label + button, .ArrangemangtypBlock label + button, .kontformBlock label + button, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + button {
+/* line 410, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.valbaraRadiobuttons label + button, .ArrangemangtypBlock label + button, .kontformBlock label + button, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label + button, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + button {
   /* IMAGE STYLES */
   cursor: pointer;
   border: 2px solid transparent; }
 
-/* line 450, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 416, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.buttonmall, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny, .kk_aj_superProductListBlock .kk_aj_searchbuttonblock button.tiny {
+  width: 16rem !important;
+  font-size: .8rem; }
+
+/* line 427, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .jplist-panel .jplist-pagination button {
   font-family: "acumin-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-shadow: none;
   font-weight: normal;
   color: #666666 !important;
   background: #ebeae9; }
-  /* line 457, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 434, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .jplist-panel .jplist-pagination button.jplist-current {
     font-weight: normal;
     color: #FFFFFF !important;
     background: #43AC6A; }
-    /* line 461, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 438, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .jplist-panel .jplist-pagination button.jplist-current:hover {
       opacity: 1;
       color: inherit;
       background: #43AC6A; }
-  /* line 466, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 443, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .jplist-panel .jplist-pagination button:hover {
     color: #FFFFFF !important;
     opacity: 0.5;
     color: inherit;
     background: #43AC6A; }
 
-/* line 476, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 453, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 #kk_aj_valdsokning ul {
   font-size: 0.8rem; }
 
-/* line 479, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 456, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 #kk_aj_valdsokning #kk_aj_valdsokord {
   margin-left: 0px;
   list-style: none; }
-  /* line 482, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 459, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   #kk_aj_valdsokning #kk_aj_valdsokord li {
     float: left;
     margin-right: 1rem; }
@@ -13464,32 +13529,188 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 
-/* New header */
-/* line 2, _dev/devsass/css/kiv/kiv.header.css */
-.kiv-new-header {
-  /* Top bar */
-  /* Left menu button */
-  /* Search */
-  /* logo */ }
+/* line 1, _dev/devsass/css/kiv/kiv.footer.css */
+footer.footer {
+  background: #000;
+  padding-bottom: 38px; }
 
-/* line 9, _dev/devsass/css/kiv/kiv.header.css */
+/* line 6, _dev/devsass/css/kiv/kiv.footer.css */
+.footer .annonsrow img {
+  min-width: 220px;
+  max-width: 220px; }
+
+/* line 11, _dev/devsass/css/kiv/kiv.footer.css */
+footer.footer.annonsfot {
+  background: #fff;
+  margin: 0 !important;
+  padding: 0; }
+
+/* line 17, _dev/devsass/css/kiv/kiv.footer.css */
+.footer .footdelare {
+  margin-top: 5rem; }
+
+/* line 21, _dev/devsass/css/kiv/kiv.footer.css */
+.footer .footdelare .foot-kivlogo-container img {
+  max-width: 160px; }
+
+/* line 25, _dev/devsass/css/kiv/kiv.footer.css */
+.footer .footdelare .foot-kivlogo-container {
+  height: 83px; }
+
+/* line 29, _dev/devsass/css/kiv/kiv.footer.css */
+.footer .footdelare .socialiconlist img {
+  max-width: 48px; }
+
+/* line 33, _dev/devsass/css/kiv/kiv.footer.css */
+.foot-lank {
+  text-align: left; }
+
+/* line 37, _dev/devsass/css/kiv/kiv.footer.css */
+.foot-lank.last {
+  margin-bottom: 35px; }
+
+/* line 41, _dev/devsass/css/kiv/kiv.footer.css */
+.foot-lank a {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  overflow: hidden;
+  display: inline-block;
+  width: 330px; }
+
+/* line 52, _dev/devsass/css/kiv/kiv.footer.css */
+.foot-lank a:hover {
+  text-decoration: underline; }
+
+/* line 56, _dev/devsass/css/kiv/kiv.footer.css */
+.foot-lank-pil {
+  float: right;
+  margin-left: 10px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -19px -120px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 67, _dev/devsass/css/kiv/kiv.footer.css */
+  .foot-lank-pil {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 1, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .searchMainWrapper {
+  min-height: 50px;
+  height: 50px;
+  overflow: hidden; }
+
+@media (min-width: 40em) {
+  /* line 8, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper {
+    min-height: 200px; } }
+
+/* line 13, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .searchMainWrapper #contentfilterblock {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+@media (min-width: 40em) {
+  /* line 19, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper #contentfilterblock {
+    margin-top: 0.5rem;
+    margin-bottom: 1em; } }
+
+/* line 25, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .searchMainWrapper #contentfilterblock input {
+  background: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  font-size: 1.2rem; }
+
+@media (min-width: 40em) {
+  /* line 35, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper #contentfilterblock input {
+    background: #fff;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem; } }
+
+/* line 45, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
+  text-transform: uppercase; }
+
+@media (min-width: 40em) {
+  /* line 50, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
+    text-transform: initial; } }
+
+/* line 55, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .searchMainWrapper #edit-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 60px;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 2000;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -2px -238px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 72, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper #edit-submit {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+@media (min-width: 40em) {
+  /* line 79, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper #edit-submit {
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: #999999;
+    overflow: visible;
+    line-height: 13px;
+    margin: 0 0 1.25rem;
+    padding: 1rem 2rem 1.0625rem 2rem;
+    background-image: none; } }
+
+/* line 92, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .searchMainWrapper {
   display: block !important; }
 
-@media (min-width: 44em) {
-  /* line 14, _dev/devsass/css/kiv/kiv.header.css */
+@media (min-width: 40em) {
+  /* line 97, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .searchMainWrapper {
     display: none !important; } }
 
-/* line 19, _dev/devsass/css/kiv/kiv.header.css */
-.kiv-new-header .tab-bar {
-  height: 47px;
-  background: #fff; }
+@media (min-width: 40em) {
+  /* line 103, _dev/devsass/css/kiv/kiv.header.css */
+  .kiv-new-header .searchMainWrapper.sok-open {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important; } }
 
-/* line 24, _dev/devsass/css/kiv/kiv.header.css */
+/* line 110, _dev/devsass/css/kiv/kiv.header.css */
+.kiv-new-header .tab-bar {
+  height: 45px;
+  background: #ebeae6; }
+
+/* line 115, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .left-small {
-  height: 47px;
-  line-height: 47px;
+  height: 45px;
+  line-height: 45px;
   background: none;
   border: none;
   background-image: url("../images/kiv-elements.png");
@@ -13498,44 +13719,43 @@ textarea {
   transition-property: opacity;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  width: 60px;
-  background-position: -9px -3px; }
+  width: 85px;
+  background-position: -1px -3px; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 40, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 131, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .left-small {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-@media (min-width: 44em) {
-  /* line 47, _dev/devsass/css/kiv/kiv.header.css */
+@media (min-width: 40em) {
+  /* line 138, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .left-small {
-    width: 150px;
-    background-position: -1px -3px; } }
+    width: 150px; } }
 
-/* line 53, _dev/devsass/css/kiv/kiv.header.css */
+/* line 143, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .left-small span {
   color: #000;
   font-size: 18px !important;
   padding-left: 67px;
   visibility: hidden; }
 
-@media (min-width: 44em) {
-  /* line 61, _dev/devsass/css/kiv/kiv.header.css */
+@media (min-width: 40em) {
+  /* line 151, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .left-small span {
     visibility: visible; } }
 
-/* line 66, _dev/devsass/css/kiv/kiv.header.css */
+/* line 156, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .left-small:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); }
 
-/* line 71, _dev/devsass/css/kiv/kiv.header.css */
+/* line 161, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .right-small {
   right: 350px;
-  height: 47px;
+  height: 45px;
   width: 120px;
-  line-height: 47px;
+  line-height: 45px;
   background: none;
   border: none;
   background-image: url("../images/kiv-elements.png");
@@ -13548,195 +13768,181 @@ textarea {
   display: none !important; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 89, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 179, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .right-small {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-@media (min-width: 44em) {
-  /* line 96, _dev/devsass/css/kiv/kiv.header.css */
+@media (min-width: 40em) {
+  /* line 186, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .right-small {
     display: block !important; } }
 
-/* line 101, _dev/devsass/css/kiv/kiv.header.css */
+/* line 191, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .right-small span {
   color: #000;
   font-size: 18px !important;
   padding-left: 48px; }
 
-/* line 107, _dev/devsass/css/kiv/kiv.header.css */
+/* line 197, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .left-small:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); }
 
-/* line 112, _dev/devsass/css/kiv/kiv.header.css */
+/* line 202, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .tab-bar-logosection {
-  height: 47px;
-  line-height: 47px;
+  height: 45px;
+  line-height: 45px;
   border: none;
   background: none;
   margin: 0;
   left: auto;
   right: 0px;
   padding-right: 0;
-  width: 270px; }
+  width: 285px; }
 
-@media (min-width: 44em) {
-  /* line 125, _dev/devsass/css/kiv/kiv.header.css */
-  .kiv-new-header .tab-bar-logosection {
-    width: 285px; } }
-
-/* line 130, _dev/devsass/css/kiv/kiv.header.css */
+/* line 214, _dev/devsass/css/kiv/kiv.header.css */
 .kiv-new-header .logo-img a {
-  height: 47px;
+  height: 45px;
   width: 275px;
   line-height: 2000px;
   display: block;
   overflow: hidden;
   background-image: url("../images/kiv-elements.png");
   background-repeat: repeat-x;
-  background-position: -23px -168px; }
+  background-position: -12px -168px; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 142, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 226, _dev/devsass/css/kiv/kiv.header.css */
   .kiv-new-header .logo-img a {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-@media (min-width: 44em) {
-  /* line 149, _dev/devsass/css/kiv/kiv.header.css */
-  .kiv-new-header .logo-img a {
-    background-position: -12px -168px; } }
-
 /* line 1, _dev/devsass/css/kiv/kiv.frontpage.css */
-.special body {
-  font-family: 'acumin-pro-regular','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.4; }
-
-/* line 10, _dev/devsass/css/kiv/kiv.frontpage.css */
-h1.medium,
-h1.large {
-  font-family: 'acumin-pro-black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3rem;
-  line-height: 1.1; }
-
-/* line 19, _dev/devsass/css/kiv/kiv.frontpage.css */
-h1.small {
-  font-family: 'acumin-pro-light','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.1rem;
-  line-height: 1.1; }
-
-/* line 27, _dev/devsass/css/kiv/kiv.frontpage.css */
-h2.medium,
-h2.large {
-  font-family: 'acumin-pro-black','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3rem;
-  line-height: 1.1; }
-
-/* line 36, _dev/devsass/css/kiv/kiv.frontpage.css */
-h2.small {
-  font-family: 'acumin-pro-light','Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.1rem;
-  line-height: 1.1; }
-
-/* line 44, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items-field-main-content {
   line-height: 0; }
 
-/* line 48, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 5, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .field-type-paragraphs .entity-paragraphs-item {
   float: none; }
 
-/* line 52, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 9, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .video-filter iframe {
+  max-width: 100%; }
+
+/* line 13, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view {
   background: #505050;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   min-height: 600px; }
 
-@media (min-width: 44em) {
-  /* line 60, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 21, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .para-flex-slider-view {
     padding-bottom: 110px; } }
 
-/* line 65, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 26, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images {
   display: block !important; }
 
-@media (min-width: 44em) {
-  /* line 70, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 31, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .para-flex-slider-view .stacked-images {
     display: none !important; } }
 
-/* line 75, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 36, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 40px; }
 
-/* line 81, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 42, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row.views-row-last {
   margin-bottom: 10px; }
 
-/* line 85, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 46, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel {
   display: block; }
 
-/* line 89, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 50, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel img {
   width: 100%; }
 
-/* line 93, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 54, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1;
   color: #fff;
-  font-size: 30px;
-  font-size: 1.875rem;
   padding-top: 10px; }
 
-/* line 100, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 65, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 71, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 {
-  color: #fff;
-  font-size: 30px;
-  font-size: 1.875rem; }
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #fff; }
 
-/* line 106, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 81, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 87, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 a {
-  color: #fff;
-  font-size: 30px;
-  font-size: 1.875rem; }
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #fff; }
 
-/* line 112, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 97, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 a {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 103, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row a:hover {
   text-decoration: underline; }
 
-/* line 116, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 107, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel {
   display: none !important; }
 
-@media (min-width: 44em) {
-  /* line 121, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 112, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .para-flex-slider-view .flex-bildspel {
     display: block !important; } }
 
-/* line 126, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 117, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flexslider {
   background: #505050; }
 
-/* line 130, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 121, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
-  overflow: visible; }
+  overflow: visible;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+@media (min-width: 40em) {
+  /* line 128, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
 
 /* line 134, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-nav {
@@ -13754,53 +13960,136 @@ h2.small {
 /* line 147, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text {
   bottom: -80px;
-  margin: 0;
-  padding-left: 10px; }
+  margin: 0; }
 
-/* line 153, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 152, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
   color: #fff;
-  font-size: 2.1rem; }
+  max-height: 80px;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
 
-/* line 158, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 163, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+@media (min-width: 40em) {
+  /* line 170, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-size: 2rem; } }
+
+@media (min-width: 64em) {
+  /* line 176, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.1; } }
+
+@media (min-width: 64em) and (min-width: 40em) {
+  /* line 186, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 192, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
   color: #fff;
-  font-size: 2.1rem; }
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
 
-/* line 163, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 202, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
+
+@media (min-width: 40em) {
+  /* line 209, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+@media (min-width: 40em) {
+  /* line 216, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-size: 2rem; } }
+
+@media (min-width: 64em) {
+  /* line 222, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 1.1; } }
+
+@media (min-width: 64em) and (min-width: 40em) {
+  /* line 232, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 238, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text a:hover {
   text-decoration: underline; }
 
-/* line 167, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 242, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-prev {
+  background: url("../images/PilMenyV28_vit.png") no-repeat center center; }
+
+/* line 246, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-next {
+  background: url("../images/PilMeny28_vit.png") no-repeat center center; }
+
+/* line 250, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph {
   overflow: hidden;
   clear: both;
   padding-top: 30px;
   padding-bottom: 35px; }
 
-@media (min-width: 44em) {
-  /* line 175, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 258, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .view-front-news-paragraph {
     padding-top: 60px;
     padding-bottom: 70px; } }
 
-/* line 181, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 264, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-view-title {
-  padding-bottom: 10px;
-  padding-top: 20px; }
+  padding-bottom: 10px; }
 
-/* line 186, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 268, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2 {
-  font-size: 40px;
-  font-size: 2.5rem; }
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #000; }
 
-/* line 191, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 278, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 284, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuelltbox a {
   height: 115px;
   display: block;
   overflow: hidden; }
 
-/* line 197, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 290, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-wrapper {
   position: relative;
   border-bottom: 1px solid #000;
@@ -13812,27 +14101,41 @@ h2.small {
   -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s; }
 
-/* line 209, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 302, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper {
+  border-bottom: 1px solid #000; }
+
+@media (min-width: 40em) {
+  /* line 307, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper {
+    border-bottom: 1px solid #000; } }
+
+/* line 312, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-wrapper:hover {
   background: #e7e7e8; }
 
-/* line 213, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 316, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .views-row-1 .aktuellt-wrapper {
   border-top: 1px solid #000; }
 
-@media (min-width: 44em) {
-  /* line 218, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 321, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .view-front-news-paragraph .views-row-2 .aktuellt-wrapper,
   .paragraphs-items .view-front-news-paragraph .views-row-3 .aktuellt-wrapper {
     border-top: 1px solid #000; } }
 
-/* line 224, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 327, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-left {
   float: left;
-  padding-right: 30px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-right: 40px; }
 
-/* line 230, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 334, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-left {
+    padding-right: 40px; } }
+
+/* line 339, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuellt-right {
   position: absolute;
   right: 5px;
@@ -13844,56 +14147,260 @@ h2.small {
   background-repeat: repeat-x; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 242, _dev/devsass/css/kiv/kiv.frontpage.css */
+  /* line 351, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .view-front-news-paragraph .aktuellt-right {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-/* line 248, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 357, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuelltbox h4 {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #b2a16c;
+  color: #a38f5a;
   text-transform: uppercase;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.2rem; }
 
-/* line 258, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 370, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 376, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .view-front-news-paragraph .aktuelltbox h5 {
-  font-size: 16px;
-  font-size: 1rem;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
   font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25;
   color: #000;
   margin-bottom: 0;
   margin-top: 0; }
 
-/* line 267, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 388, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 394, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .para-bg-row {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
 
-/* line 273, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 400, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 407, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik {
+    padding-bottom: 20px; } }
+
+/* line 412, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h1 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 421, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 427, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 436, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 442, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h3 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 451, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h3 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 457, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h4 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 466, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 472, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 481, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 487, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .paragraph-rubrik h6 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 496, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .paragraph-rubrik h6 {
+    font-size: 1.375rem;
+    line-height: 1.4; } }
+
+/* line 502, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+/* line 511, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h1 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 520, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 526, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 535, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 541, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h3 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 550, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h3 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 556, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h4 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 565, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 571, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 580, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 586, _dev/devsass/css/kiv/kiv.frontpage.css */
+.paragraphs-items .para-text-block h6 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 595, _dev/devsass/css/kiv/kiv.frontpage.css */
+  .paragraphs-items .para-text-block h6 {
+    font-size: 1.375rem;
+    line-height: 1.4; } }
+
+/* line 601, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns {
   padding-top: 30px;
   padding-bottom: 35px; }
 
-@media (min-width: 44em) {
-  /* line 279, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 607, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-four-columns {
     padding-top: 60px;
     padding-bottom: 70px; } }
 
-/* line 285, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 613, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .columns {
   position: relative; }
 
-/* line 289, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 617, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .spalt-wrapper {
   position: relative; }
 
-/* line 293, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 621, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns a.para-overlay {
   position: absolute;
   top: 0;
@@ -13901,32 +14408,27 @@ h2.small {
   bottom: 0;
   right: 0; }
 
-/* line 301, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 629, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
   text-decoration: underline; }
 
-/* line 305, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik {
-  margin-left: 15px;
-  padding-bottom: 5px; }
-
-/* line 310, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 633, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik a {
   color: inherit; }
 
-/* line 314, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 637, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik a:hover {
   text-decoration: underline; }
 
-/* line 318, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 641, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper {
   display: block; }
 
-/* line 322, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 645, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper img {
   width: 100%; }
 
-/* line 326, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 649, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
   pointer-events: none;
   position: relative;
@@ -13934,52 +14436,52 @@ h2.small {
   padding-top: 10px;
   padding-bottom: 20px; }
 
-@media (min-width: 44em) {
-  /* line 335, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 658, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
     padding-bottom: 0; } }
 
-/* line 340, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 663, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link:hover .para-text-block {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff;
   text-decoration-color: #ffffff; }
 
-/* line 346, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 669, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a {
   color: inherit;
   pointer-events: all; }
 
-/* line 351, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 674, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
-  text-transform: underline; }
+  text-decoration: underline; }
 
-/* line 355, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 678, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link .para-text-block a:hover {
   -webkit-text-decoration-color: #f77136;
   text-decoration-color: #f77136;
   color: #f77136; }
 
-/* line 361, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 684, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns {
   padding-top: 30px;
   padding-bottom: 35px; }
 
-@media (min-width: 44em) {
-  /* line 367, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 690, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-three-columns {
     padding-top: 60px;
     padding-bottom: 70px; } }
 
-/* line 373, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 696, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .columns {
   position: relative; }
 
-/* line 377, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 700, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .spalt-wrapper {
   position: relative; }
 
-/* line 381, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 704, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns a.para-overlay {
   position: absolute;
   top: 0;
@@ -13987,32 +14489,27 @@ h2.small {
   bottom: 0;
   right: 0; }
 
-/* line 389, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 712, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
   text-decoration: underline; }
 
-/* line 393, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik {
-  margin-left: 15px;
-  padding-bottom: 5px; }
-
-/* line 398, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 716, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik a {
   color: inherit; }
 
-/* line 402, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 720, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik a:hover {
   text-decoration: underline; }
 
-/* line 406, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 724, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper {
   display: block; }
 
-/* line 410, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 728, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper img {
   width: 100%; }
 
-/* line 414, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 732, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
   pointer-events: none;
   position: relative;
@@ -14020,52 +14517,52 @@ h2.small {
   padding-top: 10px;
   padding-bottom: 20px; }
 
-@media (min-width: 44em) {
-  /* line 423, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 741, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
     padding-bottom: 0; } }
 
-/* line 428, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 746, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link:hover .para-text-block {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff;
   text-decoration-color: #ffffff; }
 
-/* line 434, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 752, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a {
   color: inherit;
   pointer-events: all; }
 
-/* line 439, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 757, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
-  text-transform: underline; }
+  text-decoration: underline; }
 
-/* line 443, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 761, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link .para-text-block a:hover {
   -webkit-text-decoration-color: #f77136;
   text-decoration-color: #f77136;
   color: #f77136; }
 
-/* line 449, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 767, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns {
   padding-top: 30px;
   padding-bottom: 35px; }
 
-@media (min-width: 44em) {
-  /* line 455, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 773, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-two-columns {
     padding-top: 60px;
     padding-bottom: 70px; } }
 
-/* line 461, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 779, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .columns {
   position: relative; }
 
-/* line 465, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 783, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .spalt-wrapper {
   position: relative; }
 
-/* line 469, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 787, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns a.para-overlay {
   position: absolute;
   top: 0;
@@ -14073,11 +14570,11 @@ h2.small {
   bottom: 0;
   right: 0; }
 
-/* line 477, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 795, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
   text-decoration: underline; }
 
-/* line 481, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 799, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
   pointer-events: none;
   position: relative;
@@ -14085,69 +14582,64 @@ h2.small {
   padding-top: 10px;
   padding-bottom: 20px; }
 
-@media (min-width: 44em) {
-  /* line 490, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 808, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
     padding-bottom: 0; } }
 
-/* line 495, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 813, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link:hover .para-text-block {
   text-decoration: underline;
   -webkit-text-decoration-color: #ffffff;
   text-decoration-color: #ffffff; }
 
-/* line 501, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 819, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a {
   color: inherit;
   pointer-events: all; }
 
-/* line 506, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 824, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
-  text-transform: underline; }
+  text-decoration: underline; }
 
-/* line 510, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 828, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link .para-text-block a:hover {
   -webkit-text-decoration-color: #f77136;
   text-decoration-color: #f77136;
   color: #f77136; }
 
-/* line 516, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 834, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column {
   padding-top: 30px;
   padding-bottom: 35px; }
 
-@media (min-width: 44em) {
-  /* line 522, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 840, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-one-column {
     padding-top: 60px;
     padding-bottom: 70px; } }
 
-/* line 528, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 846, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .columns {
   position: relative; }
 
-/* line 532, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 850, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .spalt-wrapper {
   position: relative; }
 
-/* line 536, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 854, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
   text-decoration: underline; }
 
-/* line 540, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik {
-  margin-left: 15px;
-  padding-bottom: 5px; }
-
-/* line 545, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 858, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik a {
   color: inherit; }
 
-/* line 549, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 862, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik a:hover {
   text-decoration: underline; }
 
-/* line 553, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 866, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
   pointer-events: none;
   position: relative;
@@ -14155,19 +14647,19 @@ h2.small {
   padding-top: 10px;
   padding-bottom: 20px; }
 
-@media (min-width: 44em) {
-  /* line 562, _dev/devsass/css/kiv/kiv.frontpage.css */
+@media (min-width: 40em) {
+  /* line 875, _dev/devsass/css/kiv/kiv.frontpage.css */
   .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
     padding-bottom: 0; } }
 
-/* line 567, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 880, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a {
   color: inherit;
   pointer-events: all; }
 
-/* line 572, _dev/devsass/css/kiv/kiv.frontpage.css */
+/* line 885, _dev/devsass/css/kiv/kiv.frontpage.css */
 .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
-  text-transform: underline; }
+  text-decoration: underline; }
 
 /* New design menu */
 /* line 2, _dev/devsass/css/kiv/kiv.menu.css */
@@ -14704,17 +15196,17 @@ h2.small {
   margin-bottom: 0px; }
 
 /* line 143, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
+.valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input {
   visibility: hidden;
   /* Makes input not-clickable */
   position: absolute; }
   /* line 147, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-  .valbaraRadiobuttons label > input:checked + img, .ArrangemangtypBlock label > input:checked + img, .kontformBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + img {
+  .valbaraRadiobuttons label > input:checked + img, .ArrangemangtypBlock label > input:checked + img, .kontformBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label > input:checked + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label > input:checked + img {
     border: 0px solid #f00;
     background-image: url("http://kulturkatalog.kivdev.se/DesktopModules/kk_aj_Publik_ArrangemangForm/images/kulturpedagogiskaprojekt_invert.png"); }
 
 /* line 154, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
-.valbaraRadiobuttons label + img, .ArrangemangtypBlock label + img, .kontformBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + img {
+.valbaraRadiobuttons label + img, .ArrangemangtypBlock label + img, .kontformBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .ArrangemangtypBlock label + img, .kk_aj_superProductListBlock .kk_aj_mainsearchblock .searchformblock .kontformBlock label + img {
   /* IMAGE STYLES */
   cursor: pointer;
   border: 0px solid transparent; }
@@ -15112,48 +15604,48 @@ input[type=radio] + label {
 .kk_ajuseravtalblock div {
   font-style: italic; }
 
-/* line 103, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 104, _dev/devsass/kk_aj_PublicCSS.scss */
 .h2 {
   color: #000000 !important;
   font-weight: 100; }
 
-/* line 108, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 109, _dev/devsass/kk_aj_PublicCSS.scss */
 h1 {
   line-height: 1.1em !important; }
 
-/* line 110, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 111, _dev/devsass/kk_aj_PublicCSS.scss */
 .row {
   max-width: 62.5rem !important; }
 
-/* line 114, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 115, _dev/devsass/kk_aj_PublicCSS.scss */
 .size-21 {
   font-size: 1.2rem; }
 
-/* line 117, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 118, _dev/devsass/kk_aj_PublicCSS.scss */
 .size-24 {
   font-size: 1.4rem; }
 
-/* line 121, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 122, _dev/devsass/kk_aj_PublicCSS.scss */
 #contentHeader h1 {
   text-transform: uppercase;
   color: #b2a16c;
   margin-bottom: 0px; }
 
-/* line 126, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 127, _dev/devsass/kk_aj_PublicCSS.scss */
 #contentHeader a {
   text-transform: uppercase; }
 
-/* line 131, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 132, _dev/devsass/kk_aj_PublicCSS.scss */
 .row {
   max-width: 1200px; }
 
-/* line 136, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 137, _dev/devsass/kk_aj_PublicCSS.scss */
 body {
   height: auto;
   overflow: scroll; }
 
 @media only screen {
-  /* line 143, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 144, _dev/devsass/kk_aj_PublicCSS.scss */
   .small-min-300.column {
     width: 300px;
     float: left;
@@ -15165,7 +15657,7 @@ body {
       float: left; } }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 148, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 149, _dev/devsass/kk_aj_PublicCSS.scss */
   .medium-min-300.column {
     width: 350px;
     float: left;
@@ -15175,7 +15667,7 @@ body {
     /* line 29, _dev/devsass/devScss/_kivmixin.scss */
     .medium-min-300.column + .column {
       float: left; }
-  /* line 151, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 152, _dev/devsass/kk_aj_PublicCSS.scss */
   .large-min-300.column {
     width: 270px;
     float: left;
@@ -15193,26 +15685,26 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-/* line 178, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 179, _dev/devsass/kk_aj_PublicCSS.scss */
 .clear {
   clear: both; }
 
-/* line 182, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 183, _dev/devsass/kk_aj_PublicCSS.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table; }
 
-/* line 188, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 189, _dev/devsass/kk_aj_PublicCSS.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 192, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 193, _dev/devsass/kk_aj_PublicCSS.scss */
 .clearfix {
   zoom: 1;
   /* ie 6/7 */ }
 
-/* line 195, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 196, _dev/devsass/kk_aj_PublicCSS.scss */
 .scroll-top {
   width: 40px;
   height: 40px;
@@ -15224,35 +15716,35 @@ body {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   background-color: #333333; }
-  /* line 205, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 206, _dev/devsass/kk_aj_PublicCSS.scss */
   .scroll-top i {
     font-size: 1.7rem;
     padding: 0px;
     margin: 0px;
     color: #FFFFFF; }
-  /* line 211, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 212, _dev/devsass/kk_aj_PublicCSS.scss */
   .scroll-top:hover {
     background-color: #999999;
     color: #333333; }
 
-/* line 216, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 217, _dev/devsass/kk_aj_PublicCSS.scss */
 .open {
   font-size: 1.2rem; }
 
-/* line 217, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 218, _dev/devsass/kk_aj_PublicCSS.scss */
 .move-right .exit-off-canvas {
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
   background: rgba(0, 0, 0, 0.8); }
-  /* line 220, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 221, _dev/devsass/kk_aj_PublicCSS.scss */
   .move-right .exit-off-canvas:hover {
     background: rgba(0, 0, 0, 0.8); }
 
-/* line 224, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 225, _dev/devsass/kk_aj_PublicCSS.scss */
 .item img {
   width: 100%; }
 
-/* line 228, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 229, _dev/devsass/kk_aj_PublicCSS.scss */
 .kk_aj_loader {
   border: 16px solid #cccccc;
   -webkit-border-radius: 50%;
@@ -15277,7 +15769,7 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
 
-/* line 248, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 249, _dev/devsass/kk_aj_PublicCSS.scss */
 .loader {
   display: none;
   position: fixed;
@@ -15291,107 +15783,107 @@ body {
   left: 50%;
   margin-left: -100px; }
 
-/* line 263, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 264, _dev/devsass/kk_aj_PublicCSS.scss */
 .block-title {
   display: none; }
 
-/* line 265, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 266, _dev/devsass/kk_aj_PublicCSS.scss */
 .views-field-field-category, .views-label-field-underomr-de {
   display: none; }
 
-/* line 268, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 269, _dev/devsass/kk_aj_PublicCSS.scss */
 #debug h1.thin {
   font-weight: 100 !important; }
 
-/* line 271, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 272, _dev/devsass/kk_aj_PublicCSS.scss */
 #debug h1.extralight {
   font-weight: 200 !important; }
 
-/* line 272, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 273, _dev/devsass/kk_aj_PublicCSS.scss */
 #debug h1.light {
   font-weight: 300 !important; }
 
-/* line 273, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 274, _dev/devsass/kk_aj_PublicCSS.scss */
 #debug h1.regular {
   font-weight: 400 !important; }
 
-/* line 274, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 275, _dev/devsass/kk_aj_PublicCSS.scss */
 #debug h1.simibold {
   font-weight: 600 !important; }
 
 /*// Small screens
 @media only screen {body{ background-color:#fad490;}} /* Define mobile styles */
-/* line 299, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 300, _dev/devsass/kk_aj_PublicCSS.scss */
 .mozaikitems .row {
   margin: 0 -0.9rem 0 -0.99rem; }
 
-/* line 302, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 303, _dev/devsass/kk_aj_PublicCSS.scss */
 .left-small {
   height: 65px;
   width: 65px;
   line-height: 56px;
   cursor: pointer;
   cursor: hand; }
-  /* line 305, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 306, _dev/devsass/kk_aj_PublicCSS.scss */
   .left-small span {
     font-size: 15px !important; }
 
-/* line 312, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 313, _dev/devsass/kk_aj_PublicCSS.scss */
 .right-small {
   height: 65px;
   width: 65px;
   line-height: 56px;
   cursor: pointer;
   cursor: hand; }
-  /* line 315, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 316, _dev/devsass/kk_aj_PublicCSS.scss */
   .right-small span {
     font-size: 15px !important; }
 
-/* line 321, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 322, _dev/devsass/kk_aj_PublicCSS.scss */
 .tab-bar {
   height: 65px; }
-  /* line 323, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 324, _dev/devsass/kk_aj_PublicCSS.scss */
   .tab-bar img {
     width: 160px; }
 
-/* line 327, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 328, _dev/devsass/kk_aj_PublicCSS.scss */
 .tab-bar-logosection {
   margin-right: 5em;
   margin-top: 0.31rem; }
 
-/* line 332, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 333, _dev/devsass/kk_aj_PublicCSS.scss */
 .outeromrade {
   display: none; }
 
-/* line 337, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 338, _dev/devsass/kk_aj_PublicCSS.scss */
 .datumtemplate, .kivlistview h5 .date-display-single, .evenemang h5 .date-display-single, .kivlistview .evenemang_date .date-display-single, .evenemang .evenemang_date .date-display-single {
   font-size: 0.9rem;
   font-weight: 600; }
 
-/* line 342, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 343, _dev/devsass/kk_aj_PublicCSS.scss */
 .flex-control-nav {
   bottom: -60px; }
 
 /*.section-ljudmagasinet h1{
 color:transparent!important;
 }*/
-/* line 350, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 351, _dev/devsass/kk_aj_PublicCSS.scss */
 .contentboxheight {
   min-height: 700px; }
 
-/* line 352, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 353, _dev/devsass/kk_aj_PublicCSS.scss */
 .formerror {
   border: 2px solid red !important; }
 
-/* line 357, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 358, _dev/devsass/kk_aj_PublicCSS.scss */
 .lato {
   font-family: Lato,sans-serif; }
 
-/* line 361, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 362, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-hidden {
   display: none; }
 
-/* line 365, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 366, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-sticky {
   position: fixed;
   width: 100%;
@@ -15401,23 +15893,23 @@ color:transparent!important;
   background: #f1f1f1;
   padding-bottom: 5px; }
 
-/* line 375, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 376, _dev/devsass/kk_aj_PublicCSS.scss */
 .sticky-demo .panel > .center {
   max-width: 100%; }
 
-/* line 379, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 380, _dev/devsass/kk_aj_PublicCSS.scss */
 .sticky-demo .jplist-sticky > .center {
   max-width: 95%; }
 
-/* line 383, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 384, _dev/devsass/kk_aj_PublicCSS.scss */
 .no-cssgradients .jplist-panel button:hover {
   background: #f4f4f4; }
 
-/* line 387, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 388, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel {
   color: #27252a; }
 
-/* line 391, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 392, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel button {
   float: left;
   height: 30px;
@@ -15439,7 +15931,7 @@ color:transparent!important;
   background: linear-gradient(to bottom, #fff 0, #efefef 100%);
   margin: 10px 10px 0 0; }
 
-/* line 409, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 410, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel button:hover {
   color: #0381bb;
   background: #f2f2f2;
@@ -15448,17 +15940,17 @@ color:transparent!important;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), to(#ededed));
   background: linear-gradient(to bottom, #fafafa 0, #ededed 100%); }
 
-/* line 417, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 418, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel button.jplist-disabled {
   background: #e3e3e3;
   color: #6c6c6c;
   cursor: default; }
 
-/* line 423, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 424, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel button.jplist-selected {
   color: #f03800; }
 
-/* line 427, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 428, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel input[type=text] {
   float: left;
   height: 30px;
@@ -15477,7 +15969,7 @@ color:transparent!important;
   text-indent: 5px;
   background: #fff; }
 
-/* line 443, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 444, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel input[type=checkbox], .jplist-panel input[type=radio] {
   float: left;
   display: inline-block;
@@ -15489,7 +15981,7 @@ color:transparent!important;
           box-sizing: border-box;
   color: #27252a; }
 
-/* line 454, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 455, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel label {
   float: left;
   height: 30px;
@@ -15503,7 +15995,7 @@ color:transparent!important;
   color: #27252a;
   cursor: pointer; }
 
-/* line 467, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 468, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel input.jplist-no-right-border {
   border-right: 0;
   -webkit-border-top-right-radius: 0;
@@ -15511,7 +16003,7 @@ color:transparent!important;
   -webkit-border-bottom-right-radius: 0;
           border-bottom-right-radius: 0; }
 
-/* line 473, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 474, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-icon {
   float: left;
   height: 30px;
@@ -15532,11 +16024,11 @@ color:transparent!important;
   padding: 0 10px;
   border-right: 0; }
 
-/* line 491, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 492, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-icon:hover {
   color: #0381bb; }
 
-/* line 495, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 496, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-label {
   float: left;
   height: 30px;
@@ -15560,7 +16052,7 @@ color:transparent!important;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
   background: linear-gradient(to bottom, #fff 0, #efefef 100%); }
 
-/* line 515, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 516, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-clear {
   color: #666;
   cursor: pointer;
@@ -15579,26 +16071,26 @@ color:transparent!important;
           border-radius: 0 3px 3px 0;
   text-shadow: 1px 1px 1px #fff; }
 
-/* line 532, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 533, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-clear:hover {
   color: #444; }
 
-/* line 536, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 537, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-selected {
   color: #CA3F1A; }
 
-/* line 540, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 541, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-box {
   float: left;
   height: 30px;
   margin: 10px 10px 0 0; }
 
 @media only screen and (max-width: 600px) {
-  /* line 547, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 548, _dev/devsass/kk_aj_PublicCSS.scss */
   .jplist-panel {
     display: none; } }
 
-/* line 552, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 553, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down {
   float: left;
   height: 30px;
@@ -15622,7 +16114,7 @@ color:transparent!important;
   margin: 10px 10px 0 0;
   position: relative; }
 
-/* line 572, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 573, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down .jplist-dd-panel {
   float: left;
   width: 150px;
@@ -15632,7 +16124,7 @@ color:transparent!important;
   text-indent: 10px;
   cursor: pointer; }
 
-/* line 582, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 583, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down .jplist-dd-panel:after {
   content: '\25BC';
   color: #111;
@@ -15641,7 +16133,7 @@ color:transparent!important;
   right: 10px;
   z-index: 1000; }
 
-/* line 591, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 592, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down ul {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -15663,7 +16155,7 @@ color:transparent!important;
   -webkit-box-shadow: 0 3px 6px #bbb;
           box-shadow: 0 3px 6px #bbb; }
 
-/* line 610, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 611, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down ul li {
   width: 100%;
   float: left;
@@ -15672,19 +16164,19 @@ color:transparent!important;
   text-indent: 10px;
   cursor: pointer; }
 
-/* line 619, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 620, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down ul li:hover {
   background-color: #ececec; }
 
-/* line 623, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 624, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down:hover .jplist-dd-panel {
   color: #0381bb; }
 
-/* line 627, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 628, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-drop-down:hover .jplist-dd-panel:after {
   color: #0381bb; }
 
-/* line 631, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 632, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-select {
   height: 30px;
   -webkit-box-shadow: 0 0 1px #fff;
@@ -15704,12 +16196,12 @@ color:transparent!important;
   padding: 5px;
   text-shadow: none; }
 
-/* line 648, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 649, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-ios-button {
   display: none; }
 
 @media only screen and (max-width: 600px) {
-  /* line 653, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 654, _dev/devsass/kk_aj_PublicCSS.scss */
   .jplist-ios-button {
     display: block;
     width: 94vw;
@@ -15739,14 +16231,14 @@ color:transparent!important;
     background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
     background: linear-gradient(to bottom, #fff 0, #efefef 100%); }
-  /* line 680, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 681, _dev/devsass/kk_aj_PublicCSS.scss */
   .jplist-ios-button:hover {
     background: #f2f2f2;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(100%, #ededed));
     background: -webkit-linear-gradient(top, #fafafa 0, #ededed 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), to(#ededed));
     background: linear-gradient(to bottom, #fafafa 0, #ededed 100%); }
-  /* line 687, _dev/devsass/kk_aj_PublicCSS.scss */
+  /* line 688, _dev/devsass/kk_aj_PublicCSS.scss */
   .jplist-ios-show {
     display: block; } }
 
@@ -15754,17 +16246,17 @@ color:transparent!important;
 * jPList - jQuery Data Grid Controls 0.0.70 - http://jplist.com 
 * Copyright 2015 jPList Software.
 */
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .lato {
   font-family: 'Lato',sans-serif; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-pagination {
   cursor: pointer;
   float: left;
   line-height: 30px; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-pagination button {
   display: inline-block;
   color: #0381bb;
@@ -15772,104 +16264,104 @@ color:transparent!important;
   line-height: 30px;
   padding: 0 10px; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-pagination .jplist-current {
   font-weight: bold;
   color: #f03800; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-pagination .jplist-pagingprev, .jplist-panel .jplist-pagination .jplist-pagingmid, .jplist-panel .jplist-pagination .jplist-pagingnext {
   float: left; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-pagination .jplist-pagingprev button, .jplist-panel .jplist-pagination .jplist-pagingnext button {
   font-size: 20px;
   font-family: "Courier New",Courier,monospace; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-one-page {
   display: none; }
 
-/* line 695, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-empty {
   display: none; }
 
-/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
 .lato {
   font-family: 'Lato',sans-serif; }
 
-/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .text-filter-box {
   height: 30px;
   float: left;
   margin: 10px 10px 0 0; }
 
-/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .text-filter-box .jplist-icon {
   background: #E8EFF9; }
 
-/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .text-filter-box .jplist-label {
   margin: 0;
   border-right: 0;
   background: #f1f1f1; }
 
-/* line 696, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .text-filter-box button {
   margin: 0;
   border-left: 0;
   padding: 0 10px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .lato {
   font-family: Lato,sans-serif; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range {
   float: left;
   margin-top: 10px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range .gap {
   float: left;
   display: block;
   margin-right: 5px;
   line-height: 30px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range input[type=text] {
   -webkit-border-radius: 0 3px 3px 0;
           border-radius: 0 3px 3px 0; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range .jplist-icon {
   -webkit-border-radius: 3px 0 0 3px;
           border-radius: 3px 0 0 3px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .date-picker {
   float: left;
   border: 1px solid #dbdbdb;
   margin-right: 5px;
   width: 100px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider {
   float: left;
   margin-top: 15px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider .value {
   float: left;
   margin: 0 15px;
   font-size: 12px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider .ui-slider {
   float: left;
   width: 130px; }
 
-/* line 697, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 698, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider {
   margin-top: 5px; }
 
@@ -15880,11 +16372,11 @@ color:transparent!important;
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
 /* Layout helpers
 ----------------------------------*/
-/* line 707, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 708, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-hidden {
   display: none; }
 
-/* line 710, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 711, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-hidden-accessible {
   border: 0;
   clip: rect(0 0 0 0);
@@ -15895,7 +16387,7 @@ color:transparent!important;
   position: absolute;
   width: 1px; }
 
-/* line 720, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 721, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-reset {
   margin: 0;
   padding: 0;
@@ -15906,18 +16398,18 @@ color:transparent!important;
   font-size: 100%;
   list-style: none; }
 
-/* line 730, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 731, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-clearfix:before,
 .ui-helper-clearfix:after {
   content: "";
   display: table;
   border-collapse: collapse; }
 
-/* line 736, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 737, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-clearfix:after {
   clear: both; }
 
-/* line 739, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 740, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-helper-zfix {
   width: 100%;
   height: 100%;
@@ -15928,20 +16420,20 @@ color:transparent!important;
   filter: Alpha(Opacity=0);
   /* support: IE8 */ }
 
-/* line 749, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 750, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-front {
   z-index: 100; }
 
 /* Interaction Cues
 ----------------------------------*/
-/* line 756, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 757, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-disabled {
   cursor: default !important;
   pointer-events: none; }
 
 /* Icons
 ----------------------------------*/
-/* line 764, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 765, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon {
   display: inline-block;
   vertical-align: middle;
@@ -15951,7 +16443,7 @@ color:transparent!important;
   overflow: hidden;
   background-repeat: no-repeat; }
 
-/* line 774, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 775, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-icon-block {
   left: 50%;
   margin-left: -8px;
@@ -15960,7 +16452,7 @@ color:transparent!important;
 /* Misc visuals
 ----------------------------------*/
 /* Overlays */
-/* line 784, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 785, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-overlay {
   position: fixed;
   top: 0;
@@ -15968,7 +16460,7 @@ color:transparent!important;
   width: 100%;
   height: 100%; }
 
-/* line 791, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 792, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-accordion .ui-accordion-header {
   display: block;
   cursor: pointer;
@@ -15977,20 +16469,20 @@ color:transparent!important;
   padding: .5em .5em .5em .7em;
   font-size: 100%; }
 
-/* line 799, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 800, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-accordion .ui-accordion-content {
   padding: 1em 2.2em;
   border-top: 0;
   overflow: auto; }
 
-/* line 804, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 805, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-autocomplete {
   position: absolute;
   top: 0;
   left: 0;
   cursor: default; }
 
-/* line 810, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 811, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu {
   list-style: none;
   padding: 0;
@@ -15998,23 +16490,23 @@ color:transparent!important;
   display: block;
   outline: 0; }
 
-/* line 817, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 818, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-menu {
   position: absolute; }
 
-/* line 820, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 821, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-menu-item {
   margin: 0;
   cursor: pointer;
   /* support: IE10, see #8844 */
   list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"); }
 
-/* line 826, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 827, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-menu-item-wrapper {
   position: relative;
   padding: 3px 1em 3px .4em; }
 
-/* line 830, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 831, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-menu-divider {
   margin: 5px 0;
   height: 0;
@@ -16022,22 +16514,22 @@ color:transparent!important;
   line-height: 0;
   border-width: 1px 0 0 0; }
 
-/* line 837, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 838, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-state-focus,
 .ui-menu .ui-state-active {
   margin: -1px; }
 
 /* icon support */
-/* line 843, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 844, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu-icons {
   position: relative; }
 
-/* line 846, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 847, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu-icons .ui-menu-item-wrapper {
   padding-left: 2em; }
 
 /* left-aligned */
-/* line 851, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 852, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-icon {
   position: absolute;
   top: 0;
@@ -16046,12 +16538,12 @@ color:transparent!important;
   margin: auto 0; }
 
 /* right-aligned */
-/* line 860, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 861, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-menu .ui-menu-icon {
   left: auto;
   right: 0; }
 
-/* line 864, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 865, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button {
   padding: .4em 1em;
   display: inline-block;
@@ -16068,7 +16560,7 @@ color:transparent!important;
   /* Support: IE <= 11 */
   overflow: visible; }
 
-/* line 882, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 883, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button,
 .ui-button:link,
 .ui-button:visited,
@@ -16077,7 +16569,7 @@ color:transparent!important;
   text-decoration: none; }
 
 /* to make room for the icon, a width needs to be set here */
-/* line 891, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 892, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button-icon-only {
   width: 2em;
   -webkit-box-sizing: border-box;
@@ -16086,12 +16578,12 @@ color:transparent!important;
   white-space: nowrap; }
 
 /* no icon support for input elements */
-/* line 899, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 900, _dev/devsass/kk_aj_PublicCSS.scss */
 input.ui-button.ui-button-icon-only {
   text-indent: 0; }
 
 /* button icon element(s) */
-/* line 904, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 905, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button-icon-only .ui-icon {
   position: absolute;
   top: 50%;
@@ -16099,7 +16591,7 @@ input.ui-button.ui-button-icon-only {
   margin-top: -8px;
   margin-left: -8px; }
 
-/* line 912, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 913, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button.ui-icon-notext .ui-icon {
   padding: 0;
   width: 2.1em;
@@ -16107,7 +16599,7 @@ input.ui-button.ui-button-icon-only {
   text-indent: -9999px;
   white-space: nowrap; }
 
-/* line 921, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 922, _dev/devsass/kk_aj_PublicCSS.scss */
 input.ui-button.ui-icon-notext .ui-icon {
   width: auto;
   height: auto;
@@ -16117,29 +16609,29 @@ input.ui-button.ui-icon-notext .ui-icon {
 
 /* workarounds */
 /* Support: Firefox 5 - 40 */
-/* line 931, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 932, _dev/devsass/kk_aj_PublicCSS.scss */
 input.ui-button::-moz-focus-inner,
 button.ui-button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* line 936, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 937, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup {
   vertical-align: middle;
   display: inline-block; }
 
-/* line 940, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 941, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup > .ui-controlgroup-item {
   float: left;
   margin-left: 0;
   margin-right: 0; }
 
-/* line 945, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 946, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup > .ui-controlgroup-item:focus,
 .ui-controlgroup > .ui-controlgroup-item.ui-visual-focus {
   z-index: 9999; }
 
-/* line 949, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 950, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical > .ui-controlgroup-item {
   display: block;
   float: none;
@@ -16148,48 +16640,48 @@ button.ui-button::-moz-focus-inner {
   margin-bottom: 0;
   text-align: left; }
 
-/* line 957, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 958, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical .ui-controlgroup-item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/* line 960, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 961, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup .ui-controlgroup-label {
   padding: .4em 1em; }
 
-/* line 963, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 964, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup .ui-controlgroup-label span {
   font-size: 80%; }
 
-/* line 966, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 967, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-horizontal .ui-controlgroup-label + .ui-controlgroup-item {
   border-left: none; }
 
-/* line 969, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 970, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical .ui-controlgroup-label + .ui-controlgroup-item {
   border-top: none; }
 
-/* line 972, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 973, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-horizontal .ui-controlgroup-label.ui-widget-content {
   border-right: none; }
 
-/* line 975, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 976, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical .ui-controlgroup-label.ui-widget-content {
   border-bottom: none; }
 
 /* Spinner specific style fixes */
-/* line 980, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 981, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical .ui-spinner-input {
   /* Support: IE8 only, Android < 4.4 only */
   width: 75%;
   width: -webkit-calc( 100% - 2.4em);
   width: calc( 100% - 2.4em); }
 
-/* line 986, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 987, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-controlgroup-vertical .ui-spinner .ui-spinner-up {
   border-top-style: solid; }
 
-/* line 990, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 991, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-checkboxradio-label .ui-icon-background {
   -webkit-box-shadow: inset 1px 1px 1px #ccc;
           box-shadow: inset 1px 1px 1px #ccc;
@@ -16197,7 +16689,7 @@ button.ui-button::-moz-focus-inner {
           border-radius: .12em;
   border: none; }
 
-/* line 995, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 996, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-checkboxradio-radio-label .ui-icon-background {
   width: 16px;
   height: 16px;
@@ -16206,7 +16698,7 @@ button.ui-button::-moz-focus-inner {
   overflow: visible;
   border: none; }
 
-/* line 1002, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1003, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-checkboxradio-radio-label.ui-checkboxradio-checked .ui-icon,
 .ui-checkboxradio-radio-label.ui-checkboxradio-checked:hover .ui-icon {
   background-image: none;
@@ -16215,22 +16707,22 @@ button.ui-button::-moz-focus-inner {
   border-width: 4px;
   border-style: solid; }
 
-/* line 1010, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1011, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-checkboxradio-disabled {
   pointer-events: none; }
 
-/* line 1013, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1014, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker {
   width: 17em;
   padding: .2em .2em 0;
   display: none; }
 
-/* line 1018, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1019, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .2em 0; }
 
-/* line 1022, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1023, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
   position: absolute;
@@ -16238,28 +16730,28 @@ button.ui-button::-moz-focus-inner {
   width: 1.8em;
   height: 1.8em; }
 
-/* line 1029, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1030, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-prev-hover,
 .ui-datepicker .ui-datepicker-next-hover {
   top: 1px; }
 
-/* line 1033, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1034, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-prev {
   left: 2px; }
 
-/* line 1036, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1037, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-next {
   right: 2px; }
 
-/* line 1039, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1040, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-prev-hover {
   left: 1px; }
 
-/* line 1042, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1043, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-next-hover {
   right: 1px; }
 
-/* line 1045, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1046, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
   display: block;
@@ -16269,42 +16761,42 @@ button.ui-button::-moz-focus-inner {
   top: 50%;
   margin-top: -8px; }
 
-/* line 1054, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1055, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-title {
   margin: 0 2.3em;
   line-height: 1.8em;
   text-align: center; }
 
-/* line 1059, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1060, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-title select {
   font-size: 1em;
   margin: 1px 0; }
 
-/* line 1063, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1064, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
   width: 45%; }
 
-/* line 1067, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1068, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker table {
   width: 100%;
   font-size: .9em;
   border-collapse: collapse;
   margin: 0 0 .4em; }
 
-/* line 1073, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1074, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker th {
   padding: .7em .3em;
   text-align: center;
   font-weight: bold;
   border: 0; }
 
-/* line 1079, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1080, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker td {
   border: 0;
   padding: 1px; }
 
-/* line 1083, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1084, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker td span,
 .ui-datepicker td a {
   display: block;
@@ -16312,7 +16804,7 @@ button.ui-button::-moz-focus-inner {
   text-align: right;
   text-decoration: none; }
 
-/* line 1090, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1091, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-buttonpane {
   background-image: none;
   margin: .7em 0 0 0;
@@ -16321,7 +16813,7 @@ button.ui-button::-moz-focus-inner {
   border-right: 0;
   border-bottom: 0; }
 
-/* line 1098, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1099, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: right;
   margin: .5em .2em .4em;
@@ -16330,97 +16822,97 @@ button.ui-button::-moz-focus-inner {
   width: auto;
   overflow: visible; }
 
-/* line 1106, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1107, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
   float: left; }
 
 /* with multiple calendars */
-/* line 1111, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1112, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker.ui-datepicker-multi {
   width: auto; }
 
-/* line 1114, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1115, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi .ui-datepicker-group {
   float: left; }
 
-/* line 1117, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1118, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi .ui-datepicker-group table {
   width: 95%;
   margin: 0 auto .4em; }
 
-/* line 1121, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1122, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi-2 .ui-datepicker-group {
   width: 50%; }
 
-/* line 1124, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1125, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi-3 .ui-datepicker-group {
   width: 33.3%; }
 
-/* line 1127, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1128, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi-4 .ui-datepicker-group {
   width: 25%; }
 
-/* line 1130, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1131, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
 .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
   border-left-width: 0; }
 
-/* line 1134, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1135, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-multi .ui-datepicker-buttonpane {
   clear: left; }
 
-/* line 1137, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1138, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-row-break {
   clear: both;
   width: 100%;
   font-size: 0; }
 
 /* RTL support */
-/* line 1144, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1145, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl {
   direction: rtl; }
 
-/* line 1147, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1148, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-prev {
   right: 2px;
   left: auto; }
 
-/* line 1151, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1152, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-next {
   left: 2px;
   right: auto; }
 
-/* line 1155, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1156, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-prev:hover {
   right: 1px;
   left: auto; }
 
-/* line 1159, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1160, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-next:hover {
   left: 1px;
   right: auto; }
 
-/* line 1163, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1164, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane {
   clear: right; }
 
-/* line 1166, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1167, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button {
   float: left; }
 
-/* line 1169, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1170, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
 .ui-datepicker-rtl .ui-datepicker-group {
   float: right; }
 
-/* line 1173, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1174, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
 .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
   border-right-width: 0;
   border-left-width: 1px; }
 
 /* Icons */
-/* line 1180, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1181, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-datepicker .ui-icon {
   display: block;
   text-indent: -99999px;
@@ -16429,7 +16921,7 @@ button.ui-button::-moz-focus-inner {
   left: .5em;
   top: .3em; }
 
-/* line 1188, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1189, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog {
   position: absolute;
   top: 0;
@@ -16437,12 +16929,12 @@ button.ui-button::-moz-focus-inner {
   padding: .2em;
   outline: 0; }
 
-/* line 1195, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1196, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-titlebar {
   padding: .4em 1em;
   position: relative; }
 
-/* line 1199, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1200, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-title {
   float: left;
   margin: .1em 0;
@@ -16451,7 +16943,7 @@ button.ui-button::-moz-focus-inner {
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* line 1207, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1208, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-titlebar-close {
   position: absolute;
   right: .3em;
@@ -16461,7 +16953,7 @@ button.ui-button::-moz-focus-inner {
   padding: 1px;
   height: 20px; }
 
-/* line 1216, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1217, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-content {
   position: relative;
   border: 0;
@@ -16469,7 +16961,7 @@ button.ui-button::-moz-focus-inner {
   background: none;
   overflow: auto; }
 
-/* line 1223, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1224, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-buttonpane {
   text-align: left;
   border-width: 1px 0 0 0;
@@ -16477,36 +16969,36 @@ button.ui-button::-moz-focus-inner {
   margin-top: .5em;
   padding: .3em 1em .5em .4em; }
 
-/* line 1230, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1231, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
   float: right; }
 
-/* line 1233, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1234, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-dialog-buttonpane button {
   margin: .5em .4em .5em 0;
   cursor: pointer; }
 
-/* line 1237, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1238, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-n {
   height: 2px;
   top: 0; }
 
-/* line 1241, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1242, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-e {
   width: 2px;
   right: 0; }
 
-/* line 1245, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1246, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-s {
   height: 2px;
   bottom: 0; }
 
-/* line 1249, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1250, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-w {
   width: 2px;
   left: 0; }
 
-/* line 1253, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1254, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-se,
 .ui-dialog .ui-resizable-sw,
 .ui-dialog .ui-resizable-ne,
@@ -16514,40 +17006,40 @@ button.ui-button::-moz-focus-inner {
   width: 7px;
   height: 7px; }
 
-/* line 1260, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1261, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-se {
   right: 0;
   bottom: 0; }
 
-/* line 1264, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1265, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-sw {
   left: 0;
   bottom: 0; }
 
-/* line 1268, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1269, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-ne {
   right: 0;
   top: 0; }
 
-/* line 1272, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1273, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-dialog .ui-resizable-nw {
   left: 0;
   top: 0; }
 
-/* line 1276, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1277, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-draggable .ui-dialog-titlebar {
   cursor: move; }
 
-/* line 1279, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1280, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-draggable-handle {
   -ms-touch-action: none;
   touch-action: none; }
 
-/* line 1283, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1284, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable {
   position: relative; }
 
-/* line 1286, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1287, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
@@ -16555,12 +17047,12 @@ button.ui-button::-moz-focus-inner {
   -ms-touch-action: none;
   touch-action: none; }
 
-/* line 1293, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1294, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-disabled .ui-resizable-handle,
 .ui-resizable-autohide .ui-resizable-handle {
   display: none; }
 
-/* line 1297, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1298, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-n {
   cursor: n-resize;
   height: 7px;
@@ -16568,7 +17060,7 @@ button.ui-button::-moz-focus-inner {
   top: -5px;
   left: 0; }
 
-/* line 1304, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1305, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-s {
   cursor: s-resize;
   height: 7px;
@@ -16576,7 +17068,7 @@ button.ui-button::-moz-focus-inner {
   bottom: -5px;
   left: 0; }
 
-/* line 1311, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1312, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-e {
   cursor: e-resize;
   width: 7px;
@@ -16584,7 +17076,7 @@ button.ui-button::-moz-focus-inner {
   top: 0;
   height: 100%; }
 
-/* line 1318, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1319, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-w {
   cursor: w-resize;
   width: 7px;
@@ -16592,7 +17084,7 @@ button.ui-button::-moz-focus-inner {
   top: 0;
   height: 100%; }
 
-/* line 1325, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1326, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-se {
   cursor: se-resize;
   width: 12px;
@@ -16600,7 +17092,7 @@ button.ui-button::-moz-focus-inner {
   right: 1px;
   bottom: 1px; }
 
-/* line 1332, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1333, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-sw {
   cursor: sw-resize;
   width: 9px;
@@ -16608,7 +17100,7 @@ button.ui-button::-moz-focus-inner {
   left: -5px;
   bottom: -5px; }
 
-/* line 1339, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1340, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-nw {
   cursor: nw-resize;
   width: 9px;
@@ -16616,7 +17108,7 @@ button.ui-button::-moz-focus-inner {
   left: -5px;
   top: -5px; }
 
-/* line 1346, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1347, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-resizable-ne {
   cursor: ne-resize;
   width: 9px;
@@ -16624,18 +17116,18 @@ button.ui-button::-moz-focus-inner {
   right: -5px;
   top: -5px; }
 
-/* line 1353, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1354, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-progressbar {
   height: 2em;
   text-align: left;
   overflow: hidden; }
 
-/* line 1358, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1359, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-progressbar .ui-progressbar-value {
   margin: -1px;
   height: 100%; }
 
-/* line 1362, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1363, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-progressbar .ui-progressbar-overlay {
   background: url("data:image/gif;base64,R0lGODlhKAAoAIABAAAAAP///yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJAQABACwAAAAAKAAoAAACkYwNqXrdC52DS06a7MFZI+4FHBCKoDeWKXqymPqGqxvJrXZbMx7Ttc+w9XgU2FB3lOyQRWET2IFGiU9m1frDVpxZZc6bfHwv4c1YXP6k1Vdy292Fb6UkuvFtXpvWSzA+HycXJHUXiGYIiMg2R6W459gnWGfHNdjIqDWVqemH2ekpObkpOlppWUqZiqr6edqqWQAAIfkECQEAAQAsAAAAACgAKAAAApSMgZnGfaqcg1E2uuzDmmHUBR8Qil95hiPKqWn3aqtLsS18y7G1SzNeowWBENtQd+T1JktP05nzPTdJZlR6vUxNWWjV+vUWhWNkWFwxl9VpZRedYcflIOLafaa28XdsH/ynlcc1uPVDZxQIR0K25+cICCmoqCe5mGhZOfeYSUh5yJcJyrkZWWpaR8doJ2o4NYq62lAAACH5BAkBAAEALAAAAAAoACgAAAKVDI4Yy22ZnINRNqosw0Bv7i1gyHUkFj7oSaWlu3ovC8GxNso5fluz3qLVhBVeT/Lz7ZTHyxL5dDalQWPVOsQWtRnuwXaFTj9jVVh8pma9JjZ4zYSj5ZOyma7uuolffh+IR5aW97cHuBUXKGKXlKjn+DiHWMcYJah4N0lYCMlJOXipGRr5qdgoSTrqWSq6WFl2ypoaUAAAIfkECQEAAQAsAAAAACgAKAAAApaEb6HLgd/iO7FNWtcFWe+ufODGjRfoiJ2akShbueb0wtI50zm02pbvwfWEMWBQ1zKGlLIhskiEPm9R6vRXxV4ZzWT2yHOGpWMyorblKlNp8HmHEb/lCXjcW7bmtXP8Xt229OVWR1fod2eWqNfHuMjXCPkIGNileOiImVmCOEmoSfn3yXlJWmoHGhqp6ilYuWYpmTqKUgAAIfkECQEAAQAsAAAAACgAKAAAApiEH6kb58biQ3FNWtMFWW3eNVcojuFGfqnZqSebuS06w5V80/X02pKe8zFwP6EFWOT1lDFk8rGERh1TTNOocQ61Hm4Xm2VexUHpzjymViHrFbiELsefVrn6XKfnt2Q9G/+Xdie499XHd2g4h7ioOGhXGJboGAnXSBnoBwKYyfioubZJ2Hn0RuRZaflZOil56Zp6iioKSXpUAAAh+QQJAQABACwAAAAAKAAoAAACkoQRqRvnxuI7kU1a1UU5bd5tnSeOZXhmn5lWK3qNTWvRdQxP8qvaC+/yaYQzXO7BMvaUEmJRd3TsiMAgswmNYrSgZdYrTX6tSHGZO73ezuAw2uxuQ+BbeZfMxsexY35+/Qe4J1inV0g4x3WHuMhIl2jXOKT2Q+VU5fgoSUI52VfZyfkJGkha6jmY+aaYdirq+lQAACH5BAkBAAEALAAAAAAoACgAAAKWBIKpYe0L3YNKToqswUlvznigd4wiR4KhZrKt9Upqip61i9E3vMvxRdHlbEFiEXfk9YARYxOZZD6VQ2pUunBmtRXo1Lf8hMVVcNl8JafV38aM2/Fu5V16Bn63r6xt97j09+MXSFi4BniGFae3hzbH9+hYBzkpuUh5aZmHuanZOZgIuvbGiNeomCnaxxap2upaCZsq+1kAACH5BAkBAAEALAAAAAAoACgAAAKXjI8By5zf4kOxTVrXNVlv1X0d8IGZGKLnNpYtm8Lr9cqVeuOSvfOW79D9aDHizNhDJidFZhNydEahOaDH6nomtJjp1tutKoNWkvA6JqfRVLHU/QUfau9l2x7G54d1fl995xcIGAdXqMfBNadoYrhH+Mg2KBlpVpbluCiXmMnZ2Sh4GBqJ+ckIOqqJ6LmKSllZmsoq6wpQAAAh+QQJAQABACwAAAAAKAAoAAAClYx/oLvoxuJDkU1a1YUZbJ59nSd2ZXhWqbRa2/gF8Gu2DY3iqs7yrq+xBYEkYvFSM8aSSObE+ZgRl1BHFZNr7pRCavZ5BW2142hY3AN/zWtsmf12p9XxxFl2lpLn1rseztfXZjdIWIf2s5dItwjYKBgo9yg5pHgzJXTEeGlZuenpyPmpGQoKOWkYmSpaSnqKileI2FAAACH5BAkBAAEALAAAAAAoACgAAAKVjB+gu+jG4kORTVrVhRlsnn2dJ3ZleFaptFrb+CXmO9OozeL5VfP99HvAWhpiUdcwkpBH3825AwYdU8xTqlLGhtCosArKMpvfa1mMRae9VvWZfeB2XfPkeLmm18lUcBj+p5dnN8jXZ3YIGEhYuOUn45aoCDkp16hl5IjYJvjWKcnoGQpqyPlpOhr3aElaqrq56Bq7VAAAOw==");
   height: 100%;
@@ -16643,22 +17135,22 @@ button.ui-button::-moz-focus-inner {
   /* support: IE8 */
   opacity: 0.25; }
 
-/* line 1368, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1369, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-progressbar-indeterminate .ui-progressbar-value {
   background-image: none; }
 
-/* line 1371, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1372, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectable {
   -ms-touch-action: none;
   touch-action: none; }
 
-/* line 1375, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1376, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectable-helper {
   position: absolute;
   z-index: 100;
   border: 1px dotted black; }
 
-/* line 1380, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1381, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-menu {
   padding: 0;
   margin: 0;
@@ -16667,13 +17159,13 @@ button.ui-button::-moz-focus-inner {
   left: 0;
   display: none; }
 
-/* line 1388, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1389, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-menu .ui-menu {
   overflow: auto;
   overflow-x: hidden;
   padding-bottom: 1px; }
 
-/* line 1393, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1394, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
   font-size: 1em;
   font-weight: bold;
@@ -16683,34 +17175,34 @@ button.ui-button::-moz-focus-inner {
   height: auto;
   border: 0; }
 
-/* line 1402, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1403, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-open {
   display: block; }
 
-/* line 1405, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1406, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-text {
   display: block;
   margin-right: 20px;
   overflow: hidden;
   text-overflow: ellipsis; }
 
-/* line 1411, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1412, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-button.ui-button {
   text-align: left;
   white-space: nowrap;
   width: 14em; }
 
-/* line 1416, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1417, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-selectmenu-icon.ui-icon {
   float: right;
   margin-top: 0; }
 
-/* line 1420, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1421, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider {
   position: relative;
   text-align: left; }
 
-/* line 1424, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1425, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
@@ -16720,7 +17212,7 @@ button.ui-button::-moz-focus-inner {
   -ms-touch-action: none;
   touch-action: none; }
 
-/* line 1433, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1434, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
@@ -16730,64 +17222,64 @@ button.ui-button::-moz-focus-inner {
   background-position: 0 0; }
 
 /* support: IE8 - See #6727 */
-/* line 1443, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1444, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
   -webkit-filter: inherit;
           filter: inherit; }
 
-/* line 1448, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1449, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-horizontal {
   height: .8em; }
 
-/* line 1451, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1452, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-horizontal .ui-slider-handle {
   top: -.3em;
   margin-left: -.6em; }
 
-/* line 1455, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1456, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-horizontal .ui-slider-range {
   top: 0;
   height: 100%; }
 
-/* line 1459, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1460, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-horizontal .ui-slider-range-min {
   left: 0; }
 
-/* line 1462, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1463, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-horizontal .ui-slider-range-max {
   right: 0; }
 
-/* line 1466, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1467, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-vertical {
   width: .8em;
   height: 100px; }
 
-/* line 1470, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1471, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-vertical .ui-slider-handle {
   left: -.3em;
   margin-left: 0;
   margin-bottom: -.6em; }
 
-/* line 1475, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1476, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-vertical .ui-slider-range {
   left: 0;
   width: 100%; }
 
-/* line 1479, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1480, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-vertical .ui-slider-range-min {
   bottom: 0; }
 
-/* line 1482, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1483, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider-vertical .ui-slider-range-max {
   top: 0; }
 
-/* line 1485, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1486, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-sortable-handle {
   -ms-touch-action: none;
   touch-action: none; }
 
-/* line 1489, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1490, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner {
   position: relative;
   display: inline-block;
@@ -16795,7 +17287,7 @@ button.ui-button::-moz-focus-inner {
   padding: 0;
   vertical-align: middle; }
 
-/* line 1496, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1497, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner-input {
   border: none;
   background: none;
@@ -16806,7 +17298,7 @@ button.ui-button::-moz-focus-inner {
   margin-left: .4em;
   margin-right: 2em; }
 
-/* line 1506, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1507, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner-button {
   width: 1.6em;
   height: 50%;
@@ -16821,32 +17313,32 @@ button.ui-button::-moz-focus-inner {
   right: 0; }
 
 /* more specificity required here to override default borders */
-/* line 1520, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1521, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner a.ui-spinner-button {
   border-top-style: none;
   border-bottom-style: none;
   border-right-style: none; }
 
-/* line 1525, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1526, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner-up {
   top: 0; }
 
-/* line 1528, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1529, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-spinner-down {
   bottom: 0; }
 
-/* line 1531, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1532, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs {
   position: relative;
   /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
   padding: .2em; }
 
-/* line 1535, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1536, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-nav {
   margin: 0;
   padding: .2em .2em 0; }
 
-/* line 1539, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1540, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-nav li {
   list-style: none;
   float: left;
@@ -16857,57 +17349,57 @@ button.ui-button::-moz-focus-inner {
   padding: 0;
   white-space: nowrap; }
 
-/* line 1549, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1550, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   float: left;
   padding: .5em 1em;
   text-decoration: none; }
 
-/* line 1554, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1555, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   margin-bottom: -1px;
   padding-bottom: 1px; }
 
-/* line 1558, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1559, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
   cursor: text; }
 
-/* line 1563, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1564, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
   cursor: pointer; }
 
-/* line 1566, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1567, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tabs .ui-tabs-panel {
   display: block;
   border-width: 0;
   padding: 1em 1.4em;
   background: none; }
 
-/* line 1572, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1573, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-tooltip {
   padding: 8px;
   position: absolute;
   z-index: 9999;
   max-width: 300px; }
 
-/* line 1578, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1579, _dev/devsass/kk_aj_PublicCSS.scss */
 body .ui-tooltip {
   border-width: 2px; }
 
 /* Component containers
 ----------------------------------*/
-/* line 1583, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1584, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget {
   font-family: Verdana,Arial,sans-serif;
   font-size: 1.1em; }
 
-/* line 1587, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1588, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget .ui-widget {
   font-size: 1em; }
 
-/* line 1590, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1591, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget input,
 .ui-widget select,
 .ui-widget textarea,
@@ -16915,34 +17407,34 @@ body .ui-tooltip {
   font-family: Verdana,Arial,sans-serif;
   font-size: 1em; }
 
-/* line 1597, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1598, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget.ui-widget-content {
   border: 1px solid #d3d3d3; }
 
-/* line 1600, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1601, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-content {
   border: 1px solid #aaaaaa;
   background: #ffffff;
   color: #222222; }
 
-/* line 1605, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1606, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-content a {
   color: #222222; }
 
-/* line 1608, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1609, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-header {
   border: 1px solid #aaaaaa;
   background: #cccccc url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
   color: #222222;
   font-weight: bold; }
 
-/* line 1614, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1615, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-header a {
   color: #222222; }
 
 /* Interaction states
 ----------------------------------*/
-/* line 1620, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1621, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
@@ -16954,7 +17446,7 @@ html .ui-button.ui-state-disabled:active {
   font-weight: normal;
   color: #555555; }
 
-/* line 1634, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1635, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited,
@@ -16965,7 +17457,7 @@ a:visited.ui-button,
   color: #555555;
   text-decoration: none; }
 
-/* line 1644, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1645, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
@@ -16979,7 +17471,7 @@ a:visited.ui-button,
   font-weight: normal;
   color: #212121; }
 
-/* line 1657, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1658, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
@@ -16993,12 +17485,12 @@ a.ui-button:focus {
   color: #212121;
   text-decoration: none; }
 
-/* line 1671, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1672, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-visual-focus {
   -webkit-box-shadow: 0 0 3px 1px #5e9ed6;
           box-shadow: 0 0 3px 1px #5e9ed6; }
 
-/* line 1674, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1675, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active,
@@ -17010,13 +17502,13 @@ a.ui-button:active,
   font-weight: normal;
   color: #212121; }
 
-/* line 1685, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1686, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-background,
 .ui-state-active .ui-icon-background {
   border: #aaaaaa;
   background-color: #212121; }
 
-/* line 1690, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1691, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
@@ -17025,7 +17517,7 @@ a.ui-button:active,
 
 /* Interaction Cues
 ----------------------------------*/
-/* line 1699, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1700, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
@@ -17033,18 +17525,18 @@ a.ui-button:active,
   background: #fbf9ee url("images/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
   color: #363636; }
 
-/* line 1706, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1707, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-checked {
   border: 1px solid #fcefa1;
   background: #fbf9ee; }
 
-/* line 1710, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1711, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-highlight a,
 .ui-widget-content .ui-state-highlight a,
 .ui-widget-header .ui-state-highlight a {
   color: #363636; }
 
-/* line 1715, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1716, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
@@ -17052,25 +17544,25 @@ a.ui-button:active,
   background: #fef1ec url("images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
   color: #cd0a0a; }
 
-/* line 1722, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1723, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-error a,
 .ui-widget-content .ui-state-error a,
 .ui-widget-header .ui-state-error a {
   color: #cd0a0a; }
 
-/* line 1727, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1728, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-error-text,
 .ui-widget-content .ui-state-error-text,
 .ui-widget-header .ui-state-error-text {
   color: #cd0a0a; }
 
-/* line 1732, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1733, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-priority-primary,
 .ui-widget-content .ui-priority-primary,
 .ui-widget-header .ui-priority-primary {
   font-weight: bold; }
 
-/* line 1737, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1738, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-priority-secondary,
 .ui-widget-content .ui-priority-secondary,
 .ui-widget-header .ui-priority-secondary {
@@ -17079,7 +17571,7 @@ a.ui-button:active,
   /* support: IE8 */
   font-weight: normal; }
 
-/* line 1744, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1745, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-disabled,
 .ui-widget-content .ui-state-disabled,
 .ui-widget-header .ui-state-disabled {
@@ -17088,7 +17580,7 @@ a.ui-button:active,
   /* support: IE8 */
   background-image: none; }
 
-/* line 1751, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1752, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-disabled .ui-icon {
   filter: Alpha(Opacity=35);
   /* support: IE8 - See #6059 */ }
@@ -17096,25 +17588,25 @@ a.ui-button:active,
 /* Icons
 ----------------------------------*/
 /* states and images */
-/* line 1759, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1760, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon {
   width: 16px;
   height: 16px; }
 
-/* line 1763, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1764, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon,
 .ui-widget-content .ui-icon {
   background-image: url("images/ui-icons_222222_256x240.png"); }
 
-/* line 1767, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1768, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-header .ui-icon {
   background-image: url("images/ui-icons_222222_256x240.png"); }
 
-/* line 1770, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1771, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-button .ui-icon {
   background-image: url("images/ui-icons_888888_256x240.png"); }
 
-/* line 1773, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1774, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-button:hover .ui-icon,
@@ -17122,727 +17614,727 @@ a.ui-button:active,
 .ui-state-default .ui-icon {
   background-image: url("images/ui-icons_454545_256x240.png"); }
 
-/* line 1780, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1781, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
   background-image: url("images/ui-icons_454545_256x240.png"); }
 
-/* line 1784, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1785, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-highlight .ui-icon,
 .ui-button .ui-state-highlight.ui-icon {
   background-image: url("images/ui-icons_2e83ff_256x240.png"); }
 
-/* line 1788, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1789, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
   background-image: url("images/ui-icons_cd0a0a_256x240.png"); }
 
 /* positioning */
-/* line 1794, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1795, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-blank {
   background-position: 16px 16px; }
 
-/* line 1795, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1796, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-n {
   background-position: 0 0; }
 
-/* line 1796, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1797, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-ne {
   background-position: -16px 0; }
 
-/* line 1797, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1798, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-e {
   background-position: -32px 0; }
 
-/* line 1798, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1799, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-se {
   background-position: -48px 0; }
 
-/* line 1799, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1800, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-s {
   background-position: -65px 0; }
 
-/* line 1800, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1801, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-sw {
   background-position: -80px 0; }
 
-/* line 1801, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1802, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-w {
   background-position: -96px 0; }
 
-/* line 1802, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1803, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-1-nw {
   background-position: -112px 0; }
 
-/* line 1803, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1804, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-2-n-s {
   background-position: -128px 0; }
 
-/* line 1804, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1805, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-caret-2-e-w {
   background-position: -144px 0; }
 
-/* line 1805, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1806, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-n {
   background-position: 0 -16px; }
 
-/* line 1806, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1807, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-ne {
   background-position: -16px -16px; }
 
-/* line 1807, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1808, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-e {
   background-position: -32px -16px; }
 
-/* line 1808, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1809, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-se {
   background-position: -48px -16px; }
 
-/* line 1809, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1810, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-s {
   background-position: -65px -16px; }
 
-/* line 1810, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1811, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-sw {
   background-position: -80px -16px; }
 
-/* line 1811, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1812, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-w {
   background-position: -96px -16px; }
 
-/* line 1812, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1813, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-1-nw {
   background-position: -112px -16px; }
 
-/* line 1813, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1814, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-2-n-s {
   background-position: -128px -16px; }
 
-/* line 1814, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1815, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-triangle-2-e-w {
   background-position: -144px -16px; }
 
-/* line 1815, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1816, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-n {
   background-position: 0 -32px; }
 
-/* line 1816, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1817, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-ne {
   background-position: -16px -32px; }
 
-/* line 1817, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1818, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-e {
   background-position: -32px -32px; }
 
-/* line 1818, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1819, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-se {
   background-position: -48px -32px; }
 
-/* line 1819, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1820, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-s {
   background-position: -65px -32px; }
 
-/* line 1820, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1821, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-sw {
   background-position: -80px -32px; }
 
-/* line 1821, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1822, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-w {
   background-position: -96px -32px; }
 
-/* line 1822, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1823, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-1-nw {
   background-position: -112px -32px; }
 
-/* line 1823, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1824, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-2-n-s {
   background-position: -128px -32px; }
 
-/* line 1824, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1825, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-2-ne-sw {
   background-position: -144px -32px; }
 
-/* line 1825, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1826, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-2-e-w {
   background-position: -160px -32px; }
 
-/* line 1826, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1827, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-2-se-nw {
   background-position: -176px -32px; }
 
-/* line 1827, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1828, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowstop-1-n {
   background-position: -192px -32px; }
 
-/* line 1828, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1829, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowstop-1-e {
   background-position: -208px -32px; }
 
-/* line 1829, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1830, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowstop-1-s {
   background-position: -224px -32px; }
 
-/* line 1830, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1831, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowstop-1-w {
   background-position: -240px -32px; }
 
-/* line 1831, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1832, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-n {
   background-position: 1px -48px; }
 
-/* line 1832, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1833, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-ne {
   background-position: -16px -48px; }
 
-/* line 1833, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1834, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-e {
   background-position: -32px -48px; }
 
-/* line 1834, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1835, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-se {
   background-position: -48px -48px; }
 
-/* line 1835, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1836, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-s {
   background-position: -64px -48px; }
 
-/* line 1836, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1837, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-sw {
   background-position: -80px -48px; }
 
-/* line 1837, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1838, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-w {
   background-position: -96px -48px; }
 
-/* line 1838, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1839, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-1-nw {
   background-position: -112px -48px; }
 
-/* line 1839, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1840, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-2-n-s {
   background-position: -128px -48px; }
 
-/* line 1840, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1841, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-2-ne-sw {
   background-position: -144px -48px; }
 
-/* line 1841, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1842, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-2-e-w {
   background-position: -160px -48px; }
 
-/* line 1842, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1843, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthick-2-se-nw {
   background-position: -176px -48px; }
 
-/* line 1843, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1844, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthickstop-1-n {
   background-position: -192px -48px; }
 
-/* line 1844, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1845, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthickstop-1-e {
   background-position: -208px -48px; }
 
-/* line 1845, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1846, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthickstop-1-s {
   background-position: -224px -48px; }
 
-/* line 1846, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1847, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowthickstop-1-w {
   background-position: -240px -48px; }
 
-/* line 1847, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1848, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturnthick-1-w {
   background-position: 0 -64px; }
 
-/* line 1848, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1849, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturnthick-1-n {
   background-position: -16px -64px; }
 
-/* line 1849, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1850, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturnthick-1-e {
   background-position: -32px -64px; }
 
-/* line 1850, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1851, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturnthick-1-s {
   background-position: -48px -64px; }
 
-/* line 1851, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1852, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturn-1-w {
   background-position: -64px -64px; }
 
-/* line 1852, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1853, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturn-1-n {
   background-position: -80px -64px; }
 
-/* line 1853, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1854, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturn-1-e {
   background-position: -96px -64px; }
 
-/* line 1854, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1855, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowreturn-1-s {
   background-position: -112px -64px; }
 
-/* line 1855, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1856, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowrefresh-1-w {
   background-position: -128px -64px; }
 
-/* line 1856, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1857, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowrefresh-1-n {
   background-position: -144px -64px; }
 
-/* line 1857, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1858, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowrefresh-1-e {
   background-position: -160px -64px; }
 
-/* line 1858, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1859, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrowrefresh-1-s {
   background-position: -176px -64px; }
 
-/* line 1859, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1860, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-4 {
   background-position: 0 -80px; }
 
-/* line 1860, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1861, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-arrow-4-diag {
   background-position: -16px -80px; }
 
-/* line 1861, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1862, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-extlink {
   background-position: -32px -80px; }
 
-/* line 1862, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1863, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-newwin {
   background-position: -48px -80px; }
 
-/* line 1863, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1864, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-refresh {
   background-position: -64px -80px; }
 
-/* line 1864, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1865, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-shuffle {
   background-position: -80px -80px; }
 
-/* line 1865, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1866, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-transfer-e-w {
   background-position: -96px -80px; }
 
-/* line 1866, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1867, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-transferthick-e-w {
   background-position: -112px -80px; }
 
-/* line 1867, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1868, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-folder-collapsed {
   background-position: 0 -96px; }
 
-/* line 1868, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1869, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-folder-open {
   background-position: -16px -96px; }
 
-/* line 1869, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1870, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-document {
   background-position: -32px -96px; }
 
-/* line 1870, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1871, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-document-b {
   background-position: -48px -96px; }
 
-/* line 1871, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1872, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-note {
   background-position: -64px -96px; }
 
-/* line 1872, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1873, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-mail-closed {
   background-position: -80px -96px; }
 
-/* line 1873, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1874, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-mail-open {
   background-position: -96px -96px; }
 
-/* line 1874, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1875, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-suitcase {
   background-position: -112px -96px; }
 
-/* line 1875, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1876, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-comment {
   background-position: -128px -96px; }
 
-/* line 1876, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1877, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-person {
   background-position: -144px -96px; }
 
-/* line 1877, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1878, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-print {
   background-position: -160px -96px; }
 
-/* line 1878, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1879, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-trash {
   background-position: -176px -96px; }
 
-/* line 1879, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1880, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-locked {
   background-position: -192px -96px; }
 
-/* line 1880, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1881, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-unlocked {
   background-position: -208px -96px; }
 
-/* line 1881, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1882, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-bookmark {
   background-position: -224px -96px; }
 
-/* line 1882, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1883, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-tag {
   background-position: -240px -96px; }
 
-/* line 1883, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1884, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-home {
   background-position: 0 -112px; }
 
-/* line 1884, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1885, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-flag {
   background-position: -16px -112px; }
 
-/* line 1885, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1886, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-calendar {
   background-position: -32px -112px; }
 
-/* line 1886, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1887, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-cart {
   background-position: -48px -112px; }
 
-/* line 1887, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1888, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-pencil {
   background-position: -64px -112px; }
 
-/* line 1888, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1889, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-clock {
   background-position: -80px -112px; }
 
-/* line 1889, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1890, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-disk {
   background-position: -96px -112px; }
 
-/* line 1890, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1891, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-calculator {
   background-position: -112px -112px; }
 
-/* line 1891, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1892, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-zoomin {
   background-position: -128px -112px; }
 
-/* line 1892, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1893, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-zoomout {
   background-position: -144px -112px; }
 
-/* line 1893, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1894, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-search {
   background-position: -160px -112px; }
 
-/* line 1894, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1895, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-wrench {
   background-position: -176px -112px; }
 
-/* line 1895, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1896, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-gear {
   background-position: -192px -112px; }
 
-/* line 1896, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1897, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-heart {
   background-position: -208px -112px; }
 
-/* line 1897, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1898, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-star {
   background-position: -224px -112px; }
 
-/* line 1898, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1899, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-link {
   background-position: -240px -112px; }
 
-/* line 1899, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1900, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-cancel {
   background-position: 0 -128px; }
 
-/* line 1900, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1901, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-plus {
   background-position: -16px -128px; }
 
-/* line 1901, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1902, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-plusthick {
   background-position: -32px -128px; }
 
-/* line 1902, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1903, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-minus {
   background-position: -48px -128px; }
 
-/* line 1903, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1904, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-minusthick {
   background-position: -64px -128px; }
 
-/* line 1904, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1905, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-close {
   background-position: -80px -128px; }
 
-/* line 1905, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1906, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-closethick {
   background-position: -96px -128px; }
 
-/* line 1906, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1907, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-key {
   background-position: -112px -128px; }
 
-/* line 1907, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1908, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-lightbulb {
   background-position: -128px -128px; }
 
-/* line 1908, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1909, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-scissors {
   background-position: -144px -128px; }
 
-/* line 1909, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1910, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-clipboard {
   background-position: -160px -128px; }
 
-/* line 1910, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1911, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-copy {
   background-position: -176px -128px; }
 
-/* line 1911, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1912, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-contact {
   background-position: -192px -128px; }
 
-/* line 1912, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1913, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-image {
   background-position: -208px -128px; }
 
-/* line 1913, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1914, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-video {
   background-position: -224px -128px; }
 
-/* line 1914, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1915, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-script {
   background-position: -240px -128px; }
 
-/* line 1915, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1916, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-alert {
   background-position: 0 -144px; }
 
-/* line 1916, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1917, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-info {
   background-position: -16px -144px; }
 
-/* line 1917, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1918, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-notice {
   background-position: -32px -144px; }
 
-/* line 1918, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1919, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-help {
   background-position: -48px -144px; }
 
-/* line 1919, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1920, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-check {
   background-position: -64px -144px; }
 
-/* line 1920, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1921, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-bullet {
   background-position: -80px -144px; }
 
-/* line 1921, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1922, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-radio-on {
   background-position: -96px -144px; }
 
-/* line 1922, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1923, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-radio-off {
   background-position: -112px -144px; }
 
-/* line 1923, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1924, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-pin-w {
   background-position: -128px -144px; }
 
-/* line 1924, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1925, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-pin-s {
   background-position: -144px -144px; }
 
-/* line 1925, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1926, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-play {
   background-position: 0 -160px; }
 
-/* line 1926, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1927, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-pause {
   background-position: -16px -160px; }
 
-/* line 1927, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1928, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-seek-next {
   background-position: -32px -160px; }
 
-/* line 1928, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1929, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-seek-prev {
   background-position: -48px -160px; }
 
-/* line 1929, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1930, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-seek-end {
   background-position: -64px -160px; }
 
-/* line 1930, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1931, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-seek-start {
   background-position: -80px -160px; }
 
 /* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
-/* line 1932, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1933, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-seek-first {
   background-position: -80px -160px; }
 
-/* line 1933, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1934, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-stop {
   background-position: -96px -160px; }
 
-/* line 1934, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1935, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-eject {
   background-position: -112px -160px; }
 
-/* line 1935, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1936, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-volume-off {
   background-position: -128px -160px; }
 
-/* line 1936, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1937, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-volume-on {
   background-position: -144px -160px; }
 
-/* line 1937, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1938, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-power {
   background-position: 0 -176px; }
 
-/* line 1938, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1939, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-signal-diag {
   background-position: -16px -176px; }
 
-/* line 1939, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1940, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-signal {
   background-position: -32px -176px; }
 
-/* line 1940, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1941, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-battery-0 {
   background-position: -48px -176px; }
 
-/* line 1941, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1942, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-battery-1 {
   background-position: -64px -176px; }
 
-/* line 1942, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1943, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-battery-2 {
   background-position: -80px -176px; }
 
-/* line 1943, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1944, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-battery-3 {
   background-position: -96px -176px; }
 
-/* line 1944, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1945, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-plus {
   background-position: 0 -192px; }
 
-/* line 1945, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1946, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-minus {
   background-position: -16px -192px; }
 
-/* line 1946, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1947, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-close {
   background-position: -32px -192px; }
 
-/* line 1947, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1948, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-triangle-e {
   background-position: -48px -192px; }
 
-/* line 1948, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1949, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-triangle-s {
   background-position: -64px -192px; }
 
-/* line 1949, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1950, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-triangle-w {
   background-position: -80px -192px; }
 
-/* line 1950, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1951, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-triangle-n {
   background-position: -96px -192px; }
 
-/* line 1951, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1952, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-arrow-e {
   background-position: -112px -192px; }
 
-/* line 1952, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1953, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-arrow-s {
   background-position: -128px -192px; }
 
-/* line 1953, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1954, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-arrow-w {
   background-position: -144px -192px; }
 
-/* line 1954, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1955, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-arrow-n {
   background-position: -160px -192px; }
 
-/* line 1955, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1956, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-zoomin {
   background-position: -176px -192px; }
 
-/* line 1956, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1957, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-zoomout {
   background-position: -192px -192px; }
 
-/* line 1957, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1958, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circle-check {
   background-position: -208px -192px; }
 
-/* line 1958, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1959, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circlesmall-plus {
   background-position: 0 -208px; }
 
-/* line 1959, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1960, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circlesmall-minus {
   background-position: -16px -208px; }
 
-/* line 1960, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1961, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-circlesmall-close {
   background-position: -32px -208px; }
 
-/* line 1961, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1962, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-squaresmall-plus {
   background-position: -48px -208px; }
 
-/* line 1962, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1963, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-squaresmall-minus {
   background-position: -64px -208px; }
 
-/* line 1963, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1964, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-squaresmall-close {
   background-position: -80px -208px; }
 
-/* line 1964, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1965, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-grip-dotted-vertical {
   background-position: 0 -224px; }
 
-/* line 1965, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1966, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-grip-dotted-horizontal {
   background-position: -16px -224px; }
 
-/* line 1966, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1967, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-grip-solid-vertical {
   background-position: -32px -224px; }
 
-/* line 1967, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1968, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-grip-solid-horizontal {
   background-position: -48px -224px; }
 
-/* line 1968, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1969, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-gripsmall-diagonal-se {
   background-position: -64px -224px; }
 
-/* line 1969, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1970, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-icon-grip-diagonal-se {
   background-position: -80px -224px; }
 
 /* Misc visuals
 ----------------------------------*/
 /* Corner radius */
-/* line 1976, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1977, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-left,
@@ -17850,7 +18342,7 @@ a.ui-button:active,
   -webkit-border-top-left-radius: 4px;
           border-top-left-radius: 4px; }
 
-/* line 1982, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1983, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-right,
@@ -17858,7 +18350,7 @@ a.ui-button:active,
   -webkit-border-top-right-radius: 4px;
           border-top-right-radius: 4px; }
 
-/* line 1988, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1989, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-left,
@@ -17866,7 +18358,7 @@ a.ui-button:active,
   -webkit-border-bottom-left-radius: 4px;
           border-bottom-left-radius: 4px; }
 
-/* line 1994, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 1995, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-right,
@@ -17875,115 +18367,115 @@ a.ui-button:active,
           border-bottom-right-radius: 4px; }
 
 /* Overlays */
-/* line 2002, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2003, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-overlay {
   background: #aaaaaa;
   opacity: .3;
   filter: Alpha(Opacity=30);
   /* support: IE8 */ }
 
-/* line 2007, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2008, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-widget-shadow {
   -webkit-box-shadow: -8px -8px 8px #aaaaaa;
   box-shadow: -8px -8px 8px #aaaaaa; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .lato {
   font-family: Lato,sans-serif; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range {
   float: left;
   margin-top: 10px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range .gap {
   float: left;
   display: block;
   margin-right: 5px;
   line-height: 30px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range input[type=text] {
   -webkit-border-radius: 0 3px 3px 0;
           border-radius: 0 3px 3px 0; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .jplist-date-picker-range .jplist-icon {
   -webkit-border-radius: 3px 0 0 3px;
           border-radius: 3px 0 0 3px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-panel .date-picker {
   float: left;
   border: 1px solid #dbdbdb;
   margin-right: 5px;
   width: 100px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider {
   float: left;
   margin-top: 15px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider .value {
   float: left;
   margin: 0 15px;
   font-size: 12px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .jplist-range-slider .ui-slider {
   float: left;
   width: 130px; }
 
-/* line 2012, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider {
   margin-top: 5px; }
 
-/* line 2013, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2014, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider {
   margin-top: 5px;
   width: 13rem !important; }
 
-/* line 2015, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2016, _dev/devsass/kk_aj_PublicCSS.scss */
 .yearbox {
   float: left;
   clear: right; }
 
-/* line 2016, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2017, _dev/devsass/kk_aj_PublicCSS.scss */
 .kk_aj_searchfilterblock {
   margin-left: 0rem !important; }
 
-/* line 2018, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2019, _dev/devsass/kk_aj_PublicCSS.scss */
 #kk_aj_conf {
   display: none; }
 
-/* line 2019, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2020, _dev/devsass/kk_aj_PublicCSS.scss */
 .ui-slider {
   width: 100% !important; }
 
-/* line 2021, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2022, _dev/devsass/kk_aj_PublicCSS.scss */
 .top-bar-section a {
   color: #000 !important;
   font-size: 1rem !important; }
 
-/* line 2024, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2025, _dev/devsass/kk_aj_PublicCSS.scss */
 .top-bar-section ul li * {
   background: #fff !important; }
 
-/* line 2028, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2029, _dev/devsass/kk_aj_PublicCSS.scss */
 .top-bar-section ul ul li * {
   background-color: #eee !important; }
 
-/* line 2031, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2032, _dev/devsass/kk_aj_PublicCSS.scss */
 .caret {
   color: #000; }
 
-/* line 2033, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2034, _dev/devsass/kk_aj_PublicCSS.scss */
 #kk_aj_CurrentUserid {
   display: none; }
 
-/* line 2035, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2036, _dev/devsass/kk_aj_PublicCSS.scss */
 a:active, a:focus,
 li:active, li:focus {
   opacity: .5; }
@@ -17991,14 +18483,14 @@ li:active, li:focus {
 /**:focus {
     outline: none;  
 }*/
-/* line 2042, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2043, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit {
   border: 1px #A9A9A9 solid;
   width: 500px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 2049, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2050, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar {
   position: relative;
   z-index: 10;
@@ -18010,7 +18502,7 @@ li:active, li:focus {
   overflow: hidden;
   display: none; }
 
-/* line 2061, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2062, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button {
   width: 36px;
   height: 34px;
@@ -18020,7 +18512,7 @@ li:active, li:focus {
   background-position: right 4px;
   cursor: pointer; }
 
-/* line 2070, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2071, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button:hover,
 .classyedit .toolbar .button.on {
   background-color: #E5E8EF;
@@ -18029,7 +18521,7 @@ li:active, li:focus {
   margin-left: -1px;
   width: 35px; }
 
-/* line 2078, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2079, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button.first:hover {
   border-left: none;
   margin-left: 0px;
@@ -18037,7 +18529,7 @@ li:active, li:focus {
   -webkit-border-top-left-radius: 3px;
   border-top-left-radius: 3px; }
 
-/* line 2085, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2086, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button div,
 .classyedit .toolbar .button a {
   background-repeat: no-repeat;
@@ -18046,38 +18538,38 @@ li:active, li:focus {
   width: 100%;
   height: 34px; }
 
-/* line 2093, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2094, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='underline'] {
   background-image: url("../images/underline.png"); }
 
-/* line 2096, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2097, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='italic'] {
   background-image: url("../images/italic.png"); }
 
-/* line 2099, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2100, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='bold'] {
   background-image: url("../images/bold.png"); }
 
-/* line 2102, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2103, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='insertUnorderedList'] {
   background-image: url("../images/bullet.png"); }
 
-/* line 2105, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2106, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='html'] {
   background-image: url("../images/html.png"); }
 
-/* line 2108, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2109, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .toolbar .button [command='href'] {
   background-image: url("../images/href.png"); }
 
-/* line 2111, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2112, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .editor {
   position: relative;
   z-index: 1;
   min-height: 150px;
   padding: 10px; }
 
-/* line 2117, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2118, _dev/devsass/kk_aj_PublicCSS.scss */
 .classyedit .html_editor {
   width: 95%;
   resize: none;
@@ -18086,6 +18578,11 @@ li:active, li:focus {
   display: none;
   min-height: 140px; }
 
-/* line 2126, _dev/devsass/kk_aj_PublicCSS.scss */
+/* line 2127, _dev/devsass/kk_aj_PublicCSS.scss */
 label img {
   pointer-events: none; }
+
+/* line 2133, _dev/devsass/kk_aj_PublicCSS.scss */
+#kk_aj_slider-range2 {
+  margin-left: .5rem;
+  margin-bottom: .5rem; }

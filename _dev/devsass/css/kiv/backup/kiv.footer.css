@@ -1,23 +1,29 @@
 footer.footer {
+  /* Footer Ren farg istallet for bild */
+  /* background: #504f4d; */
     background: #000;
     padding-bottom: 38px;
 }
 
+/* Justera footer smabilds linjer  */
 .footer .annonsrow img {
     min-width: 220px;
     max-width: 220px;
 }
 
+/* Annonsfooter vit bakgrund */
 footer.footer.annonsfot {
     background: #fff;
     margin: 0 !important;
     padding: 0;
 }
 
+/* Footer Justering marginal */
 .footer .footdelare {
     margin-top: 5rem;
 }
 
+/* Footer Forminska kiv logga och justera i botten */
 .footer .footdelare .foot-kivlogo-container img {
     max-width: 160px;
 }
@@ -26,10 +32,12 @@ footer.footer.annonsfot {
     height: 83px;
 }
 
+/* Footer social */
 .footer .footdelare .socialiconlist img {
     max-width: 48px;
 }
 
+/* Pil bakgrund */
 .foot-lank {
     text-align: left;
 }
@@ -39,18 +47,9 @@ footer.footer.annonsfot {
 }
 
 .foot-lank a {
-    font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    font-size: 1.125rem;
     overflow: hidden;
     display: inline-block;
     width: 330px;
-}
-
-.foot-lank a:hover {
-    text-decoration: underline;
 }
 
 .foot-lank-pil {

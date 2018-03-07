@@ -25,10 +25,31 @@
                 background-position-x: 95%;
             }
 
+.kk_aj_mainLogoheaderblock{  
+    height:289px;  
 
+    .kk_aj_searchHeader{
+        margin-top:60px;
+        h1{
+            font-size: 5.5rem; 
+            font-weight:lighter;
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style:none;
+        margin-left:0px;
+        li{
+            margin-right:1rem;
+        }
+    }
+}
 .kk_aj_mainFreetextSearchblock{
    
     .kk_aj_searchHeader{
+        
         h1{font-size:3.5rem;padding-bottom:1.5rem;}
         @media #{$small-only} {
             h1{font-size:2.5rem;padding-bottom:1.5rem;}
@@ -41,6 +62,8 @@
                 padding-right:2.6rem;
             }
         }
+        
+
         margin-top:3rem;
         margin-bottom:2rem;
         @media #{$medium-up} {
@@ -54,11 +77,44 @@
         margin-right:0px;
         padding-right:0px;
     }
-    .kk_aj_btnfreetextSearch{
-        border-radius:0px 10px 10px 0px !important;
-        color:#fff !important;
+    #kk_aj_btnfreetextSearch{
+        &.tiny{
+               @extend .buttonmall;
+            }
     }
 } 
+
+.kk_aj_mainInfotextblock{
+  background:#3a8280;
+  color:#fff;
+  padding-bottom:70px;
+  h2{
+      font-size: 2.2rem;
+      margin-top:60px;
+      margin-bottom:40px;
+      color:#fff;
+      font-weight:bold;
+    }
+}
+
+.kk_aj_mainFreetextSearchblock{
+  background: #ebeae6;
+  padding-bottom:70px;
+  h2{
+      font-size: 2.2rem;
+      margin-top:60px;
+      margin-bottom:40px;  
+    }
+}
+.kk_aj_mainsearchblock{
+    background: #b1a06b;
+  padding-bottom:70px;
+  h2{
+      font-size: 2.2rem;
+      margin-top:60px;
+      margin-bottom:40px;  
+    }
+}
 
 .kk_aj_superProductListBlock{
     /*background: url(http://kulturkatalog.kivdev.se/portals/0/kulturkatalogenArrImages/kulturkatalogen/bak_kulturkatalogen.jpg);
@@ -66,7 +122,7 @@
     background-repeat:no-repeat;*/
      .row{margin:0rem!important;}
    /* Superblock globals */
-
+   
     .kk_aj_coloredblocks{
         margin-top:2rem;                
         background:$orange;
@@ -77,131 +133,49 @@
 
     /*Sök form --------------------------------------*/
     .kk_aj_mainsearchblock{
-          padding-top: 4rem;
+       
           
         .ui-state-active{background:#fff !important; border-color:#f77136 !important;}
         .searchformblock{
             margin-top:1rem;
-            #kk_aj_yearspan2{padding-top:.4rem;}
+            #kk_aj_slider-range2{margin:1rem !important;}
+            #kk_aj_yearspan2{padding-top:.4rem; margin-top:1rem;}
              @media #{$large-up} { 
                  margin-top: 4rem;
              }
             /* mainblock globals */               
-            .button{
-                margin-bottom:0.6rem;  
-                max-height:60px;           
-                &.round{
-                    border-radius: 6px;
-                }
-                &.small{
-                    padding-left:.2rem;
-                    padding-right:.2rem;
-                }
-                &.secondary{
-                    background-color:#efeded;
-                    &:hover{
-                        background-color:#f77136; 
-                        opacity:0.6;
-                        color:$white;
-                    }
-                }
-            } /*END button*/
-        
-            .button-group{
-                #val_formDesign{padding-left:1rem; padding-right:1rem;}
-                &.even-2{
-                    li{
-                        .button{
-                            width:94%;
-                            padding:.6rem;
-                        }
-                    }
-                }
-             
-            } /*END button-group*/
-    
-            fieldset{
-                legend{
-                    margin-bottom:0.5rem;                   
-                }
-                &.arrkonstform{
-                    @extend .centerfields;
-                }
-                &.arrpublik{
-                    @extend .centerfields;
-                }
-                &.arralder{
-                    padding:0 1.7rem;
-                    .ui-widget-header{
-                        background:$orange !important;
-                    }
-                }
-                /*#kk_aj_yearspan{
-                    margin-top: 0.5rem;
-                    background-color:#f77136; 
-                    color:#fff; 
-                    float:right;
-                    padding-left:1rem; 
-                    padding-right:1rem;
-                    padding-top:.5rem;
-                    padding-bottom:.5rem; 
-                    font-size: 0.9rem;
-                }*/
-                #kk_aj_yearspan{
-                    margin-top: 0.5rem;
-                    _background-color:#f77136; 
-                    color:#000; 
-                    float:right;
-                    padding-left:1rem; 
-                    padding-right:.2rem;
-                    padding-top:.0rem;
-                    padding-bottom:.5rem; 
-                    font-size: 0.9rem;
-                }
-            }
+           
+            .ArrangemangtypBlock{
+            @extend .valbaraRadiobuttons;
+            }   
             .kontformBlock{
             @extend .valbaraRadiobuttons;
-            }      
+            }     
         }
-        .kk_aj_searchbuttonblock{
-            margin-top:2rem;
-            margin-bottom:4rem;          
-            @media #{$small-only} {
-                margin-bottom:2rem;
-            }
-            .button{
-                margin-left:1rem;  
-                margin-right:1rem;
-                width:30%;
-                @media #{$small-only} {
-                   width:40%;
-                    margin-left: 0.5rem;
-                    margin-right: .5rem;   
-                    padding-left: .1rem;
-                    padding-right: .1rem;
-                }
-                                          
-                &.round{
-                    border-radius: 6px;
-                }
-                &.small{
-                    padding-left:.2rem;
-                    padding-right:.2rem;
-                }
-                &.info{
-                    color:$white;
-                }
-                .kk_aj_searchRensaformbutton{
-                    &:hover{
-                       background: $smoke!important;
-                    }
-                }
-            } /*END button*/
-        }
+        
+        .searchformbutton{
+            flex-shrink: 0;
+            flex-grow: 1;
+            background:#ccc;  
+            margin-bottom:.5rem;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            padding:.5rem;  
+        }  
+        padding-bottom:2rem;
     }/* END Sök form ---------------------------------*/
 
-  
-
+    .kk_aj_searchbuttonblock{
+        margin-bottom:4rem;
+        button {
+            &.tiny{
+               @extend .buttonmall;
+            }
+        }
+    }
     /*produktlista ----------------------------------*/
     .kk_aj_filterRubrikBlock{
         @media #{$small-only} {
@@ -439,7 +413,10 @@
         }
     }
 }
-
+.buttonmall{
+    width:16rem !important;
+    font-size:.8rem;
+}
 
 
 .jplist-panel{

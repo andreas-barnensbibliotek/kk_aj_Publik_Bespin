@@ -1,0 +1,652 @@
+@import "singularitygs";
+@import "compass";
+@import "breakpoint";
+
+@import "variables/**/*.scss";
+@import "base/**/*.scss";
+@import "components/**/*.scss";
+
+//
+.row {
+    //background: rgba(235, 205, 255, 0.1);
+}
+
+// Remove line height inherited from body
+.paragraphs-items-field-main-content {
+    line-height: 0;
+}
+
+.paragraphs-items {
+    .field-type-paragraphs .entity-paragraphs-item {
+        float: none;
+    }
+
+    .video-filter iframe {
+        max-width: 100%;
+    }
+    adfadfasd
+    // FLEX SLIDER
+    .para-flex-slider-view {
+        background: $flex-bg;
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+        min-height: 600px;
+
+        @include breakpoint($tab) {
+            padding-bottom: 110px;
+        }
+
+
+        // STACK IMAGES ON MOBILE
+        // MOBILE SLIDER
+        .stacked-images {
+            display: block !important;
+
+            @include breakpoint($tab) {
+                display: none !important;
+            }
+
+
+            .mobile-flex-row {
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-bottom: 40px;
+            }
+
+            .mobile-flex-row.views-row-last {
+                margin-bottom: 10px;
+            }
+
+            .views-field-field-bild-bildspel {
+                display: block;
+            }
+
+            .views-field-field-bild-bildspel img {
+                width: 100%;
+            }
+
+            .views-field-body {
+                @include kiv-h1-light;
+
+                color: #fff;
+                padding-top: 10px;
+            }
+
+            .mobile-flex-row h1 {
+                @include kiv-h1-light;
+
+                color: #fff;
+            }
+
+            .mobile-flex-row h1 a {
+                @include kiv-h1-light;
+
+                color: #fff;
+            }
+
+            .mobile-flex-row a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        // NORMAL FELX SLIDER ON DESKTOP
+        // DESKTOP SLIDER
+        .flex-bildspel {
+            display: none !important;
+
+            @include breakpoint($tab) {
+                display: block !important;
+            }
+
+
+            .flexslider {
+                background: $flex-bg;
+            }
+
+            .flex-slider {
+                overflow: visible;
+
+                // ONLY LARGE PADDING USED IN KIV padding-left: 0.625rem;
+                // ONLY LARGE PADDING USED IN KIV padding-right: 0.625rem;
+                padding-left: 0.9375rem;
+                padding-right: 0.9375rem;
+
+                @include breakpoint($tab) {
+                    padding-left: 0.9375rem;
+                    padding-right: 0.9375rem;
+                }
+            }
+
+            .flex-control-nav {
+                bottom: 10px;
+                z-index: 100;
+            }
+
+            .flex-control-paging li a {
+                background: rgba(255, 255, 255, 0.5);
+            }
+
+            .flex-control-paging li a.flex-active {
+                background: rgba(255, 255, 255, 1);
+            }
+
+            .flex-slider .flex-text {
+                bottom: -80px;
+                margin: 0;
+
+                //padding-left: 10px;
+           
+            }
+
+            .flex-slider .flex-text h1 {
+                color: #fff;
+                max-height: 80px;
+
+                @include kiv-h1-light;
+
+                @include breakpoint($tab) {
+                    font-size: 2rem;
+                }
+
+
+                @include breakpoint($desk) {
+                    @include kiv-h1-light;
+                }
+            }
+
+            .flex-slider .flex-text h1 a {
+                color: #fff;
+
+                @include breakpoint($tab) {
+                    padding-left: 0.9375rem;
+                    padding-right: 0.9375rem;
+                }
+
+
+                @include kiv-h1-light;
+
+                @include breakpoint($tab) {
+                    font-size: 2rem;
+                }
+
+
+                @include breakpoint($desk) {
+                    @include kiv-h1-light;
+                }
+            }
+
+            .flex-slider .flex-text a:hover {
+                text-decoration: underline;
+            }
+
+            a.flex-prev {
+                background: url("../images/PilMenyV28_vit.png") no-repeat center center;
+            }
+
+            a.flex-next {
+                background: url("../images/PilMeny28_vit.png") no-repeat center center;
+            }
+        }
+    }
+
+    // AKTUELLT
+    .view-front-news-paragraph {
+        overflow: hidden;
+        clear: both;
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-top: $top-sektion-padding-large;
+            padding-bottom: $bottom-sektion-padding-large;
+        }
+
+
+        // Titel
+        .aktuellt-view-title {
+            padding-bottom: 10px;
+
+            //padding-top: 20px;
+       
+        }
+
+        .aktuellt-view-title h2 {
+            @include kiv-h2-light;
+
+            color: #000;
+        }
+
+        // Aktuellt box
+        .aktuelltbox {}
+
+        .aktuelltbox a {
+            height: 115px;
+            display: block;
+            overflow: hidden;
+        }
+
+        .aktuellt-wrapper {
+            position: relative;
+            border-bottom: 1px solid #000;
+            height: 115px;
+            padding-top: 15px;
+            background: #fff;
+
+            @include animate-bg;
+        }
+
+        .views-row-last .aktuellt-wrapper {
+            // Remove border border-bottom: none;
+            border-bottom: 1px solid #000;
+
+            @include breakpoint($tab) {
+                border-bottom: 1px solid #000;
+            }
+        }
+
+        .aktuellt-wrapper:hover {
+            background: #e7e7e8;
+        }
+
+        .views-row-1 .aktuellt-wrapper {
+            border-top: 1px solid #000;
+        }
+
+        .views-row-2 .aktuellt-wrapper,
+        .views-row-3 .aktuellt-wrapper {
+            @include breakpoint($tab) {
+                border-top: 1px solid #000;
+            }
+        }
+
+        .aktuellt-left {
+            float: left;
+            padding-left: 15px;
+            padding-right: 40px;
+
+            @include breakpoint($tab) {
+                padding-right: 40px;
+            }
+        }
+
+        .aktuellt-right {
+            position: absolute;
+            right: 5px;
+            top: 40px;
+            width: 33px;
+            height: 33px;
+            background-image: url("../images/kiv-elements.png");
+            background-position: -19px -120px;
+            background-repeat: repeat-x;
+
+            @include image-2x("../images/kiv-elements@2x.png", 500px, 700px);
+        }
+
+        .aktuelltbox h4 {
+            @include kiv-h4-brown;
+
+            margin-top: 0;
+            margin-bottom: 0.2rem;
+        }
+
+        .aktuelltbox h5 {
+            @include kiv-h5;
+
+            color: #000;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+
+    // -- START -- GENERELLA KLASSER PARAGRAPH 
+    //CLASS FOR BACKGROUND ROW IMAGE
+    .para-bg-row {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .paragraph-rubrik {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: $rubrik-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-bottom: $rubrik-sektion-padding-small;
+        }
+    }
+
+    .paragraph-rubrik h1 {
+        @include kiv-h1-light;
+    }
+
+    .paragraph-rubrik h2 {
+        @include kiv-h2-light;
+    }
+
+    .paragraph-rubrik h3 {
+        @include kiv-h3;
+    }
+
+    .paragraph-rubrik h4 {
+        @include kiv-h4;
+    }
+
+    .paragraph-rubrik h5 {
+        @include kiv-h5;
+    }
+
+    .paragraph-rubrik h6 {
+        @include kiv-h6;
+    }
+
+    .para-text-block {
+        @include kiv-body;
+    }
+
+    .para-text-block h1 {
+        @include kiv-h1-light;
+    }
+
+    .para-text-block h2 {
+        @include kiv-h2-light;
+    }
+
+    .para-text-block h3 {
+        @include kiv-h3;
+    }
+
+    .para-text-block h4 {
+        @include kiv-h4;
+    }
+
+    .para-text-block h5 {
+        @include kiv-h5;
+    }
+
+    .para-text-block h6 {
+        @include kiv-h6;
+    }
+
+    // --END -- GENERELLA KLASSER PARAGRAPH
+
+    // FOUR COLUMNS
+    .paragraphs-item-paragraph-four-columns {
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-top: $top-sektion-padding-large;
+            padding-bottom: $bottom-sektion-padding-large;
+        }
+
+
+        .columns {
+            position: relative;
+        }
+
+        .spalt-wrapper {
+            position: relative;
+        }
+
+        a.para-overlay {
+            position: absolute;
+
+            //background-color: rgba(255, 150, 255, 0.3);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .paragraph-rubrik a {
+            color: inherit;
+        }
+
+        .paragraph-rubrik a:hover {
+            text-decoration: underline;
+        }
+
+        .para-img-wrapper {
+            display: block;
+        }
+
+        .para-img-wrapper img {
+            width: 100%;
+        }
+
+        .para-text-block {
+            pointer-events: none;
+            position: relative;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
+            @include breakpoint($tab) {
+                padding-bottom: 0;
+            }
+        }
+
+        .para-has-link:hover .para-text-block {
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+        }
+
+        .para-text-block a {
+            color: inherit;
+            pointer-events: all;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .para-has-link .para-text-block a:hover {
+            text-decoration-color: $orange;
+            color: $orange;
+        }
+    }
+
+    // THREE COLUMNS
+    .paragraphs-item-paragraph-three-columns {
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-top: $top-sektion-padding-large;
+            padding-bottom: $bottom-sektion-padding-large;
+        }
+
+
+        .columns {
+            position: relative;
+        }
+
+        .spalt-wrapper {
+            position: relative;
+        }
+
+        a.para-overlay {
+            position: absolute;
+
+            //background-color: rgba(255, 150, 255, 0.3);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .paragraph-rubrik a {
+            color: inherit;
+        }
+
+        .paragraph-rubrik a:hover {
+            text-decoration: underline;
+        }
+
+        .para-img-wrapper {
+            display: block;
+        }
+
+        .para-img-wrapper img {
+            width: 100%;
+        }
+
+        .para-text-block {
+            pointer-events: none;
+            position: relative;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
+            @include breakpoint($tab) {
+                padding-bottom: 0;
+            }
+        }
+
+        .para-has-link:hover .para-text-block {
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+        }
+
+        .para-text-block a {
+            color: inherit;
+            pointer-events: all;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .para-has-link .para-text-block a:hover {
+            text-decoration-color: $orange;
+            color: $orange;
+        }
+    }
+
+    // TWO COLUMNS
+    .paragraphs-item-paragraph-two-columns {
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-top: $top-sektion-padding-large;
+            padding-bottom: $bottom-sektion-padding-large;
+        }
+
+
+        .columns {
+            position: relative;
+        }
+
+        .spalt-wrapper {
+            position: relative;
+        }
+
+        a.para-overlay {
+            position: absolute;
+
+            //background-color: rgba(255, 150, 255, 0.3);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .para-text-block {
+            pointer-events: none;
+            position: relative;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
+            @include breakpoint($tab) {
+                padding-bottom: 0;
+            }
+        }
+
+        .para-has-link:hover .para-text-block {
+            text-decoration: underline;
+            text-decoration-color: #ffffff;
+        }
+
+        .para-text-block a {
+            color: inherit;
+            pointer-events: all;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .para-has-link .para-text-block a:hover {
+            text-decoration-color: $orange;
+            color: $orange;
+        }
+    }
+
+    // ONE COLUMN
+    .paragraphs-item-paragraph-one-column {
+        padding-top: $top-sektion-padding-small;
+        padding-bottom: $bottom-sektion-padding-small;
+
+        @include breakpoint($tab) {
+            padding-top: $top-sektion-padding-large;
+            padding-bottom: $bottom-sektion-padding-large;
+        }
+
+
+        .columns {
+            position: relative;
+        }
+
+        .spalt-wrapper {
+            position: relative;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+
+        .paragraph-rubrik a {
+            color: inherit;
+        }
+
+        .paragraph-rubrik a:hover {
+            text-decoration: underline;
+        }
+
+        .para-text-block {
+            pointer-events: none;
+            position: relative;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
+            @include breakpoint($tab) {
+                padding-bottom: 0;
+            }
+        }
+
+        .para-text-block a {
+            color: inherit;
+            pointer-events: all;
+        }
+
+        .para-text-block a:hover {
+            text-decoration: underline;
+        }
+    }
+}

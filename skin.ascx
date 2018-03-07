@@ -133,7 +133,7 @@
          <div class="small-12 columns">
              <div class="row">
                  <div class="menybreadcrumb">
-                     <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
+                     <a href="www.kulturkivast.se/kulturkatalogen">START</a> | <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
                  </div>
              </div>
          </div>

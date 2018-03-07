@@ -93,10 +93,11 @@
 
   @import 'devScss/foundation/_type';
   @import 'css/main';
+  @import 'css/kiv/kiv.footer';
   @import 'css/kiv/kiv.header';
   @import 'css/kiv/kiv.frontpage';
   @import 'css/kiv/kiv.menu';
-  @import 'css/kiv/kiv.footer.css';
+  
   @import 'css/jquery.steps';
   
 @import 'devScss/kulturkatalogen/_arrangemangsteps';
@@ -2126,5 +2127,11 @@ li:active, li:focus {opacity:.5;}
 label img{
     pointer-events: none;
 }
-              
+ 
 
+
+#kk_aj_slider-range2{margin-left:.5rem;margin-bottom:.5rem;}
+
+            
+
+        

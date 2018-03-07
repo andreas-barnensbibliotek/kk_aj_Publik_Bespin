@@ -1,14 +1,14 @@
 ﻿.menybreadcrumb{
     height:26px;
     padding-top:0.1rem;
-    padding-left:.5rem;
-    background-color:$orange;
+    padding-left:.5rem;   
+    
     a{  
-        color: $white !important;
+        color: $black !important;
         /*color: $jumbo !important;*/
         padding-right:2px;
         padding-left:2px;
-        &:hover{color: $white  !important;
+        &:hover{
                text-decoration:underline;
         } 
         text-transform: uppercase;     
@@ -37,5 +37,5 @@
         }
     }    
    /*color: $jumbo !important;*/
-    color: $white !important;
+    color: $black !important;
 }

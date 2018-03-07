@@ -1,0 +1,80 @@
+/* New design menu */
+.move-right .exit-off-canvas {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.left-off-canvas-menu {
+    background: #58595b;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-submenu.multiColumn {
+    margin-bottom: 0;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li {
+    background: #58595b;
+    border-bottom: 1px solid #808184;
+    line-height: 1.7;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li:hover {
+    background: #3f4041;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li a {
+    font-weight: 600;
+    background: none;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li a:before {
+    background: none;
+    width: 0;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li a:hover,
+.menu-name-menu-2015-meny ul.off-canvas-list li a:active {
+    color: #f77136;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.first {
+    background: #e6e7e7;
+    border-bottom: 1px solid #929496;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.first a {
+    color: #000;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first {
+    background: #a6a8aa;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first:hover {
+    background: #66686b;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first a {
+    background: #a6a8aa;
+    color: #fff;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li {
+    background: #a6a8aa;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li:hover {
+    background: #66686b;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li a {
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}

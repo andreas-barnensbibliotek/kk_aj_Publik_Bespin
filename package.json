@@ -21,6 +21,8 @@
     "@babel/preset-env": "^7.0.0-beta.37",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "breakpoint-sass": "^2.7.1",
+    "compass-mixins": "^0.12.10",
     "documentation": "^5.5.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -28,18 +30,24 @@
     "gulp-babel-minify": "^0.2.0",
     "gulp-clean-css": "^2.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-cssbeautify": "^1.0.0",
     "gulp-documentation": "^3.2.1",
     "gulp-jshint": "^2.0.4",
     "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sassbeautify": "^0.1.0",
     "gulp-sourcemaps": "^1.12.1",
     "gulp-uglify": "^3.0.0",
     "jquery-ui-dist": "^1.12.1",
+    "node-sass-globbing": "0.0.23",
+    "singularitygs": "^1.8.0",
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "jquery-ui-dist": "^1.12.1"
+    "jquery-ui-dist": "^1.12.1",
+    "lodash": "^4.17.5"
   }
 }

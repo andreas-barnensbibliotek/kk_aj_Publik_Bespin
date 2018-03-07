@@ -1,0 +1,107 @@
+@import "singularitygs";
+@import "compass";
+@import "breakpoint";
+
+@import "variables/**/*.scss";
+
+/* New design menu */
+.move-right .exit-off-canvas {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.left-off-canvas-menu {
+    background: #58595b;
+}
+
+.menu-name-menu-2015-meny {
+    ul.off-canvas-submenu.multiColumn {
+        margin-bottom: 0;
+    }
+
+    ul.off-canvas-list {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    ul.off-canvas-list li {
+        background: #58595b;
+        border-bottom: 1px solid #808184;
+        line-height: 1.7;
+
+        //@include animate(0.3s, background);
+   
+    }
+
+    ul.off-canvas-list li:hover {
+        background: darken(#58595b, 10%);
+    }
+
+    ul.off-canvas-list li a {
+        font-weight: 600;
+        background: none;
+
+        //@include animate(0.5s, (color, background));
+   
+    }
+
+    ul.off-canvas-list li a:before {
+        background: none;
+        width: 0;
+    }
+
+    ul.off-canvas-list li a:hover,
+    ul.off-canvas-list li a:active {
+        color: $orange;
+    }
+
+    ul.off-canvas-list li.first {
+        background: #e6e7e7;
+        border-bottom: 1px solid #929496;
+    }
+
+    ul.off-canvas-list li.first a {
+        color: #000;
+    }
+
+    ul.off-canvas-list li.expanded li.first {
+        background: #a6a8aa;
+    }
+
+    ul.off-canvas-list li.expanded li.first:hover {
+        background: darken(#a6a8aa, 25%);
+    }
+
+    ul.off-canvas-list li.expanded li.first a {
+        background: #a6a8aa;
+        color: #fff;
+    }
+
+    ul.off-canvas-list li.expanded li {
+        background: #a6a8aa;
+
+        //@include animate(0.3s, background);
+   
+    }
+
+    ul.off-canvas-list li.expanded li:hover {
+        background: darken(#a6a8aa, 25%);
+    }
+
+    ul.off-canvas-list li.expanded li a {
+        font-weight: 600;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+
+        //@include animate(0.5s, (color, background));
+   
+    }
+
+    ul.off-canvas-list li.expanded li a:hover,
+    ul.off-canvas-list li.expanded li a:active {
+        //color: $orange;
+   
+    }
+}

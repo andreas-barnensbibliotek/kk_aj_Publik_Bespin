@@ -21,7 +21,10 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
     babel = require('gulp-babel'),
     minify = require("gulp-babel-minify"),  
-	path = require('path');
+	path = require('path'),
+    importer = require('node-sass-globbing'),
+    plumber = require('gulp-plumber'),
+    cssbeautify = require('gulp-cssbeautify');
 
 	/*
 	sÃ¤tter sÃ¶kvÃ¤gar till mapptrÃ¤det
@@ -33,17 +36,21 @@ var gulp = require('gulp'),
         'devjs':'./_dev/devjs',
         'jsbundle': './_dev/jsbundle',
         'docsrc': './_dev/devjs/jsbundle',
-        'docoutput': './documentation'
+        'docoutput': './documentation',
+        'node_modules' : './node_modules',
 	};
-	
-	
+
 gulp.task('SassToCssSrc', function() {
     gulp.src(srcPath.scss +'/**/*.scss')  
         .pipe(sass({
             style: 'expanded',
             sourceComments: 'normal',
+            importer: importer,
 			includePaths: [
-				srcPath.bower +'/foundation/scss' //importera alla sass filer från foundation. gör att alla komponenter går att använda direkt
+				srcPath.bower + '/foundation/scss', //importera alla sass filer från foundation. gör att alla komponenter går att använda direkt
+                srcPath.node_modules + '/breakpoint-sass/stylesheets/',
+			    srcPath.node_modules + '/singularitygs/stylesheets/',
+			    srcPath.node_modules + '/compass-mixins/lib/'
 			]			
 		}).on('error', sass.logError))
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // pass the file through autoprefixer 
