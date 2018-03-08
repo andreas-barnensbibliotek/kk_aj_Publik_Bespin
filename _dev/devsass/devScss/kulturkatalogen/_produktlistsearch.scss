@@ -12,18 +12,18 @@
 }
 
 .jplist-select_Stilmall {        
-                padding: 4px;
-                font-size: 14px;
-                line-height: 1;
-                border: 1px;
-                border-radius: 5px;
-                border-color:#e6e6e6;
-                border-style:solid;
-                height: 30px;
-                background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #f8f8f8;
-                -webkit-appearance: none;
-                background-position-x: 95%;
-            }
+        padding: 4px;
+        font-size: 14px;
+        line-height: 1;
+        border: 1px;
+        border-radius: 5px;
+        border-color:#e6e6e6;
+        border-style:solid;
+        height: 30px;
+        background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #f8f8f8;
+        -webkit-appearance: none;
+        background-position-x: 95%;
+    }
 
 .kk_aj_mainLogoheaderblock{  
     height:289px;  
@@ -63,7 +63,6 @@
             }
         }
         
-
         margin-top:3rem;
         margin-bottom:2rem;
         @media #{$medium-up} {
@@ -98,29 +97,32 @@
 }
 
 .kk_aj_mainFreetextSearchblock{
-  background: #ebeae6;
-  padding-bottom:70px;
-  h2{
-      font-size: 2.2rem;
-      margin-top:60px;
-      margin-bottom:40px;  
+    #kk_aj_btnfreetextSearch{
+         background: $kk_aj_beige;
+    }
+    background: $kk_aj_lightgrey;
+    padding-bottom:70px;
+    h2{
+        font-size: 2.2rem;
+        margin-top:60px;
+        margin-bottom:40px;  
     }
 }
 .kk_aj_mainsearchblock{
     background: #b1a06b;
-  padding-bottom:70px;
-  h2{
-      font-size: 2.2rem;
-      margin-top:60px;
-      margin-bottom:40px;  
+    padding-bottom:70px;
+    h2{
+        font-size: 2.2rem;
+        margin-top:60px;
+        margin-bottom:40px;  
     }
 }
 
-.kk_aj_superProductListBlock{
+/*.kk_aj_superProductListBlock{*/
     /*background: url(http://kulturkatalog.kivdev.se/portals/0/kulturkatalogenArrImages/kulturkatalogen/bak_kulturkatalogen.jpg);
     background-size: 100% auto;
     background-repeat:no-repeat;*/
-     .row{margin:0rem!important;}
+     /*.row{margin:0rem!important;}*/
    /* Superblock globals */
    
     .kk_aj_coloredblocks{
@@ -133,9 +135,19 @@
 
     /*Sök form --------------------------------------*/
     .kk_aj_mainsearchblock{
-       
+       h3{    
+           font-weight:600;      
+       }
           
         .ui-state-active{background:#fff !important; border-color:#f77136 !important;}
+        .ui-slider-handle{
+            &.ui-state-default{
+                border-radius:8px;
+                background:$kk_aj_darkgrey;
+                border-color:$kk_aj_darkgrey;
+            }
+
+        }
         .searchformblock{
             margin-top:1rem;
             #kk_aj_slider-range2{margin:1rem !important;}
@@ -144,19 +156,13 @@
                  margin-top: 4rem;
              }
             /* mainblock globals */               
-           
-            .ArrangemangtypBlock{
-            @extend .valbaraRadiobuttons;
-            }   
-            .kontformBlock{
-            @extend .valbaraRadiobuttons;
-            }     
+                      
         }
         
         .searchformbutton{
             flex-shrink: 0;
             flex-grow: 1;
-            background:#ccc;  
+            background:$kk_aj_lightgrey;  
             margin-bottom:.5rem;
             height: 45px;
             display: flex;
@@ -165,10 +171,19 @@
             text-align: left;
             padding:.5rem;  
         }  
+
+        .kk_aj_searchRensaformbutton{
+            background:$kk_aj_darkgrey;
+        }
+        .kk_aj_searchformbutton{
+             color:$black;
+            background:$kk_aj_lightgrey;
+        }
         padding-bottom:2rem;
     }/* END Sök form ---------------------------------*/
 
     .kk_aj_searchbuttonblock{
+        margin-top:2rem;
         margin-bottom:4rem;
         button {
             &.tiny{
@@ -177,6 +192,14 @@
         }
     }
     /*produktlista ----------------------------------*/
+
+    #kk_aj_masterproductlistblock{
+        .hittaarrHeader{
+            h2{
+                
+            }
+        }
+        }
     .kk_aj_filterRubrikBlock{
         @media #{$small-only} {
             h3{font-size:$h4-font-size;
@@ -201,8 +224,8 @@
     .kk_aj_mainproductlistblock{
         
         .kk_aj_filterblock{
-            margin-bottom: 1rem;
-            padding-right:2.5rem!important;
+            /*margin-bottom: 1rem;
+            padding-right:2.5rem!important;*/
             /* START Filter tillvänster --------------------*/
             .spellangdblock{
                 h4{
@@ -256,7 +279,7 @@
                          /*background-color:$white;                                    
                          border-color: $orange;*/  
                          
-                         background-color: #f9f9f9;
+                        background-color: #f9f9f9;
                         border-top-color: #f77136; 
 
 
@@ -266,7 +289,7 @@
                         -webkit-animation: rainbow 18s ease infinite;
                         -z-animation: rainbow 18s ease infinite;
                         -o-animation: rainbow 18s ease infinite;
-                          animation: rainbow 18s ease infinite;
+                        animation: rainbow 18s ease infinite;
                                                       
                     }                   
                     .kk_aj_arr_item_thumbnail {                         
@@ -319,7 +342,7 @@
                     .kk_aj_arr_item_buttonblock{
                         .button { 
                             border:1px solid transparent;
-                            background-color:$orange;
+                            background-color:$kk_aj_green;
                              color:$white;
                             @media #{$small-only} {
                                 padding:.5rem .7rem;                            
@@ -329,8 +352,8 @@
                             }
                             &:hover{
                                background-color:$white;                                    
-                               border:1px solid $orange;
-                               color:$orange;
+                               border:1px solid $kk_aj_green;
+                               color:$white;
                             }                            
                         }                       
                     }
@@ -354,13 +377,15 @@
             }
         }
         /*STOPP Produktlistningen sökresultat ----------*/ 
-
-
-       
-
     }
     
-}
+    .kk_aj_omkulturkatalogenblock{
+        background:$kk_aj_lightgrey;
+        .kk_aj_kontaktmbutton{
+             background:$kk_aj_darkgrey;
+        }
+    }
+/*}*/
 
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -389,11 +414,22 @@
 .centerfields{
     text-align:center;
 }
-.valbaraRadiobuttons{
+
+.ArrangemangtypBlock{
     .vald{
-            color:$white!important;
-            background:$orange!important;
-        }
+        color:$white!important;
+        background:$kk_aj_green!important;
+    }
+}   
+.kontformBlock{
+    .vald{
+        color:$white!important;
+        background:$kk_aj_darkgrey!important;
+    }
+}     
+
+.valbaraRadiobuttons{   
+    
     label{
         & > input{
             visibility: hidden; /* Makes input not-clickable */
@@ -401,7 +437,7 @@
                 &:checked{                    
                          & + span{ 
                         color:$white;
-                        background:$orange!important;
+                        background:$kk_aj_green!important;
                 }
                 
             }

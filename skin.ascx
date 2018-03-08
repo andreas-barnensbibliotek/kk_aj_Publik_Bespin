@@ -30,6 +30,7 @@
 <fortyfingers:STYLEHELPER ID="headMeta2" AddToHead='<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">' runat="server" />
 <fortyfingers:STYLEHELPER ID="headreferrer" AddToHead='<meta name="referrer" content="no-referrer">' runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER2" AddCssFile="public/css/jquery-ui.css" runat="server" />
+<fortyfingers:STYLEHELPER ID="typekit_KIV" AddCssFile="https://use.typekit.net/qpl5lxd.css" runat="server" />
 
 <%--<!-- kulturkatalogen.org GOOGLEANALYTICS kör denna när domänen är ändrad
 <fortyfingers:STYLEHELPER ID="googleanalytics" AddToHead="<script async src='https://www.googletagmanager.com/gtag/js?id=UA-7175122-13'></script><script>window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-7175122-13');</script>" runat="server" />
@@ -139,27 +140,25 @@
          </div>
          <!-- Navigerings breadcrumb END -->
 
-         <br>
-         <div class="small-12 columns contentboxheight">
-             <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        
+         <!-- START content-wrapper -->
 
-                <!-- Content Wrapper. Contains page content -->
-            <div class="row">
-                <div id="ContentPane" class="contentPane content-wrapper" runat="server">
-                    <div class="loader">
-                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
-                     </div>
+        <div id="ContentPane" class="contentPane content-wrapper" runat="server">
+            <div class="loader">
+                    <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
                 </div>
-              </div>
-                <!-- /.content-wrapper -->
+        </div>
+            
+        <!-- /.content-wrapper -->
 
-                <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
               
-             <a href="#" id="myBtn" title="Go to top">
-                <i class="fa fa-arrow-up"></i>
-             </a>
+        <a href="#" id="myBtn" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+        </a>
 
-         </div>
+        
 
 <!-- CONTENTPANE END ################################################################################################ -->  
          <div class="small-12 columns footencol">
