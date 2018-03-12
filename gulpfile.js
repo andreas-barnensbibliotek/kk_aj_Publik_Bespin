@@ -74,7 +74,7 @@ gulp.task('jsconcatfiles', ['webpackjs', 'foundationJS'], function () {
                 srcPath.jsbundle + '/jplist_pagination/jquery-ui.min.js',
                 srcPath.jsbundle + '/jplist_pagination/jplist.core.min.js',
                 srcPath.jsbundle + '/jplist_pagination/jplist.pagination-bundle.min.js',
-                srcPath.jsbundle + '/jplist_pagination/jplist.sort-bundle.min.js',
+                srcPath.jsbundle + '/jplist_pagination/jplist.sort-buttons.min.js',
                 srcPath.jsbundle + '/jplist_pagination/jplist.filter-dropdown-bundle.min.js',
                 srcPath.jsbundle + '/jplist_pagination/jplist.jquery-ui-bundle.min.js',
                 srcPath.jsbundle + '/jplist_pagination/jplist.history-bundle.min.js',

@@ -9,7 +9,8 @@
 					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}" class="kk_aj_arr_item_thumbnail_img">
 						<img src="/Portals/0/kulturkatalogenArrImages/{{ansokningMediaImage.MediaUrl}}" alt="{{ansokningtitle}}">
 					</a>
-										<a href="#" class="kk_aj_arr_item_minneslista {{ansokningstatus}}" title="Lägg till i minneslistan" rel="{{ansokningid}}">{{#inMemList ansokningstatus}}{{/inMemList}}</a>
+					<a href="#" class="kk_aj_arr_item_minneslista {{ansokningstatus}}" title="Lägg till i minneslistan" rel="{{ansokningid}}">
+					{{#inMemList ansokningstatus}}{{/inMemList}}</a>
                 
 				</div>
 			</div>
@@ -25,15 +26,15 @@
 				</div>
 				<div class="kk_aj_arr_item_buttonblock small-12 medium-2 columns">
 					
-							<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}" class="button right small round " rel="{{ansokningid}}">Läs mer</a>
-					
+					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}"  rel="{{ansokningid}}">
+						<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/iconrightarrow.png" class="readmorebutton" alt="Läs mer" title="Läs mer"/>
+					</a>					
 					                               
 				</div>
 			</div>
-			<div class="row">
-				<div class="kk_aj_arr_item_Utovare small-4 columns" rel="{{ansokningUtovarid}}"><h4>{{ansokningutovare}}</h4></div>
-				<div class="kk_aj_arr_item_konstform small-4 columns"><h4>{{ansokningkonstform}}</h4></div>							
-				{{#showyearspan ansokningAgespan}}{{/showyearspan}}
+			<div class="row kk_aj_arr_item_utovareblock">
+				<div class="kk_aj_arr_item_Utovare small-8 columns" rel="{{ansokningUtovarid}}"><h3>{{ansokningutovare}}</h3></div>
+				<div class="kk_aj_arr_item_age small-4 columns age"><h3>{{#showyearspan ansokningAgespan}}{{/showyearspan}}</h3></div>											
 												
 			</div>
 			<div  class="kk_aj_filtervalues S_BB_p{{ansokningFilterfakta.Bokningsbar}} S_ML_{{ansokningFilterfakta.Morklaggning}} S_TH_{{ansokningFilterfakta.Takhojd}} S_ST">{{ansokningFilterfakta.Speltid}}</div><div class="S_KO">{{ansokningFilterfakta.Kostnad}}</div>

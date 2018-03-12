@@ -284,7 +284,11 @@ var publiksearchEvents = function () {
         }
         return false;
     })
-    
+   
+    $("body").on('DOMSubtreeModified', "#antalarr", function () {
+        //alert('changed:' + $('#antalarr').html());
+        $('#searchantal').html($('#antalarr').html());
+    });
 
     $('.ArrangemangtypBlock a').on('click', function (e) {
         let obj = $(this);
@@ -296,7 +300,7 @@ var publiksearchEvents = function () {
         }
 
         return false;
-    })
+    });
 }
 var resetfilterlist = function () {
     $('#kk_aj_valdsokning').hide();
@@ -305,18 +309,18 @@ var resetfilterlist = function () {
     });   
    
 }
-var addvaldasokord = function (sokord) {
-    let ulobj = $('#kk_aj_valdsokord');
-    ulobj.append('<li class="removevaltsokord"><i class="fa fa-check-square-o" aria-hidden="true"></i> ' + sokord + '</li>');
-    return false;
-}
-$('#kk_aj_valdsokord').on('click', 'li', function (e) {   
-    $(this).remove();
-});
+//var addvaldasokord = function (sokord) {
+//    let ulobj = $('#kk_aj_valdsokord');
+//    ulobj.append('<li class="removevaltsokord"><i class="fa fa-check-square-o" aria-hidden="true"></i> ' + sokord + '</li>');
+//    return false;
+//}
+//$('#kk_aj_valdsokord').on('click', 'li', function (e) {   
+//    $(this).remove();
+//});
 
 //HELPER
 var searchformcollector = function () {
-    $('#kk_aj_valdsokord').html("");
+    //$('#kk_aj_valdsokord').html("");
     $('#kk_aj_valdsokning').show();
     let ArrangemangtypBlock =$('.ArrangemangtypBlock a.vald');
     let kontformBlock = $('.kontformBlock a.vald');
@@ -334,11 +338,11 @@ var searchformcollector = function () {
 
     if (tmparrtypid !== undefined) {
         searchdataContainer.arrtypid = tmparrtypid;
-        addvaldasokord(ArrangemangtypBlock.html());
+        //addvaldasokord(ArrangemangtypBlock.html());
     }
     if (tmpkonstartid !== undefined) {
         searchdataContainer.konstartid = tmpkonstartid;
-        addvaldasokord(kontformBlock.html());
+        //addvaldasokord(kontformBlock.html());
     }
     if (tmpstartyear !== undefined) {
         searchdataContainer.startyear = tmpstartyear;        
@@ -349,9 +353,9 @@ var searchformcollector = function () {
             searchdataContainer.startyear = 1
         };
     }
-    if (tmpstartyear != 0 || tmpstopyear != 0) {
-        addvaldasokord("Ålder: " + tmpstartyear + "-" + tmpstopyear);
-    }
+    //if (tmpstartyear != 0 || tmpstopyear != 0) {
+      //  addvaldasokord("Ålder: " + tmpstartyear + "-" + tmpstopyear);
+    //}
    
     return searchdataContainer;    
 }
@@ -360,8 +364,24 @@ var resetsearchform = function () {
     //$(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
     //$(':checkbox, :radio').prop('checked', false);
     $('.kk_aj_mainsearchblock a').removeClass("vald");
-    $("#kk_aj_yearspan2").attr("rel", "0");
-    $("#kk_aj_yearspan2").attr("rev", "0");
+    var $slider = $("#kk_aj_slider-range2");
+    $slider.attr("rel", "0");
+    $slider.attr("rev", "0");
+    
+    $slider.slider({
+        range: true,
+        min: 0,
+        max: 19,
+        values: [0, 19],
+        slide: function (event, ui) {
+            $("#kk_aj_yearspan2").html(ui.values[0] + " " + unescape("%E5") + "r  - " + ui.values[1] + " " + unescape("%E5") + "r");
+            $("#kk_aj_yearspan2").attr("rel", ui.values[0]);
+            $("#kk_aj_yearspan2").attr("rev", ui.values[1]);
+        }
+    });
+    $("#kk_aj_yearspan2").html($("#kk_aj_slider-range2").slider("values", 0) +
+       " " + unescape("%E5") + "r -" + $("#kk_aj_slider-range2").slider("values", 1) + " " + unescape("%E5") + "r");
+   
     return false;
 }
 

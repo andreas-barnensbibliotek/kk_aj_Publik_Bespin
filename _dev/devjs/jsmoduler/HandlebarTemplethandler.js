@@ -158,14 +158,14 @@ Handlebars.registerHelper('showyearspan', function (ansokningstatus) {
     if (ansokningstatus.trim() != "-") {
         rettext = 'Ålder ' + ansokningstatus + ' år';
     }
-    ret = '<div class="kk_aj_arr_item_age small-4 columns age"><h4>' + rettext + '</h4></div>';
+    ret = rettext;
     return ret;
 });
 
 Handlebars.registerHelper('inMemList', function (yearspan) {
-    var ret = '<i class="fa fa-plus-square"></i>';
+    var ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png" alt="Lägg till i minneslistan" title="Lägg till i minneslistan"/>';
     if (yearspan) {
-        ret = '<i class="fa fa-check-square-o"></i>';
+        ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Check-32.png" alt="Ta bort från minneslistan" title="Ta bort från minneslistan"/>';
     }
 
     return ret;

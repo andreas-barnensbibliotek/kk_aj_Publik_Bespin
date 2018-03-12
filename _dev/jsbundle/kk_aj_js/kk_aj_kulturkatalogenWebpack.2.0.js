@@ -12241,14 +12241,14 @@
 	    if (ansokningstatus.trim() != "-") {
 	        rettext = 'Ålder ' + ansokningstatus + ' år';
 	    }
-	    ret = '<div class="kk_aj_arr_item_age small-4 columns age"><h4>' + rettext + '</h4></div>';
+	    ret = rettext;
 	    return ret;
 	});
 
 	Handlebars.registerHelper('inMemList', function (yearspan) {
-	    var ret = '<i class="fa fa-plus-square"></i>';
+	    var ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png" alt="Lägg till i minneslistan" title="Lägg till i minneslistan"/>';
 	    if (yearspan) {
-	        ret = '<i class="fa fa-check-square-o"></i>';
+	        ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Check-32.png" alt="Ta bort från minneslistan" title="Ta bort från minneslistan"/>';
 	    }
 
 	    return ret;
@@ -14098,7 +14098,11 @@
 	        }
 	        return false;
 	    })
-	    
+	   
+	    $("body").on('DOMSubtreeModified', "#antalarr", function () {
+	        //alert('changed:' + $('#antalarr').html());
+	        $('#searchantal').html($('#antalarr').html());
+	    });
 
 	    $('.ArrangemangtypBlock a').on('click', function (e) {
 	        let obj = $(this);
@@ -14110,7 +14114,7 @@
 	        }
 
 	        return false;
-	    })
+	    });
 	}
 	var resetfilterlist = function () {
 	    $('#kk_aj_valdsokning').hide();
@@ -14119,18 +14123,18 @@
 	    });   
 	   
 	}
-	var addvaldasokord = function (sokord) {
-	    let ulobj = $('#kk_aj_valdsokord');
-	    ulobj.append('<li class="removevaltsokord"><i class="fa fa-check-square-o" aria-hidden="true"></i> ' + sokord + '</li>');
-	    return false;
-	}
-	$('#kk_aj_valdsokord').on('click', 'li', function (e) {   
-	    $(this).remove();
-	});
+	//var addvaldasokord = function (sokord) {
+	//    let ulobj = $('#kk_aj_valdsokord');
+	//    ulobj.append('<li class="removevaltsokord"><i class="fa fa-check-square-o" aria-hidden="true"></i> ' + sokord + '</li>');
+	//    return false;
+	//}
+	//$('#kk_aj_valdsokord').on('click', 'li', function (e) {   
+	//    $(this).remove();
+	//});
 
 	//HELPER
 	var searchformcollector = function () {
-	    $('#kk_aj_valdsokord').html("");
+	    //$('#kk_aj_valdsokord').html("");
 	    $('#kk_aj_valdsokning').show();
 	    let ArrangemangtypBlock =$('.ArrangemangtypBlock a.vald');
 	    let kontformBlock = $('.kontformBlock a.vald');
@@ -14148,11 +14152,11 @@
 
 	    if (tmparrtypid !== undefined) {
 	        searchdataContainer.arrtypid = tmparrtypid;
-	        addvaldasokord(ArrangemangtypBlock.html());
+	        //addvaldasokord(ArrangemangtypBlock.html());
 	    }
 	    if (tmpkonstartid !== undefined) {
 	        searchdataContainer.konstartid = tmpkonstartid;
-	        addvaldasokord(kontformBlock.html());
+	        //addvaldasokord(kontformBlock.html());
 	    }
 	    if (tmpstartyear !== undefined) {
 	        searchdataContainer.startyear = tmpstartyear;        
@@ -14163,9 +14167,9 @@
 	            searchdataContainer.startyear = 1
 	        };
 	    }
-	    if (tmpstartyear != 0 || tmpstopyear != 0) {
-	        addvaldasokord("Ålder: " + tmpstartyear + "-" + tmpstopyear);
-	    }
+	    //if (tmpstartyear != 0 || tmpstopyear != 0) {
+	      //  addvaldasokord("Ålder: " + tmpstartyear + "-" + tmpstopyear);
+	    //}
 	   
 	    return searchdataContainer;    
 	}
@@ -14174,8 +14178,24 @@
 	    //$(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
 	    //$(':checkbox, :radio').prop('checked', false);
 	    $('.kk_aj_mainsearchblock a').removeClass("vald");
-	    $("#kk_aj_yearspan2").attr("rel", "0");
-	    $("#kk_aj_yearspan2").attr("rev", "0");
+	    var $slider = $("#kk_aj_slider-range2");
+	    $slider.attr("rel", "0");
+	    $slider.attr("rev", "0");
+	    
+	    $slider.slider({
+	        range: true,
+	        min: 0,
+	        max: 19,
+	        values: [0, 19],
+	        slide: function (event, ui) {
+	            $("#kk_aj_yearspan2").html(ui.values[0] + " " + unescape("%E5") + "r  - " + ui.values[1] + " " + unescape("%E5") + "r");
+	            $("#kk_aj_yearspan2").attr("rel", ui.values[0]);
+	            $("#kk_aj_yearspan2").attr("rev", ui.values[1]);
+	        }
+	    });
+	    $("#kk_aj_yearspan2").html($("#kk_aj_slider-range2").slider("values", 0) +
+	       " " + unescape("%E5") + "r -" + $("#kk_aj_slider-range2").slider("values", 1) + " " + unescape("%E5") + "r");
+	   
 	    return false;
 	}
 
@@ -33641,7 +33661,28 @@
 	                a); (this.params.selected = a.data.selected) ? this.$control.addClass("jplist-selected") : this.$control.removeClass("jplist-selected")
 	            }; jQuery.fn.jplist.controls.RangeSliderToggleFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["range-filter"] = { className: "RangeSliderToggleFilter", options: {} }
 	        })();
-
+	        /**
+	        * jPList - jQuery Data Grid Controls 5.2.0.7  sort-button control- http://jplist.com 
+	        * Copyright 2016 Miriam Zusin
+	        */
+	        (function () {
+	            var g = function (a) { return a.params.$buttons.filter('[data-selected="true"]') }, h = function (a, c) {
+	                var b = null, d = [], f; a.params.$buttons.each(function () { var b = jQuery(this), e; if (e = c ? "true" === b.attr("data-selected") : b.data(a.params.DATA_NAME)) f = new jQuery.fn.jplist.controls.SortButtonDTO(b.attr("data-path"), b.attr("data-type"), b.attr("data-order"), b.attr("data-datetime-format"), b.attr("data-ignore"), e), d.push(f) }); "single" === a.params.mode && 0 >= d.length && (b = g(a)) && 0 < b.length && (f = new jQuery.fn.jplist.controls.SortButtonDTO(b.attr("data-path"),
+	                b.attr("data-type"), b.attr("data-order"), b.attr("data-datetime-format"), b.attr("data-ignore"), !0), d.push(f)); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, new jQuery.fn.jplist.controls.SortButtonsGroupDTO(d), a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
+	            }, k = function (a, c) { a.params.$buttons.each(function () { var a, d = jQuery(this); a = d.attr("data-path"); d = d.attr("data-type"); a = new jQuery.fn.jplist.PathModel(a, d); c.push(a) }) }, l = function (a) {
+	                a.params.$buttons.on("click", function () {
+	                    var c =
+	                    jQuery(this), b; "single" === a.params.mode ? (a.params.$buttons.each(function () { jQuery(this).data(a.params.DATA_NAME, !1) }), c.data(a.params.DATA_NAME, !0)) : (b = c.data(a.params.DATA_NAME), c.data(a.params.DATA_NAME, !b)); c = h(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]])
+	                })
+	            }, e = function (a) {
+	                a.params = { $buttons: a.$control.find("[data-path]"), mode: a.$control.attr("data-mode"), DATA_NAME: "jplist.selected" }; var c; a.params.$buttons.data(a.params.DATA_NAME, !1); "single" === a.params.mode && (c = g(a)) &&
+	                0 < c.length && c.data(a.params.DATA_NAME, !0); l(a); return jQuery.extend(this, a)
+	            }; e.prototype.getStatus = function (a) { return h(this, a) }; e.prototype.getDeepLink = function () { var a = "", c, b, d = []; if (this.inDeepLinking && (c = h(this, !1), c.data && c.data.sortGroup && 0 < c.data.sortGroup.length)) { for (var f = 0; f < c.data.sortGroup.length; f++) b = c.data.sortGroup[f], b.selected && d.push(b.path + this.options.delimiter3 + b.type + this.options.delimiter3 + b.order); 0 < d.length && (a = this.name + this.options.delimiter0 + "selected=" + d.join(this.options.delimiter2)) } return a };
+	            e.prototype.getStatusByDeepLink = function (a, c) { var b = null, d, f; if (this.inDeepLinking && (b = h(this, !1), b.data && "selected" === a)) { b.data.sortGroup = []; d = c.split(this.options.delimiter2); for (var e = 0; e < d.length; e++) f = d[e].split(this.options.delimiter3), 3 === f.length && b.data.sortGroup.push({ selected: !0, path: f[0], type: f[1], order: f[2] }) } return b }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
+	                var b; this.params.$buttons.removeClass("jplist-selected"); this.params.$buttons.data(this.params.DATA_NAME,
+	                !1); if (a && a.data && a.data.sortGroup) for (var d = 0; d < a.data.sortGroup.length; d++) b = a.data.sortGroup[d], b.selected && (b = this.params.$buttons.filter('[data-path="' + b.path + '"][data-order="' + b.order + '"][data-type="' + b.type + '"]'), 0 < b.length && (b.addClass("jplist-selected"), b.data(this.params.DATA_NAME, !0)))
+	            }; jQuery.fn.jplist.controls.SortButtonsGroup = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-buttons-group"] = { className: "SortButtonsGroup", options: {} }
+	        })(); (function () { jQuery.fn.jplist.controls.SortButtonDTO = function (g, h, k, l, e, a) { return { path: g, type: h, order: k, dateTimeFormat: l, ignore: e, selected: a } }; jQuery.fn.jplist.controls.SortButtonsGroupDTO = function (g) { return { sortGroup: g } } })();
 
 
 
