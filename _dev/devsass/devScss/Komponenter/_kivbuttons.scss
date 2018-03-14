@@ -15,3 +15,25 @@
      }
 }
 
+.buttonmall{
+    width:16rem !important;
+    font-size:.8rem;
+}
+.darkhover{
+    &:hover{
+        background:$kk_aj_darkgrey;
+        color:$white;
+    }
+}
+.lighthover{
+    &:hover{
+        background:$kk_aj_lightgrey;
+        color:$black;
+    }
+}
+.beigehover{
+    &:hover{
+        background:$kk_aj_beige;
+       color:$white;
+    }
+}

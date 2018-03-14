@@ -192,6 +192,14 @@
 	        });
 
 	    }
+
+	    $('#pagemenyblock a').click(function () {
+	        $('html, body').animate({
+	            scrollTop: $($(this).attr('href')).offset().top
+	        }, 500);
+	        return false;
+	    });
+
 	    ////----------------------------------------------------------------------------
 	    ////----------------------------------------------------------------------------
 	    ////----------------------------------------------------------------------------
@@ -14028,6 +14036,7 @@
 	        if(!$(this).hasClass("inminneslist")){
 	            minneslistaHandler.addto(arrid);
 	            $(this).addClass("inminneslist");
+	            $(this).find('img').attr('src', '/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Check-32.png');
 	        }
 	        return false;
 	    });
@@ -14035,6 +14044,7 @@
 	        var arrid = $(this).attr("rel");
 	        minneslistaHandler.removefrom(arrid);
 	        $(this).removeClass("inminneslist");
+	        $(this).find('img').attr('src', '/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png');
 	        return false;
 	    });
 

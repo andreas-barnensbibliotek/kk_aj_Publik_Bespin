@@ -115,3 +115,26 @@
 /*.top-level-menu a.godkandlabel{color:#00a65a;}
 .top-level-menu a.nekalabel{color:#dd4b39;}
 .top-level-menu a.ovrigtlabel{color:#f39c12;}*/
+.kk_aj_bg_beige{
+    background: $kk_aj_beige;
+
+    padding-bottom:70px;
+    h2{
+        font-size: 2.2rem;
+        margin-top:60px;
+        margin-bottom:40px;             
+        color:$white;
+    }
+    h3{    
+           font-weight:600;  
+           color:$white;    
+       }
+     p{color:$white;}
+        .kk_aj_kontaktmbutton{
+            background:$kk_aj_lightgrey;
+            color:$black;
+            @extend .buttonmall;
+            @extend .darkhover;
+            text-transform:uppercase;
+        }
+}

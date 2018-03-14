@@ -3,7 +3,7 @@
 {{#if ansokningid}}
 
 	<div class="row kk_aj_arritem S_AR_{{ansokningtypid}} S_KF_{{ansokningkonstformid}}" rel="{{ansokningdate}}" >
-		<div class="small-4 columns kk_aj_arr_item_thumbnail">
+		<div class="small-12 medium-4 columns kk_aj_arr_item_thumbnail">
 			<div class=" kk_aj_arr_item_thumbnail_color">
 				<div class="small-12 bildtestbox">
 					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}" class="kk_aj_arr_item_thumbnail_img">
@@ -16,7 +16,7 @@
 			</div>
 			
 		</div>
-		<div class="small-8 columns ">
+		<div class="small-12 medium-8 columns ">
 			<div class="row">
 				<div class="kk_aj_arr_item_contentblock small-12  medium-10 columns">
 					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}">

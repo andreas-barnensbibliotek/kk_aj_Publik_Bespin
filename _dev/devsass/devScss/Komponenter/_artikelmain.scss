@@ -71,7 +71,7 @@
         padding-right: 2rem;
         padding-top: 0.5rem;
     }
-    background-color:$lightermediumgrey;     
+    background-color:$white;     
     //background-color:$white;  
     ul{
         list-style:none;
@@ -88,7 +88,8 @@
     }
     h3{
         font-size:$omoss-h3-font-size;
-          text-transform: uppercase;          
+          text-transform: uppercase;     
+        margin-bottom:0px;     
     }
     p{ font-size:0.9rem;}
    
@@ -138,7 +139,7 @@
         }       
     }
 
-.artmaincontent{       
+.artmaincontent{           
      h1,h2,h3,h4,h5{
         color:$black;          
     }
@@ -151,9 +152,7 @@
      }
      }
        @media #{$medium-up} {padding-right: 0.5rem; }
-       @media #{$large-up} {padding-right: 10rem; }
-
-      
+       @media #{$large-up} {padding-right: 3rem !important; }
 
 
        blockquote{
