@@ -17,15 +17,21 @@
     .searchmainContent{
         input {
             float: left;
-        }
+            }
         .searchinputbox {
             height: 50px;
             width: 90%;
-            font-size:1.5rem;
+            font-size:1.2rem;
             border:0px;
+               
             @media #{$small-only}{
                 width: 75%;
-             }
+                 background-color:  transparent;   
+            }
+                   
+            box-shadow: none;
+            text-transform: uppercase;
+            margin-bottom:0px;
         }
         .searchButton {
             height: 50px;
@@ -34,6 +40,12 @@
             background-color:transparent;
             padding:0px;
             margin:0px;
+            background-image: url("../images/kiv-elements@2x.png");
+            background-size: 500px 700px;
+            width: 50px;
+            background-position-y: -238px;
+            background-position-x: -2px;
+
         }
     } 
 

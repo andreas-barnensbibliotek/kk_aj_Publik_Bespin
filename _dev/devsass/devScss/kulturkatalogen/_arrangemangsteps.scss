@@ -285,6 +285,9 @@ input[type=radio] + label {
         padding-left: 1rem;
         padding-right: 0rem;
         padding-top: 0.5rem;
+        @media #{$small-only} {
+            padding-left: 0rem;
+        }
         margin-bottom: 1rem;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -307,6 +310,17 @@ input[type=radio] + label {
                 display: inline;
             }
         }
+        .granska_Utovare_epost {
+            @media #{$small-only} {
+                float:left!important;
+            }
+        }
+        .granska_Utovare_hemsida{
+            @media #{$small-only} {
+                float:left!important;
+            }
+            }
+        
     }
 }
 

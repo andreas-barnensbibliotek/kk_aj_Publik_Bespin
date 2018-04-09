@@ -101,6 +101,7 @@
   @import 'css/jquery.steps';
   
 @import 'devScss/kulturkatalogen/_arrangemangsteps';
+@import 'devScss/kulturkatalogen/_kulturkatalogMobilFix';
 .h2{
     color:$black !important;
     font-weight:$kiv-header-font-weight_thin;
@@ -653,42 +654,36 @@ color:transparent!important;
 @media only screen and (max-width:600px) {
     .jplist-ios-button {
         display: block;
-        width: 94vw;
+        width: 96vw;
         text-align: left;
         margin-left:.5rem;
         margin-right:.5rem;
-        margin-bottom:.3rem;
-        padding-left:.5rem;
+        margin-bottom:.3rem;       
         cursor: pointer;
-        font-size: 15px;
-        line-height: 30px;
-        float: left;
-        height: 30px;
-        box-shadow: 0 0 1px #fff;
-        -ms-box-sizing: border-box;
-        -o-box-sizing: border-box;
-        box-sizing: border-box;
-        border: 1px solid #dbdbdb;
-        border-radius: 3px;
-        text-shadow: 1px 1px 1px #fff;
-        color: #27252a;
-        background: #fff;
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(100%,#efefef));
-        background: -webkit-linear-gradient(top,#fff 0,#efefef 100%);
-        background: linear-gradient(to bottom,#fff 0,#efefef 100%);
+        float: left;       
+        padding-left: .5rem;
+        padding-top:0px;
+        font-size: 1rem;
+        line-height: 34px;
+        border: 1px;
+        border-radius: 0px;
+        border-color:$kk_aj_lightgrey;
+        border-style:solid;
+        height: 36px;
+        background: url(/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Arrowdown.png) no-repeat right $kk_aj_lightgrey;
+        -webkit-appearance: none;
+        background-position-x: 95%;
     }
-
-    .jplist-ios-button:hover {
-        background: #f2f2f2;
-        background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fafafa),color-stop(100%,#ededed));
-        background: -webkit-linear-gradient(top,#fafafa 0,#ededed 100%);
-        background: linear-gradient(to bottom,#fafafa 0,#ededed 100%);
-    }
+      
 
     .jplist-ios-show {
         display: block;
     }
+    
 }
+.jplist-no-results{
+        margin-left:1rem!important;
+    }
 /**
 * jPList - jQuery Data Grid Controls 0.0.70 - http://jplist.com 
 * Copyright 2015 jPList Software.
@@ -2128,10 +2123,6 @@ label img{
     pointer-events: none;
 }
  
-
-
-#kk_aj_slider-range2{margin-left:.5rem;margin-bottom:.5rem;}
-
      .DnnModule {
 		position:static !important;
 		/*z-index:902;*/

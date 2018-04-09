@@ -35,7 +35,7 @@ ul.off-canvas-list {
           background-attachment: scroll;
             background-clip: border-box;
             background-color: rgba(0, 0, 0, 0);
-           // background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikStang28.png");
+           // background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/MosaikStang28.png");
             background-origin: padding-box;
             background-position: 0 0;
             background-repeat: no-repeat;
@@ -65,7 +65,7 @@ ul.multiColumn {
         &::before {
              @extend .toggleimageBaseEXTEND;           
             
-             background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/PilMeny28.png");            
+             background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/PilMeny28.png");            
             float: left;
         }
     }    
@@ -80,7 +80,7 @@ ul.multiColumn {
         
      &::after {
           @extend .toggleimageBaseEXTEND;                                
-            background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikPlus28.png");          
+            background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/MosaikPlus28.png");          
             float: right;         
         }
     
@@ -90,7 +90,7 @@ ul.multiColumn {
       
     &::after {
           @extend .toggleimageBaseEXTEND;               
-            background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikStang28.png");            
+            background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/MosaikStang28.png");            
             float: right;            
         }
     
@@ -100,7 +100,7 @@ ul.multiColumn {
     span{
         &::after {
            @extend .toggleimageBaseEXTEND;               
-            background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikStang28.png");            
+            background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/MosaikStang28.png");            
             float: right;
         }
     }

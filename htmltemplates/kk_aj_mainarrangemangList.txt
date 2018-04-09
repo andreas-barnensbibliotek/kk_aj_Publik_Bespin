@@ -18,13 +18,13 @@
 		</div>
 		<div class="small-12 medium-8 columns ">
 			<div class="row">
-				<div class="kk_aj_arr_item_contentblock small-12  medium-10 columns">
+				<div class="kk_aj_arr_item_contentblock small-10 columns">
 					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}">
 						<h2 class="kk_aj_title">{{ansokningtitle}}</h2>
 						<h3>{{ansokningsubtitle}}</h3>
 					</a>
 				</div>
-				<div class="kk_aj_arr_item_buttonblock small-12 medium-2 columns">
+				<div class="kk_aj_arr_item_buttonblock small-2 columns">
 					
 					<a href="/Kulturkatalogen/ArrangemangDetail/id/{{ansokningid}}"  rel="{{ansokningid}}">
 						<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/iconrightarrow.png" class="readmorebutton" alt="Läs mer" title="Läs mer"/>
@@ -33,8 +33,8 @@
 				</div>
 			</div>
 			<div class="row kk_aj_arr_item_utovareblock">
-				<div class="kk_aj_arr_item_Utovare small-8 columns" rel="{{ansokningUtovarid}}"><h3>{{ansokningutovare}}</h3></div>
-				<div class="kk_aj_arr_item_age small-4 columns age"><h3>{{#showyearspan ansokningAgespan}}{{/showyearspan}}</h3></div>											
+				<div class="kk_aj_arr_item_Utovare small-7 medium-8 columns" rel="{{ansokningUtovarid}}"><h3>{{ansokningutovare}}</h3></div>
+				<div class="kk_aj_arr_item_age small-5 medium-4 columns age"><h3>{{#showyearspan ansokningAgespan}}{{/showyearspan}}</h3></div>											
 												
 			</div>
 			<div  class="kk_aj_filtervalues S_BB_p{{ansokningFilterfakta.Bokningsbar}} S_ML_{{ansokningFilterfakta.Morklaggning}} S_TH_{{ansokningFilterfakta.Takhojd}} S_ST">{{ansokningFilterfakta.Speltid}}</div><div class="S_KO">{{ansokningFilterfakta.Kostnad}}</div>

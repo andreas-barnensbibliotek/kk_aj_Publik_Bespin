@@ -248,36 +248,36 @@
 	window.kk_aj_publikAppsettings =
 	    {
 	        globalconfig: {
-	            apiserver: "http://localhost:60485",
-	            dnnURL: "http://dnndev.me",           
-	            localOrServerURL: "http://localhost:60485/Api_v2",
-	            htmltemplateURL: "http://dnndev.me/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            detailediturl: "http://localhost:60485/Api_v3/updatearrangemang",
-	            basepageUri: "/KulturkatalogenAdmin",
-	            arrtmpimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/tmp/",
-	            arrimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/",
-	            granskavy: "GranskaDetalj"
-
-	            //SERVERN kulturkatalogenvast.org
-	            //apiserver: "http://kulturkatalog.kivdev.se:8080",
-	            //dnnURL: "http://www.kulturkatalogenvast.org",
-	            //localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
-	            //htmltemplateURL: "http://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            //detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+	            //apiserver: "http://localhost:60485",
+	            //dnnURL: "http://dnndev.me",           
+	            //localOrServerURL: "http://localhost:60485/Api_v2",
+	            //htmltemplateURL: "http://dnndev.me/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            //detailediturl: "http://localhost:60485/Api_v3/updatearrangemang",
 	            //basepageUri: "/KulturkatalogenAdmin",
-	            //arrtmpimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
-	            //arrimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+	            //arrtmpimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/tmp/",
+	            //arrimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/",
 	            //granskavy: "GranskaDetalj"
 
-	            //SERVERN DEV
-	            //apiserver: "http://kulturkatalog.kivdev.se:8080",
-	            //dnnURL: "http://kulturkatalog.kivdev.se",
-	            //localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
-	            //htmltemplateURL: "http://kulturkatalog.kivdev.se/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            //detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+	            //SERVERN kulturkatalogenvast.org
+	            apiserver: "http://kulturkatalog.kivdev.se:8080",
+	            dnnURL: "http://www.kulturkatalogenvast.org",
+	            localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
+	            htmltemplateURL: "http://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+	            basepageUri: "/KulturkatalogenAdmin",
+	            arrtmpimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+	            arrimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+	            granskavy: "GranskaDetalj"
+
+	            //SERVERN DEV dev.kulturkatalogenvast.org
+	            //apiserver: "http://dev.kulturkatalogenvast.org:8080",
+	            //dnnURL: "http://dev.kulturkatalogenvast.org",
+	            //localOrServerURL: "http://dev.kulturkatalogenvast.org:8080/Api_v2",
+	            //htmltemplateURL: "http://dev.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            //detailediturl: "http://dev.kulturkatalogenvast.org:8080/Api_v3/updatearrangemang",
 	            //basepageUri: "/KulturkatalogenAdmin",
-	            //arrtmpimgurl: "http://kulturkatalog.kivdev.se/Portals/0/kulturkatalogenArrImages/tmp/",
-	            //arrimgurl: "http://kulturkatalog.kivdev.se/Portals/0/kulturkatalogenArrImages/",
+	            //arrtmpimgurl: "http://dev.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+	            //arrimgurl: "http://dev.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
 	            //granskavy: "GranskaDetalj"
 
 
@@ -11139,12 +11139,18 @@
 	                    alert("Du kan bara ladda upp filer i formaten: gif, png, jpg, jpeg");
 	                    filinput.val("");
 	                    spinnerobj.attr('src', orgimg);
-	                } else {                   
+	                } else {
 	                    let files = filinput.get(0).files;
-	                    arrformjsonBuilder.tempuploadimage("tmpimg", files, "0", function (callback) {
-	                        console.log(callback);
-	                        spinnerobj.attr('src', callback);
-	                    });
+	                    if (files[0].size <= 2000000) {                       
+	                        arrformjsonBuilder.tempuploadimage("tmpimg", files, "0", function (callback) {
+	                            console.log(callback);
+	                            spinnerobj.attr('src', callback);
+	                        });
+	                    } else {
+	                        alert("Filen är för stor! den får inte vara större än 2 MB!");
+	                        filinput.val("");
+	                        spinnerobj.attr('src', orgimg);
+	                    };
 	                }
 	                
 	                return false;
@@ -13998,22 +14004,29 @@
 	    });
 	    
 	    $('.kk_aj_searchRensaformbutton').on('click', function (e) {
+
 	        initlist();
 	        resetfilterlist();
+	               
 	        return resetsearchform();
 	    });
 	    $('#kk_aj_freetextSearch').keypress(function (event) {
 	        if (event.which === 13) {
-	            freesearch();
-	            resetfilterlist();
+	            if ($('#kk_aj_freetextSearch').val()) {
+	                freesearch();
+	                resetfilterlist();
+	            };
+	           
 	            event.preventDefault(); // Stop the default behaviour
 	            
 	        }
 	    });
 
 	    $('#kk_aj_btnfreetextSearch').on('click', function (e) {        
-	        freesearch();
-	        resetfilterlist();
+	        if ($('#kk_aj_freetextSearch').val()) {
+	            freesearch();
+	            resetfilterlist();
+	        };
 	        
 	        return false;
 	    });
@@ -14125,13 +14138,27 @@
 
 	        return false;
 	    });
+
+	    $('#kk_aj_topsearchbutton').on('click', function (e) {
+	        $('.searchMainWrapper ').toggle();
+	    });
+	    $('.searchButton').on('click', function (e) {
+	        
+	        let searchtext = $('#searchinputbox').val();
+	        if(searchtext){
+	            window.location.replace("http://www.kulturivast.se/search?query="+ searchtext);
+	        }
+	        return false;
+	    });
+	    
 	}
 	var resetfilterlist = function () {
 	    $('#kk_aj_valdsokning').hide();
 	    $('#kk_aj_masterproductlistblock').jplist({
 	        command: 'empty'
-	    });   
-	   
+	    });
+	    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
+	    $('#searchantal').html('0');
 	}
 	//var addvaldasokord = function (sokord) {
 	//    let ulobj = $('#kk_aj_valdsokord');

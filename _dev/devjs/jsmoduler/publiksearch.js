@@ -176,22 +176,29 @@ var publiksearchEvents = function () {
     });
     
     $('.kk_aj_searchRensaformbutton').on('click', function (e) {
+
         initlist();
         resetfilterlist();
+               
         return resetsearchform();
     });
     $('#kk_aj_freetextSearch').keypress(function (event) {
         if (event.which === 13) {
-            freesearch();
-            resetfilterlist();
+            if ($('#kk_aj_freetextSearch').val()) {
+                freesearch();
+                resetfilterlist();
+            };
+           
             event.preventDefault(); // Stop the default behaviour
             
         }
     });
 
     $('#kk_aj_btnfreetextSearch').on('click', function (e) {        
-        freesearch();
-        resetfilterlist();
+        if ($('#kk_aj_freetextSearch').val()) {
+            freesearch();
+            resetfilterlist();
+        };
         
         return false;
     });
@@ -303,13 +310,27 @@ var publiksearchEvents = function () {
 
         return false;
     });
+
+    $('#kk_aj_topsearchbutton').on('click', function (e) {
+        $('.searchMainWrapper ').toggle();
+    });
+    $('.searchButton').on('click', function (e) {
+        
+        let searchtext = $('#searchinputbox').val();
+        if(searchtext){
+            window.location.replace("http://www.kulturivast.se/search?query="+ searchtext);
+        }
+        return false;
+    });
+    
 }
 var resetfilterlist = function () {
     $('#kk_aj_valdsokning').hide();
     $('#kk_aj_masterproductlistblock').jplist({
         command: 'empty'
-    });   
-   
+    });
+    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
+    $('#searchantal').html('0');
 }
 //var addvaldasokord = function (sokord) {
 //    let ulobj = $('#kk_aj_valdsokord');

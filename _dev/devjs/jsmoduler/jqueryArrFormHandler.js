@@ -406,12 +406,18 @@ module.exports = {
                     alert("Du kan bara ladda upp filer i formaten: gif, png, jpg, jpeg");
                     filinput.val("");
                     spinnerobj.attr('src', orgimg);
-                } else {                   
+                } else {
                     let files = filinput.get(0).files;
-                    arrformjsonBuilder.tempuploadimage("tmpimg", files, "0", function (callback) {
-                        console.log(callback);
-                        spinnerobj.attr('src', callback);
-                    });
+                    if (files[0].size <= 2000000) {                       
+                        arrformjsonBuilder.tempuploadimage("tmpimg", files, "0", function (callback) {
+                            console.log(callback);
+                            spinnerobj.attr('src', callback);
+                        });
+                    } else {
+                        alert("Filen är för stor! den får inte vara större än 2 MB!");
+                        filinput.val("");
+                        spinnerobj.attr('src', orgimg);
+                    };
                 }
                 
                 return false;

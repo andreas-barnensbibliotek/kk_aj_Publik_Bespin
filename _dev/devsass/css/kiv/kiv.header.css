@@ -1,12 +1,13 @@
 .kiv-new-header .searchMainWrapper {
     min-height: 50px;
-    
+    height: 50px;
     overflow: hidden;
 }
 
 @media (min-width: 40em) {
     .kiv-new-header .searchMainWrapper {
-        min-height: 200px;
+       min-height: 100px;
+       padding-top: 1rem;
     }
 }
 
@@ -90,12 +91,12 @@
 }
 
 .kiv-new-header .searchMainWrapper {
-    display: block !important;
+    display: none;
 }
 
-@media (min-width: 40em) {
+@media (max-width: 40em) {
     .kiv-new-header .searchMainWrapper {
-        display: none !important;
+        display: block !important;
     }
 }
 
@@ -108,13 +109,13 @@
 }
 
 .kiv-new-header .tab-bar {
-    height: 45px;
+    height: 47px;
     background: #ebeae6;
 }
 
 .kiv-new-header .left-small {
-    height: 45px;
-    line-height: 45px;
+    height: 47px;
+    line-height: 47px;
     background: none;
     border: none;
     background-image: url("../images/kiv-elements.png");
@@ -160,9 +161,9 @@
 
 .kiv-new-header .right-small {
     right: 350px;
-    height: 45px;
+    height: 47px;
     width: 120px;
-    line-height: 45px;
+    line-height: 47px;
     background: none;
     border: none;
     background-image: url("../images/kiv-elements.png");
@@ -200,8 +201,8 @@
 }
 
 .kiv-new-header .tab-bar-logosection {
-    height: 45px;
-    line-height: 45px;
+    height: 47px;
+    line-height: 47px;
     border: none;
     background: none;
     margin: 0;
@@ -212,7 +213,7 @@
 }
 
 .kiv-new-header .logo-img a {
-    height: 45px;
+    height: 47px;
     width: 275px;
     line-height: 2000px;
     display: block;

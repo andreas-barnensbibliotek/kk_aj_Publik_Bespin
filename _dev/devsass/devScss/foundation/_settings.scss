@@ -58,7 +58,7 @@
 @import 'foundation/functions';
 
 //urllänken till background-url mm
-$current-kiv-domain-url: "http://kivdev.monoclick-dev.se"; //"http://dev.kulturivast.se.www359.your-server.de";
+$current-kiv-domain-url: "http://www.kulturkatalogenvast.org"; //"http://kivdev.monoclick-dev.se"; //"http://dev.kulturivast.se.www359.your-server.de";
 
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
@@ -137,6 +137,9 @@ $kk_aj_beige  :#b1a06b;
 $kk_aj_darkgrey  :#585661;
 $kk_aj_lightgrey  :#ebeae6;
 $kk_aj_orange  :#d7410f;
+$kk_aj_green2: #bcdc62;
+$kk_aj_orange1: #ed6d04;
+$kk_aj_grasgreen: #109569;
 
 $darkgrey: #5a5958;
 $darkergrey: #6e6d6c; //#575756;

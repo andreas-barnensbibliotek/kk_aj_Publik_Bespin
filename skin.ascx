@@ -63,7 +63,7 @@
         </section>
 
              <section class="right-small">
-                 <a href="http://www.kulturivast.se/search?query="><span>S&Ouml;K</span></a>
+                 <a id="kk_aj_topsearchbutton" href="#"><span>S&Ouml;K</span></a>
              </section>
          </nav>
          <!-- ### MENYBALK END (NAV) ################################################################################################ -->
@@ -114,15 +114,14 @@
 
 <!-- CONTENTPANE START ################################################################################################ -->
 
-         <div class="searchMainWrapper search-opener" style="display:none;">
+         <div class="searchMainWrapper search-opener" >
              <div class="small-12 columns">
                  <div class="row">
                      <div class="small-12 columns">
-                         <div class="searchmainContent">
-                             <label for="searchinputbox">S&ouml;k p&aring; kulturivast.se</label>
-                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k p&aring; kulturivast.se" />
+                         <div class="searchmainContent">                             
+                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k" />
                              <button type="button" class="searchButton">
-                                 <img src="http://kulturivast.se/sites/all/themes/kivnew/images/PilVanster28.png" alt="Sök" /></button>
+                             </button>
                          </div>
                      </div>
 
@@ -132,9 +131,9 @@
 
           <!-- Navigerings breadcrumb START -->
          <div class="small-12 columns">
-             <div class="row">
+             <div id="breadcrumbPane" runat="server" class="row">
                  <div class="menybreadcrumb">
-                     <a href="www.kulturkivast.se/kulturkatalogen">START</a> | <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
+                                         
                  </div>
              </div>
          </div>
@@ -165,18 +164,14 @@
              <footer class="footer" style="margin-top: 2rem;">
                  <div class="row">
                      <div class="small-12 medium-12 large-12 columns">
-                         <div class="vglogo">
-                             <a href="http://www.vgregion.se" target="_blank">
-                                 <img alt="V&auml;stra G&ouml;talandsregionen" src="http://kulturivast.se/sites/all/themes/kivnew/images/vg_logo_white.png">
-                             </a>
-                         </div>
+                         <a href="/"></a>
                      </div>
                  </div>
                  <div class="row footdelare">
                      <div class="small-12 medium-6 large-6 columns">
-                         <div class="foot-kivlogo-container">
-                             <a href="/">
-                                 <img alt="Kultur i V&auml;st" src="http://kulturivast.se/sites/all/themes/kivnew/images/kivlogo.png"></a>
+                         <div class="foot-kivlogo-container">                            
+                            <div class="foot-lank last"><a href="">Prenumerera p&aring; v&aring;ra nyhetsbrev</a></div>
+
                          </div>
                      </div>
                      <div class="small-12 medium-6 large-6 columns">
