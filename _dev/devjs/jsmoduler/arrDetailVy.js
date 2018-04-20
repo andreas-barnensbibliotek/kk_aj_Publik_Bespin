@@ -118,7 +118,7 @@ var fyllArrJson = function (data, callback) {
     _arrjsondata.Faktalist.push({
         "Faktaid": "1",
         "FaktaTypID": 0,
-        "Faktarubrik": "Arrarangemangstyp",
+        "Faktarubrik": "Arrangemangstyp",
         "FaktaValue": _arrjsondata.Arrangemangtyp
     });
     _arrjsondata.Faktalist.push({

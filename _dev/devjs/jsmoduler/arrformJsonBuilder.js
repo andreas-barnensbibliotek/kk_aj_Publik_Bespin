@@ -302,7 +302,7 @@ module.exports = {
                 });
             };        
             let kk_aj_speltid = $('#kk_aj_speltid');
-            if (kk_aj_speltid.html() !="") {
+            if (kk_aj_speltid.html() != "") {
                 if (kk_aj_speltid.html() != "0min") {
                     arrformjsondata.Faktalist.push({
                         "Faktaid": "3",
@@ -311,7 +311,7 @@ module.exports = {
                         "FaktaValue": kk_aj_speltid.html().replace(/min/g, ''),
                     });
                 };
-            }
+            };
 
             let arr_ekonomikostnad = $('#arr_ekonomikostnad');
             if (arr_ekonomikostnad.val()) {
@@ -432,7 +432,7 @@ module.exports = {
             if (mediaExempledata.exempelitemlist) {
                 if (mediaExempledata.exempelitemlist.length >= 0) {
                     arrformjsondata.MediaList = mediaExempledata.exempelitemlist;
-                }
+                };
             };
                                 
             let filen = $("#arr_presentationsbild").get(0).files;
@@ -440,7 +440,7 @@ module.exports = {
                 arrformjsondata.MainImage.MediaUrl = filen[0].name;
             } else {
                 arrformjsondata.MainImage.MediaUrl = $('#kk_aj_tmpimg').attr("alt");
-            }
+            };
             arrformjsondata.MainImage.MediaSize = $('#arr_sizefoto').val();
             arrformjsondata.MainImage.MediaAlt = $('#arr_altfoto').val();
             arrformjsondata.MainImage.MediaFoto = $('#arr_fotograf').val();
@@ -485,7 +485,7 @@ module.exports = {
                 data.append("UploadedImage", files[0]);
             } else {
                 data.append("UploadedImage", "");
-            }
+            };
                 // Make Ajax request with the contentType = false, and procesDate = false
 
                 var ajaxRequest = $.ajax({
@@ -500,7 +500,7 @@ module.exports = {
                     var retfileurl = "";
                     if (files.length > 0) {
                         var retfileurl = _appsetting.globalconfig.arrimgurl + files[0].name;
-                    }
+                    };
                     callback(retfileurl)
                        
                 });       

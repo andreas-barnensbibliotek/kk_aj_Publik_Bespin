@@ -2,7 +2,7 @@
 {{#each kk_aj_admin.ansokningarlista.ansokningar}}
 {{#if ansokningid}}
 
-	<div class="row kk_aj_arritem S_AR_{{ansokningtypid}} S_KF_{{ansokningkonstformid}}" rel="{{ansokningdate}}" >
+	<div class="row kk_aj_arritem  " rel="{{ansokningdate}}" >
 		<div class="small-12 medium-4 columns kk_aj_arr_item_thumbnail">
 			<div class=" kk_aj_arr_item_thumbnail_color">
 				<div class="small-12 bildtestbox">
@@ -37,7 +37,14 @@
 				<div class="kk_aj_arr_item_age small-5 medium-4 columns age"><h3>{{#showyearspan ansokningAgespan}}{{/showyearspan}}</h3></div>											
 												
 			</div>
-			<div  class="kk_aj_filtervalues S_BB_p{{ansokningFilterfakta.Bokningsbar}} S_ML_{{ansokningFilterfakta.Morklaggning}} S_TH_{{ansokningFilterfakta.Takhojd}} S_ST">{{ansokningFilterfakta.Speltid}}</div><div class="S_KO">{{ansokningFilterfakta.Kostnad}}</div>
+			<div class="kk_aj_filtervalues S_ST">{{ansokningFilterfakta.Speltid}}</div>
+			<div class="S_KO">{{ansokningFilterfakta.Kostnad}}</div>
+			<span class="S_AR_{{ansokningtypid}}"></span>
+			<span class="S_KF_{{ansokningkonstformid}}"></span>
+			<span class="S_BB_p{{ansokningFilterfakta.Bokningsbar}}"></span>
+			<span class="S_ML_{{ansokningFilterfakta.Morklaggning}}"></span>
+			<span class="S_TH_{{ansokningFilterfakta.Takhojd}}"></span>
+			<span class="S_ML_{{ansokningFilterfakta.Morklaggning}}"></span>
 		</div>
 	</div>
 	

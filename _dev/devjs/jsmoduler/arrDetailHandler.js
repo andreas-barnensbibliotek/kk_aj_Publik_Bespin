@@ -66,22 +66,29 @@ var maincontent = function (arrJson) {
     $('.granska_rubrik').html(arrJson.Rubrik);
     $('.granska_underrubrik').html(arrJson.UnderRubrik);
    
-        let decodehtml = $('<div/>').html(arrJson.Innehall).text(); // detta behövs inte då decodingen görs i arrDetailVy.js -> fyllArrJson
-        $('.granska_innehall').html(decodehtml);
+    let decodehtml = $('<div/>').html(arrJson.Innehall).text(); // detta behövs inte då decodingen görs i arrDetailVy.js -> fyllArrJson
+    $('.granska_innehall').html(decodehtml);
         //$('.granska_innehall').html(arrJson.Innehall);
         //let decodehtml = $('<div/>').html(arrJson.Innehall).text(); // detta behövs inte då decodingen görs i arrDetailVy.js -> fyllArrJson
     //$('.granska_innehall').html(arrJson.Innehall);
+    // kollar om bilden är ny eller redan finns
+    var imgfile = arrJson.MainImage.MediaUrl;
+
+    if (typeof arrJson.Arrid !== "undefined") { // om arrid finns kör nästa if
+        if (imgfile.indexOf(arrJson.Arrid) == -1) {
+            imgfile = arrJson.Arrid + "_" + imgfile;
+        };
+    };
     var imgsrc = "";
     if (arrJson.Arrid) {
-        imgsrc = _appsetting.globalconfig.arrimgurl + arrJson.MainImage.MediaUrl;
+        imgsrc = _appsetting.globalconfig.arrimgurl + imgfile;
     } else {
         let tidigarearrid = $('#arr_getTidigareArrangemang_Get').attr('rel');
-        imgsrc = _appsetting.globalconfig.arrimgurl + arrJson.MainImage.MediaUrl;
+        imgsrc = _appsetting.globalconfig.arrimgurl + imgfile;
         if (tidigarearrid > 0) {
-            imgsrc = _appsetting.globalconfig.arrimgurl + '/' + arrJson.MainImage.MediaUrl;
-        };     
-       
-    }
+            imgsrc = _appsetting.globalconfig.arrimgurl + '/' + imgfile;
+        };
+    };
     
     $('.granska_pressentationsbild').attr('src', imgsrc);
     $('.granska_pressentationsbild').attr('alt', arrJson.MainImage.MediaAlt);
@@ -110,9 +117,7 @@ var maincontent = function (arrJson) {
     $('#shareMail').attr('href', 'mailto:?Subject=Delat%20fr%C3%A5n+Kulturkatalogen%20V%C3%A4st%20-%20' + arrJson.Rubrik + '&body=Jag%20vill%20dela%20arrangemanget:%20%22' + arrJson.Rubrik + '%22%20%0D%0Afr%C3%A5n%20Kulturkatalogen%20V%C3%A4st%3A%20 http://kulturkatalog.kivdev.se/Kulturkatalogen/ArrangemangDetail/id/' + arrJson.Arrid);
     let facebokURI = "https://www.facebook.com/sharer.php?u=";
     facebokURI += encodeURIComponent('http://kulturkatalog.kivdev.se/Kulturkatalogen/ArrangemangDetail/id/') + arrJson.Arrid  +'&picture=&' + encodeURIComponent(imgsrc) + '&t=' + encodeURIComponent(arrJson.Rubrik) + '&description=' + encodeURIComponent(arrJson.UnderRubrik);
-    $('#shareFacebook').attr('href', facebokURI);
-       
-    
+    $('#shareFacebook').attr('href', facebokURI);    
 };
 /**
     * faktaContent uppdaterar detaljvyn med alla faktauppgifter
@@ -164,7 +169,7 @@ var utovareContentJson = function (utovareJson) {
     $('.granska_Utovare_Adress').html(utovareJson.UtovareData.Adress);
     $('.granska_Utovare_postort').html(utovareJson.UtovareData.Postnr + " " + utovareJson.UtovareData.Ort);
     $('.granska_Utovare_tfn').html(utovareJson.UtovareData.Telefon);
-    $('.granska_Utovare_epost').html(utovareJson.UtovareData.Epost);
-    $('.granska_Utovare_hemsida').html(utovareJson.UtovareData.Weburl);
+    $('.granska_Utovare_epost').html('<a href="mailto:' + utovareJson.UtovareData.Epost +'">'+ utovareJson.UtovareData.Epost + '</a>');
+    $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl +'" target="_blank">'+ utovareJson.UtovareData.Weburl + '</a>');
 };
 

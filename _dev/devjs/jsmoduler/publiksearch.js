@@ -145,6 +145,26 @@ var arrdataservice = function (callTyp, searchdata, callback) {
     });
 };
 
+var arrIDdataservice = function (arrid, callback) {
+    var appsettings = appsettingsobject.config;
+    var currurl = appsettings.globalconfig.apiserver + "/Api_v2/arrangemang/details/uid/0/typ/"+ arrid +"/devkey/alf?type=json&callback=testar";        
+
+    //console.log("Searchservicen hämtar Arrangemangdata");
+    $.ajax({
+        async: true,
+        type: "get",
+        url: currurl,        
+        success: function (data) {
+            console.log("Search Detalj arrangemang hämtat: ");
+            callback(data);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            alert("Nått blev fel vid hämtning av arrangemang!");
+        }
+    });
+};
+
+
 // EVENTS
 var publiksearchEvents = function () {
     var appsettings = appsettingsobject.config;
@@ -254,12 +274,13 @@ var publiksearchEvents = function () {
             minLength: 2,
             select: function (event, ui) {
                 $('#kk_aj_freetextSearch').val(ui.item.ansokningtitle);
-
+                freeAutocompleteValsearch(ui.item.ansokningid);
+                resetfilterlist();
                 return false;
             }
         }).autocomplete("instance")._renderItem = function (ul, item) {
             return $("<li>")
-              .append("<div>" + item.ansokningtitle + " <i>(" + item.ansokningutovare + ")</i></div>")
+              .append("<div class='arrid" + item.ansokningid + "'>" + item.ansokningtitle + " <i>(" + item.ansokningutovare + ")</i></div>")
               .appendTo(ul);
         };
     });
@@ -326,11 +347,12 @@ var publiksearchEvents = function () {
 }
 var resetfilterlist = function () {
     $('#kk_aj_valdsokning').hide();
+    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
+   
     $('#kk_aj_masterproductlistblock').jplist({
         command: 'empty'
     });
-    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
-    $('#searchantal').html('0');
+     $('#searchantal').html('0');
 }
 //var addvaldasokord = function (sokord) {
 //    let ulobj = $('#kk_aj_valdsokord');
@@ -431,6 +453,21 @@ var freesearch = function () {
             });
         });
     };
+}
+
+var freeAutocompleteValsearch = function (valdarrid) {
+    
+    arrIDdataservice(valdarrid, function (data) {
+            handlebartempletService(".kk_aj_productlist", "kk_aj_mainarrangemangList.txt", data, function (returtext) {
+                //scrolla till resultatlistan
+                $('html, body').animate({
+                    scrollTop: $(".kk_aj_searchbuttonblock").offset().top
+                }, 1000);
+                return false;
+
+            });
+        });
+    
 }
 
 var scrolldowntosearchresult = function () {

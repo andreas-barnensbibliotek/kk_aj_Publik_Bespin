@@ -7,6 +7,7 @@
 //här sätts alla pluggin och jquery.ready starters 
 var $ = require("jquery");
 var appsettingsobject = require("./appSettings.js");
+var arrformValidator = require("./arrFormValidator.js");
 var _appsetting = appsettingsobject.config;
 
 module.exports = {
@@ -254,6 +255,11 @@ var fyllarrangemangDetaildata = function (data,callback) {
     if (arrval.length > 0) {
         $('#arr_getTidigareArrangemang_Get').attr('rel', arrval[0].ansokningid);
         $('ul.ArrangemangtypBlock input[name=arr_radioValArrtyp][value="' + arrval[0].ansokningtypid + '"] ').click();
+        $('small.error').hide();
+        $('.kontformBlock').removeClass("radioError");
+        arrformValidator.arrShowforminputs(arrval[0].ansokningtypid);
+        arrformValidator.arrtypimg(arrval[0].ansokningtypid);
+   
         $('ul.kontformBlock input[name=arr_radioValkontstform][value="' + arrval[0].ansokningkonstformid + '"] ').click();
         $('#arr_rubrik').val(arrval[0].ansokningtitle);
         $('#arr_underrubrik').val(arrval[0].ansokningsubtitle);
@@ -261,8 +267,20 @@ var fyllarrangemangDetaildata = function (data,callback) {
         
         var text = $('<div/>').html(arrval[0].ansokningContent).text();
         window.editorobj.activeEditor.setContent(text);
-        let imgurl = _appsetting.globalconfig.dnnURL + "/Portals/0/kulturkatalogenArrImages/" + arrval[0].ansokningid + "_" + arrval[0].ansokningMediaImage.MediaUrl
-        let imgfilenamn = arrval[0].ansokningid + "_" + arrval[0].ansokningMediaImage.MediaUrl;
+
+        let imgurl = _appsetting.globalconfig.dnnURL + "/Portals/0/kulturkatalogenArrImages/";
+        let imgfilenamn="";
+        let imgfile = arrval[0].ansokningMediaImage.MediaUrl;
+        if (imgfile.indexOf(arrval[0].ansokningid) == -1) {
+            imgurl += arrval[0].ansokningid + "_" + imgfile;
+            imgfilenamn = arrval[0].ansokningid + "_" + imgfile;
+        } else {
+            imgurl += imgfile;
+            imgfilenamn = imgfile;
+        };
+
+        //imgurl = _appsetting.globalconfig.dnnURL + "/Portals/0/kulturkatalogenArrImages/" + arrval[0].ansokningid + "_" + arrval[0].ansokningMediaImage.MediaUrl
+        //imgfilenamn = arrval[0].ansokningid + "_" + arrval[0].ansokningMediaImage.MediaUrl;
 
         //let imgurl = _appsetting.globalconfig.dnnURL + "/Portals/0/kulturkatalogenArrImages/" + arrval[0].ansokningMediaImage.MediaUrl
         //let imgfilenamn = arrval[0].ansokningMediaImage.MediaUrl;

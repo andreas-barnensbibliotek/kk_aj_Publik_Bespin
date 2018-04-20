@@ -164,13 +164,20 @@ Handlebars.registerHelper('showyearspan', function (ansokningstatus) {
 
 Handlebars.registerHelper('inMemList', function (yearspan) {
     var ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png" alt="Lägg till i minneslistan" title="Lägg till i minneslistan"/>';
-    if (yearspan) {
+    if (yearspan === "inminneslist") {
         ret = '<img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Check-32.png" alt="Ta bort från minneslistan" title="Ta bort från minneslistan"/>';
     }
 
     return ret;
 });
 
+// kollar om bilden är ny eller redan finns
+Handlebars.registerHelper('imgfix', function (id, imgfile) {
+    if (imgfile.indexOf(id) == -1) {
+        imgfile = id + "_" + imgfile;
+    }
+    return imgfile;
+});
 var faktavalueextention =function(typ){
     let fixat = typ.replace(/^\s+|\s+$/gm, '').toLowerCase();
     

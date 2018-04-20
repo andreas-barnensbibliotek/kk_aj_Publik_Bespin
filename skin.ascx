@@ -119,7 +119,7 @@
                  <div class="row">
                      <div class="small-12 columns">
                          <div class="searchmainContent">                             
-                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k" />
+                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k p&aring; kulturivast.se" />
                              <button type="button" class="searchButton">
                              </button>
                          </div>

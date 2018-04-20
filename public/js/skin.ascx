@@ -129,16 +129,15 @@
              </div>
          </div>
 
-          <!-- Navigerings breadcrumb START -->
+         <!-- Navigerings breadcrumb START -->
          <div class="small-12 columns">
              <div class="row">
                  <div class="menybreadcrumb">
-                     <a href="http://www.kulturivast.se/kulturkatalogen-vast">START</a> | <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
+                     <a href="http://www.kulturkivast.se/kulturkatalogen">START</a> | <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
                  </div>
              </div>
          </div>
          <!-- Navigerings breadcrumb END -->
-
         <!-- ################################################################################################ -->
         
          <!-- START content-wrapper -->
@@ -169,8 +168,9 @@
                  </div>
                  <div class="row footdelare">
                      <div class="small-12 medium-6 large-6 columns">
-                         <div class="foot-kivlogo-container">                             
-                            <div class="foot-lank last"><a href="http://www.kulturivast.se/nyhetsbrev">Prenumerera p&aring; v&aring;ra nyhetsbrev</a></div>
+                         <div class="foot-kivlogo-container">
+                             <div class="foot-lank"><a href="">Bes&ouml;k v&aring;ra andra webbplatser</a></div>
+                            <div class="foot-lank last"><a href="">Prenumerera p&aring; v&aring;ra nyhetsbrev</a></div>
 
                          </div>
                      </div>
@@ -239,7 +239,7 @@
 
 <dnn:jQuery ID="dnnjQuery" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER5" AddJsFile="public/js/tinymce/tinymce.min.js" runat="server" />
-<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.2.0.9.js" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.2.1.6.1d.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER4" AddJsFile="public/js/modernizr.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddJsFile="public/js/jquery.adaptive-backgrounds.js" runat="server" />
 

@@ -12,18 +12,6 @@
 <!-- item loop STOP -->
 
 <!-- item loop START -->
-{{#faktatypvisas Faktalist 2}}
-<div class="artsidecontainer granska_lokal_mainblock">
-	<h3>Lokal</h3>  
-	{{#each Faktalist}}	 
-		{{#lokaltyp Faktaid Faktarubrik FaktaValue FaktaTypID}}		      
-		{{/lokaltyp}} 	      
-	{{/each}}
-</div> 
-{{/faktatypvisas}}
-<!-- item loop STOP -->
-
-<!-- item loop START -->
 {{#faktatypvisas Faktalist 3}}
 <div class="artsidecontainer granska_Publik_mainblock">
 	<h3>Publik</h3>  
@@ -34,6 +22,18 @@
 </div>
 {{/faktatypvisas}}
 <!-- item loop STOP --> 
+
+<!-- item loop START -->
+{{#faktatypvisas Faktalist 2}}
+<div class="artsidecontainer granska_lokal_mainblock">
+	<h3>Lokal</h3>  
+	{{#each Faktalist}}	 
+		{{#lokaltyp Faktaid Faktarubrik FaktaValue FaktaTypID}}		      
+		{{/lokaltyp}} 	      
+	{{/each}}
+</div> 
+{{/faktatypvisas}}
+<!-- item loop STOP -->
 
 <!-- item loop START -->
 {{#faktatypvisas Faktalist 4}}
