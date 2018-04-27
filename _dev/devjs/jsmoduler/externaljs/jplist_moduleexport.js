@@ -3,10 +3,13 @@
 module.exports = {
     init: function () {
         //alert("INNE");
+
+        /////////////////////////
         /**
-         * jPList - jQuery Data Grid Controls 5.2.0.287 - http://jplist.com 
-         * Copyright 2016 Miriam Zusin
-         */
+* jplist-core
+* jPList - jQuery Data Grid Controls 5.2.0.287 - http://jplist.com 
+* Copyright 2016 Miriam Zusin
+*/
         (function () {
             var d = function (a, e) {
                 var b, c; if (a && a.controller && a.controller.collection) {
@@ -231,119 +234,59 @@ module.exports = {
             }; jQuery.fn.jplist.CookiesService.saveCookies = function (d, b, c) { d = JSON.stringify(d); jQuery.fn.jplist.CookiesService.setCookie(b, d, c) }; jQuery.fn.jplist.CookiesService.restoreCookies = function (d) { var b = []; (d = jQuery.fn.jplist.CookiesService.getCookie(d)) && (b = jQuery.parseJSON(d)); b || (b = []); return b }
         })(); (function () { jQuery.fn.jplist.LocalStorageService = {}; jQuery.fn.jplist.LocalStorageService.supported = function () { try { return "localStorage" in window && null !== window.localStorage } catch (d) { return !1 } }; jQuery.fn.jplist.LocalStorageService.save = function (d, b) { var c; c = JSON.stringify(d); window.localStorage[b] = c }; jQuery.fn.jplist.LocalStorageService.restore = function (d) { var b = []; (d = window.localStorage[d]) && (b = jQuery.parseJSON(d)); b || (b = []); return b } })();
 
-
         /**
-        * jPList - jQuery Data Grid Controls 5.2.0.7 - http://jplist.com 
+        * jplist sort_bundle
+        * jPList - jQuery Data Grid Controls 5.2.0.10 - http://jplist.com 
         * Copyright 2016 Miriam Zusin
         */
         (function () {
-            var e = function (a, b) { var d = null; b ? (d = a.$control.find('li:has(span[data-default="true"])').eq(0), 0 >= d.length && (d = a.$control.find("li:eq(0)"))) : d = a.$control.find(".active"); d = d.find("span"); d = new jQuery.fn.jplist.controls.DropdownFilterDTO(d.attr("data-path"), d.attr("data-type")); return d = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, d, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, g = function (a, b) {
-                var d, c, e; a.$control.find("span").each(function () {
-                    d = jQuery(this).attr("data-path");
-                    c = jQuery(this).attr("data-type"); d && "" !== jQuery.trim(d) && (e = new jQuery.fn.jplist.PathModel(d, c), b.push(e))
+            var d = function (g) { return jQuery.extend(this, g) }; d.prototype.getStatus = function (g) { g = new jQuery.fn.jplist.controls.DefaultSortDTO(this.$control.attr("data-path"), this.$control.attr("data-type"), this.$control.attr("data-order"), this.$control.attr("data-datetime-format"), this.$control.attr("data-ignore")); return new jQuery.fn.jplist.StatusDTO(this.name, this.action, this.type, g, this.inStorage, this.inAnimation, this.isAnimateToTop, this.inDeepLinking) }; d.prototype.getPaths = function (g) {
+                var d, h;
+                d = this.$control.attr("data-path"); h = this.$control.attr("data-type"); d && (d = new jQuery.fn.jplist.PathModel(d, h), g.push(d))
+            }; jQuery.fn.jplist.controls.DefaultSort = function (g) { return new d(g) }; jQuery.fn.jplist.controlTypes["default-sort"] = { className: "DefaultSort", options: {} }
+        })(); (function () { jQuery.fn.jplist.controls.DefaultSortDTO = function (d, g, k, h, e) { return { path: d, type: g, order: k, dateTimeFormat: h, ignore: e } } })(); (function () {
+            var d = function (a, c) {
+                var b; b = null; c ? (b = a.$control.find('option[data-default="true"]').eq(0), 0 >= b.length && (b = a.$control.find("option").eq(0))) : b = a.$control.find("option:selected"); b = new jQuery.fn.jplist.controls.DropdownSortDTO(jQuery.fn.jplist.ControlFactory.getProp(b, "path"), jQuery.fn.jplist.ControlFactory.getProp(b, "type"), jQuery.fn.jplist.ControlFactory.getProp(b, "order"), a.params.dateTimeFormat, a.params.ignore); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, b, a.inStorage,
+                a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
+            }, g = function (a, c) { return (a = jQuery.trim(a)) ? new jQuery.fn.jplist.PathModel(a, c || "text") : null }, k = function (a, c) { a.$control.find("option").each(function () { var a, f; f = jQuery(this); var d; a = jQuery.fn.jplist.ControlFactory.getProp(f, "path"); f = jQuery.fn.jplist.ControlFactory.getProp(f, "type"); if (jQuery.isArray(a)) for (var e = 0; e < a.length; e++) d = e < f.length ? f[e] : "text", (d = g(a[e], d)) && c.push(d); else (d = g(a, f)) && c.push(d) }) }, h = function (a) {
+                a.$control.on("change", function () {
+                    var c,
+                    b; c = d(a, !1); b = jQuery(this).find("option:selected"); 0 < b.length && (c.data.path = jQuery.fn.jplist.ControlFactory.getProp(b, "path"), c.data.type = jQuery.fn.jplist.ControlFactory.getProp(b, "type"), c.data.order = jQuery.fn.jplist.ControlFactory.getProp(b, "order")); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]])
                 })
-            }, h = function (a, b) { var d; d = a.$control.find("li"); d.removeClass("active"); if (!b || 0 >= b.length) b = d.eq(0); 0 < b.length && (b.addClass("active"), a.$control.find(".jplist-dd-panel").text(b.eq(0).text())) }, f = function (a) { a.$control.find("li").off("click").on("click", function () { var b; b = jQuery(this); h(a, b); b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]]) }) }, c = function (a) {
-                new jQuery.fn.jplist.DropdownControl(a.options,
-                a.observer, a.history, a.$control); f(a); return jQuery.extend(this, a)
-            }; c.prototype.getStatus = function (a) { return e(this, a) }; c.prototype.getDeepLink = function () { var a = "", b; this.inDeepLinking && (b = e(this, !1), b.data && b.data.path && (a = this.name + this.options.delimiter0 + "path=" + b.data.path)); return a }; c.prototype.getStatusByDeepLink = function (a, b) {
-                var d; a: if (d = null, this.inDeepLinking) {
-                    if ("number" !== a && a !== "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && "path" !== a) { d = null; break a } d = e(this,
-                    !0); d.data && "path" === a && d.data.path && (d.data.path = b)
-                } return d
-            }; c.prototype.getPaths = function (a) { g(this, a) }; c.prototype.setStatus = function (a, b) { var d; a && a.data && (d = this.$control.find('[data-path="' + a.data.path + '"]')) && 0 < d.length && h(this, d.parent("li")) }; c.prototype.setByDeepLink = function (a) { var b; if (a) for (var d = 0; d < a.length; d++) b = a[d], b.controlName === this.name && "path" === b.propName && b.propValue && this.$control.find('[data-path="' + b.propValue + '"]').trigger("click") }; jQuery.fn.jplist.controls.FilterDropdown =
-            function (a) { return new c(a) }; jQuery.fn.jplist.controlTypes["filter-drop-down"] = { className: "FilterDropdown", options: {}, dropdown: !0 }
+            }, e = function (a) { a.params = { dateTimeFormat: a.$control.attr("data-datetime-format") || "", ignore: a.$control.attr("data-ignore") || "" }; h(a); return jQuery.extend(this, a) }; e.prototype.getStatus =
+            function (a) { return d(this, a) }; e.prototype.getDeepLink = function () { var a = "", c; this.inDeepLinking && (c = d(this, !1), c.data && c.data.path && c.data.type && c.data.order && (a = this.name + this.options.delimiter0 + "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order=" + c.data.path + this.options.delimiter2 + c.data.type + this.options.delimiter2 + c.data.order)); return a }; e.prototype.getStatusByDeepLink = function (a, c) {
+                var b = null, f; this.inDeepLinking && (b = d(this, !0), b.data && a === "path" + this.options.delimiter2 + "type" +
+                this.options.delimiter2 + "order" && (f = c.split(this.options.delimiter2), 3 === f.length && (b.data.path = f[0], b.data.type = f[1], b.data.order = f[2]))); return b
+            }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
+                var b; if ("default" == a.data.path) b = this.$control.find('option[data-path="default"]'); else {
+                    b = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.path, "path"); var f = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.type, "type"), d = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.order,
+                    "order"); b = this.$control.find("option" + b + f + d)
+                } 0 < b.length && (b.get(0).selected = !0)
+            }; jQuery.fn.jplist.controls.SortSelect = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-select"] = { className: "SortSelect", options: {} }
         })(); (function () {
-            var e = function (c, a) { var b; b = null; a ? (b = c.$control.find('option[data-default="true"]').eq(0), 0 >= b.length && (b = c.$control.find("option").eq(0))) : b = c.$control.find("option:selected"); b = new jQuery.fn.jplist.controls.DropdownFilterDTO(b.attr("data-path"), b.attr("data-type")); return b = new jQuery.fn.jplist.StatusDTO(c.name, c.action, c.type, b, c.inStorage, c.inAnimation, c.isAnimateToTop, c.inDeepLinking) }, g = function (c, a) {
-                var b, d, e; c.$control.find("option").each(function () {
-                    b = jQuery(this).attr("data-path");
-                    d = jQuery(this).attr("data-type"); b && (e = new jQuery.fn.jplist.PathModel(b, d), a.push(e))
-                })
-            }, h = function (c) { c.$control.change(function () { var a, b, d; a = e(c, !1); b = jQuery(this).find("option:selected"); d = b.attr("data-path"); b = b.attr("data-number"); d ? (a.data.path = d, a.data.type = jQuery(this).attr("data-type"), a.data.order = jQuery(this).attr("data-order")) : b && (a.data.number = b); c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]]) }) }, f = function (c) { h(c); return jQuery.extend(this, c) }; f.prototype.getStatus =
-            function (c) { return e(this, c) }; f.prototype.getDeepLink = function () { var c = "", a; this.inDeepLinking && (a = e(this, !1), a.data && a.data.path && (c = this.name + this.options.delimiter0 + "path=" + a.data.path)); return c }; f.prototype.getStatusByDeepLink = function (c, a) { var b = null; this.inDeepLinking && (b = e(this, !0), b.data && "path" === c && b.data.path && (b.data.path = a)); return b }; f.prototype.getPaths = function (c) { g(this, c) }; f.prototype.setStatus = function (c, a) {
-                var b; (b = this.$control.find('option[data-path="' + c.data.path + '"]')) && 0 <
-                b.length && (b.get(0).selected = !0)
-            }; jQuery.fn.jplist.controls.FilterSelect = function (c) { return new f(c) }; jQuery.fn.jplist.controlTypes["filter-select"] = { className: "FilterSelect", options: {} }
-        })(); (function () {
-            var e = function (a, b) { var d; d = b.find("option[checked]"); 0 >= d.length && (d = b.find("option").eq(0)); return d }, g = function (a) { a.params.$dropdowns.each(function () { var b = jQuery(this), b = e(a, b); 0 <= b.length && b.prop("selected", !0) }) }, h = function (a, b) {
-                var d = [], c; c = null; a.params.$dropdowns.each(function () { var c = jQuery(this), f = ""; b ? (c = e(a, c), 0 < c.length && (f = c.attr("value"))) : f = c.val(); f && d.push(f) }); c = new jQuery.fn.jplist.controls.TextFilterDropdownGroupDTO(d, a.params.mode, a.params.dataPath, a.params.ignoreRegex);
-                return c = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
-            }, f = function (a) { a.params.$dropdowns.on("change", function () { a.observer.trigger(a.observer.events.unknownStatusesChanged, [!1]) }) }, c = function (a) { a.params = { $dropdowns: a.$control.find("select"), mode: a.$control.attr("data-mode") || "and", dataPath: a.$control.attr("data-path") || "", ignoreRegex: a.$control.attr("data-ignore-regex") || "" }; g(a); f(a); return jQuery.extend(this, a) }; c.prototype.getPaths =
-            function (a) { var b; this.params.dataPath && (b = new jQuery.fn.jplist.PathModel(this.params.dataPath, "text"), a.push(b)) }; c.prototype.getStatus = function (a) { return h(this, a) }; c.prototype.setStatus = function (a, b) { var d; g(this); if (a.data && a.data.textGroup && jQuery.isArray(a.data.textGroup) && 0 < a.data.textGroup.length) for (var c = 0; c < a.data.textGroup.length; c++) d = a.data.textGroup[c], d = this.params.$dropdowns.find('option[value="' + d + '"]'), 0 < d.length && d.prop("selected", !0) }; c.prototype.getDeepLink = function () {
-                var a =
-                "", b, d = ""; if (this.inDeepLinking && (b = h(this, !1), b.data && jQuery.isArray(b.data.textGroup) && 0 < b.data.textGroup.length)) { for (a = 0; a < b.data.textGroup.length; a++) "" !== d && (d += this.options.delimiter2), d += b.data.textGroup[a]; a = this.name + this.options.delimiter0 + "textGroup=" + d } return a
-            }; c.prototype.getStatusByDeepLink = function (a, b) { var d = null, c; this.inDeepLinking && (d = h(this, !0), d.data && "textGroup" === a && (c = b.split(this.options.delimiter2), 0 < c.length && (d.data.textGroup = c))); return d }; jQuery.fn.jplist.controls.FilterDropdownGroupSelectText =
-            function (a) { return new c(a) }; jQuery.fn.jplist.controlTypes["dropdown-select-group-text-fitler"] = { className: "FilterDropdownGroupSelectText", options: {}, dropdown: !0 }
-        })(); (function () { jQuery.fn.jplist.controls.DropdownFilterDTO = function (e, g) { return { path: e, type: g, filterType: "path" } } })(); (function () { jQuery.fn.jplist.controls.TextFilterDropdownGroupDTO = function (e, g, h, f) { return { textGroup: e, logic: g, path: h, ignoreRegex: f, filterType: "textGroup" } } })();
+            var d = function (a, c) {
+                var b = null; c ? (b = a.$control.find('li:has(span[data-default="true"])').eq(0), 0 >= b.length && (b = a.$control.find("li:eq(0)"))) : b = a.$control.find(".active"); b = b.find("span"); b = new jQuery.fn.jplist.controls.DropdownSortDTO(jQuery.fn.jplist.ControlFactory.getProp(b, "path"), jQuery.fn.jplist.ControlFactory.getProp(b, "type"), jQuery.fn.jplist.ControlFactory.getProp(b, "order"), a.params.dateTimeFormat, a.params.ignore); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type,
+                b, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
+            }, g = function (a, c) { return (a = jQuery.trim(a)) ? new jQuery.fn.jplist.PathModel(a, c || "text") : null }, k = function (a, c) { a.$control.find("span").each(function () { var a, f; f = jQuery(this); var d; a = jQuery.fn.jplist.ControlFactory.getProp(f, "path"); f = jQuery.fn.jplist.ControlFactory.getProp(f, "type"); if (jQuery.isArray(a)) for (var e = 0; e < a.length; e++) d = e < f.length ? f[e] : "text", (d = g(a[e], d)) && c.push(d); else (d = g(a, f)) && c.push(d) }) }, h = function (a) {
+                a.$control.find("li").off("click").on("click",
+                function () { var c, b; c = d(a, !1); b = jQuery(this).find("span"); 0 < b.length && (c.data.path = jQuery.fn.jplist.ControlFactory.getProp(b, "path"), c.data.type = jQuery.fn.jplist.ControlFactory.getProp(b, "type"), c.data.order = jQuery.fn.jplist.ControlFactory.getProp(b, "order")); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]]) })
+            }, e = function (a) {
+                a.params = { dateTimeFormat: a.$control.attr("data-datetime-format") || "", ignore: a.$control.attr("data-ignore") || "" }; new jQuery.fn.jplist.DropdownControl(a.options, a.observer,
+                a.history, a.$control); h(a); return jQuery.extend(this, a)
+            }; e.prototype.getStatus = function (a) { return d(this, a) }; e.prototype.getDeepLink = function () { var a = "", c; this.inDeepLinking && (c = d(this, !1), c.data && c.data.path && c.data.type && c.data.order && (a = this.name + this.options.delimiter0 + "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order=" + c.data.path + this.options.delimiter2 + c.data.type + this.options.delimiter2 + c.data.order)); return a }; e.prototype.getStatusByDeepLink = function (a, c) {
+                var b; a: {
+                    b = null;
+                    var f; if (this.inDeepLinking) { if ("number" !== a && a !== "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && "path" !== a) { b = null; break a } b = d(this, !0); b.data && a === "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && (f = c.split(this.options.delimiter2), 3 === f.length && (b.data.path = f[0], b.data.type = f[1], b.data.order = f[2])) }
+                } return b
+            }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
+                var b, d; d = this.$control.find("li"); d.removeClass("active"); if ("default" ===
+                a.data.path) b = this.$control.find('li:has([data-path="default"])'); else { b = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.path, "path"); var e = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.type, "type"), g = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.order, "order"); b = this.$control.find("li:has(" + b + e + g + ")") } 0 >= b.length && (b = d.eq(0)); b.addClass("active"); this.$control.find(".jplist-dd-panel").text(b.eq(0).text())
+            }; jQuery.fn.jplist.controls.SortDropdown = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-drop-down"] =
+            { className: "SortDropdown", options: {}, dropdown: !0 }
+        })(); (function () { jQuery.fn.jplist.controls.DropdownSortDTO = function (d, g, k, h, e) { return { path: d, type: g, order: k, dateTimeFormat: h, ignore: e } } })();
 
         /**
-        * jPList - jQuery Data Grid Controls 5.2.0.6 - http://jplist.com 
-        * Copyright 2016 Miriam Zusin
-        */
-        (function () {
-            var c = function (a) { !a.history.statusesQueue || 0 >= a.history.statusesQueue.length ? a.$control.addClass("jplist-disabled") : a.$control.removeClass("jplist-disabled") }, d = function (a) {
-                a.observer.on(a.observer.events.unknownStatusesChanged, function () { c(a) }); a.observer.on(a.observer.events.knownStatusesChanged, function () { c(a) }); a.$control.on("click", function () {
-                    var b; a.history.popList(); b = a.history.getLastList() || []; a.observer.one(a.observer.events.statusesAppliedToList, function () { a.history.popList() });
-                    b ? a.observer.trigger(a.observer.events.knownStatusesChanged, [b]) : a.observer.trigger(a.observer.events.unknownStatusesChanged, [!0]); c(a)
-                })
-            }, b = function (a) { c(a); d(a); return jQuery.extend(this, a) }; jQuery.fn.jplist.controls.BackButton = function (a) { return new b(a) }; jQuery.fn.jplist.controlTypes["back-button"] = { className: "BackButton", options: {} }
-        })(); (function () { var c = function (b) { b.$control.on("click", function () { b.observer.trigger(b.observer.events.unknownStatusesChanged, [!0]) }) }, d = function (b) { c(b); return jQuery.extend(this, b) }; jQuery.fn.jplist.controls.Reset = function (b) { return new d(b) }; jQuery.fn.jplist.controlTypes.reset = { className: "Reset", options: {} } })();
-
-        /**
-        * jPList - jQuery Data Grid Controls 5.2.0.11 - http://jplist.com 
-        * Copyright 2016 Miriam Zusin
-        */
-        (function () { jQuery.fn.jplist.controls.DatePickerRangeFilterDTO = function (e, g, h, f) { e = { path: e, format: g, filterType: "dateRange", prev_year: "", prev_month: "", prev_day: "", next_year: "", next_month: "", next_day: "" }; h && (e.prev_year = h.getFullYear(), e.prev_month = h.getMonth(), e.prev_day = h.getDate()); f && (e.next_year = f.getFullYear(), e.next_month = f.getMonth(), e.next_day = f.getDate()); return e } })(); (function () {
-            var e = function (c) {
-                var a = {}; c.params.$prev.off("change").change(function () { var a; "" === jQuery.trim(jQuery(this).val()) && (a = g(c, !1), c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]])) }); c.params.$next.off("change").change(function () { var a; "" === jQuery.trim(jQuery(this).val()) && (a = g(c, !1), c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]])) }); a.onSelect = function (a, b) { var d = g(c, !1); c.observer.trigger(c.observer.events.knownStatusesChanged, [[d]]) }; c.params.datepickerFunc(c.params.$prev,
-                a); c.params.datepickerFunc(c.params.$next, a); (a = c.params.$prev.attr("value")) && c.params.$prev.datepicker("setDate", a); (a = c.params.$next.attr("value")) && c.params.$next.datepicker("setDate", a)
-            }, g = function (c, a) {
-                var b = null, d = b = b = null, e; e = c.$control.attr("data-path").toString(); a ? (b = c.params.defaultPrev, d = c.params.defaultNext) : (b = c.params.$prev.datepicker("getDate"), d = c.params.$next.datepicker("getDate")); b = new jQuery.fn.jplist.controls.DatePickerRangeFilterDTO(e, c.params.dateTimeFormat, b, d); return b =
-                new jQuery.fn.jplist.StatusDTO(c.name, c.action, c.type, b, c.inStorage, c.inAnimation, c.isAnimateToTop, c.inDeepLinking)
-            }, h = function (c, a, b) { c = b.split(c.options.delimiter2); 3 === c.length && (a.data.prev_year = c[0], a.data.prev_month = c[1], a.data.prev_day = c[2]) }, f = function (a, b, d) { a = d.split(a.options.delimiter2); 3 === a.length && (b.data.next_year = a[0], b.data.next_month = a[1], b.data.next_day = a[2]) }, a = function (a) {
-                var b = a.$control.attr("data-datepicker-func"); jQuery.isFunction(jQuery.fn.jplist.settings[b]) && (a.params.datepickerFunc =
-                jQuery.fn.jplist.settings[b])
-            }, d = function (a, b) { var d = null; b && (d = "today" === b ? new Date : jQuery.fn.jplist.HelperService.formatDateTime(b, a.params.dateTimeFormat)); return d }, b = function (c) {
-                c.params = { datepickerFunc: function () { }, $prev: c.$control.find('[data-type="prev"]'), $next: c.$control.find('[data-type="next"]'), dateTimeFormat: c.$control.attr("data-datetime-format").toString() }; c.params.defaultPrev = c.params.$prev.datepicker("getDate"); c.params.defaultPrev || (c.params.defaultPrev = d(c, c.params.$prev.attr("value")));
-                c.params.defaultNext = c.params.$next.datepicker("getDate"); c.params.defaultNext || (c.params.defaultNext = d(c, c.params.$next.attr("value"))); a(c); e(c); return jQuery.extend(this, c)
-            }; b.prototype.getStatus = function (a) { return g(this, a) }; b.prototype.getDeepLink = function () {
-                var a = "", b, d, e; this.inDeepLinking && (b = g(this, !1), b.data && (d = jQuery.isNumeric(b.data.prev_year) && jQuery.isNumeric(b.data.prev_month) && jQuery.isNumeric(b.data.prev_day), e = jQuery.isNumeric(b.data.next_year) && jQuery.isNumeric(b.data.next_month) &&
-                jQuery.isNumeric(b.data.next_day), d || e)) && (a += this.name + this.options.delimiter0, d && (a += "prev"), e && (d && (a += this.options.delimiter2), a += "next"), a += "=", d && (a += b.data.prev_year + this.options.delimiter2 + b.data.prev_month + this.options.delimiter2 + b.data.prev_day), e && (d && (a += this.options.delimiter3), a += b.data.next_year + this.options.delimiter2 + b.data.next_month + this.options.delimiter2 + b.data.next_day)); return a
-            }; b.prototype.getStatusByDeepLink = function (a, b) {
-                var d = null, e; if (this.inDeepLinking && (d = g(this, !0),
-                delete d.data.next_year, delete d.data.next_month, delete d.data.next_day, delete d.data.prev_year, delete d.data.prev_month, delete d.data.prev_day, d.data)) switch (a) { case "prev": h(this, d, b); break; case "next": f(this, d, b); break; case "prev~next": e = b.split(this.options.delimiter3), 2 === e.length && (h(this, d, e[0]), f(this, d, e[1])) } return d
-            }; b.prototype.getPaths = function (a) { var b; if (b = this.$control.attr("data-path").toString()) b = new jQuery.fn.jplist.PathModel(b, "datetime"), a.push(b) }; b.prototype.setStatus = function (a,
-            b) { var d; jQuery.isNumeric(a.data.prev_year) && jQuery.isNumeric(a.data.prev_month) && jQuery.isNumeric(a.data.prev_day) ? (d = new Date(a.data.prev_year, a.data.prev_month, a.data.prev_day), this.params.$prev.datepicker("setDate", d)) : this.params.$prev.val(""); jQuery.isNumeric(a.data.next_year) && jQuery.isNumeric(a.data.next_month) && jQuery.isNumeric(a.data.next_day) ? (d = new Date(a.data.next_year, a.data.next_month, a.data.next_day), this.params.$next.datepicker("setDate", d)) : this.params.$next.val("") }; jQuery.fn.jplist.controls.DatePickerRangeFilter =
-            function (a) { return new b(a) }; jQuery.fn.jplist.controlTypes["date-picker-range-filter"] = { className: "DatePickerRangeFilter", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.DatePickerFilterDTO = function (e, g, h) { e = { path: e, format: g, filterType: "date", year: "", month: "", day: "" }; h && (e.year = h.getFullYear(), e.month = h.getMonth(), e.day = h.getDate()); return e } })(); (function () {
-            var e = function (a) { var d = {}; a.$control.off("change").on("change", function () { var b; "" === jQuery.trim(jQuery(this).val()) && (b = g(a, !1), a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]])) }); d.onSelect = function (b, c) { a.observer.trigger(a.observer.events.knownStatusesChanged, [[g(a, !1)]]) }; a.params.datepickerFunc(a.$control, d) }, g = function (a, d) {
-                var b = null, b = b = null; d || (b = a.$control.datepicker("getDate")); b = new jQuery.fn.jplist.controls.DatePickerFilterDTO(a.params.dataPath, a.params.dateTimeFormat,
-                b); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, b, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
-            }, h = function (a) { var d = a.$control.attr("data-datepicker-func"); jQuery.isFunction(jQuery.fn.jplist.settings[d]) && (a.params.datepickerFunc = jQuery.fn.jplist.settings[d]) }, f = function (a) { a.params = { datepickerFunc: function () { }, dataPath: a.$control.attr("data-path"), dateTimeFormat: a.$control.attr("data-datetime-format") }; h(a); e(a); return jQuery.extend(this, a) }; f.prototype.getStatus =
-            function (a) { return g(this, a) }; f.prototype.getDeepLink = function () { var a = "", d; this.inDeepLinking && (d = g(this, !1), d.data && jQuery.isNumeric(d.data.year) && jQuery.isNumeric(d.data.month) && jQuery.isNumeric(d.data.day) && (a += this.name + this.options.delimiter0 + "date=" + d.data.year + this.options.delimiter2 + d.data.month + this.options.delimiter2 + d.data.day)); return a }; f.prototype.getStatusByDeepLink = function (a, d) {
-                var b = null, c; this.inDeepLinking && (b = g(this, !0), b.data && "date" === a && (c = d.split(this.options.delimiter2),
-                3 === c.length && (b.data.year = c[0], b.data.month = c[1], b.data.day = c[2]))); return b
-            }; f.prototype.getPaths = function (a) { var d; this.params.dataPath && (d = new jQuery.fn.jplist.PathModel(this.params.dataPath, "datetime"), a.push(d)) }; f.prototype.setStatus = function (a, d) { var b; jQuery.isNumeric(a.data.year) && jQuery.isNumeric(a.data.month) && jQuery.isNumeric(a.data.day) ? (b = new Date(a.data.year, a.data.month, a.data.day), this.$control.datepicker("setDate", b)) : this.$control.val("") }; jQuery.fn.jplist.controls.DatePickerFilter =
-            function (a) { return new f(a) }; jQuery.fn.jplist.controlTypes["date-picker-filter"] = { className: "DatePickerFilter", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.RangeSliderDTO = function (e, g, h, f, a) { return { path: e, type: "number", filterType: "range", min: g, max: h, prev: f, next: a } } })(); (function () {
-            var e = function (a, d) { var b = null, c, e, f, b = a.params.$uiSlider.slider("option", "min"); c = a.params.$uiSlider.slider("option", "max"); d ? (e = a.params.defaultPrev, f = a.params.defaultNext) : (e = a.params.$uiSlider.slider("values", 0), f = a.params.$uiSlider.slider("values", 1)); b = new jQuery.fn.jplist.controls.RangeSliderDTO(a.params.dataPath, b, c, e, f); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, b, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, g = function (a) {
-                a.params.$uiSlider.on("slidechange",
-                function (d, b) { var c = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]]) })
-            }, h = function (a) { var d = a.$control.attr("data-slider-func"), b = a.$control.attr("data-setvalues-func"); jQuery.isFunction(jQuery.fn.jplist.settings[d]) && (a.params.uiSliderFunc = jQuery.fn.jplist.settings[d]); jQuery.isFunction(jQuery.fn.jplist.settings[b]) && (a.params.uiSetValuesFunc = jQuery.fn.jplist.settings[b]) }, f = function (a) {
-                a.params = {
-                    $uiSlider: a.$control.find('[data-type="ui-slider"]'), $prev: a.$control.find('[data-type="prev-value"]'),
-                    $next: a.$control.find('[data-type="next-value"]'), uiSliderFunc: function (a, b, c) { }, uiSetValuesFunc: function (a, b, c) { }, controlOptions: a.controlOptions, dataPath: a.$control.attr("data-path")
-                }; h(a); a.params.uiSliderFunc(a.params.$uiSlider, a.params.$prev, a.params.$next); a.params.uiSetValuesFunc(a.params.$uiSlider, a.params.$prev, a.params.$next); a.params.defaultPrev = a.params.$uiSlider.slider("values", 0); a.params.defaultNext = a.params.$uiSlider.slider("values", 1); g(a); return jQuery.extend(this, a)
-            }; f.prototype.getStatus =
-            function (a) { return e(this, a) }; f.prototype.getDeepLink = function () { var a = "", d; this.inDeepLinking && (d = e(this, !1), d.data && jQuery.isNumeric(d.data.prev) && jQuery.isNumeric(d.data.next) && (a = this.name + this.options.delimiter0 + "prev" + this.options.delimiter2 + "next=" + d.data.prev + this.options.delimiter2 + d.data.next)); return a }; f.prototype.getStatusByDeepLink = function (a, d) {
-                var b = null, c; this.inDeepLinking && (b = e(this, !0), b.data && a === "prev" + this.options.delimiter2 + "next" && (c = d.split(this.options.delimiter2), 2 === c.length &&
-                (b.data.prev = c[0], b.data.next = c[1]))); return b
-            }; f.prototype.getPaths = function (a) { var d; this.params.dataPath && (d = new jQuery.fn.jplist.PathModel(this.params.dataPath, "number"), a.push(d)) }; f.prototype.setStatus = function (a, d) {
-                var b, c; jQuery.isNumeric(a.data.prev) && jQuery.isNumeric(a.data.next) && (b = Number(a.data.prev), c = Number(a.data.next), isNaN(b) || isNaN(c) || (this.params.$uiSlider.slider("values", 0) != b && this.params.$uiSlider.slider("values", 0, b), this.params.$uiSlider.slider("values", 1) != c && this.params.$uiSlider.slider("values",
-                1, c))); this.params.controlOptions && this.params.uiSetValuesFunc(this.params.$uiSlider, this.params.$prev, this.params.$next)
-            }; jQuery.fn.jplist.controls.RangeSlider = function (a) { return new f(a) }; jQuery.fn.jplist.controlTypes["range-slider"] = { className: "RangeSlider", options: {} }
-        })();
-
-        /**
+        * jPList - Pagination bundle
         * jPList - jQuery Data Grid Controls 5.2.0.29 - http://jplist.com 
         * Copyright 2016 Miriam Zusin
         */
@@ -421,81 +364,54 @@ module.exports = {
         })(); (function () { jQuery.fn.jplist.controls.DropdownPaginationDTO = function (e) { return { number: e } } })();
 
         /**
-        * jPList - jQuery Data Grid Controls 5.2.0.10 - http://jplist.com 
+        * jPList - Filter drop-down bundle
+        * jPList - jQuery Data Grid Controls 5.2.0.7 - http://jplist.com 
         * Copyright 2016 Miriam Zusin
         */
         (function () {
-            var d = function (g) { return jQuery.extend(this, g) }; d.prototype.getStatus = function (g) { g = new jQuery.fn.jplist.controls.DefaultSortDTO(this.$control.attr("data-path"), this.$control.attr("data-type"), this.$control.attr("data-order"), this.$control.attr("data-datetime-format"), this.$control.attr("data-ignore")); return new jQuery.fn.jplist.StatusDTO(this.name, this.action, this.type, g, this.inStorage, this.inAnimation, this.isAnimateToTop, this.inDeepLinking) }; d.prototype.getPaths = function (g) {
-                var d, h;
-                d = this.$control.attr("data-path"); h = this.$control.attr("data-type"); d && (d = new jQuery.fn.jplist.PathModel(d, h), g.push(d))
-            }; jQuery.fn.jplist.controls.DefaultSort = function (g) { return new d(g) }; jQuery.fn.jplist.controlTypes["default-sort"] = { className: "DefaultSort", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.DefaultSortDTO = function (d, g, k, h, e) { return { path: d, type: g, order: k, dateTimeFormat: h, ignore: e } } })(); (function () {
-            var d = function (a, c) {
-                var b; b = null; c ? (b = a.$control.find('option[data-default="true"]').eq(0), 0 >= b.length && (b = a.$control.find("option").eq(0))) : b = a.$control.find("option:selected"); b = new jQuery.fn.jplist.controls.DropdownSortDTO(jQuery.fn.jplist.ControlFactory.getProp(b, "path"), jQuery.fn.jplist.ControlFactory.getProp(b, "type"), jQuery.fn.jplist.ControlFactory.getProp(b, "order"), a.params.dateTimeFormat, a.params.ignore); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, b, a.inStorage,
-                a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
-            }, g = function (a, c) { return (a = jQuery.trim(a)) ? new jQuery.fn.jplist.PathModel(a, c || "text") : null }, k = function (a, c) { a.$control.find("option").each(function () { var a, f; f = jQuery(this); var d; a = jQuery.fn.jplist.ControlFactory.getProp(f, "path"); f = jQuery.fn.jplist.ControlFactory.getProp(f, "type"); if (jQuery.isArray(a)) for (var e = 0; e < a.length; e++) d = e < f.length ? f[e] : "text", (d = g(a[e], d)) && c.push(d); else (d = g(a, f)) && c.push(d) }) }, h = function (a) {
-                a.$control.on("change", function () {
-                    var c,
-                    b; c = d(a, !1); b = jQuery(this).find("option:selected"); 0 < b.length && (c.data.path = jQuery.fn.jplist.ControlFactory.getProp(b, "path"), c.data.type = jQuery.fn.jplist.ControlFactory.getProp(b, "type"), c.data.order = jQuery.fn.jplist.ControlFactory.getProp(b, "order")); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]])
+            var e = function (a, b) { var d = null; b ? (d = a.$control.find('li:has(span[data-default="true"])').eq(0), 0 >= d.length && (d = a.$control.find("li:eq(0)"))) : d = a.$control.find(".active"); d = d.find("span"); d = new jQuery.fn.jplist.controls.DropdownFilterDTO(d.attr("data-path"), d.attr("data-type")); return d = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, d, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, g = function (a, b) {
+                var d, c, e; a.$control.find("span").each(function () {
+                    d = jQuery(this).attr("data-path");
+                    c = jQuery(this).attr("data-type"); d && "" !== jQuery.trim(d) && (e = new jQuery.fn.jplist.PathModel(d, c), b.push(e))
                 })
-            }, e = function (a) { a.params = { dateTimeFormat: a.$control.attr("data-datetime-format") || "", ignore: a.$control.attr("data-ignore") || "" }; h(a); return jQuery.extend(this, a) }; e.prototype.getStatus =
-            function (a) { return d(this, a) }; e.prototype.getDeepLink = function () { var a = "", c; this.inDeepLinking && (c = d(this, !1), c.data && c.data.path && c.data.type && c.data.order && (a = this.name + this.options.delimiter0 + "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order=" + c.data.path + this.options.delimiter2 + c.data.type + this.options.delimiter2 + c.data.order)); return a }; e.prototype.getStatusByDeepLink = function (a, c) {
-                var b = null, f; this.inDeepLinking && (b = d(this, !0), b.data && a === "path" + this.options.delimiter2 + "type" +
-                this.options.delimiter2 + "order" && (f = c.split(this.options.delimiter2), 3 === f.length && (b.data.path = f[0], b.data.type = f[1], b.data.order = f[2]))); return b
-            }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
-                var b; if ("default" == a.data.path) b = this.$control.find('option[data-path="default"]'); else {
-                    b = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.path, "path"); var f = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.type, "type"), d = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.order,
-                    "order"); b = this.$control.find("option" + b + f + d)
-                } 0 < b.length && (b.get(0).selected = !0)
-            }; jQuery.fn.jplist.controls.SortSelect = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-select"] = { className: "SortSelect", options: {} }
+            }, h = function (a, b) { var d; d = a.$control.find("li"); d.removeClass("active"); if (!b || 0 >= b.length) b = d.eq(0); 0 < b.length && (b.addClass("active"), a.$control.find(".jplist-dd-panel").text(b.eq(0).text())) }, f = function (a) { a.$control.find("li").off("click").on("click", function () { var b; b = jQuery(this); h(a, b); b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]]) }) }, c = function (a) {
+                new jQuery.fn.jplist.DropdownControl(a.options,
+                a.observer, a.history, a.$control); f(a); return jQuery.extend(this, a)
+            }; c.prototype.getStatus = function (a) { return e(this, a) }; c.prototype.getDeepLink = function () { var a = "", b; this.inDeepLinking && (b = e(this, !1), b.data && b.data.path && (a = this.name + this.options.delimiter0 + "path=" + b.data.path)); return a }; c.prototype.getStatusByDeepLink = function (a, b) {
+                var d; a: if (d = null, this.inDeepLinking) {
+                    if ("number" !== a && a !== "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && "path" !== a) { d = null; break a } d = e(this,
+                    !0); d.data && "path" === a && d.data.path && (d.data.path = b)
+                } return d
+            }; c.prototype.getPaths = function (a) { g(this, a) }; c.prototype.setStatus = function (a, b) { var d; a && a.data && (d = this.$control.find('[data-path="' + a.data.path + '"]')) && 0 < d.length && h(this, d.parent("li")) }; c.prototype.setByDeepLink = function (a) { var b; if (a) for (var d = 0; d < a.length; d++) b = a[d], b.controlName === this.name && "path" === b.propName && b.propValue && this.$control.find('[data-path="' + b.propValue + '"]').trigger("click") }; jQuery.fn.jplist.controls.FilterDropdown =
+            function (a) { return new c(a) }; jQuery.fn.jplist.controlTypes["filter-drop-down"] = { className: "FilterDropdown", options: {}, dropdown: !0 }
         })(); (function () {
-            var d = function (a, c) {
-                var b = null; c ? (b = a.$control.find('li:has(span[data-default="true"])').eq(0), 0 >= b.length && (b = a.$control.find("li:eq(0)"))) : b = a.$control.find(".active"); b = b.find("span"); b = new jQuery.fn.jplist.controls.DropdownSortDTO(jQuery.fn.jplist.ControlFactory.getProp(b, "path"), jQuery.fn.jplist.ControlFactory.getProp(b, "type"), jQuery.fn.jplist.ControlFactory.getProp(b, "order"), a.params.dateTimeFormat, a.params.ignore); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type,
-                b, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
-            }, g = function (a, c) { return (a = jQuery.trim(a)) ? new jQuery.fn.jplist.PathModel(a, c || "text") : null }, k = function (a, c) { a.$control.find("span").each(function () { var a, f; f = jQuery(this); var d; a = jQuery.fn.jplist.ControlFactory.getProp(f, "path"); f = jQuery.fn.jplist.ControlFactory.getProp(f, "type"); if (jQuery.isArray(a)) for (var e = 0; e < a.length; e++) d = e < f.length ? f[e] : "text", (d = g(a[e], d)) && c.push(d); else (d = g(a, f)) && c.push(d) }) }, h = function (a) {
-                a.$control.find("li").off("click").on("click",
-                function () { var c, b; c = d(a, !1); b = jQuery(this).find("span"); 0 < b.length && (c.data.path = jQuery.fn.jplist.ControlFactory.getProp(b, "path"), c.data.type = jQuery.fn.jplist.ControlFactory.getProp(b, "type"), c.data.order = jQuery.fn.jplist.ControlFactory.getProp(b, "order")); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]]) })
-            }, e = function (a) {
-                a.params = { dateTimeFormat: a.$control.attr("data-datetime-format") || "", ignore: a.$control.attr("data-ignore") || "" }; new jQuery.fn.jplist.DropdownControl(a.options, a.observer,
-                a.history, a.$control); h(a); return jQuery.extend(this, a)
-            }; e.prototype.getStatus = function (a) { return d(this, a) }; e.prototype.getDeepLink = function () { var a = "", c; this.inDeepLinking && (c = d(this, !1), c.data && c.data.path && c.data.type && c.data.order && (a = this.name + this.options.delimiter0 + "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order=" + c.data.path + this.options.delimiter2 + c.data.type + this.options.delimiter2 + c.data.order)); return a }; e.prototype.getStatusByDeepLink = function (a, c) {
-                var b; a: {
-                    b = null;
-                    var f; if (this.inDeepLinking) { if ("number" !== a && a !== "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && "path" !== a) { b = null; break a } b = d(this, !0); b.data && a === "path" + this.options.delimiter2 + "type" + this.options.delimiter2 + "order" && (f = c.split(this.options.delimiter2), 3 === f.length && (b.data.path = f[0], b.data.type = f[1], b.data.order = f[2])) }
-                } return b
-            }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
-                var b, d; d = this.$control.find("li"); d.removeClass("active"); if ("default" ===
-                a.data.path) b = this.$control.find('li:has([data-path="default"])'); else { b = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.path, "path"); var e = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.type, "type"), g = jQuery.fn.jplist.ControlFactory.getPropPath(a.data.order, "order"); b = this.$control.find("li:has(" + b + e + g + ")") } 0 >= b.length && (b = d.eq(0)); b.addClass("active"); this.$control.find(".jplist-dd-panel").text(b.eq(0).text())
-            }; jQuery.fn.jplist.controls.SortDropdown = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-drop-down"] =
-            { className: "SortDropdown", options: {}, dropdown: !0 }
-        })(); (function () { jQuery.fn.jplist.controls.DropdownSortDTO = function (d, g, k, h, e) { return { path: d, type: g, order: k, dateTimeFormat: h, ignore: e } } })();
+            var e = function (c, a) { var b; b = null; a ? (b = c.$control.find('option[data-default="true"]').eq(0), 0 >= b.length && (b = c.$control.find("option").eq(0))) : b = c.$control.find("option:selected"); b = new jQuery.fn.jplist.controls.DropdownFilterDTO(b.attr("data-path"), b.attr("data-type")); return b = new jQuery.fn.jplist.StatusDTO(c.name, c.action, c.type, b, c.inStorage, c.inAnimation, c.isAnimateToTop, c.inDeepLinking) }, g = function (c, a) {
+                var b, d, e; c.$control.find("option").each(function () {
+                    b = jQuery(this).attr("data-path");
+                    d = jQuery(this).attr("data-type"); b && (e = new jQuery.fn.jplist.PathModel(b, d), a.push(e))
+                })
+            }, h = function (c) { c.$control.change(function () { var a, b, d; a = e(c, !1); b = jQuery(this).find("option:selected"); d = b.attr("data-path"); b = b.attr("data-number"); d ? (a.data.path = d, a.data.type = jQuery(this).attr("data-type"), a.data.order = jQuery(this).attr("data-order")) : b && (a.data.number = b); c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]]) }) }, f = function (c) { h(c); return jQuery.extend(this, c) }; f.prototype.getStatus =
+            function (c) { return e(this, c) }; f.prototype.getDeepLink = function () { var c = "", a; this.inDeepLinking && (a = e(this, !1), a.data && a.data.path && (c = this.name + this.options.delimiter0 + "path=" + a.data.path)); return c }; f.prototype.getStatusByDeepLink = function (c, a) { var b = null; this.inDeepLinking && (b = e(this, !0), b.data && "path" === c && b.data.path && (b.data.path = a)); return b }; f.prototype.getPaths = function (c) { g(this, c) }; f.prototype.setStatus = function (c, a) {
+                var b; (b = this.$control.find('option[data-path="' + c.data.path + '"]')) && 0 <
+                b.length && (b.get(0).selected = !0)
+            }; jQuery.fn.jplist.controls.FilterSelect = function (c) { return new f(c) }; jQuery.fn.jplist.controlTypes["filter-select"] = { className: "FilterSelect", options: {} }
+        })(); (function () {
+            var e = function (a, b) { var d; d = b.find("option[checked]"); 0 >= d.length && (d = b.find("option").eq(0)); return d }, g = function (a) { a.params.$dropdowns.each(function () { var b = jQuery(this), b = e(a, b); 0 <= b.length && b.prop("selected", !0) }) }, h = function (a, b) {
+                var d = [], c; c = null; a.params.$dropdowns.each(function () { var c = jQuery(this), f = ""; b ? (c = e(a, c), 0 < c.length && (f = c.attr("value"))) : f = c.val(); f && d.push(f) }); c = new jQuery.fn.jplist.controls.TextFilterDropdownGroupDTO(d, a.params.mode, a.params.dataPath, a.params.ignoreRegex);
+                return c = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
+            }, f = function (a) { a.params.$dropdowns.on("change", function () { a.observer.trigger(a.observer.events.unknownStatusesChanged, [!1]) }) }, c = function (a) { a.params = { $dropdowns: a.$control.find("select"), mode: a.$control.attr("data-mode") || "and", dataPath: a.$control.attr("data-path") || "", ignoreRegex: a.$control.attr("data-ignore-regex") || "" }; g(a); f(a); return jQuery.extend(this, a) }; c.prototype.getPaths =
+            function (a) { var b; this.params.dataPath && (b = new jQuery.fn.jplist.PathModel(this.params.dataPath, "text"), a.push(b)) }; c.prototype.getStatus = function (a) { return h(this, a) }; c.prototype.setStatus = function (a, b) { var d; g(this); if (a.data && a.data.textGroup && jQuery.isArray(a.data.textGroup) && 0 < a.data.textGroup.length) for (var c = 0; c < a.data.textGroup.length; c++) d = a.data.textGroup[c], d = this.params.$dropdowns.find('option[value="' + d + '"]'), 0 < d.length && d.prop("selected", !0) }; c.prototype.getDeepLink = function () {
+                var a =
+                "", b, d = ""; if (this.inDeepLinking && (b = h(this, !1), b.data && jQuery.isArray(b.data.textGroup) && 0 < b.data.textGroup.length)) { for (a = 0; a < b.data.textGroup.length; a++) "" !== d && (d += this.options.delimiter2), d += b.data.textGroup[a]; a = this.name + this.options.delimiter0 + "textGroup=" + d } return a
+            }; c.prototype.getStatusByDeepLink = function (a, b) { var d = null, c; this.inDeepLinking && (d = h(this, !0), d.data && "textGroup" === a && (c = b.split(this.options.delimiter2), 0 < c.length && (d.data.textGroup = c))); return d }; jQuery.fn.jplist.controls.FilterDropdownGroupSelectText =
+            function (a) { return new c(a) }; jQuery.fn.jplist.controlTypes["dropdown-select-group-text-fitler"] = { className: "FilterDropdownGroupSelectText", options: {}, dropdown: !0 }
+        })(); (function () { jQuery.fn.jplist.controls.DropdownFilterDTO = function (e, g) { return { path: e, type: g, filterType: "path" } } })(); (function () { jQuery.fn.jplist.controls.TextFilterDropdownGroupDTO = function (e, g, h, f) { return { textGroup: e, logic: g, path: h, ignoreRegex: f, filterType: "textGroup" } } })();
 
         /**
-        * jPList - jQuery Data Grid Controls 5.2.0.16 - http://jplist.com 
+        jPList - jquery UI bundle
+        * jPList - jQuery Data Grid Controls 5.2.0.11 - http://jplist.com 
         * Copyright 2016 Miriam Zusin
         */
-        (function () {
-            var e = function (a, b) { var c, d; c = a.$control.attr("data-path"); d = b ? a.$control.attr("value") || "" : a.$control.val(); c = new jQuery.fn.jplist.controls.TextboxDTO(c, d, a.params.ignore, a.params.mode, a.params.not, a.params.and, a.params.or); return new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, g = function (a) {
-                a.params.typingStart && a.params.typingEnd && (a.params.isTyping ? window.clearTimeout(a.params.typingHandler) : (a.params.isTyping = !0,
-                a.params.typingStart()), a.params.typingHandler = window.setTimeout(function () { a.params.isTyping = !1; a.params.typingEnd() }, a.params.typingDelay))
-            }, f = function (a) { var b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]]) }, h = function (a) {
-                if (a.params.$button && 0 < a.params.$button.length) a.params.$button.on("click", function (b) { b.preventDefault(); f(a); return !1 }); else a.$control.on(a.params.eventName, function () { f(a); g(a) }); if (0 < a.params.$clear.length) a.params.$clear.on("click", function (b) {
-                    b.preventDefault();
-                    a.$control.val(""); f(a)
-                })
-            }, d = function (a) {
-                a.params = { path: a.$control.attr("data-path"), dataButton: a.$control.attr("data-button"), eventName: a.$control.attr("data-event-name") || "keyup", $button: null, $clear: a.$control.next('[data-type="clear"]'), ignore: a.$control.attr("data-ignore"), mode: a.$control.attr("data-mode") || "contains", typingDelay: Number(a.$control.attr("data-typing-delay")) || 400, isTyping: !1, typingHandler: null, typingStart: null, typingEnd: null }; "advanced" === a.params.mode ? (a.params.or = jQuery.fn.jplist.ControlFactory.getProp(a.$control,
-                "or"), a.params.and = jQuery.fn.jplist.ControlFactory.getProp(a.$control, "and"), a.params.not = jQuery.fn.jplist.ControlFactory.getProp(a.$control, "not")) : a.params.ignore = a.params.ignore || "[~!@#$%^&*()+=`'\"/\\_]+"; var b = a.$control.attr("data-typing-start"), c = a.$control.attr("data-typing-end"); jQuery.isFunction(jQuery.fn.jplist.settings[b]) && (a.params.typingStart = jQuery.fn.jplist.settings[b]); jQuery.isFunction(jQuery.fn.jplist.settings[c]) && (a.params.typingEnd = jQuery.fn.jplist.settings[c]); a.$control.val(a.$control.attr("value") ||
-                ""); a.params.dataButton && (a.params.$button = jQuery(a.params.dataButton)); h(a); return jQuery.extend(this, a)
-            }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink = function () { var a = "", b; this.inDeepLinking && (b = e(this, !1), b.data && "" !== jQuery.trim(b.data.value) && (a = this.name + this.options.delimiter0 + "value=" + b.data.value)); return a }; d.prototype.getStatusByDeepLink = function (a, b) { var c = null; this.inDeepLinking && (c = e(this, !0), c.data && "value" === a && (c.data.value = b)); return c }; d.prototype.getPaths =
-            function (a) { var b; b = new jQuery.fn.jplist.PathModel(this.params.path, null); a.push(b) }; d.prototype.setStatus = function (a, b) { a.data && (a.data.value || (a.data.value = ""), this.$control.val() !== a.data.value && this.$control.val(a.data.value)) }; jQuery.fn.jplist.controls.Textbox = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes.textbox = { className: "Textbox", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.TextboxDTO = function (e, g, f, h, d, a, b) { return { path: e, ignore: f, value: g, mode: h, not: d, and: a, or: b, filterType: "TextFilter" } } })();
-
-
-        /**
-* jPList - jQuery Data Grid Controls 5.2.0.11 - http://jplist.com 
-* Copyright 2016 Miriam Zusin
-*/
         (function () { jQuery.fn.jplist.controls.DatePickerRangeFilterDTO = function (e, g, h, f) { e = { path: e, format: g, filterType: "dateRange", prev_year: "", prev_month: "", prev_day: "", next_year: "", next_month: "", next_day: "" }; h && (e.prev_year = h.getFullYear(), e.prev_month = h.getMonth(), e.prev_day = h.getDate()); f && (e.next_year = f.getFullYear(), e.next_month = f.getMonth(), e.next_day = f.getDate()); return e } })(); (function () {
             var e = function (c) {
                 var a = {}; c.params.$prev.off("change").change(function () { var a; "" === jQuery.trim(jQuery(this).val()) && (a = g(c, !1), c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]])) }); c.params.$next.off("change").change(function () { var a; "" === jQuery.trim(jQuery(this).val()) && (a = g(c, !1), c.observer.trigger(c.observer.events.knownStatusesChanged, [[a]])) }); a.onSelect = function (a, b) { var d = g(c, !1); c.observer.trigger(c.observer.events.knownStatusesChanged, [[d]]) }; c.params.datepickerFunc(c.params.$prev,
@@ -548,169 +464,21 @@ module.exports = {
         })();
 
         /**
-* jPList - jQuery Data Grid Controls 5.2.0.15 - http://jplist.com 
-* Copyright 2016 Miriam Zusin
-*/
-        (function () {
-            var e = function (a, c) { var b, e = [], d, f, l; b = a.$control.data("storage-status"); c && b || a.params.$buttons.each(function (a, h) { d = jQuery(h); (l = c ? "true" === d.attr("data-selected") : d.data("selected") || !1) && (f = d.attr("data-path")) && e.push(f) }); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, { pathGroup: e, filterType: "pathGroup" }, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a, c) {
-                var b, e; a.params.$buttons.each(function (a, h) {
-                    if (b = jQuery(h).attr("data-path")) e = new jQuery.fn.jplist.PathModel(b,
-                    "text"), c.push(e)
-                })
-            }, d = function (a, c, b) { var e; a.params.$buttons.each(function (a, c) { e = jQuery(c); e.removeClass("jplist-selected"); e.data("selected", !1) }); if (c.data && c.data.pathGroup && jQuery.isArray(c.data.pathGroup) && 0 < c.data.pathGroup.length) for (var d = 0; d < c.data.pathGroup.length; d++) b = c.data.pathGroup[d], e = a.params.$buttons.filter('[data-path="' + b + '"]'), 0 < e.length && (e.addClass("jplist-selected"), e.data("selected", !0)) }, a = function (a) {
-                a.params.$buttons.on("click", function () {
-                    var c, b; c = jQuery(this); "multiple" ===
-                    a.params.mode ? (b = c.data("selected") || !1, c.data("selected", !b)) : (a.params.$buttons.data("selected", !1), c.data("selected", !0)); c = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]])
-                })
-            }, b = function (a) {
-                var c; "multiple" === a.params.mode ? a.params.$buttons.each(function () { var c = jQuery(this), b; b = "true" === c.attr("data-selected"); a.options.deepLinking && (b = !1); c.data("selected", b) }) : (a.params.$buttons.data("selected", !1), c = a.params.$buttons.filter('[data-selected="true"]'), c = 0 < c.length ? c.eq(0) :
-                a.params.$buttons.eq(0), c.data("selected", !0), c.attr("data-selected", !0), c.trigger("click"))
-            }, c = function (c) { c.params = { $buttons: c.$control.find("[data-button]"), mode: c.$control.attr("data-mode") || "multiple" }; a(c); b(c); return jQuery.extend(this, c) }; c.prototype.getStatus = function (a) { return e(this, a) }; c.prototype.getDeepLink = function () {
-                var a = "", c = "", b; if (this.inDeepLinking && (b = e(this, !1), b.data && b.data.pathGroup && 0 < b.data.pathGroup.length)) {
-                    for (var d = 0; d < b.data.pathGroup.length; d++) a = b.data.pathGroup[d],
-                    0 < d && (c += this.options.delimiter2), c += a; a = this.name + this.options.delimiter0 + "selected=" + c
-                } return a
-            }; c.prototype.getStatusByDeepLink = function (a, c) { var b = null; this.inDeepLinking && (b = e(this, !1), b.data && "selected" === a && (b.data.pathGroup = c.split(this.options.delimiter2))); return b }; c.prototype.getPaths = function (a) { f(this, a) }; c.prototype.setStatus = function (a, c) { d(this, a, c) }; jQuery.fn.jplist.controls.ButtonFilterGroup = function (a) { return new c(a) }; jQuery.fn.jplist.controlTypes["button-filter-group"] = {
-                className: "ButtonFilterGroup",
-                options: {}
-            }
-        })(); (function () {
-            var e = function (a, b) { var c, h = ""; (c = b ? "true" === a.$control.attr("data-selected") : a.params.selected) && (h = "path"); c = { path: a.$control.attr("data-path"), filterType: h, selected: c }; return new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a) { a.$control.on("click", function () { var b; a.params.selected = !a.params.selected; b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]]) }) }, d = function (a) {
-                a.params = {
-                    selected: "true" ===
-                    a.$control.attr("data-selected")
-                }; a.options.deepLinking && (a.params.selected = !1); f(a); return jQuery.extend(this, a)
-            }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink = function () { var a = "", b = null; this.inDeepLinking && (b = e(this, !1), b.data && b.data.selected && (a = this.name + this.options.delimiter0 + "selected=true")); return a }; d.prototype.getStatusByDeepLink = function (a, b) {
-                var c = null, h; this.inDeepLinking && (c = e(this, !1), c.data && (h = "selected" === a && "true" === b)) && (c.data.selected = h, c.data.filterType =
-                "path"); return c
-            }; d.prototype.getPaths = function (a) { var b; if (b = this.$control.attr("data-path")) b = new jQuery.fn.jplist.PathModel(b, "text"), a.push(b) }; d.prototype.setStatus = function (a, b) { (this.params.selected = a.data.selected) ? this.$control.addClass("jplist-selected") : this.$control.removeClass("jplist-selected") }; jQuery.fn.jplist.controls.ButtonFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["button-filter"] = { className: "ButtonFilter", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.ButtonTextFilterDTO = function (e, f, d, a, b) { return { path: e, ignore: d, value: f, selected: a, mode: b, filterType: "TextFilter" } } })(); (function () { jQuery.fn.jplist.controls.ButtonTextFilterGroupDTO = function (e, f) { return { textAndPathsGroup: e, ignore: f, filterType: "textFilterPathGroup" } } })(); (function () {
-            var e = function (a, b) {
-                var g, e = []; g = null; g = ""; a.controlOptions && a.controlOptions.ignore && (g = a.controlOptions.ignore); a.params.$buttons.each(function (a, c) { var g = jQuery(c), d; d = b ? "true" === g.attr("data-selected") : g.data("selected") || !1; e.push({ selected: d, text: g.data("dataText"), path: g.data("dataPath"), mode: g.data("dataMode") || "contains" }) }); g = new jQuery.fn.jplist.controls.ButtonTextFilterGroupDTO(e, g); return g = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, g, a.inStorage, a.inAnimation,
-                a.isAnimateToTop, a.inDeepLinking)
-            }, f = function (a, b) { var g, e, d; a.params.$buttons.each(function (a, c) { g = jQuery(this); if (e = g.attr("data-path")) d = new jQuery.fn.jplist.PathModel(e, "text"), b.push(d) }) }, d = function (a, b, g) {
-                var e; a.params.$buttons.each(function (a, c) { e = jQuery(c); e.removeClass("jplist-selected"); e.data("selected", !1) }); if (b.data && b.data.textAndPathsGroup && jQuery.isArray(b.data.textAndPathsGroup) && 0 < b.data.textAndPathsGroup.length) for (var d = 0; d < b.data.textAndPathsGroup.length; d++) g = b.data.textAndPathsGroup[d],
-                e = a.params.$buttons.filter('[data-path="' + g.path + '"][data-text="' + g.text + '"]'), 0 < e.length && g.selected && (e.addClass("jplist-selected"), e.data("selected", !0))
-            }, a = function (a) { var b; a.params.$buttons.on("click", function () { var g = jQuery(this); b = g.data("selected") || !1; g.data("selected", !b); g = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[g]]) }) }, b = function (c) {
-                c.params = { $buttons: c.$control.find("[data-button]") }; c.params.$buttons.each(function () {
-                    var a = jQuery(this), b; b = "true" === a.attr("data-selected");
-                    c.options.deepLinking && (b = !1); a.data("selected", b); a.data("dataPath", a.attr("data-path")); a.data("dataText", a.attr("data-text")); a.data("dataMode", a.attr("data-mode") || "contains")
-                }); a(c); return jQuery.extend(this, c)
-            }; b.prototype.getStatus = function (a) { return e(this, a) }; b.prototype.getDeepLink = function () {
-                var a = "", b, g, d = []; if (this.inDeepLinking && (b = e(this, !1), b.data && b.data.textAndPathsGroup && 0 < b.data.textAndPathsGroup.length)) {
-                    for (var f = 0; f < b.data.textAndPathsGroup.length; f++) g = b.data.textAndPathsGroup[f],
-                    g.selected && d.push(g.text + this.options.delimiter3 + g.path); 0 < d.length && (a = this.name + this.options.delimiter0 + "selected=" + d.join(this.options.delimiter2))
-                } return a
-            }; b.prototype.getStatusByDeepLink = function (a, b) { var g = null, d, f; if (this.inDeepLinking && (g = e(this, !1), g.data && "selected" === a)) { g.data.textAndPathsGroup = []; d = b.split(this.options.delimiter2); for (var k = 0; k < d.length; k++) f = d[k].split(this.options.delimiter3), 2 === f.length && g.data.textAndPathsGroup.push({ selected: !0, text: f[0], path: f[1] }) } return g };
-            b.prototype.getPaths = function (a) { f(this, a) }; b.prototype.setStatus = function (a, b) { d(this, a, b) }; jQuery.fn.jplist.controls.ButtonTextFilterGroup = function (a) { return new b(a) }; jQuery.fn.jplist.controlTypes["button-text-filter-group"] = { className: "ButtonTextFilterGroup", options: { ignore: "[~!@#$%^&*()+=`'\"/\\_]+" } }
-        })(); (function () {
-            var e = function (a, b) { var c; c = null; var e = "", d = ""; a.controlOptions && a.controlOptions.ignore && (e = a.controlOptions.ignore); d = (c = b ? "true" === a.$control.attr("data-selected") : a.params.selected) ? a.params.dataText : ""; c = new jQuery.fn.jplist.controls.ButtonTextFilterDTO(a.params.dataPath, d, e, c, a.params.dataMode || "contains"); return c = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a) {
-                a.$control.on("click", function () {
-                    var b;
-                    a.params.selected = !a.params.selected; b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]])
-                })
-            }, d = function (a) { a.params = { selected: "true" === a.$control.attr("data-selected"), dataPath: a.$control.attr("data-path"), dataText: a.$control.attr("data-text"), dataMode: a.$control.attr("data-mode") }; a.options.deepLinking && (a.params.selected = !1); f(a); return jQuery.extend(this, a) }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink = function () {
-                var a = "", b; this.inDeepLinking &&
-                (b = e(this, !1), b.data && b.data.selected && (a = this.name + this.options.delimiter0 + "selected=true")); return a
-            }; d.prototype.getStatusByDeepLink = function (a, b) { var c = null, d; this.inDeepLinking && (c = e(this, !1), c.data && (d = "selected" === a && "true" === b)) && (c.data.selected = d, c.data.value = this.params.dataText); return c }; d.prototype.getPaths = function (a) { var b; this.params.dataPath && (b = new jQuery.fn.jplist.PathModel(this.params.dataPath, "text"), a.push(b)) }; d.prototype.setStatus = function (a, b) {
-                (this.params.selected = a.data.selected) ?
-                this.$control.addClass("jplist-selected") : this.$control.removeClass("jplist-selected")
-            }; jQuery.fn.jplist.controls.ButtonTextFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["button-text-filter"] = { className: "ButtonTextFilter", options: { ignore: "[~!@#$%^&*()+=`'\"/\\_]+" } }
-        })(); (function () { jQuery.fn.jplist.controls.CheckboxGroupFilterDTO = function (e) { return { pathGroup: e, filterType: "pathGroup" } } })(); (function () {
-            var e = function (a, b) { var e, d = []; e = null; var f; a.params.$checkboxes.each(function (a, c) { var e = jQuery(c); f = b ? e.data("selected-on-start") || !1 : e.get(0).checked; e = e.attr("data-path"); f && e && d.push(e) }); e = new jQuery.fn.jplist.controls.CheckboxGroupFilterDTO(d); return e = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, e, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a, b) {
-                a.params.$checkboxes.each(function (a, c) {
-                    var e; if (e = jQuery(this).attr("data-path")) e = new jQuery.fn.jplist.PathModel(e,
-                    "text"), b.push(e)
-                })
-            }, d = function (a, b, e) { var d; a.params.$checkboxes.each(function (a, b) { d = jQuery(b); d.removeClass("jplist-selected"); d.get(0).checked = !1 }); if (b.data && b.data.pathGroup && jQuery.isArray(b.data.pathGroup) && 0 < b.data.pathGroup.length) for (var f = 0; f < b.data.pathGroup.length; f++) e = b.data.pathGroup[f], d = a.params.$checkboxes.filter('[data-path="' + e + '"]'), 0 < d.length && (d.addClass("jplist-selected"), d.get(0).checked = !0) }, a = function (a) {
-                a.params.$checkboxes.on("change", function () {
-                    var b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged,
-                    [[b]])
-                })
-            }, b = function (b) { b.params = { $checkboxes: b.$control.find("[data-path]") }; b.params.$checkboxes.each(function () { var a = jQuery(this), e; e = a.get(0).checked; b.options.deepLinking && (e = !1); a.data("selected-on-start", e); a.data("mode", a.attr("data-mode") || "contains") }); a(b); return jQuery.extend(this, b) }; b.prototype.getStatus = function (a) { return e(this, a) }; b.prototype.getDeepLink = function () {
-                var a = "", b, d = ""; if (this.inDeepLinking && (b = e(this, !1), b.data && jQuery.isArray(b.data.pathGroup) && 0 < b.data.pathGroup.length)) {
-                    for (a =
-                    0; a < b.data.pathGroup.length; a++) "" !== d && (d += this.options.delimiter2), d += b.data.pathGroup[a]; a = this.name + this.options.delimiter0 + "pathGroup=" + d
-                } return a
-            }; b.prototype.getStatusByDeepLink = function (a, b) { var d = null, f; this.inDeepLinking && (d = e(this, !0), d.data && "pathGroup" === a && (f = b.split(this.options.delimiter2), 0 < f.length && (d.data.pathGroup = f))); return d }; b.prototype.getPaths = function (a) { f(this, a) }; b.prototype.setStatus = function (a, b) { d(this, a, b) }; jQuery.fn.jplist.controls.CheckboxGroupFilter = function (a) { return new b(a) };
-            jQuery.fn.jplist.controlTypes["checkbox-group-filter"] = { className: "CheckboxGroupFilter", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.CheckboxTextFilterDTO = function (e, f, d, a, b) { return { textGroup: e, logic: f, path: d, ignoreRegex: a, mode: b, filterType: "textGroup" } } })(); (function () {
-            var e = function (a, c) { var e, d = []; e = null; var f; a.params.$checkboxes.each(function (a, b) { var e = jQuery(b); f = c ? e.data("selected-on-start") || !1 : e.get(0).checked; (e = e.val()) && f && d.push(e) }); e = new jQuery.fn.jplist.controls.CheckboxTextFilterDTO(d, a.params.dataLogic, a.params.dataPath, a.params.ignore); return e = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, e, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a, c, e) {
-                var d; a.params.$checkboxes.each(function (a, b) {
-                    d = jQuery(b);
-                    d.removeClass("jplist-selected"); d.get(0).checked = !1
-                }); if (c.data && c.data.textGroup && jQuery.isArray(c.data.textGroup) && 0 < c.data.textGroup.length) for (var f = 0; f < c.data.textGroup.length; f++) e = c.data.textGroup[f], d = a.params.$checkboxes.filter('[value="' + e + '"]'), 0 < d.length && (d.addClass("jplist-selected"), d.get(0).checked = !0)
-            }, d = function (a) { a.params.$checkboxes.on("change", function () { var c = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]]) }) }, a = function (a) {
-                a.params = {
-                    $checkboxes: a.$control.find('input[type="checkbox"]'),
-                    dataPath: a.$control.attr("data-path"), dataLogic: a.$control.attr("data-logic") || "or", ignore: ""
-                }; a.controlOptions && a.controlOptions.ignore && (a.params.ignore = a.controlOptions.ignore); a.params.$checkboxes.each(function () { var c = jQuery(this), e; e = c.get(0).checked; a.options.deepLinking && (e = !1); c.data("selected-on-start", e) }); d(a); return jQuery.extend(this, a)
-            }; a.prototype.getStatus = function (a) { return e(this, a) }; a.prototype.getDeepLink = function () {
-                var a = "", c, d = ""; if (this.inDeepLinking && (c = e(this, !1), c.data &&
-                jQuery.isArray(c.data.textGroup) && 0 < c.data.textGroup.length)) { for (a = 0; a < c.data.textGroup.length; a++) "" !== d && (d += this.options.delimiter2), d += c.data.textGroup[a]; a = this.name + this.options.delimiter0 + "textGroup=" + d } return a
-            }; a.prototype.getStatusByDeepLink = function (a, c) { var d = null, f; this.inDeepLinking && (d = e(this, !0), d.data && "textGroup" === a && (f = c.split(this.options.delimiter2), 0 < f.length && (d.data.textGroup = f))); return d }; a.prototype.getPaths = function (a) {
-                var c; this.params.dataPath && (c = new jQuery.fn.jplist.PathModel(this.params.dataPath,
-                "text"), a.push(c))
-            }; a.prototype.setStatus = function (a, c) { f(this, a, c) }; jQuery.fn.jplist.controls.CheckboxTextFilter = function (b) { return new a(b) }; jQuery.fn.jplist.controlTypes["checkbox-text-filter"] = { className: "CheckboxTextFilter", options: { ignore: "" } }
-        })(); (function () { jQuery.fn.jplist.controls.RadioButtonsPathFilterDTO = function (e, f) { return { path: e, type: "text", filterType: "path", selected: f } } })(); (function () {
-            var e = function (a, b) { var c = null, d; d = b ? a.params.initialSelected || !1 : a.$control.get(0).checked; c = { path: a.$control.attr("data-path"), type: "TextFilter", filterType: "path", selected: d }; d || (c.filterType = ""); return c = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a) { a.$control.on("change", function () { var b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[b]]) }) }, d = function (a) {
-                a.params = {
-                    initialSelected: a.$control.get(0).checked ||
-                    !1
-                }; f(a); return jQuery.extend(this, a)
-            }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink = function () { var a = "", b; this.inDeepLinking && (b = e(this, !1), b.data && b.data.selected && (a = this.name + this.options.delimiter0 + "selected=true")); return a }; d.prototype.getStatusByDeepLink = function (a, b) { var c = null; this.inDeepLinking && (c = e(this, !0), c.data && "selected" === a && (c.data.selected = !0)); return c }; d.prototype.getPaths = function (a) {
-                var b; if (b = this.$control.attr("data-path")) b = new jQuery.fn.jplist.PathModel(b,
-                "text"), a.push(b)
-            }; d.prototype.setStatus = function (a, b) { this.$control.get(0).checked = a.data.selected || !1 }; d.prototype.setByDeepLink = function (a) { this.observer.trigger(this.observer.events.knownStatusesChanged, [[e(this, !1)]]) }; jQuery.fn.jplist.controls.RadioButtonsFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["radio-buttons-filters"] = { className: "RadioButtonsFilter", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.RadioButtonsTextFilterDTO = function (e, f, d, a, b, c, h, g) { return { path: e, ignore: a, value: f, selected: d, mode: b, not: c, and: h, or: g, filterType: "TextFilter" } } })(); (function () {
-            var e = function (a, b) { var c = null, d; d = (c = b ? a.params.initialSelected : a.$control.prop("checked")) ? a.$control.val() : ""; c = new jQuery.fn.jplist.controls.RadioButtonsTextFilterDTO(a.params.dataPath, d, c, a.params.ignore, a.params.mode, a.params.not, a.params.and, a.params.or); return c = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking) }, f = function (a) {
-                a.$control.on("change", function () {
-                    var b = e(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged,
-                    [[b]])
-                })
-            }, d = function (a) { a.params = { initialSelected: a.$control.prop("checked"), dataPath: a.$control.attr("data-path"), ignore: a.$control.attr("data-ignore"), mode: a.$control.attr("data-mode") || "contains" }; "advanced" === a.params.mode ? (a.params.or = a.$control.attr("data-or"), a.params.and = a.$control.attr("data-and"), a.params.not = a.$control.attr("data-not")) : a.params.ignore = a.params.ignore || "[~!@#$%^&*()+=`'\"/\\_]+"; f(a); return jQuery.extend(this, a) }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink =
-            function () { var a = "", b = null; this.inDeepLinking && (b = e(this, !1), b.data && b.data.selected && (a = this.name + this.options.delimiter0 + "selected=true")); return a }; d.prototype.getStatusByDeepLink = function (a, b) { var c = null, d; this.inDeepLinking && (c = e(this, !1), c.data && (d = "selected" === a && "true" === b)) && (c.data.selected = d, c.data.value = this.$control.val()); return c }; d.prototype.getPaths = function (a) { var b; this.params.dataPath && (b = new jQuery.fn.jplist.PathModel(this.params.dataPath, "text"), a.push(b)) }; d.prototype.setStatus =
-            function (a, b) { this.$control.get(0).checked = a.data.selected || !1 }; d.prototype.setByDeepLink = function (a) { this.observer.trigger(this.observer.events.knownStatusesChanged, [[e(this, !1)]]) }; jQuery.fn.jplist.controls.RadioButtonsTextFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["radio-buttons-text-filters"] = { className: "RadioButtonsTextFilter", options: {} }
-        })(); (function () {
-            var e = function (a, b) { var c, d = null; c = b ? "true" === a.$control.attr("data-selected") : a.params.selected; a.params.path && (c = c ? { path: a.params.path, type: "number", filterType: "range", min: 0, max: 0, prev: a.params.prev, next: a.params.next, selected: c } : { path: a.params.path, filterType: "", selected: c }, d = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, c, a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)); return d }, f = function (a) {
-                a.$control.on("click", function () {
-                    a.params.selected = !a.params.selected;
-                    a.observer.trigger(a.observer.events.unknownStatusesChanged, [!1])
-                })
-            }, d = function (a) { a.params = { path: a.$control.attr("data-path"), prev: Number(a.$control.attr("data-min")), next: Number(a.$control.attr("data-max")), selected: "true" === a.$control.attr("data-selected") }; f(a); return jQuery.extend(this, a) }; d.prototype.getStatus = function (a) { return e(this, a) }; d.prototype.getDeepLink = function () {
-                var a = "", b; this.inDeepLinking && (b = e(this, !1), b.data && b.data.selected && (a = this.name + this.options.delimiter0 + "selected=true"));
-                return a
-            }; d.prototype.getStatusByDeepLink = function (a, b) { var c = null; this.inDeepLinking && (c = e(this, !1), c.data && "selected" === a && "true" === b && (c.data = { path: this.params.path, type: "number", filterType: "range", min: 0, max: 0, prev: this.params.prev, next: this.params.next, selected: !0 })); return c }; d.prototype.getPaths = function (a) { var b; this.params.path && (b = new jQuery.fn.jplist.PathModel(this.params.path, "number"), a.push(b)) }; d.prototype.setStatus = function (a, b) {
-                this.inStorage && b && this.$control.data("storage-status",
-                a); (this.params.selected = a.data.selected) ? this.$control.addClass("jplist-selected") : this.$control.removeClass("jplist-selected")
-            }; jQuery.fn.jplist.controls.RangeSliderToggleFilter = function (a) { return new d(a) }; jQuery.fn.jplist.controlTypes["range-filter"] = { className: "RangeSliderToggleFilter", options: {} }
-        })();
-        /**
-        * jPList - jQuery Data Grid Controls 5.2.0.7  sort-button control- http://jplist.com 
+        * JPList history-bundle
+        * jPList - jQuery Data Grid Controls 5.2.0.6 - http://jplist.com 
         * Copyright 2016 Miriam Zusin
         */
         (function () {
-            var g = function (a) { return a.params.$buttons.filter('[data-selected="true"]') }, h = function (a, c) {
-                var b = null, d = [], f; a.params.$buttons.each(function () { var b = jQuery(this), e; if (e = c ? "true" === b.attr("data-selected") : b.data(a.params.DATA_NAME)) f = new jQuery.fn.jplist.controls.SortButtonDTO(b.attr("data-path"), b.attr("data-type"), b.attr("data-order"), b.attr("data-datetime-format"), b.attr("data-ignore"), e), d.push(f) }); "single" === a.params.mode && 0 >= d.length && (b = g(a)) && 0 < b.length && (f = new jQuery.fn.jplist.controls.SortButtonDTO(b.attr("data-path"),
-                b.attr("data-type"), b.attr("data-order"), b.attr("data-datetime-format"), b.attr("data-ignore"), !0), d.push(f)); return b = new jQuery.fn.jplist.StatusDTO(a.name, a.action, a.type, new jQuery.fn.jplist.controls.SortButtonsGroupDTO(d), a.inStorage, a.inAnimation, a.isAnimateToTop, a.inDeepLinking)
-            }, k = function (a, c) { a.params.$buttons.each(function () { var a, d = jQuery(this); a = d.attr("data-path"); d = d.attr("data-type"); a = new jQuery.fn.jplist.PathModel(a, d); c.push(a) }) }, l = function (a) {
-                a.params.$buttons.on("click", function () {
-                    var c =
-                    jQuery(this), b; "single" === a.params.mode ? (a.params.$buttons.each(function () { jQuery(this).data(a.params.DATA_NAME, !1) }), c.data(a.params.DATA_NAME, !0)) : (b = c.data(a.params.DATA_NAME), c.data(a.params.DATA_NAME, !b)); c = h(a, !1); a.observer.trigger(a.observer.events.knownStatusesChanged, [[c]])
+            var c = function (a) { !a.history.statusesQueue || 0 >= a.history.statusesQueue.length ? a.$control.addClass("jplist-disabled") : a.$control.removeClass("jplist-disabled") }, d = function (a) {
+                a.observer.on(a.observer.events.unknownStatusesChanged, function () { c(a) }); a.observer.on(a.observer.events.knownStatusesChanged, function () { c(a) }); a.$control.on("click", function () {
+                    var b; a.history.popList(); b = a.history.getLastList() || []; a.observer.one(a.observer.events.statusesAppliedToList, function () { a.history.popList() });
+                    b ? a.observer.trigger(a.observer.events.knownStatusesChanged, [b]) : a.observer.trigger(a.observer.events.unknownStatusesChanged, [!0]); c(a)
                 })
-            }, e = function (a) {
-                a.params = { $buttons: a.$control.find("[data-path]"), mode: a.$control.attr("data-mode"), DATA_NAME: "jplist.selected" }; var c; a.params.$buttons.data(a.params.DATA_NAME, !1); "single" === a.params.mode && (c = g(a)) &&
-                0 < c.length && c.data(a.params.DATA_NAME, !0); l(a); return jQuery.extend(this, a)
-            }; e.prototype.getStatus = function (a) { return h(this, a) }; e.prototype.getDeepLink = function () { var a = "", c, b, d = []; if (this.inDeepLinking && (c = h(this, !1), c.data && c.data.sortGroup && 0 < c.data.sortGroup.length)) { for (var f = 0; f < c.data.sortGroup.length; f++) b = c.data.sortGroup[f], b.selected && d.push(b.path + this.options.delimiter3 + b.type + this.options.delimiter3 + b.order); 0 < d.length && (a = this.name + this.options.delimiter0 + "selected=" + d.join(this.options.delimiter2)) } return a };
-            e.prototype.getStatusByDeepLink = function (a, c) { var b = null, d, f; if (this.inDeepLinking && (b = h(this, !1), b.data && "selected" === a)) { b.data.sortGroup = []; d = c.split(this.options.delimiter2); for (var e = 0; e < d.length; e++) f = d[e].split(this.options.delimiter3), 3 === f.length && b.data.sortGroup.push({ selected: !0, path: f[0], type: f[1], order: f[2] }) } return b }; e.prototype.getPaths = function (a) { k(this, a) }; e.prototype.setStatus = function (a, c) {
-                var b; this.params.$buttons.removeClass("jplist-selected"); this.params.$buttons.data(this.params.DATA_NAME,
-                !1); if (a && a.data && a.data.sortGroup) for (var d = 0; d < a.data.sortGroup.length; d++) b = a.data.sortGroup[d], b.selected && (b = this.params.$buttons.filter('[data-path="' + b.path + '"][data-order="' + b.order + '"][data-type="' + b.type + '"]'), 0 < b.length && (b.addClass("jplist-selected"), b.data(this.params.DATA_NAME, !0)))
-            }; jQuery.fn.jplist.controls.SortButtonsGroup = function (a) { return new e(a) }; jQuery.fn.jplist.controlTypes["sort-buttons-group"] = { className: "SortButtonsGroup", options: {} }
-        })(); (function () { jQuery.fn.jplist.controls.SortButtonDTO = function (g, h, k, l, e, a) { return { path: g, type: h, order: k, dateTimeFormat: l, ignore: e, selected: a } }; jQuery.fn.jplist.controls.SortButtonsGroupDTO = function (g) { return { sortGroup: g } } })();
+            }, b = function (a) { c(a); d(a); return jQuery.extend(this, a) }; jQuery.fn.jplist.controls.BackButton = function (a) { return new b(a) }; jQuery.fn.jplist.controlTypes["back-button"] = { className: "BackButton", options: {} }
+        })(); (function () { var c = function (b) { b.$control.on("click", function () { b.observer.trigger(b.observer.events.unknownStatusesChanged, [!0]) }) }, d = function (b) { c(b); return jQuery.extend(this, b) }; jQuery.fn.jplist.controls.Reset = function (b) { return new d(b) }; jQuery.fn.jplist.controlTypes.reset = { className: "Reset", options: {} } })();
 
 
-
-
+        /////////////////////
         jQuery.fn.jplist.settings = {
            
             /**
@@ -760,7 +528,7 @@ module.exports = {
               $next.text($slider.slider('values', 1) + ' kr');             
           }
         };
-        
+       
     } //module.export.init STOPP
 }
 

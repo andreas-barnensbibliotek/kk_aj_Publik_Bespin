@@ -44,7 +44,6 @@
 			<span class="S_BB_p{{ansokningFilterfakta.Bokningsbar}}"></span>
 			<span class="S_ML_{{ansokningFilterfakta.Morklaggning}}"></span>
 			<span class="S_TH_{{ansokningFilterfakta.Takhojd}}"></span>
-			<span class="S_ML_{{ansokningFilterfakta.Morklaggning}}"></span>
 		</div>
 	</div>
 	

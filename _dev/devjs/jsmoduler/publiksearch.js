@@ -169,19 +169,17 @@ var arrIDdataservice = function (arrid, callback) {
 var publiksearchEvents = function () {
     var appsettings = appsettingsobject.config;
 
-
     $('.kk_aj_searchformbutton').on('click', function (e) {
         resetfilterlist();
-
+        noresultblock();
+        $('#searchantal').html("0");
         var tempsearchformcollector = searchformcollector();
 
         arrdataservice("mainsearch", tempsearchformcollector, function (data) {
-
             handlebartempletService(".kk_aj_productlist", "kk_aj_mainarrangemangList.txt", data, function (returtext) {
                 //scrolla till resultatlistan
                 scrolldowntosearchresult();
                 return false;
-
             });
         });
 
@@ -192,38 +190,43 @@ var publiksearchEvents = function () {
         var searchbox = $(".kk_aj_searchbuttonblock").offset().top;
         $('html, body').animate({
             scrollTop: searchbox
-        }, 500);        
+        }, 500);
     });
-    
-    $('.kk_aj_searchRensaformbutton').on('click', function (e) {
 
+    $('.kk_aj_searchRensaformbutton').on('click', function (e) {
         initlist();
         resetfilterlist();
-               
+
         return resetsearchform();
     });
+
     $('#kk_aj_freetextSearch').keypress(function (event) {
         if (event.which === 13) {
             if ($('#kk_aj_freetextSearch').val()) {
                 freesearch();
                 resetfilterlist();
             };
-           
-            event.preventDefault(); // Stop the default behaviour
-            
-        }
+            event.preventDefault(); // Stop the default behaviour            
+        };
     });
 
-    $('#kk_aj_btnfreetextSearch').on('click', function (e) {        
+    $('#kk_aj_btnfreetextSearch').on('click', function (e) {
         if ($('#kk_aj_freetextSearch').val()) {
             freesearch();
             resetfilterlist();
         };
-        
         return false;
     });
+
     ///MINNESLISTAN
-    $('body').on('click', '#kk_aj_cmd_minneslistan', function (e) {
+    $('body').on('click', '.kk_aj_cmd_minneslistan', function (e) {
+        $(this).removeClass("kk_aj_cmd_minneslistan").addClass("kk_aj_cmd_Closeminneslistan");
+        resetfilterlist();
+        getminneslista();
+        return false;
+    });
+
+    var getminneslista = function () {
         resetfilterlist();
         let minneslistaData = minneslistaHandler.getminneslistan();
         if (minneslistaData) {
@@ -232,30 +235,38 @@ var publiksearchEvents = function () {
                 return false;
             });
         };
-        return false;
-    });
-    
+    };
 
-    $('body').on('click','.kk_aj_arr_item_minneslista', function (e) {
+    $('body').on('click', '.kk_aj_cmd_Closeminneslistan', function (e) {
+        $(this).removeClass("kk_aj_cmd_Closeminneslistan").addClass("kk_aj_cmd_minneslistan");
+        initlist();
+        resetfilterlist();
+        noresultblock();
+        return resetsearchform();
+    });
+
+    $('body').on('click', '.kk_aj_arr_item_minneslista', function (e) {
         var arrid = $(this).attr("rel");
-        if(!$(this).hasClass("inminneslist")){
+        if (!$(this).hasClass("inminneslist")) {
             minneslistaHandler.addto(arrid);
             $(this).addClass("inminneslist");
             $(this).find('img').attr('src', '/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Check-32.png');
         }
         return false;
     });
-    $('body').on('click','.inminneslist', function (e) {
+
+    $('body').on('click', '.inminneslist', function (e) {
         var arrid = $(this).attr("rel");
         minneslistaHandler.removefrom(arrid);
         $(this).removeClass("inminneslist");
         $(this).find('img').attr('src', '/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png');
+
         return false;
     });
 
     // AUTOCOMPLETE Freetextsearch
     $('body').on('keydown', '#kk_aj_freetextSearch', function (event) {
-       
+
         $(this).autocomplete({
             source: function (request, response) {
                 searchdata = searchdataContainer;
@@ -284,11 +295,11 @@ var publiksearchEvents = function () {
               .appendTo(ul);
         };
     });
+
     $('#kk_aj_reset').on('click', function (e) {
-       
         return false;
     });
-    
+
     $('.kontformBlock a').on('click', function (e) {
         let obj = $(this);
         if (obj.hasClass("vald")) {
@@ -296,28 +307,35 @@ var publiksearchEvents = function () {
         } else {
             $('.kontformBlock a').removeClass("vald");
             obj.addClass("vald");
-        }       
-
+        };
         return false;
-    })
-    $('body').on('keypress','a', function (e) {   
+    });
+
+    $('body').on('keypress', 'a', function (e) {
         let obj = $(this);
         alert("inne" + e.keyCode)
         if (e.keyCode === 0 || e.keyCode === 32) {
-           alert("japp" + e.keyCode)
+            alert("japp" + e.keyCode)
             if (obj.hasClass("vald")) {
                 obj.removeClass("vald");
             } else {
                 $('.kontformBlock a').removeClass("vald");
                 obj.addClass("vald");
-            }
-        }
+            };
+        };
         return false;
-    })
-   
+    });
+
     $("body").on('DOMSubtreeModified', "#antalarr", function () {
-        //alert('changed:' + $('#antalarr').html());
-        $('#searchantal').html($('#antalarr').html());
+        var antalbox = $('#antalarr');
+        var antal = antalbox.html();
+        var searchantal = $('#searchantal');
+        searchantal.html("0");
+        if (antal) {
+            searchantal.html(antalbox.html());
+        } else {
+            searchantal.html("0");
+        };
     });
 
     $('.ArrangemangtypBlock a').on('click', function (e) {
@@ -327,7 +345,7 @@ var publiksearchEvents = function () {
         } else {
             $('.ArrangemangtypBlock a').removeClass("vald");
             obj.addClass("vald");
-        }
+        };
 
         return false;
     });
@@ -335,33 +353,28 @@ var publiksearchEvents = function () {
     $('#kk_aj_topsearchbutton').on('click', function (e) {
         $('.searchMainWrapper ').toggle();
     });
+
     $('.searchButton').on('click', function (e) {
-        
+
         let searchtext = $('#searchinputbox').val();
-        if(searchtext){
-            window.location.replace("http://www.kulturivast.se/search?query="+ searchtext);
-        }
+        if (searchtext) {
+            window.location.replace("http://www.kulturivast.se/search?query=" + searchtext);
+        };
         return false;
     });
-    
-}
+};
+
 var resetfilterlist = function () {
     $('#kk_aj_valdsokning').hide();
-    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
-   
+    $('#searchantal').html("0");
     $('#kk_aj_masterproductlistblock').jplist({
         command: 'empty'
     });
-     $('#searchantal').html('0');
-}
-//var addvaldasokord = function (sokord) {
-//    let ulobj = $('#kk_aj_valdsokord');
-//    ulobj.append('<li class="removevaltsokord"><i class="fa fa-check-square-o" aria-hidden="true"></i> ' + sokord + '</li>');
-//    return false;
-//}
-//$('#kk_aj_valdsokord').on('click', 'li', function (e) {   
-//    $(this).remove();
-//});
+};
+
+var noresultblock = function () {
+    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
+};
 
 //HELPER
 var searchformcollector = function () {
@@ -384,35 +397,30 @@ var searchformcollector = function () {
     if (tmparrtypid !== undefined) {
         searchdataContainer.arrtypid = tmparrtypid;
         //addvaldasokord(ArrangemangtypBlock.html());
-    }
+    };
     if (tmpkonstartid !== undefined) {
         searchdataContainer.konstartid = tmpkonstartid;
         //addvaldasokord(kontformBlock.html());
-    }
+    };
     if (tmpstartyear !== undefined) {
-        searchdataContainer.startyear = tmpstartyear;        
-    }
+        searchdataContainer.startyear = tmpstartyear;
+    };
     if (tmpstopyear !== undefined) {
-        searchdataContainer.stopyear = tmpstopyear;        
+        searchdataContainer.stopyear = tmpstopyear;
         if (searchdataContainer.startyear == 0 && searchdataContainer.stopyear > 0) {
             searchdataContainer.startyear = 1
         };
-    }
-    //if (tmpstartyear != 0 || tmpstopyear != 0) {
-      //  addvaldasokord("Ålder: " + tmpstartyear + "-" + tmpstopyear);
-    //}
-   
+    };
+    
     return searchdataContainer;    
 }
 
 var resetsearchform = function () {
-    //$(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
-    //$(':checkbox, :radio').prop('checked', false);
     $('.kk_aj_mainsearchblock a').removeClass("vald");
     var $slider = $("#kk_aj_slider-range2");
     $slider.attr("rel", "0");
     $slider.attr("rev", "0");
-    
+
     $slider.slider({
         range: true,
         min: 0,
@@ -426,14 +434,14 @@ var resetsearchform = function () {
     });
     $("#kk_aj_yearspan2").html($("#kk_aj_slider-range2").slider("values", 0) +
        " " + unescape("%E5") + "r -" + $("#kk_aj_slider-range2").slider("values", 1) + " " + unescape("%E5") + "r");
-   
+
     return false;
-}
+};
 
 
 var freesearch = function () {
     var freetextinput = $('#kk_aj_freetextSearch');
-    console.log("freetextinput" + freetextinput.val())
+    console.log("freetextinput" + freetextinput.val());
     if (freetextinput.val()) {
         var tempfreesearchcollector = searchdataContainer;
         tempfreesearchcollector.arrtypid = "0";
@@ -449,34 +457,29 @@ var freesearch = function () {
                     scrollTop: $(".kk_aj_searchbuttonblock").offset().top
                 }, 1000);
                 return false;
-
             });
         });
     };
-}
+};
 
 var freeAutocompleteValsearch = function (valdarrid) {
-    
     arrIDdataservice(valdarrid, function (data) {
-            handlebartempletService(".kk_aj_productlist", "kk_aj_mainarrangemangList.txt", data, function (returtext) {
-                //scrolla till resultatlistan
-                $('html, body').animate({
-                    scrollTop: $(".kk_aj_searchbuttonblock").offset().top
-                }, 1000);
-                return false;
-
-            });
+        handlebartempletService(".kk_aj_productlist", "kk_aj_mainarrangemangList.txt", data, function (returtext) {
+            //scrolla till resultatlistan
+            $('html, body').animate({
+                scrollTop: $(".kk_aj_searchbuttonblock").offset().top
+            }, 1000);
+            return false;
         });
-    
-}
+    });
+};
 
 var scrolldowntosearchresult = function () {
     $('html, body').animate({
         scrollTop: $(".kk_aj_searchbuttonblock").offset().top
     }, 500);
     return false;
-
-}
+};
 
 // LOCALSTORAGE
 // används för att rätt listningar skall visas om användaren öppnar sidan för förstagången = alla arr annars senaste sökningen och
@@ -484,15 +487,15 @@ var scrolldowntosearchresult = function () {
 
 var SetSession = function () {
     session.set("Session", "true");
-}
+};
 var isSessionSet = function () {
 
     if (session.get("Session")) {
         return true;
-    }
+    };
 
     return false;
-}
+};
 
 var localstorageHandler = function (stdata) {
 
@@ -500,6 +503,6 @@ var localstorageHandler = function (stdata) {
         storage.set('currentdata', stdata);
     } else {
         stdata = storage.get('currentdata');
-    }
+    };
     return stdata;
 };

@@ -178,6 +178,8 @@ Handlebars.registerHelper('imgfix', function (id, imgfile) {
     }
     return imgfile;
 });
+
+
 var faktavalueextention =function(typ){
     let fixat = typ.replace(/^\s+|\s+$/gm, '').toLowerCase();
     
@@ -214,3 +216,4 @@ var faktavalueextention =function(typ){
             return "";
     }
 }
+
