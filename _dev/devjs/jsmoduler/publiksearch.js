@@ -63,11 +63,16 @@ var initlist = function () {
 
 /* handlebartempletService hämtar handelbartemplate och uppdaterar produktlistan både i filter och i sök */
 var handlebartempletService = function(targetClass, usetemplateName, currentdata, callback){
-   
+   //$('#kk_aj_productlist').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />').show();
+    //
+
+    $('.kk_aj_spinner').show();
+    $('.jplist-no-results').hide();
+
     var appsetting = appsettingsobject.config;
          
     $.get(appsettingsobject.config.globalconfig.htmltemplateURL + "/" + usetemplateName, function (data) {
-
+       
         var fu = function (datat,currdata, callback) {
             
             currdata = localstorageHandler(currdata);
@@ -82,28 +87,30 @@ var handlebartempletService = function(targetClass, usetemplateName, currentdata
         }
             
         fu(data, currentdata, function () {
+           // $('.jplist-no-results').show();
             $('#kk_aj_mainproductlistblock').jplist({
                 command: 'empty'
             });
+            $('.kk_aj_spinner').hide();
+            $('.jplist-no-results').show();
 
-            $('#kk_aj_masterproductlistblock').jplist({
-                itemsBox: ' #kk_aj_productlist ',
-                itemPath: '.kk_aj_arritem',
-                panelPath: '.jplist-panel',
-                storage: 'localstorage',               
-                storageName: 'KulturkatalogenStorage',
-                redrawCallback: function (collection, $dataview, statuses) {
+                $('#kk_aj_masterproductlistblock').jplist({
+                    itemsBox: ' #kk_aj_productlist ',
+                    itemPath: '.kk_aj_arritem',
+                    panelPath: '.jplist-panel',
+                    storage: 'localstorage',
+                    storageName: 'KulturkatalogenStorage',
+                    redrawCallback: function (collection, $dataview, statuses) {
 
                         /* döljer produktlistan om filter inte ger resultat */
-                        if ($('.jplist-no-results').is(":visible")) {                           
+                        if ($('.jplist-no-results').is(":visible")) {
                             $('#kk_aj_productlist').hide();
                         } else {
                             $('#kk_aj_productlist').show();
-                        }                    
-                }
-            });
+                        };
 
-           
+                    }
+                });
         });
         
     }, 'html');
@@ -170,6 +177,7 @@ var publiksearchEvents = function () {
     var appsettings = appsettingsobject.config;
 
     $('.kk_aj_searchformbutton').on('click', function (e) {
+       
         resetfilterlist();
         noresultblock();
         $('#searchantal').html("0");
@@ -193,10 +201,10 @@ var publiksearchEvents = function () {
         }, 500);
     });
 
-    $('.kk_aj_searchRensaformbutton').on('click', function (e) {
+    $('.kk_aj_searchRensaformbutton').on('click', function (e) {        
         initlist();
         resetfilterlist();
-
+        
         return resetsearchform();
     });
 
@@ -365,6 +373,8 @@ var publiksearchEvents = function () {
 };
 
 var resetfilterlist = function () {
+       
+    $('.kk_aj_spinner').hide();
     $('#kk_aj_valdsokning').hide();
     $('#searchantal').html("0");
     $('#kk_aj_masterproductlistblock').jplist({
@@ -372,13 +382,12 @@ var resetfilterlist = function () {
     });
 };
 
-var noresultblock = function () {
-    $('.jplist-no-results').html('<img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />');
+var noresultblock = function () {    
+    $('.kk_aj_spinner').hide();
 };
 
 //HELPER
-var searchformcollector = function () {
-    //$('#kk_aj_valdsokord').html("");
+var searchformcollector = function () {    
     $('#kk_aj_valdsokning').show();
     let ArrangemangtypBlock =$('.ArrangemangtypBlock a.vald');
     let kontformBlock = $('.kontformBlock a.vald');
@@ -395,12 +404,10 @@ var searchformcollector = function () {
     searchdataContainer.stopyear="0";
 
     if (tmparrtypid !== undefined) {
-        searchdataContainer.arrtypid = tmparrtypid;
-        //addvaldasokord(ArrangemangtypBlock.html());
+        searchdataContainer.arrtypid = tmparrtypid;        
     };
     if (tmpkonstartid !== undefined) {
         searchdataContainer.konstartid = tmpkonstartid;
-        //addvaldasokord(kontformBlock.html());
     };
     if (tmpstartyear !== undefined) {
         searchdataContainer.startyear = tmpstartyear;
@@ -435,6 +442,13 @@ var resetsearchform = function () {
     $("#kk_aj_yearspan2").html($("#kk_aj_slider-range2").slider("values", 0) +
        " " + unescape("%E5") + "r -" + $("#kk_aj_slider-range2").slider("values", 1) + " " + unescape("%E5") + "r");
 
+    if (!$("#val_alla").hasClass("vald")) {
+        $("#val_alla").addClass("vald");
+    };
+    if (!$("#val_allakonstformer").hasClass("vald")) {
+        $("#val_allakonstformer").addClass("vald");
+    };
+  
     return false;
 };
 
