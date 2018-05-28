@@ -646,7 +646,7 @@ var kk_aj_sb_verify = function (ret) {
     return ret;
 };
 var validateage = function (ret) {
-    if ($("#kk_aj_yearspan").html() === '0år -0år') {
+    if ($("#kk_aj_yearspan").html().replace(/\s/g, '') === '0år-0år') {
         $('.kk_aj_yearspan_error').css('display', 'block');
         ret = false;
     };

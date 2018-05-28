@@ -169,7 +169,13 @@ var utovareContentJson = function (utovareJson) {
     $('.granska_Utovare_Adress').html(utovareJson.UtovareData.Adress);
     $('.granska_Utovare_postort').html(utovareJson.UtovareData.Postnr + " " + utovareJson.UtovareData.Ort);
     $('.granska_Utovare_tfn').html(utovareJson.UtovareData.Telefon);
-    $('.granska_Utovare_epost').html('<a href="mailto:' + utovareJson.UtovareData.Epost +'">'+ utovareJson.UtovareData.Epost + '</a>');
-    $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl +'" target="_blank">'+ utovareJson.UtovareData.Weburl + '</a>');
+    $('.granska_Utovare_epost').html('<a href="mailto:' + utovareJson.UtovareData.Epost + '">' + utovareJson.UtovareData.Epost + '</a>');
+    
+    if (utovareJson.UtovareData.Weburl.length > 40) {
+        $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">Gå till hemsidan</a>');
+    } else {
+        $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">' + utovareJson.UtovareData.Weburl + '</a>');
+    }
+    //$('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl +'" target="_blank">'+ utovareJson.UtovareData.Weburl + '</a>');
 };
 
