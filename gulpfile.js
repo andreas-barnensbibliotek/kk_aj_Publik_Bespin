@@ -83,11 +83,11 @@ gulp.task('jsconcatfiles', ['webpackjs', 'foundationJS'], function () {
                 srcPath.jsbundle + '/handelbars/handlebars.js',				
                 //srcPath.jsbundle + '/autocomplete/jquery.easy-autocomplete.js',
                 srcPath.jsbundle + '/localstorage/localstorage.js',
-                srcPath.jsbundle +'/kk_aj_js/kk_aj_kulturkatalogenWebpack.2.0.js',
+                srcPath.jsbundle +'/kk_aj_js/kk_aj_kulturkatalogenWebpack.3.0.js',
             ]
         )
        .pipe(sourcemaps.init())
-       .pipe(concat('kk_aj_publicbundle.2.0.0.js'))
+       .pipe(concat('kk_aj_publicbundle.3.0.0.js'))
        .pipe(sourcemaps.write())
        .pipe(gulp.dest(srcPath.publik + '/js/'));
 });

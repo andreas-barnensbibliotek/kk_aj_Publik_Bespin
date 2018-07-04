@@ -257,17 +257,28 @@
 	            //arrtmpimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/tmp/",
 	            //arrimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/",
 	            //granskavy: "GranskaDetalj"
-
-	            //SERVERN kulturkatalogenvast.org
-	            apiserver: "http://kulturkatalog.kivdev.se:8080",
-	            dnnURL: "http://www.kulturkatalogenvast.org",
-	            localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
-	            htmltemplateURL: "http://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+	            
+	            //NYA SERVERN www2.kulturkatalogenvast.org
+	            apiserver: "http://apidev.kulturkatalogenvast.org:8080",
+	            dnnURL: "http://www2.kulturkatalogenvast.org",
+	            localOrServerURL: "http://apidev.kulturkatalogenvast.org:8080/Api_v2",
+	            htmltemplateURL: "http://www2.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            detailediturl: "http://apidev.kulturkatalogenvast.org:8080/Api_v3/updatearrangemang",
 	            basepageUri: "/KulturkatalogenAdmin",
-	            arrtmpimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
-	            arrimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+	            arrtmpimgurl: "http://www2.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+	            arrimgurl: "http://www2.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
 	            granskavy: "GranskaDetalj"
+
+	            ////SERVERN kulturkatalogenvast.org
+	            //apiserver: "http://kulturkatalog.kivdev.se:8080",
+	            //dnnURL: "http://www.kulturkatalogenvast.org",
+	            //localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
+	            //htmltemplateURL: "http://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            //detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+	            //basepageUri: "/KulturkatalogenAdmin",
+	            //arrtmpimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+	            //arrimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+	            //granskavy: "GranskaDetalj"
 
 	            //SERVERN DEV dev.kulturkatalogenvast.org
 	            //apiserver: "http://dev.kulturkatalogenvast.org:8080",
@@ -12955,10 +12966,6 @@
 	};
 	var kk_aj_sb_verify = function (ret) {
 
-	    if ($("#kk_aj_yearspan").html() === '0år -0år') {
-	        $('.kk_aj_yearspan_error').css('display', 'block');
-	        ret = false;
-	    };
 	    if ($("#kk_aj_speltid").html() === '0min') {
 	        $('.kk_aj_speltid_error').css('display', 'block');
 	        ret = false;

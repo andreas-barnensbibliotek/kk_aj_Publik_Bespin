@@ -634,10 +634,6 @@ var kk_aj_rm_verify = function (ret) {
 };
 var kk_aj_sb_verify = function (ret) {
 
-    if ($("#kk_aj_yearspan").html() === '0år -0år') {
-        $('.kk_aj_yearspan_error').css('display', 'block');
-        ret = false;
-    };
     if ($("#kk_aj_speltid").html() === '0min') {
         $('.kk_aj_speltid_error').css('display', 'block');
         ret = false;
