@@ -116,7 +116,7 @@ var maincontent = function (arrJson) {
     
     $('#shareMail').attr('href', 'mailto:?Subject=Delat%20fr%C3%A5n+Kulturkatalogen%20V%C3%A4st%20-%20' + arrJson.Rubrik + '&body=Jag%20vill%20dela%20arrangemanget:%20%22' + arrJson.Rubrik + '%22%20%0D%0Afr%C3%A5n%20Kulturkatalogen%20V%C3%A4st%3A%20 http://kulturkatalog.kivdev.se/Kulturkatalogen/ArrangemangDetail/id/' + arrJson.Arrid);
     let facebokURI = "https://www.facebook.com/sharer.php?u=";
-    facebokURI += encodeURIComponent('http://kulturkatalog.kivdev.se/Kulturkatalogen/ArrangemangDetail/id/') + arrJson.Arrid  +'&picture=&' + encodeURIComponent(imgsrc) + '&t=' + encodeURIComponent(arrJson.Rubrik) + '&description=' + encodeURIComponent(arrJson.UnderRubrik);
+    facebokURI += encodeURIComponent('https://www.kulturkatalogenvast.org/Kulturkatalogen/ArrangemangDetail/id/') + arrJson.Arrid  +'&picture=&' + encodeURIComponent(imgsrc) + '&t=' + encodeURIComponent(arrJson.Rubrik) + '&description=' + encodeURIComponent(arrJson.UnderRubrik);
     $('#shareFacebook').attr('href', facebokURI);    
 };
 /**
@@ -171,11 +171,16 @@ var utovareContentJson = function (utovareJson) {
     $('.granska_Utovare_tfn').html(utovareJson.UtovareData.Telefon);
     $('.granska_Utovare_epost').html('<a href="mailto:' + utovareJson.UtovareData.Epost + '">' + utovareJson.UtovareData.Epost + '</a>');
     
-    if (utovareJson.UtovareData.Weburl.length > 40) {
-        $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">Gå till hemsidan</a>');
+    if (utovareJson.UtovareData.Weburl !== null && utovareJson.UtovareData.Weburl !== undefined){
+     if (utovareJson.UtovareData.Weburl.length > 40) {
+            $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">Gå till hemsidan</a>');
+        } else {
+            $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">' + utovareJson.UtovareData.Weburl + '</a>');
+        }
     } else {
-        $('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl + '" target="_blank">' + utovareJson.UtovareData.Weburl + '</a>');
+        $('.granska_Utovare_hemsida').html('');
     }
+   
     //$('.granska_Utovare_hemsida').html('<a href="http://' + utovareJson.UtovareData.Weburl +'" target="_blank">'+ utovareJson.UtovareData.Weburl + '</a>');
 };
 

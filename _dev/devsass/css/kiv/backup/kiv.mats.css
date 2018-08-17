@@ -1,0 +1,95 @@
+/* Startsida bilder vit bg istallet for konfiguerbar */
+.row.view-frontpage {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+}
+
+.view-frontpage .themebildajcover {
+    background: #fff !important;
+    margin-bottom: 30px;
+}
+
+.view-frontpage .themebildajcover .itemcontainer.row {
+    width: 100%;
+    margin: 0;
+}
+
+/* Exponerat sokblock med autocomplete */
+.searchMainWrapper .views-exposed-widget.views-widget-filter-search_api_views_fulltext {
+    float: none;
+    padding: 0;
+}
+.searchMainWrapper .views-exposed-widget.views-widget-filter-search_api_views_fulltext #contentfilterblock input.form-autocomplete {
+    background-position: 99% center;
+}
+.searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button {
+    margin: 0;
+    float: none;
+}
+.searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button .ajax-progress {
+    display: inline-block;
+    position: relative;
+    top: -35px;
+    left: 100px;
+}
+.searchMainWrapper button#edit-submit-search-page {
+    margin-left: 0.1rem !important;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 1.25rem;
+    padding: 0;
+    min-width: initial;
+    height: 50px;
+    line-height: 13px;
+    background-color: #999999;
+    border-color: #b9b9b9;
+    color: #333333;
+    border-radius: 3px;
+    padding: 1rem 2rem 1.0625rem 2rem;
+    font-size: 1rem;
+    margin: 0 0 1.25rem;
+    font-family: "acumin-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.searchMainWrapper #autocomplete {
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+.searchMainWrapper #autocomplete li {
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.searchMainWrapper #autocomplete li.selected {
+    background: #f77136;
+    color: #fff;
+    -webkit-transition-property: background, color;
+    -moz-transition-property: background, color;
+    -o-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion {
+    padding-left: 0.5rem;
+}
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion span {
+    display: inline;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-user-input {}
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-suffix {}
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-results {}
+.searchMainWrapper #autocomplete.search-api-autocomplete-suggestion .autocomplete-suggestion-note {}
+
+
+/* Fix for att lankar i listor och punklistor ska ha samma formatering som for de utan */
+.artikelMainContainer .artikelwrapper li a {
+    text-decoration: underline;
+}
+.artikelMainContainer .artikelwrapper li a:hover {
+    color: #000 !important;
+}

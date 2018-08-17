@@ -32,10 +32,10 @@
 <fortyfingers:STYLEHELPER ID="STYLEHELPER2" AddCssFile="public/css/jquery-ui.css" runat="server" />
 <fortyfingers:STYLEHELPER ID="typekit_KIV" AddCssFile="https://use.typekit.net/qpl5lxd.css" runat="server" />
 
-<%--<!-- kulturkatalogen.org GOOGLEANALYTICS kör denna när domänen är ändrad
-<fortyfingers:STYLEHELPER ID="googleanalytics" AddToHead="<script async src='https://www.googletagmanager.com/gtag/js?id=UA-7175122-13'></script><script>window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-7175122-13');</script>" runat="server" />
--->
-<!-- DEV GOOGLEANALYTICS -->
+<!-- kulturkatalogen.org GOOGLEANALYTICS kör denna när domänen är ändrad-->
+<fortyfingers:STYLEHELPER ID="googleanalytics" AddAfterBody="<script async src='https://www.googletagmanager.com/gtag/js?id=UA-7175122-13'></script><script>window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-7175122-13');</script>" runat="server" />
+
+<%--<!-- DEV GOOGLEANALYTICS -->
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddToHead="<script async src='https://www.googletagmanager.com/gtag/js?id=UA-111614024-1'></script><script>window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-111614024-1');</script>" runat="server" />--%>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,12 +58,12 @@
 
         <section class="right tab-bar-section tab-bar-logosection">
                         <div class="logo-img">
-            	<a rel="home" href="http://develop-v1.kulturivast.se" title="Kultur i Väst Hem">Kultur i Väst</a>
+            	<a rel="home" href="http://www.kulturivast.se" title="Kultur i Väst Hem">Kultur i Väst</a>
 	        </div>
         </section>
 
              <section class="right-small">
-                 <a id="kk_aj_topsearchbutton" href="#"><span>S&Ouml;K</span></a>
+                 <a id="kk_aj_topsearchbutton" href="#"><span>S&Ouml;K </span></a>
              </section>
          </nav>
          <!-- ### MENYBALK END (NAV) ################################################################################################ -->
@@ -119,7 +119,7 @@
                  <div class="row">
                      <div class="small-12 columns">
                          <div class="searchmainContent">                             
-                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k" />
+                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k p&aring; kulturivast.se" />
                              <button type="button" class="searchButton">
                              </button>
                          </div>
@@ -145,7 +145,7 @@
 
         <div id="ContentPane" class="contentPane content-wrapper" runat="server">
             <div class="loader">
-                    <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
+                    <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/page-loader.gif" alt="Laddar sidan" />
                 </div>
         </div>
             
@@ -179,15 +179,15 @@
                              <ul class="socialiconlist">
                                  <li>
                                      <a href="https://www.facebook.com/kulturivast/" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/FACEBOOKlogga.png" alt="www.facebook.com/kulturivast/"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/FACEBOOKlogga.png" alt="www.facebook.com/kulturivast/"></a>
                                  </li>
                                  <li>
                                      <a href="https://twitter.com/kulturivast" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/TWITTERlogga.png" alt="www.twitter.com/kulturivast"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/TWITTERlogga.png" alt="www.twitter.com/kulturivast"></a>
                                  </li>
                                  <li>
                                      <a href="https://www.instagram.com/kulturivast/" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/INSTAGRAMlogga.png" alt="www.instagram.com/kulturivast"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/INSTAGRAMlogga.png" alt="www.instagram.com/kulturivast"></a>
                                  </li>
                              </ul>
                          </div>
@@ -239,7 +239,7 @@
 
 <dnn:jQuery ID="dnnjQuery" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER5" AddJsFile="public/js/tinymce/tinymce.min.js" runat="server" />
-<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.2.0.9.js" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.3.0.4.1.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER4" AddJsFile="public/js/modernizr.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddJsFile="public/js/jquery.adaptive-backgrounds.js" runat="server" />
 

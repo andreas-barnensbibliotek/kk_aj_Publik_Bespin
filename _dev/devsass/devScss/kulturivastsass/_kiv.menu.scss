@@ -1,8 +1,4 @@
-@import "singularitygs";
-@import "compass";
-@import "breakpoint";
 
-@import "variables/**/*.scss";
 
 /* New design menu */
 .move-right .exit-off-canvas {
@@ -79,7 +75,7 @@
     }
 
     ul.off-canvas-list li.expanded li {
-        background: #a6a8aa;
+        background: #ebeae6;
 
         //@include animate(0.3s, background);
    
@@ -92,7 +88,6 @@
     ul.off-canvas-list li.expanded li a {
         font-weight: 600;
         color: #fff;
-        text-transform: capitalize;
         font-size: 0.9rem;
 
         //@include animate(0.5s, (color, background));
@@ -104,4 +99,22 @@
         //color: $orange;
    
     }
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li {}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li {
+    background: #ebeae6 !important;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li a:hover {
+    color: #f77136 !important;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first a {
+    background: none !important;
+}
+
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li a {
+    color: #000 !important;
 }

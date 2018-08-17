@@ -58,7 +58,7 @@
 
         <section class="right tab-bar-section tab-bar-logosection">
                         <div class="logo-img">
-            	<a rel="home" href="http://develop-v1.kulturivast.se" title="Kultur i Väst Hem">Kultur i Väst</a>
+            	<a rel="home" href="http://www.kulturivast.se" title="Kultur i Väst Hem">Kultur i Väst</a>
 	        </div>
         </section>
 
@@ -76,38 +76,41 @@
              
               <ul class="off-canvas-list">       
                  <li class="first expanded"><a href="http://www.kulturivast.se" title="">Start</a></li>
-                 <li class="expanded"><a href="http://www.kulturivast.se/det-har-jobbar-vi-med" class="togglebgimagehide" title="">Det h&auml;r jobbar vi med</a></li>
-                 <ul class="off-canvas-submenu multiColumn">
-                     <li><a href="http://www.kulturivast.se/arkitektur">arkitektur</a></li>
-                     <li><a href="http://www.kulturivast.se/arrangorsutveckling">arrang&ouml;rsutveckling</a></li>
-                     <li><a href="http://www.kulturivast.se/barn-och-unga">Barn och unga</a></li>
-                     <li><a href="http://www.kulturivast.se/bibliotek">bibliotek</a></li>
-                     <li><a href="http://www.kulturivast.se/dans">dans</a></li>
-                     <li><a href="http://www.kulturivast.se/film">Film</a></li>                     
-                     <li><a href="http://www.kulturivast.se/fria-kulturutovare">Fria kulturut&ouml;vare</a></li>
-                     <li><a href="http://www.kulturivast.se/internationellt">Internationellt</a></li>
-                     <li><a href="http://www.kulturivast.se/jamstalldhet">J&auml;mst&auml;lldhet</a></li>
-                     <li><a href="http://www.kulturivast.se/klangfarg">Klangf&auml;rg</a></li>
-                     <li><a href="http://www.kulturivast.se/litteratur">Litteratur</a></li>
-                     <li><a href="http://www.kulturivast.se/ljudmagasinet">ljudmagasinet</a></li>
-                     <li><a href="http://www.kulturivast.se/musik">Musik</a></li>
-                     <li><a href="http://www.kulturivast.se/samhallsutveckling">Samh&auml;llsutveckling</a></li>
-                     <li><a href="http://www.kulturivast.se/teater">Teater</a></li>                     
-                     <li><a href="http://www.kulturivast.se/tillganglighet">Tillg&auml;nglighet</a></li>
-                 </ul>
-                 <li><a href="http://www.kulturivast.se/kurser-event-natverkstraffar">Kurser | Event | N&auml;tverkstr&auml;ffar</a></li>                 
-                 <li><a href="http://www.kulturivast.se/kulturkatalogen-vast">Kulturkatalogen V&auml;st</a></li>
-                 <li><a href="http://www.kulturivast.se/kalendarium/kurserfortbildningar">Kalender</a></li>
-                 <li><a href="http://www.kulturivast.se/arrangera-boka">Arrangera | Boka</a></li>
-                 <li><a href="http://www.kulturivast.se/trycksaker-och-publikationer">Trycksaker | Publikationer</a></li>                 
-                 <li><a href="http://www.kulturivast.se/kontakt">Kontakt</a></li>
-                 <li><a href="http://www.kulturivast.se/press">Press</a></li>
-                 <li><a href="http://www.kulturivast.se/om-kultur-i-vast">Om Kultur i V&auml;st</a></li>                 
-                 <li><a href="http://www.kulturivast.se/in-english">In English</a></li>
+                 <li class="expanded"><a href="http://www.kulturivast.se/det-har-jobbar-vi-med" class="togglebgimagehide" title="">Det h&auml;r jobbar vi med</a>
+                     <ul class="off-canvas-submenu multiColumn">                        
+                         <li class="leaf"><a href="http://www.kulturivast.se/arrangorsutveckling">arrang&ouml;rsutveckling</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/barn-och-unga">Barn och unga</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/bibliotek">bibliotek</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/dans">dans</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/film-och-rorlig-bild">Film och r&ouml;rlig bild</a></li>                     
+                         <li class="leaf"><a href="http://www.kulturivast.se/fria-kulturutovare">Fria kulturut&ouml;vare</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/internationellt">Internationellt</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/jamstalldhet">J&auml;mst&auml;lldhet</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/klangfarg">Klangf&auml;rg</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/kultur-och-samhallsutveckling" >Kultur och samh&auml;llsutveckling</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/litteratur">Litteratur</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/ljudmagasinet">ljudmagasinet</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/mik">Mik</a></li>  
+                         <li class="leaf"><a href="http://www.kulturivast.se/musik">Musik</a></li>
+                         <li class="leaf"><a href="http://www.kulturivast.se/samtida-konst-arkitektur-form-och-design">Samtida konst, arkitektur, form och design</a></li>  
+                         <li class="leaf"><a href="http://www.kulturivast.se/teater">Teater</a></li>                     
+                         <li class="leaf"><a href="http://www.kulturivast.se/tillganglighet">Tillg&auml;nglighet</a></li>
+                     </ul>
+                 </li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/kurser-event-natverkstraffar">Kurser | Event | N&auml;tverkstr&auml;ffar</a></li>                 
+                 <li class="leaf"><a href="http://www.kulturivast.se/kalendarium/kurserfortbildningar">Kalender</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/kulturkatalogen-vast">Kulturkatalogen V&auml;st</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/arrangera-boka">Arrangera | Boka</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/trycksaker-och-publikationer">Trycksaker | Publikationer</a></li>                 
+                 <li class="leaf"><a href="http://www.kulturivast.se/kontakt">Kontakt</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/press">Press</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/om-kultur-i-vast">Om Kultur i V&auml;st</a></li>                 
+                 <li class="leaf"><a href="http://www.kulturivast.se/in-english">In English</a></li>
+                 <li class="leaf"><a href="http://www.kulturivast.se/nyhetsbrev">Nyhetsbrev</a></li>
                  <li>
              </ul>
             </div>
-             <dnn:MENU ID="MENU1" MenuStyle="Simple" runat="Server" />
+             <dnn:MENU ID="MENU1" MenuStyle="Simple" runat="Server" Visible="false"/>
          </aside>
          <a class="exit-off-canvas"></a>
 <!-- ### OFFCANVAS END ################################################################################################ -->
@@ -145,7 +148,7 @@
 
         <div id="ContentPane" class="contentPane content-wrapper" runat="server">
             <div class="loader">
-                    <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
+                    <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/page-loader.gif" alt="Laddar sidan" />
                 </div>
         </div>
             
@@ -179,15 +182,15 @@
                              <ul class="socialiconlist">
                                  <li>
                                      <a href="https://www.facebook.com/kulturivast/" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/FACEBOOKlogga.png" alt="www.facebook.com/kulturivast/"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/FACEBOOKlogga.png" alt="www.facebook.com/kulturivast/"></a>
                                  </li>
                                  <li>
                                      <a href="https://twitter.com/kulturivast" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/TWITTERlogga.png" alt="www.twitter.com/kulturivast"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/TWITTERlogga.png" alt="www.twitter.com/kulturivast"></a>
                                  </li>
                                  <li>
                                      <a href="https://www.instagram.com/kulturivast/" target="_blank">
-                                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/INSTAGRAMlogga.png" alt="www.instagram.com/kulturivast"></a>
+                                         <img src="portals/_default/skins/kk_aj_Publik_Bespin/public/images/INSTAGRAMlogga.png" alt="www.instagram.com/kulturivast"></a>
                                  </li>
                              </ul>
                          </div>
@@ -239,7 +242,7 @@
 
 <dnn:jQuery ID="dnnjQuery" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER5" AddJsFile="public/js/tinymce/tinymce.min.js" runat="server" />
-<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.2.2.1.js" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.3.0.5.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER4" AddJsFile="public/js/modernizr.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddJsFile="public/js/jquery.adaptive-backgrounds.js" runat="server" />
 

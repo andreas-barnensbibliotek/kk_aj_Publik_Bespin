@@ -7088,7 +7088,7 @@ ul.off-canvas-list {
   /* line 258, bower_components/foundation/scss/foundation/components/_offcanvas.scss */
   ul.off-canvas-list li a {
     border-bottom: 1px solid #262626;
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     display: block;
     padding: 0.66667rem;
     -webkit-transition: background 300ms ease;

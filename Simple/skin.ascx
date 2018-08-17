@@ -30,6 +30,7 @@
 <fortyfingers:STYLEHELPER ID="headMeta2" AddToHead='<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">' runat="server" />
 <fortyfingers:STYLEHELPER ID="headreferrer" AddToHead='<meta name="referrer" content="no-referrer">' runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER2" AddCssFile="public/css/jquery-ui.css" runat="server" />
+<fortyfingers:STYLEHELPER ID="typekit_KIV" AddCssFile="https://use.typekit.net/qpl5lxd.css" runat="server" />
 
 <%--<!-- kulturkatalogen.org GOOGLEANALYTICS kör denna när domänen är ändrad
 <fortyfingers:STYLEHELPER ID="googleanalytics" AddToHead="<script async src='https://www.googletagmanager.com/gtag/js?id=UA-7175122-13'></script><script>window.dataLayer=window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-7175122-13');</script>" runat="server" />
@@ -62,7 +63,7 @@
         </section>
 
              <section class="right-small">
-                 <a href="http://www.kulturivast.se/search?query="><span>S&Ouml;K</span></a>
+                 <a id="kk_aj_topsearchbutton" href="#"><span>S&Ouml;K</span></a>
              </section>
          </nav>
          <!-- ### MENYBALK END (NAV) ################################################################################################ -->
@@ -113,15 +114,14 @@
 
 <!-- CONTENTPANE START ################################################################################################ -->
 
-         <div class="searchMainWrapper search-opener" style="display:none;">
+         <div class="searchMainWrapper search-opener" >
              <div class="small-12 columns">
                  <div class="row">
                      <div class="small-12 columns">
-                         <div class="searchmainContent">
-                             <label for="searchinputbox">S&ouml;k p&aring; kulturivast.se</label>
-                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k p&aring; kulturivast.se" />
+                         <div class="searchmainContent">                             
+                             <input type="text" id="searchinputbox" class="searchinputbox" placeholder="S&ouml;k" />
                              <button type="button" class="searchButton">
-                                 <img src="http://kulturivast.se/sites/all/themes/kivnew/images/PilVanster28.png" alt="Sök" /></button>
+                             </button>
                          </div>
                      </div>
 
@@ -129,55 +129,49 @@
              </div>
          </div>
 
-          <!-- Navigerings breadcrumb START -->
+         <!-- Navigerings breadcrumb START -->
          <div class="small-12 columns">
              <div class="row">
                  <div class="menybreadcrumb">
-                     <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
+                     <a href="http://www.kulturkivast.se/kulturkatalogen">START</a> | <dnn:BREADCRUMB ID="dnnBreadcrumb" runat="server" CssClass="mbc_navlinklist" RootLevel="0" Separator=" | " HideWithNoBreadCrumb="false" />           
                  </div>
              </div>
          </div>
          <!-- Navigerings breadcrumb END -->
+        <!-- ################################################################################################ -->
+        
+         <!-- START content-wrapper -->
 
-         <br>
-         <div class="small-12 columns contentboxheight">
-             <!-- ################################################################################################ -->
-
-                <!-- Content Wrapper. Contains page content -->
-            <div class="row">
-                <div id="ContentPane" class="contentPane content-wrapper" runat="server">
-                    <div class="loader">
-                         <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
-                     </div>
+        <div id="ContentPane" class="contentPane content-wrapper" runat="server">
+            <div class="loader">
+                    <img src="http://kulturivast.se/sites/all/themes/kivnew/images/page-loader.gif" alt="Laddar sidan" />
                 </div>
-              </div>
-                <!-- /.content-wrapper -->
+        </div>
+            
+        <!-- /.content-wrapper -->
 
-                <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
               
-             <a href="#" id="myBtn" title="Go to top">
-                <i class="fa fa-arrow-up"></i>
-             </a>
+        <a href="#" id="myBtn" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+        </a>
 
-         </div>
+        
 
 <!-- CONTENTPANE END ################################################################################################ -->  
          <div class="small-12 columns footencol">
              <footer class="footer" style="margin-top: 2rem;">
                  <div class="row">
                      <div class="small-12 medium-12 large-12 columns">
-                         <div class="vglogo">
-                             <a href="http://www.vgregion.se" target="_blank">
-                                 <img alt="V&auml;stra G&ouml;talandsregionen" src="http://kulturivast.se/sites/all/themes/kivnew/images/vg_logo_white.png">
-                             </a>
-                         </div>
+                         <a href="/"></a>
                      </div>
                  </div>
                  <div class="row footdelare">
                      <div class="small-12 medium-6 large-6 columns">
                          <div class="foot-kivlogo-container">
-                             <a href="/">
-                                 <img alt="Kultur i V&auml;st" src="http://kulturivast.se/sites/all/themes/kivnew/images/kivlogo.png"></a>
+                             <div class="foot-lank"><a href="">Bes&ouml;k v&aring;ra andra webbplatser</a></div>
+                            <div class="foot-lank last"><a href="">Prenumerera p&aring; v&aring;ra nyhetsbrev</a></div>
+
                          </div>
                      </div>
                      <div class="small-12 medium-6 large-6 columns">
@@ -242,10 +236,10 @@
 
    
  </div>
-
+<div style="width:100%; background-color:red; color:#fff;"> DEV-SITE</dev>
 <dnn:jQuery ID="dnnjQuery" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER5" AddJsFile="public/js/tinymce/tinymce.min.js" runat="server" />
-<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.1.0.2.js" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.2.1.6.1d.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER4" AddJsFile="public/js/modernizr.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddJsFile="public/js/jquery.adaptive-backgrounds.js" runat="server" />
 

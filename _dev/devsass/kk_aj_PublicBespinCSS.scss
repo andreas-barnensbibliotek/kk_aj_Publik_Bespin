@@ -96,7 +96,8 @@
   @import 'css/kiv/kiv.footer';
   @import 'css/kiv/kiv.header';
   @import 'css/kiv/kiv.frontpage';
-  @import 'css/kiv/kiv.menu';
+  @import 'devScss/kulturivastsass/_kiv.menu';
+  @import 'css/kiv/kiv.mats';
   
   @import 'css/jquery.steps';
   
@@ -172,7 +173,8 @@ $font-path: "../fonts/foundation-icons/foundation-icons";
   font-style: normal;
 }
 
-@import "http://develop-v1.kulturivast.se/sites/all/themes/kivnew/fonts/foundation-icons/foundation-icons.css";
+@import "foundation-icons.css";
+//"http://develop-v1.kulturivast.se/sites/all/themes/kivnew/fonts/foundation-icons/foundation-icons.css";
 //@import "http://www.kulturivast.se/sites/all/themes/kivnew/fonts/foundation-icons/foundation-icons.css";
 ///@import "http://kulturivast.se.preview.binero.se/sites/all/themes/kivnew/fonts/foundation-icons/foundation-icons.css";
 //@import "/public/fonts/foundation-icons/foundation-icons/foundation-icons.css";

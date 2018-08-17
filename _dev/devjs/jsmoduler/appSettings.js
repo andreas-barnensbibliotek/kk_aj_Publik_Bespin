@@ -24,14 +24,14 @@ window.kk_aj_publikAppsettings =
             //granskavy: "GranskaDetalj"
 
             ////SERVERN kulturkatalogenvast.org
-            apiserver: "http://kulturkatalog.kivdev.se:8080",
-            dnnURL: "http://www.kulturkatalogenvast.org",
-            localOrServerURL: "http://kulturkatalog.kivdev.se:8080/Api_v2",
-            htmltemplateURL: "http://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-            detailediturl: "http://kulturkatalog.kivdev.se:8080/Api_v3/updatearrangemang",
+            apiserver: "https://api.kulturkatalogenvast.org:443",
+            dnnURL: "https://www.kulturkatalogenvast.org",
+            localOrServerURL: "https://api.kulturkatalogenvast.org:443/Api_v2",
+            htmltemplateURL: "https://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+            detailediturl: "https://api.kulturkatalogenvast.org:443/Api_v3/updatearrangemang",
             basepageUri: "/KulturkatalogenAdmin",
-            arrtmpimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
-            arrimgurl: "http://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+            arrtmpimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+            arrimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
             granskavy: "GranskaDetalj"
 
             //SERVERN DEV dev.kulturkatalogenvast.org

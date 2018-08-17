@@ -1,3 +1,15 @@
+
+/* Orange H1 sidtitel till Svart */
+.artikelMainContainer h1,
+.omossspace h1 {
+    color: #000000;
+}
+
+/* Annan farg på info rutorna */
+.artsidecontainer {
+    background-color: #ebeae6;
+}
+
 /* Startsida bilder vit bg istallet for konfiguerbar */
 .row.view-frontpage {
     padding-left: 0.9375rem;
@@ -19,19 +31,23 @@
     float: none;
     padding: 0;
 }
+
 .searchMainWrapper .views-exposed-widget.views-widget-filter-search_api_views_fulltext #contentfilterblock input.form-autocomplete {
     background-position: 99% center;
 }
+
 .searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button {
     margin: 0;
     float: none;
 }
+
 .searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button .ajax-progress {
     display: inline-block;
     position: relative;
     top: -35px;
     left: 100px;
 }
+
 .searchMainWrapper button#edit-submit-search-page {
     margin-left: 0.1rem !important;
     margin-top: 0px;
@@ -50,15 +66,18 @@
     margin: 0 0 1.25rem;
     font-family: "acumin-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+
 .searchMainWrapper #autocomplete {
     border: 1px solid #ccc;
     margin-top: 5px;
 }
+
 .searchMainWrapper #autocomplete li {
     height: 35px;
     line-height: 35px;
     cursor: pointer;
 }
+
 .searchMainWrapper #autocomplete li.selected {
     background: #f77136;
     color: #fff;
@@ -71,25 +90,61 @@
     -o-transition-duration: 0.25s;
     transition-duration: 0.25s;
 }
+
 .searchMainWrapper #autocomplete .search-api-autocomplete-suggestion {
     padding-left: 0.5rem;
 }
+
 .searchMainWrapper #autocomplete .search-api-autocomplete-suggestion span {
     display: inline;
     float: none;
     margin: 0;
     padding: 0;
 }
-.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-user-input {}
-.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-suffix {}
-.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-results {}
-.searchMainWrapper #autocomplete.search-api-autocomplete-suggestion .autocomplete-suggestion-note {}
 
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-user-input {}
+
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-suffix {}
+
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion .autocomplete-suggestion-results {}
+
+.searchMainWrapper #autocomplete.search-api-autocomplete-suggestion .autocomplete-suggestion-note {}
 
 /* Fix for att lankar i listor och punklistor ska ha samma formatering som for de utan */
 .artikelMainContainer .artikelwrapper li a {
     text-decoration: underline;
 }
+
 .artikelMainContainer .artikelwrapper li a:hover {
     color: #000 !important;
+}
+
+.page-taxonomy-term-2406 .omossspace h1 {
+    color: transparent;
+    margin-bottom: 0px;
+}
+
+.page-taxonomy-term-2406 .main-background, .page-taxonomy-term-2406 .footencol {
+    background-color: #000 !important;
+}
+
+.page-taxonomy-term-2406 .breadcrumb-BG {
+    background-color: #fff;
+}
+
+.page-taxonomy-term-2406 .top-bild-wrapper {
+    margin-bottom: 0px !important;
+}
+
+.page-taxonomy-term-2406 .ajimage-omrade-nod img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.page-taxonomy-term-2406 .top-bild-wrapper {
+    margin-bottom: -100px !important;
+}
+
+.page-taxonomy-term-2406 .footencol, .page-taxonomy-term-980 .footencol {
+    background-color: #000;
 }
