@@ -1,0 +1,258 @@
+/* line 1, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper > .columns:first-child {
+  padding: 0; }
+
+/* line 5, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper {
+  min-height: 50px;
+  height: 50px;
+  overflow: hidden; }
+
+@media (min-width: 40em) {
+  /* line 12, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper {
+    min-height: 200px; } }
+
+/* line 17, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+@media (min-width: 40em) {
+  /* line 23, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper #contentfilterblock {
+    margin-top: 0.5rem;
+    margin-bottom: 1em; } }
+
+/* line 29, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input {
+  background: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  font-size: 18px !important; }
+
+@media (min-width: 40em) {
+  /* line 39, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper #contentfilterblock input {
+    background: #fff;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem; } }
+
+/* line 49, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 54, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 59, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 64, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-moz-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input::placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 69, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000; }
+
+/* line 73, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-ms-input-placeholder {
+  color: #000000; }
+
+/* line 77, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
+  text-transform: uppercase; }
+
+@media (min-width: 40em) {
+  /* line 82, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
+    text-transform: initial; } }
+
+/* line 87, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #edit-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 60px;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 2000;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -2px -238px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 104, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper #edit-submit {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+@media (min-width: 40em) {
+  /* line 111, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper #edit-submit {
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: #999999;
+    overflow: visible;
+    line-height: 13px;
+    margin: 0 0 1.25rem;
+    padding: 1rem 2rem 1.0625rem 2rem;
+    background-image: none; } }
+
+/* line 124, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper {
+  display: block !important; }
+
+@media (min-width: 40em) {
+  /* line 129, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper {
+    display: none !important; } }
+
+@media (min-width: 40em) {
+  /* line 135, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .searchMainWrapper.sok-open {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important; } }
+
+/* line 142, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .tab-bar {
+  height: 47px;
+  background: #ebeae6; }
+
+/* line 147, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .left-small {
+  height: 47px;
+  line-height: 47px;
+  background: none;
+  border: none;
+  background-image: url("../images/kiv-elements.png");
+  background-repeat: repeat-x;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 85px;
+  background-position: -1px -3px; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 163, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .left-small {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+@media (min-width: 40em) {
+  /* line 170, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .left-small {
+    width: 150px; } }
+
+/* line 175, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .left-small span {
+  color: #000;
+  font-size: 18px !important;
+  padding-left: 67px;
+  visibility: hidden; }
+
+@media (min-width: 40em) {
+  /* line 183, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .left-small span {
+    visibility: visible; } }
+
+/* line 188, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .left-small:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70); }
+
+/* line 193, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .right-small {
+  right: 350px;
+  height: 47px;
+  width: 120px;
+  line-height: 47px;
+  background: none;
+  border: none;
+  background-image: url("../images/kiv-elements.png");
+  background-position: 2px -61px;
+  background-repeat: repeat-x;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  display: none !important; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 211, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .right-small {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+@media (min-width: 40em) {
+  /* line 218, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .right-small {
+    display: block !important; } }
+
+/* line 223, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .right-small span {
+  color: #000;
+  font-size: 18px !important;
+  padding-left: 48px; }
+
+/* line 229, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .left-small:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70); }
+
+/* line 234, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .tab-bar-logosection {
+  height: 47px;
+  line-height: 47px;
+  border: none;
+  background: none;
+  margin: 0;
+  left: auto;
+  right: 0px;
+  padding-right: 0;
+  width: 285px; }
+
+/* line 246, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .logo-img a {
+  height: 47px;
+  width: 275px;
+  line-height: 2000px;
+  display: block;
+  overflow: hidden;
+  background-image: url("../images/kiv-elements.png");
+  background-repeat: repeat-x;
+  background-position: -12px -168px; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 258, _dev/devsass/css/kiv/kiv.header.scss */
+  .kiv-new-header .logo-img a {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }

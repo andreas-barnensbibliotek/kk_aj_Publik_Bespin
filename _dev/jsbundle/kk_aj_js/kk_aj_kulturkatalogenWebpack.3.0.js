@@ -245,18 +245,18 @@
 /***/ (function(module, exports) {
 
 	
-	window.kk_aj_publikAppsettings =
+	var kk_aj_publikAppsettings =
 	    {
 	        globalconfig: {
-	            //apiserver: "http://localhost:60485",
-	            //dnnURL: "http://dnndev.me",           
-	            //localOrServerURL: "http://localhost:60485/Api_v2",
-	            //htmltemplateURL: "http://dnndev.me/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            //detailediturl: "http://localhost:60485/Api_v3/updatearrangemang",
-	            //basepageUri: "/KulturkatalogenAdmin",
-	            //arrtmpimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/tmp/",
-	            //arrimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/",
-	            //granskavy: "GranskaDetalj"
+	            apiserver: "http://localhost:60485",
+	            dnnURL: "http://dnndev.me",           
+	            localOrServerURL: "http://localhost:60485/Api_v2",
+	            htmltemplateURL: "http://dnndev.me/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            detailediturl: "http://localhost:60485/Api_v3/updatearrangemang",
+	            basepageUri: "/KulturkatalogenAdmin",
+	            arrtmpimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/tmp/",
+	            arrimgurl: "http://dnndev.me/Portals/0/kulturkatalogenArrImages/",
+	            granskavy: "GranskaDetalj"
 	            
 	            //NYA SERVERN www2.kulturkatalogenvast.org
 	            //apiserver: "http://apidev.kulturkatalogenvast.org:8080",
@@ -270,15 +270,15 @@
 	            //granskavy: "GranskaDetalj"
 
 	            ////SERVERN kulturkatalogenvast.org
-	            apiserver: "https://api.kulturkatalogenvast.org:443",
-	            dnnURL: "https://www.kulturkatalogenvast.org",
-	            localOrServerURL: "https://api.kulturkatalogenvast.org:443/Api_v2",
-	            htmltemplateURL: "https://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
-	            detailediturl: "https://api.kulturkatalogenvast.org:443/Api_v3/updatearrangemang",
-	            basepageUri: "/KulturkatalogenAdmin",
-	            arrtmpimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
-	            arrimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
-	            granskavy: "GranskaDetalj"
+	            //apiserver: "https://api.kulturkatalogenvast.org:443",
+	            //dnnURL: "https://www.kulturkatalogenvast.org",
+	            //localOrServerURL: "https://api.kulturkatalogenvast.org:443/Api_v2",
+	            //htmltemplateURL: "https://www.kulturkatalogenvast.org/Portals/_default/Skins/kk_aj_Publik_Bespin/htmltemplates",
+	            //detailediturl: "https://api.kulturkatalogenvast.org:443/Api_v3/updatearrangemang",
+	            //basepageUri: "/KulturkatalogenAdmin",
+	            //arrtmpimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/tmp/",
+	            //arrimgurl: "https://www.kulturkatalogenvast.org/Portals/0/kulturkatalogenArrImages/",
+	            //granskavy: "GranskaDetalj"
 
 	            //SERVERN DEV dev.kulturkatalogenvast.org
 	            //apiserver: "http://dev.kulturkatalogenvast.org:8080",
@@ -313,7 +313,7 @@
 	    };
 
 	module.exports = {  
-	    config: window.kk_aj_publikAppsettings
+	    config: kk_aj_publikAppsettings
 	}
 
 
@@ -33628,9 +33628,9 @@
 	          kostnadSlider: function ($slider, $prev, $next) {
 	              $slider.slider({
 	                  min: 0
-	                 , max: 50000
+	                 , max: 60000
 	                 , range: true
-	                 , values: [0, 50000]
+	                 , values: [0, 60000]
 	                 , slide: function (event, ui) {
 	                     $prev.text(ui.values[0] + ' kr');
 	                     $next.text(ui.values[1] + ' kr');                     

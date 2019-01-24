@@ -1,0 +1,1725 @@
+/* line 1, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.node-type-kiv-grundsida .grundsida-header div,
+.view-paragraph-top-meny div {
+  line-height: 0; }
+
+/* line 6, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-item-paragraph-vy {
+  line-height: 0; }
+
+/* line 10, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-item-paragraph-vy .view,
+.paragraphs-item-paragraph-vy .view div {
+  line-height: 1.5; }
+
+/* line 15, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items-field-main-content {
+  line-height: 0; }
+
+/* line 19, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header {
+  padding-top: 50px;
+  padding-bottom: 25px; }
+
+@media (min-width: 40em) {
+  /* line 25, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .grundsida-header {
+    padding-top: 40px; } }
+
+/* line 30, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header .row:after {
+  line-height: 0; }
+
+/* line 34, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header h1 {
+  font-weight: 200;
+  font-size: 56px;
+  font-size: 3.5rem; }
+
+@media (min-width: 40em) {
+  /* line 41, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .grundsida-header h1 {
+    font-size: 100px;
+    font-size: 6.25rem; } }
+
+/* line 47, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header.liten h1 {
+  font-weight: 200;
+  font-size: 56px;
+  font-size: 3.5rem; }
+
+@media (min-width: 40em) {
+  /* line 54, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .grundsida-header.liten h1 {
+    font-size: 80px;
+    font-size: 5rem; } }
+
+/* line 60, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header.mellan h1 {
+  font-weight: 200;
+  font-size: 56px;
+  font-size: 3.5rem; }
+
+@media (min-width: 40em) {
+  /* line 67, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .grundsida-header.mellan h1 {
+    font-size: 90px;
+    font-size: 5.625rem; } }
+
+/* line 73, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.grundsida-header.stor h1 {
+  font-weight: 200;
+  font-size: 56px;
+  font-size: 3.5rem; }
+
+@media (min-width: 40em) {
+  /* line 80, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .grundsida-header.stor h1 {
+    font-size: 100px;
+    font-size: 6.25rem; } }
+
+/* line 86, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.h1-underline {
+  height: 6px;
+  background-color: #000000;
+  margin-top: 0.8rem; }
+
+/* line 92, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.view-paragraph-top-meny {
+  padding-top: 5px;
+  margin-top: -45px; }
+
+@media (min-width: 40em) {
+  /* line 98, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .view-paragraph-top-meny {
+    padding-bottom: 20px; } }
+
+@media (min-width: 64em) {
+  /* line 104, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .view-paragraph-top-meny {
+    padding-bottom: 50px; } }
+
+/* line 109, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.para-top-meny-block {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+/* line 114, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.para-top-meny-block li {
+  line-height: 10px;
+  clear: both; }
+
+@media (min-width: 40em) {
+  /* line 120, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .para-top-meny-block li {
+    clear: none; } }
+
+/* line 125, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.para-top-meny-block a {
+  line-height: 20px;
+  font-weight: 600; }
+
+/* line 130, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.para-top-meny-block a:hover {
+  text-decoration: underline; }
+
+/* line 134, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.para-top-meny-block .vanster-pil {
+  width: 19px;
+  height: 22px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -17px -310px;
+  background-repeat: repeat-x;
+  display: block;
+  float: left; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 145, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .para-top-meny-block .vanster-pil {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 151, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraph-nedre-soundcloud-lank {
+  margin-top: 30px;
+  text-align: center; }
+
+/* line 156, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.soundcloud-wrapper {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  text-align: center; }
+
+@media (min-width: 64em) {
+  /* line 166, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .soundcloud-wrapper {
+    margin-top: 28px; } }
+
+/* line 171, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.soundcloud-info {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  padding-bottom: 14px; }
+
+/* line 178, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.soundcloud-knapp {
+  display: inline-block;
+  background: #fff;
+  height: 28px;
+  -webkit-border-radius: 16px;
+          border-radius: 16px; }
+
+/* line 185, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.soundcloud-knapp iframe {
+  width: auto;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-right: 8px; }
+
+/* line 192, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraph-nedre-soundcloud-lank .soundcloud-wrapper {
+  margin-bottom: 25px; }
+
+/* line 196, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.spalt-antal-4 .soundcloud-wrapper iframe {
+  max-width: 200px !important; }
+
+/* line 200, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items {
+  /* ingress text */ }
+
+/* line 204, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .field-type-paragraphs .entity-paragraphs-item {
+  float: none; }
+
+/* line 208, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items strong {
+  font-weight: 600; }
+
+/* line 212, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vikt-200 {
+  font-weight: 200; }
+
+/* line 216, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vikt-300 {
+  font-weight: 300; }
+
+/* line 220, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vikt-600 {
+  font-weight: 600; }
+
+/* line 224, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vikt-800 {
+  font-weight: 800; }
+
+/* line 228, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .ingresstextstil {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 1.6; }
+
+@media (min-width: 40em) {
+  /* line 237, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .ingresstextstil {
+    font-size: 1.5rem;
+    line-height: 1.6; } }
+
+/* line 243, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .ingresstextstil-stor {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1.6; }
+
+@media (min-width: 40em) {
+  /* line 252, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .ingresstextstil-stor {
+    font-size: 1.8rem;
+    line-height: 1.6; } }
+
+/* line 258, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vittext {
+  color: #ffffff; }
+
+/* line 262, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .vittext a,
+.paragraphs-items .vittext h1,
+.paragraphs-items .vittext h2,
+.paragraphs-items .vittext h3,
+.paragraphs-items .vittext h4,
+.paragraphs-items .vittext h5,
+.paragraphs-items .vittext h6,
+.paragraphs-items .vittext p {
+  color: #ffffff; }
+
+/* line 273, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .svarttext {
+  color: #000000; }
+
+/* line 277, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .svarttext a,
+.paragraphs-items .svarttext h1,
+.paragraphs-items .svarttext h2,
+.paragraphs-items .svarttext h3,
+.paragraphs-items .svarttext h4,
+.paragraphs-items .svarttext h5,
+.paragraphs-items .svarttext h6,
+.paragraphs-items .svarttext p {
+  color: #000000; }
+
+/* line 288, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .video-filter iframe {
+  max-width: 100%; }
+
+/* line 292, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li a,
+.paragraphs-items ul.pagination li button {
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding-bottom: 2px;
+  color: #000; }
+
+/* line 299, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li.current a:hover,
+.paragraphs-items ul.pagination li.current a:focus,
+.paragraphs-items ul.pagination li.current button:hover,
+.paragraphs-items ul.pagination li.current button:focus,
+.paragraphs-items ul.pagination li.current a,
+.paragraphs-items ul.pagination li.current button,
+.paragraphs-items ul.pagination li:hover a,
+.paragraphs-items ul.pagination li a:focus,
+.paragraphs-items ul.pagination li:hover button,
+.paragraphs-items ul.pagination li button:focus {
+  background: #939497;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding-bottom: 2px;
+  color: #fff; }
+
+/* line 315, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li.arrow a {
+  width: 45px;
+  height: 28px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -14px -354px;
+  background-repeat: repeat-x;
+  display: block;
+  float: left;
+  background-color: transparent;
+  line-height: 2000; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 328, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items ul.pagination li.arrow a {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 334, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination .arrow.last,
+.paragraphs-items ul.pagination .arrow.first {
+  display: none; }
+
+/* line 339, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li.arrow:nth-child(2) a {
+  background-position: -14px -405px; }
+
+/* line 343, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li .ajax-progress.ajax-progress-throbber {
+  position: relative;
+  display: block; }
+
+/* line 348, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li .throbber {
+  top: 20px;
+  position: absolute;
+  left: 4px; }
+
+/* line 354, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items ul.pagination li.arrow .throbber {
+  top: 40px; }
+
+/* line 358, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items a.long-round-link {
+  background: #b1a16c;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  color: #fff !important;
+  text-align: center;
+  display: inline-block;
+  width: 320px;
+  height: 28px;
+  text-transform: uppercase;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+
+/* line 373, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items a.long-round-link:hover {
+  background: #887948;
+  text-decoration: none !important; }
+
+/* line 378, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank {
+  margin-top: 30px;
+  text-align: center; }
+
+/* line 383, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a {
+  background: #b1a16c;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+  color: #fff !important;
+  text-align: center;
+  display: inline-block;
+  width: 320px;
+  height: 28px;
+  text-transform: uppercase;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+
+/* line 398, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a:hover {
+  background: #887948;
+  text-decoration: none !important; }
+
+/* line 403, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a.variant1 {
+  background: #505050;
+  color: #fff !important; }
+
+/* line 408, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a.variant1:hover {
+  background: #2a2a2a; }
+
+/* line 412, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a.variant2 {
+  background: #ebeae6;
+  color: #000000 !important; }
+
+/* line 417, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-nedre-lank a.variant2:hover {
+  background: #c9c6bc; }
+
+/* line 421, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view {
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 40em) {
+  /* line 427, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    min-height: 470px; } }
+
+@media (min-width: 64em) {
+  /* line 435, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view {
+    background-repeat: repeat-x;
+    background-image: url("http://www.kulturivast.se/sites/all/themes/kivnew/images/flex-bg.png");
+    background-size: 100% 485px;
+    min-height: 650px; } }
+
+/* line 443, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images {
+  background: #505050;
+  padding-bottom: 35px;
+  margin-bottom: -35px;
+  margin-top: -35px;
+  display: block !important; }
+
+@media (min-width: 40em) {
+  /* line 452, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .stacked-images {
+    display: none !important; } }
+
+/* line 457, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row {
+  margin-bottom: 40px; }
+
+/* line 461, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row.views-row-last {
+  margin-bottom: 10px; }
+
+/* line 465, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel {
+  display: block; }
+
+/* line 469, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel img {
+  width: 100%; }
+
+/* line 473, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+@media (min-width: 40em) {
+  /* line 486, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 492, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  color: #fff; }
+
+/* line 501, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 a {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  color: #fff; }
+
+/* line 510, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row a:hover {
+  text-decoration: underline; }
+
+/* line 514, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel {
+  display: none !important; }
+
+@media (min-width: 40em) {
+  /* line 519, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel {
+    display: block !important; } }
+
+/* line 524, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flexslider {
+  background: #505050; }
+
+@media (min-width: 40em) {
+  /* line 529, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flexslider {
+    background: none; } }
+
+/* line 534, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
+  overflow: visible;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+@media (min-width: 40em) {
+  /* line 541, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (min-width: 64em) {
+  /* line 548, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
+
+@media (min-width: 40em) {
+  /* line 555, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-big-image {
+    height: auto; } }
+
+@media (min-width: 64em) {
+  /* line 561, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-big-image {
+    height: auto; } }
+
+/* line 566, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-nav {
+  bottom: 10px;
+  z-index: 100; }
+
+/* line 571, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-paging li a {
+  background: rgba(255, 255, 255, 0.5); }
+
+/* line 575, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-paging li a.flex-active {
+  background: white; }
+
+/* line 579, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .extra-wrapper-new {
+  display: block;
+  position: relative;
+  line-height: 1; }
+
+@media (min-width: 40em) {
+  /* line 586, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .extra-wrapper-new {
+    height: 130px;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem; } }
+
+@media (min-width: 64em) {
+  /* line 594, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .extra-wrapper-new {
+    height: 130px;
+    padding-left: 0;
+    padding-right: 0; } }
+
+/* line 601, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text {
+  bottom: initial;
+  margin: 0;
+  padding-top: 10px; }
+
+/* line 607, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+  color: #000;
+  margin: 0;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 618, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-size: 2.7rem; } }
+
+@media (min-width: 64em) {
+  /* line 624, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+    font-size: 3rem; } }
+
+/* line 629, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
+  line-height: 1; }
+
+/* line 633, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+  color: #000;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 645, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-size: 2.7rem; } }
+
+@media (min-width: 64em) {
+  /* line 651, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+    font-size: 3rem; } }
+
+/* line 656, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
+  line-height: 1; }
+
+/* line 660, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text a:hover {
+  text-decoration: underline; }
+
+/* line 664, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-prev {
+  background: url("../images/PilMenyV28_vit.png") no-repeat center center; }
+
+/* line 668, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-next {
+  background: url("../images/PilMeny28_vit.png") no-repeat center center; }
+
+@media (min-width: 40em) {
+  /* line 673, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel ul.flex-direction-nav a {
+    top: 29%; } }
+
+@media (min-width: 64em) {
+  /* line 679, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-flex-slider-view .flex-bildspel ul.flex-direction-nav a {
+    top: 33%; } }
+
+/* line 684, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-bottom-border {
+  border-bottom: 8px solid #000;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+  padding-top: 25px; }
+
+/* line 691, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph,
+.paragraphs-items .view-grundsida-mosaik-paragraph {
+  overflow: hidden;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 64em) {
+  /* line 700, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph,
+  .paragraphs-items .view-grundsida-mosaik-paragraph {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 707, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-view-title,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-view-title {
+  padding-bottom: 10px; }
+
+/* line 712, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-view-title h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #000; }
+
+@media (min-width: 40em) {
+  /* line 723, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-view-title h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 730, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuelltbox a,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox a {
+  min-height: 115px;
+  display: block;
+  overflow: hidden; }
+
+@media (min-width: 40em) {
+  /* line 738, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox a,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox a {
+    min-height: 120px;
+    height: inherit; } }
+
+@media (min-width: 64em) {
+  /* line 746, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox a,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox a {
+    height: inherit; } }
+
+/* line 752, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-wrapper,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-wrapper {
+  position: relative;
+  border-bottom: 1px solid #000;
+  min-height: 115px;
+  padding-top: 15px;
+  background: #fff;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+
+@media (min-width: 40em) {
+  /* line 766, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-wrapper,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-wrapper {
+    min-height: 120px;
+    height: inherit; } }
+
+@media (min-width: 64em) {
+  /* line 774, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-wrapper,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-wrapper {
+    height: inherit; } }
+
+/* line 780, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .view-grundsida-mosaik-paragraph .view-content,
+.paragraphs-items .view-grundsida-mosaik-paragraph .view-grundsida-mosaik-paragraph .view-content {
+  padding-top: 10px; }
+
+/* line 785, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper,
+.paragraphs-items .view-grundsida-mosaik-paragraph .views-row-last .aktuellt-wrapper {
+  border-bottom: 1px solid #000; }
+
+@media (min-width: 40em) {
+  /* line 791, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .views-row-last .aktuellt-wrapper {
+    border-bottom: 1px solid #000; } }
+
+/* line 797, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-wrapper:hover,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-wrapper:hover {
+  background: #e7e7e8; }
+
+/* line 802, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .views-row-1 .aktuellt-wrapper,
+.paragraphs-items .view-grundsida-mosaik-paragraph .views-row-1 .aktuellt-wrapper {
+  border-top: 1px solid #000; }
+
+@media (min-width: 40em) {
+  /* line 808, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .views-row-2 .aktuellt-wrapper,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .views-row-2 .aktuellt-wrapper {
+    border-top: 1px solid #000; } }
+
+@media (min-width: 64em) {
+  /* line 815, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .views-row-3 .aktuellt-wrapper,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .views-row-3 .aktuellt-wrapper {
+    border-top: 1px solid #000; } }
+
+/* line 821, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-left,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-left {
+  float: left;
+  padding-left: 15px;
+  padding-right: 40px; }
+
+@media (min-width: 40em) {
+  /* line 829, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-left,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-left {
+    padding-right: 40px;
+    padding-bottom: 15px; } }
+
+/* line 836, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuellt-right,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-right {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 33px;
+  height: 33px;
+  margin-top: -16px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -19px -120px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 850, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuellt-right,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuellt-right {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 857, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuelltbox h4,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox h4 {
+  color: #a38f5a;
+  text-transform: uppercase;
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.2rem; }
+
+@media (min-width: 40em) {
+  /* line 871, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox h4,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 878, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-front-news-paragraph .aktuelltbox h5,
+.paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  color: #000;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+@media (min-width: 40em) {
+  /* line 891, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-front-news-paragraph .aktuelltbox h5,
+  .paragraphs-items .view-grundsida-mosaik-paragraph .aktuelltbox h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 898, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph {
+  background: #59595b;
+  overflow: hidden;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 64em) {
+  /* line 907, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-grundsida-kontaktpersoner-paragraph {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 913, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .aktuellt-view-title {
+  padding-bottom: 10px; }
+
+/* line 917, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .aktuellt-view-title h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  color: #fff; }
+
+@media (min-width: 40em) {
+  /* line 927, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-grundsida-kontaktpersoner-paragraph .aktuellt-view-title h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 933, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+@media (min-width: 40em) {
+  /* line 945, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 951, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+@media (min-width: 40em) {
+  /* line 958, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row {
+    margin-top: 30px;
+    margin-bottom: 10px; } }
+
+/* line 964, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row a {
+  color: #fff; }
+
+/* line 968, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row a:hover {
+  text-decoration: underline; }
+
+/* line 972, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kont-row .para-kontakt-mobil a:hover {
+  text-decoration: none; }
+
+/* line 976, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kontakt-epost a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word; }
+
+/* line 984, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .view-grundsida-kontaktpersoner-paragraph .para-kontakt-lank {
+  margin-top: 35px;
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem; }
+
+/* line 990, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-bg-row {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+/* line 996, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+  font-weight: 200; }
+
+@media (min-width: 40em) {
+  /* line 1004, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik {
+    padding-bottom: 20px; } }
+
+/* line 1009, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h1 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 1018, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 1024, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 1033, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 1039, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h3 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 1048, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h3 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 1054, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h4 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 1063, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 1069, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 1078, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 1084, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraph-rubrik h6 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 1093, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraph-rubrik h6 {
+    font-size: 1.375rem;
+    line-height: 1.4; } }
+
+/* line 1099, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+/* line 1108, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h1 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 1117, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h1 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 1123, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h2 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 1.1; }
+
+@media (min-width: 40em) {
+  /* line 1132, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h2 {
+    font-size: 3rem;
+    line-height: 1.1; } }
+
+/* line 1138, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h3 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 1147, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h3 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 1153, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h4 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 1162, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h4 {
+    font-size: 1rem;
+    line-height: 1.4; } }
+
+/* line 1168, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h5 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.12rem;
+  line-height: 1.25; }
+
+@media (min-width: 40em) {
+  /* line 1177, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h5 {
+    font-size: 1.12rem;
+    line-height: 1.25; } }
+
+/* line 1183, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-text-block h6 {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.4; }
+
+@media (min-width: 40em) {
+  /* line 1192, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .para-text-block h6 {
+    font-size: 1.375rem;
+    line-height: 1.4; } }
+
+/* line 1198, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .las-mer-pil-svart:after {
+  content: "->";
+  width: 33px;
+  height: 29px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -16px -355px;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  line-height: 2000;
+  overflow: hidden;
+  position: absolute; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 1212, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .las-mer-pil-svart:after {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 1218, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .las-mer-pil-vit:after {
+  content: "->";
+  width: 33px;
+  height: 29px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -136px -355px;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  line-height: 2000;
+  overflow: hidden;
+  position: absolute; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 1232, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .las-mer-pil-vit:after {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }
+
+/* line 1238, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-fullbg-wrapper {
+  display: none; }
+
+@media (min-width: 40em) {
+  /* line 1243, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-fullbg-wrapper {
+    display: block; } }
+
+@media (min-width: 40em) {
+  /* line 1249, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-fullbg-wrapper.spalt-antal-4 {
+    display: none; } }
+
+@media (min-width: 64em) {
+  /* line 1255, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-fullbg-wrapper.spalt-antal-4 {
+    display: block; } }
+
+/* line 1260, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-fullbg-container {
+  visibility: visible; }
+
+/* line 1264, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .fullbg-inside {
+  display: inline-block; }
+
+/* line 1268, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-full-bg {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 0;
+  left: 0;
+  top: -30px; }
+
+@media (min-width: 64em) {
+  /* line 1278, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-full-bg {
+    top: -60px; } }
+
+/* line 1283, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-full-bg.bg-breddare {
+  background-size: auto; }
+
+/* line 1287, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-full-bg.bg-hojdare {
+  background-size: auto 100%; }
+
+/* line 1291, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .norm-spalt {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+@media (min-width: 40em) {
+  /* line 1297, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .norm-spalt {
+    min-height: 0 !important; } }
+
+/* line 1302, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .spalt-antal-4 .norm-spalt {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+@media (min-width: 64em) {
+  /* line 1308, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-antal-4 .norm-spalt {
+    background-image: none !important;
+    min-height: 0 !important; } }
+
+/* line 1314, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .norm-spalt.bg-breddare {
+  background-size: 100% auto; }
+
+@media (min-width: 40em) {
+  /* line 1319, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .norm-spalt.bg-breddare {
+    background-size: 0 0; } }
+
+@media (min-width: 40em) {
+  /* line 1325, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-antal-4 .norm-spalt.bg-breddare {
+    background-size: 100% auto; } }
+
+@media (min-width: 64em) {
+  /* line 1331, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-antal-4 .norm-spalt.bg-breddare {
+    background-size: 0 0; } }
+
+/* line 1336, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .norm-spalt.bg-hojdare {
+  background-size: auto 100%; }
+
+@media (min-width: 40em) {
+  /* line 1341, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .norm-spalt.bg-hojdare {
+    background-size: 0 0; } }
+
+@media (min-width: 40em) {
+  /* line 1347, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-antal-4 .norm-spalt.bg-hojdare {
+    background-size: auto 100%; } }
+
+@media (min-width: 64em) {
+  /* line 1353, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .spalt-antal-4 .norm-spalt.bg-hojdare {
+    background-size: 0 0; } }
+
+/* line 1358, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-has-column-bg .paragraph-rubrik {
+  position: relative; }
+
+/* line 1362, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .para-has-column-bg {
+  overflow: hidden; }
+
+/* line 1366, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  /*
+        .columns {
+            position: relative;
+
+            @include breakpoint($tab) {
+                width: 50%;
+            }
+
+
+            @include breakpoint($extra-break) {
+                width: 25%;
+            }
+        }
+        */ }
+
+@media (min-width: 64em) {
+  /* line 1386, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-flex-columns {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 1392, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .parcol-3 {
+  /*
+            @include breakpoint($extra-break) {
+                clear: none;
+            }
+            */ }
+
+@media (min-width: 40em) {
+  /* line 1401, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-flex-columns .parcol-3 {
+    clear: both; } }
+
+@media (min-width: 64em) {
+  /* line 1407, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-flex-columns .parcol-3 {
+    clear: none; } }
+
+/* line 1412, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .spalt-wrapper {
+  position: relative; }
+
+/* line 1416, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns a.para-overlay {
+  position: absolute;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 1426, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1430, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .paragraph-rubrik a:hover {
+  text-decoration: underline; }
+
+/* line 1434, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-img-wrapper {
+  display: block; }
+
+/* line 1438, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-img-wrapper img {
+  width: 100%; }
+
+/* line 1442, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 1449, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block {
+    padding-bottom: 0; } }
+
+/* line 1454, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-has-link:hover .para-text-block {
+  text-decoration: underline; }
+
+/* line 1458, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block iframe {
+  pointer-events: all; }
+
+/* line 1462, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  z-index: 4; }
+
+/* line 1469, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1473, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-flex-columns .para-has-link .para-text-block a:hover {
+  opacity: 0.9; }
+
+/* line 1477, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  /*
+        .columns {
+            position: relative;
+
+            @include breakpoint($tab) {
+                width: 50%;
+            }
+
+
+            @include breakpoint($extra-break) {
+                width: 25%;
+            }
+        }
+        */ }
+
+@media (min-width: 64em) {
+  /* line 1497, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-four-columns {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 1503, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .parcol-3 {
+  /*
+            @include breakpoint($extra-break) {
+                clear: none;
+            }
+            */ }
+
+@media (min-width: 40em) {
+  /* line 1512, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-four-columns .parcol-3 {
+    clear: both; } }
+
+@media (min-width: 64em) {
+  /* line 1518, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-four-columns .parcol-3 {
+    clear: none; } }
+
+/* line 1523, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .spalt-wrapper {
+  position: relative; }
+
+/* line 1527, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns a.para-overlay {
+  position: absolute;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 1537, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1541, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik a:hover {
+  text-decoration: underline; }
+
+/* line 1545, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper {
+  display: block; }
+
+/* line 1549, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper img {
+  width: 100%; }
+
+/* line 1553, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 1560, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
+    padding-bottom: 0; } }
+
+/* line 1565, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link:hover .para-text-block {
+  text-decoration: underline; }
+
+/* line 1569, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block iframe {
+  pointer-events: all; }
+
+/* line 1573, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  z-index: 4; }
+
+/* line 1580, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1584, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link .para-text-block a:hover {
+  opacity: 0.9; }
+
+/* line 1588, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns {
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 64em) {
+  /* line 1594, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-three-columns {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 1600, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .columns {
+  position: relative; }
+
+/* line 1604, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .spalt-wrapper {
+  position: relative; }
+
+/* line 1608, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns a.para-overlay {
+  position: absolute;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 1618, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1622, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik a:hover {
+  text-decoration: underline; }
+
+/* line 1626, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper {
+  display: block; }
+
+/* line 1630, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper img {
+  width: 100%; }
+
+/* line 1634, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 1641, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
+    padding-bottom: 0; } }
+
+/* line 1646, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link:hover .para-text-block {
+  text-decoration: underline; }
+
+/* line 1650, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block iframe {
+  pointer-events: all; }
+
+/* line 1654, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  z-index: 4; }
+
+/* line 1661, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1665, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link .para-text-block a:hover {
+  opacity: 0.9; }
+
+/* line 1669, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns {
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 64em) {
+  /* line 1675, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-two-columns {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 1681, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .columns {
+  position: relative; }
+
+/* line 1685, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .spalt-wrapper {
+  position: relative; }
+
+/* line 1689, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns a.para-overlay {
+  position: absolute;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 1699, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1703, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 1710, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
+    padding-bottom: 0; } }
+
+/* line 1715, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link:hover .para-text-block {
+  text-decoration: underline; }
+
+/* line 1719, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block iframe {
+  pointer-events: all; }
+
+/* line 1723, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  z-index: 4; }
+
+/* line 1730, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1734, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link .para-text-block a:hover {
+  opacity: 0.9; }
+
+/* line 1738, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column {
+  padding-top: 30px;
+  padding-bottom: 35px; }
+
+@media (min-width: 64em) {
+  /* line 1744, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-one-column {
+    padding-top: 60px;
+    padding-bottom: 70px; } }
+
+/* line 1750, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .columns {
+  position: relative; }
+
+/* line 1754, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .spalt-wrapper {
+  position: relative; }
+
+/* line 1758, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column a.para-overlay {
+  position: absolute;
+  background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+/* line 1768, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1772, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik a:hover {
+  text-decoration: underline; }
+
+/* line 1776, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+@media (min-width: 40em) {
+  /* line 1783, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+  .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
+    padding-bottom: 0; } }
+
+/* line 1788, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-has-link:hover .para-text-block {
+  text-decoration: underline; }
+
+/* line 1792, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block iframe {
+  pointer-events: all; }
+
+/* line 1796, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  z-index: 4; }
+
+/* line 1803, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
+  text-decoration: underline; }
+
+/* line 1807, _dev/devsass/css/kiv/kiv.paragraphs.scss */
+.paragraphs-items .paragraphs-item-paragraph-one-column .para-has-link .para-text-block a:hover {
+  opacity: 0.9; }

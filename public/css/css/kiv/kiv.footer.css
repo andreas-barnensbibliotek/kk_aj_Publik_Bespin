@@ -1,0 +1,70 @@
+/* line 1, _dev/devsass/css/kiv/kiv.footer.scss */
+footer.footer {
+  background: #000;
+  padding-bottom: 38px; }
+
+/* line 6, _dev/devsass/css/kiv/kiv.footer.scss */
+.footer .annonsrow img {
+  min-width: 220px;
+  max-width: 220px; }
+
+/* line 11, _dev/devsass/css/kiv/kiv.footer.scss */
+footer.footer.annonsfot {
+  background: #fff;
+  margin: 0 !important;
+  padding: 0; }
+
+/* line 17, _dev/devsass/css/kiv/kiv.footer.scss */
+.footer .footdelare {
+  margin-top: 5rem; }
+
+/* line 21, _dev/devsass/css/kiv/kiv.footer.scss */
+.footer .footdelare .foot-kivlogo-container img {
+  max-width: 160px; }
+
+/* line 25, _dev/devsass/css/kiv/kiv.footer.scss */
+.footer .footdelare .foot-kivlogo-container {
+  height: 83px; }
+
+/* line 29, _dev/devsass/css/kiv/kiv.footer.scss */
+.footer .footdelare .socialiconlist img {
+  max-width: 48px; }
+
+/* line 33, _dev/devsass/css/kiv/kiv.footer.scss */
+.foot-lank {
+  text-align: left; }
+
+/* line 37, _dev/devsass/css/kiv/kiv.footer.scss */
+.foot-lank.last {
+  margin-bottom: 35px; }
+
+/* line 41, _dev/devsass/css/kiv/kiv.footer.scss */
+.foot-lank a {
+  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  font-size: 1.125rem;
+  overflow: hidden;
+  display: inline-block;
+  width: 330px; }
+
+/* line 52, _dev/devsass/css/kiv/kiv.footer.scss */
+.foot-lank a:hover {
+  text-decoration: underline; }
+
+/* line 56, _dev/devsass/css/kiv/kiv.footer.scss */
+.foot-lank-pil {
+  float: right;
+  margin-left: 10px;
+  width: 33px;
+  height: 33px;
+  background-image: url("../images/kiv-elements.png");
+  background-position: -19px -120px;
+  background-repeat: repeat-x; }
+
+@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 67, _dev/devsass/css/kiv/kiv.footer.scss */
+  .foot-lank-pil {
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px; } }

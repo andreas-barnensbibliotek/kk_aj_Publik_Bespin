@@ -66,8 +66,7 @@ html, body {
   box-sizing: border-box; }
 
 /* line 498, bower_components/foundation/scss/foundation/components/_global.scss */
-html,
-body {
+html, body {
   font-size: 100%; }
 
 /* line 502, bower_components/foundation/scss/foundation/components/_global.scss */
@@ -4355,7 +4354,7 @@ kbd {
   /* line 188, bower_components/foundation/scss/foundation/components/_orbit.scss */
   .orbit-container .orbit-slide-number {
     left: 10px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     color: #FFFFFF;
     font-size: 12px;
     position: absolute;
@@ -7091,7 +7090,7 @@ ul.off-canvas-list {
   /* line 258, bower_components/foundation/scss/foundation/components/_offcanvas.scss */
   ul.off-canvas-list li a {
     border-bottom: 1px solid #262626;
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     display: block;
     padding: 0.66667rem;
     -webkit-transition: background 300ms ease;
@@ -7117,7 +7116,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7145,7 +7144,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7173,7 +7172,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7201,7 +7200,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7231,7 +7230,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7260,7 +7259,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7289,7 +7288,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7318,7 +7317,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -7347,7 +7346,7 @@ ul.off-canvas-list {
   cursor: pointer;
   -webkit-transition: background 300ms ease;
   transition: background 300ms ease;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
   bottom: 0;
   display: block;
@@ -8578,7 +8577,7 @@ ul.off-canvas-list {
 .toggleimageBaseEXTEND, ul.multiColumn a::before, .togglebgimageshow::after, .togglebgimagehide::after, .row-node-top-menu ul a::before {
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
   background-origin: padding-box;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -8604,7 +8603,7 @@ ul.multiColumn {
     line-height: 1.4; }
   /* line 65, _dev/devsass/devScss/Komponenter/_mainMenu.scss */
   ul.multiColumn a::before {
-    background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/PilMeny28.png");
+    background-image: url("/portals/_default/skins/kk_aj_Publik_Bespin/public/images/PilMeny28.png");
     float: left; }
 
 /* line 74, _dev/devsass/devScss/Komponenter/_mainMenu.scss */
@@ -8614,19 +8613,19 @@ ul.multiColumn {
 
 /* line 81, _dev/devsass/devScss/Komponenter/_mainMenu.scss */
 .togglebgimageshow::after {
-  background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikPlus28.png");
+  background-image: url("/portals/_default/skins/kk_aj_Publik_Bespin/public/images/MosaikPlus28.png");
   float: right; }
 
 /* line 91, _dev/devsass/devScss/Komponenter/_mainMenu.scss */
 .togglebgimagehide::after {
-  background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikStang28.png");
+  background-image: url("/portals/_default/skins/kk_aj_Publik_Bespin/public/images/MosaikStang28.png");
   float: right; }
 
 /*.menu-mlid-6811{
     span{
         &::after {
            @extend .toggleimageBaseEXTEND;               
-            background-image: url("http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/MosaikStang28.png");            
+            background-image: url("/portals/_default/skin/kk_aj_Publik_Bespin/public/images//MosaikStang28.png");            
             float: right;
         }
     }
@@ -9419,7 +9418,7 @@ footer.footer.annonsfot {
 .artsidecontainer {
   display: block;
   padding: 1rem 1.2rem 1rem 1.2rem;
-  background-color: #dcdbda; }
+  background-color: #FFFFFF; }
   @media only screen and (min-width: 64.0625em) {
     /* line 63, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .artsidecontainer {
@@ -9443,89 +9442,90 @@ footer.footer.annonsfot {
   /* line 89, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artsidecontainer h3 {
     font-size: 1.5rem;
-    text-transform: uppercase; }
-  /* line 93, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    text-transform: uppercase;
+    margin-bottom: 0px; }
+  /* line 94, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artsidecontainer p {
     font-size: 0.9rem; }
-  /* line 95, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 96, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artsidecontainer .kontaktkort {
     font-size: 0.9rem; }
-    /* line 97, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    /* line 98, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .artsidecontainer .kontaktkort .namn {
       font-weight: bold;
       line-height: 1.1rem;
       text-transform: uppercase; }
-    /* line 102, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    /* line 103, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .artsidecontainer .kontaktkort .avd {
       color: #000000;
       margin-bottom: 0.4rem;
       line-height: 1.2rem; }
-    /* line 107, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    /* line 108, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .artsidecontainer .kontaktkort .artikelkontatkort {
       font-weight: bold;
       line-height: 1.1rem;
       text-transform: uppercase; }
-    /* line 112, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    /* line 113, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .artsidecontainer .kontaktkort .artikelFakta {
       color: #000000;
       margin-bottom: 0.4rem;
       line-height: 1.2rem; }
-  /* line 119, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 120, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artsidecontainer .success {
     width: 100%; }
 
-/* line 122, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 123, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .standardbutton {
   text-align: center;
   padding-right: 0.7rem; }
 
-/* line 127, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 128, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .l-main {
   display: none; }
 
-/* line 129, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 130, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .view-2015-supporting-articles .level2, .view-2015-supporting-articles-suo .level2 {
   padding-top: 3rem;
   padding-bottom: 3rem; }
-  /* line 132, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 133, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .view-2015-supporting-articles .level2:nth-child(odd), .view-2015-supporting-articles-suo .level2:nth-child(odd) {
     background-color: #dcdbda; }
-    /* line 134, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+    /* line 135, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
     .view-2015-supporting-articles .level2:nth-child(odd) .artsidecontainer, .view-2015-supporting-articles-suo .level2:nth-child(odd) .artsidecontainer {
       background-color: #ebeae9; }
 
-/* line 142, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 143, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent h1, .artmaincontent h2, .artmaincontent h3, .artmaincontent h4, .artmaincontent h5 {
   color: #000000; }
 
-/* line 145, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 146, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent h3 {
   font-size: 1rem;
   font-weight: 600; }
 
-/* line 149, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 150, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent .filicons h3 {
   font-size: 1.5rem;
   font-weight: 200; }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 141, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 142, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artmaincontent {
     padding-right: 0.5rem; } }
 
 @media only screen and (min-width: 64.0625em) {
-  /* line 141, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 142, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artmaincontent {
-    padding-right: 10rem; } }
+    padding-right: 3rem !important; } }
 
-/* line 159, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 158, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent blockquote {
   border-left: 10px solid #EEEEEE;
   padding: 0 0 0 2.0875rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   quotes: "”" "“" "‘" "’"; }
-  /* line 169, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+  /* line 168, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
   .artmaincontent blockquote p:before {
     color: #ccc;
     content: open-quote;
@@ -9536,7 +9536,7 @@ footer.footer.annonsfot {
     font-family: "bodoni-urw";
     font-weight: 800; }
 
-/* line 182, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 181, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent .citatblock, .artmaincontent blockquote, .artmaincontent blockquote p {
   color: #000;
   font-size: 2rem;
@@ -9544,23 +9544,23 @@ footer.footer.annonsfot {
   line-height: 1.4;
   margin-left: 0px; }
 
-/* line 189, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 188, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .artmaincontent .kulturkatFoto {
   display: inline;
   font-style: italic;
   font-weight: 100; }
 
-/* line 195, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 194, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .element-invisible {
   display: none; }
 
-/* line 199, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 198, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .node-type-informationssida .ajimage-omrade-nod img {
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 200px; }
 
-/* line 205, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
+/* line 204, _dev/devsass/devScss/Komponenter/_artikelmain.scss */
 .top-bild-wrapper {
   margin-bottom: 3rem !important; }
 
@@ -9614,7 +9614,7 @@ footer.footer.annonsfot {
     .artikelsubmenuContent a:before {
       content: "";
       display: block;
-      background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/iconopenarrowright.png) no-repeat;
+      background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/iconopenarrowright.png) no-repeat;
       background-size: 20px 20px;
       width: 20px;
       height: 20px;
@@ -9700,7 +9700,7 @@ footer.footer.annonsfot {
 .filer a:before {
   content: "";
   display: block;
-  background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/icondownarrow.png) no-repeat;
+  background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/icondownarrow.png) no-repeat;
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -9711,7 +9711,7 @@ footer.footer.annonsfot {
 .externalinks a:before {
   content: "";
   display: block;
-  background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
+  background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -9722,7 +9722,7 @@ footer.footer.annonsfot {
 .ljudfiler a:before {
   content: "";
   display: block;
-  background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
+  background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -9733,7 +9733,7 @@ footer.footer.annonsfot {
 .readlink a:before {
   content: "";
   display: block;
-  background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
+  background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -9744,7 +9744,7 @@ footer.footer.annonsfot {
 .undersida a:before {
   content: "";
   display: block;
-  background: url(http://kivdev.monoclick-dev.se/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
+  background: url(http://www.kulturkatalogenvast.org/sites/all/themes/kivnew/images/iconrightarrow.png) no-repeat;
   background-size: 20px 20px;
   width: 20px;
   height: 20px;
@@ -10006,7 +10006,6 @@ footer.footer.annonsfot {
 /* line 217, _dev/devsass/devScss/Komponenter/_startsida.scss */
 .themegradientgreen {
   background: -webkit-gradient(linear, left top, right top, from(#63674e), to(#7c805d));
-  background: -webkit-linear-gradient(left, #63674e, #7c805d);
   background: linear-gradient(to right, #63674e, #7c805d);
   /* Standard syntax */ }
   /* line 221, _dev/devsass/devScss/Komponenter/_startsida.scss */
@@ -10023,7 +10022,6 @@ footer.footer.annonsfot {
 /* line 242, _dev/devsass/devScss/Komponenter/_startsida.scss */
 .themegradientYellow {
   background: -webkit-gradient(linear, left top, right top, from(#d0b75d), to(#e8dcb2));
-  background: -webkit-linear-gradient(left, #d0b75d, #e8dcb2);
   background: linear-gradient(to right, #d0b75d, #e8dcb2);
   /* Standard syntax */
   /*font-size:3vw!important;*/ }
@@ -10039,7 +10037,6 @@ footer.footer.annonsfot {
 /* line 263, _dev/devsass/devScss/Komponenter/_startsida.scss */
 .themegradientPink {
   background: -webkit-gradient(linear, left top, right top, from(#83224b), to(#83224b));
-  background: -webkit-linear-gradient(left, #83224b, #83224b);
   background: linear-gradient(to right, #83224b, #83224b);
   /* Standard syntax */
   /*font-size:3vw!important;*/ }
@@ -10075,7 +10072,6 @@ footer.footer.annonsfot {
   /* line 280, _dev/devsass/devScss/Komponenter/_startsida.scss */
   .themegradientPink h3 {
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, #83224b), color-stop(20%, #83224b));
-    background: -webkit-linear-gradient(left, #83224b 20%, #83224b 20%);
     background: linear-gradient(to right, #83224b 20%, #83224b 20%);
     /* Standard syntax */
     color: #fff !important; }
@@ -10083,7 +10079,6 @@ footer.footer.annonsfot {
 /* line 287, _dev/devsass/devScss/Komponenter/_startsida.scss */
 .themegradientbeige {
   background: -webkit-gradient(linear, left top, right top, from(#e2ce79), to(#e2ce79));
-  background: -webkit-linear-gradient(left, #e2ce79, #e2ce79);
   background: linear-gradient(to right, #e2ce79, #e2ce79);
   /* Standard syntax */
   /*font-size:3vw!important;*/ }
@@ -10525,14 +10520,12 @@ footer.footer.annonsfot {
         /* line 483, _dev/devsass/devScss/Komponenter/_startsida.scss */
         .themegranslandet .itemcontainer .itembox .textbox h3 {
           background: -webkit-gradient(linear, left top, right top, color-stop(20%, #83224b), color-stop(20%, #83224b));
-          background: -webkit-linear-gradient(left, #83224b 20%, #83224b 20%);
           background: linear-gradient(to right, #83224b 20%, #83224b 20%);
           /* Standard syntax */
           color: #fff !important; }
 
 /* line 492, _dev/devsass/devScss/Komponenter/_startsida.scss */
 .themesommarboken {
-  background: -webkit-radial-gradient(#8c523d, #3b1d11);
   background: radial-gradient(#8c523d, #3b1d11);
   /* Standard syntax */
   /*font-size:3vw!important;*/ }
@@ -11152,20 +11145,30 @@ img .flip {
   .searchMainWrapper .searchmainContent .searchinputbox {
     height: 50px;
     width: 90%;
-    font-size: 1.5rem;
-    border: 0px; }
+    font-size: 1.2rem;
+    border: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-transform: uppercase;
+    margin-bottom: 0px; }
     @media only screen and (max-width: 40em) {
       /* line 21, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
       .searchMainWrapper .searchmainContent .searchinputbox {
-        width: 75%; } }
-  /* line 30, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
+        width: 75%;
+        background-color: transparent; } }
+  /* line 36, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
   .searchMainWrapper .searchmainContent .searchButton {
     height: 50px;
     float: right;
     background-color: transparent;
     padding: 0px;
-    margin: 0px; }
-  /* line 41, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
+    margin: 0px;
+    background-image: url("../images/kiv-elements@2x.png");
+    background-size: 500px 700px;
+    width: 50px;
+    background-position-y: -238px;
+    background-position-x: -2px; }
+  /* line 53, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
   .searchMainWrapper #contentfilterblock input {
     height: 50px;
     width: 90% !important;
@@ -11173,7 +11176,7 @@ img .flip {
     border: 0px;
     margin-right: 4px; }
     @media only screen and (max-width: 40em) {
-      /* line 41, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
+      /* line 53, _dev/devsass/devScss/Komponenter/_searchTopbox.scss */
       .searchMainWrapper #contentfilterblock input {
         width: 75%; } }
 
@@ -11208,9 +11211,7 @@ img .flip {
 
 /*Overrides LIZTA bilder*/
 /* line 9, _dev/devsass/devScss/Komponenter/_view-2015-staff.scss */
-.view-2015-staff .kivlistview .imgplaceholder img, .view-2015-staff .evenemang .imgplaceholder img,
-.view-2015-dokument .kivlistview .imgplaceholder img,
-.view-2015-dokument .evenemang .imgplaceholder img {
+.view-2015-staff .kivlistview .imgplaceholder img, .view-2015-staff .evenemang .imgplaceholder img, .view-2015-dokument .kivlistview .imgplaceholder img, .view-2015-dokument .evenemang .imgplaceholder img {
   max-width: 160px;
   min-width: 160px;
   width: 100%; }
@@ -11227,6 +11228,38 @@ img .flip {
   .pager-next:hover {
     background-color: #e2974a;
     color: #000000; }
+
+/* line 18, _dev/devsass/devScss/Komponenter/_kivbuttons.scss */
+.buttonmall, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny, .kk_aj_searchbuttonblock button.tiny, .kk_aj_bg_beige .kk_aj_kontaktmbutton {
+  width: 16rem !important;
+  font-size: .8rem; }
+
+/*.darkhover{
+    &:hover{
+        background:$kk_aj_darkgrey;
+        color:$white;
+    }
+}
+.lighthover{
+    &:hover{
+        background:$kk_aj_lightgrey;
+        color:$black;
+    }
+}*/
+/* line 36, _dev/devsass/devScss/Komponenter/_kivbuttons.scss */
+.darkhover:hover, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch:hover, .kk_aj_mainsearchblock .kk_aj_searchRensaformbutton:hover, .kk_aj_mainsearchblock .kk_aj_searchformbutton:hover, .kk_aj_bg_beige .kk_aj_kontaktmbutton:hover {
+  background: #ed6d04;
+  color: #FFFFFF; }
+
+/* line 42, _dev/devsass/devScss/Komponenter/_kivbuttons.scss */
+.lighthover:hover, .kk_aj_mainproductlistblock .kk_aj_filterblock .kk_aj_searchRensaformbutton:hover, .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_visaminneslistan:hover {
+  background: #ebeae6;
+  color: #000000; }
+
+/* line 48, _dev/devsass/devScss/Komponenter/_kivbuttons.scss */
+.beigehover:hover, .kk_aj_omkulturkatalogenblock .kk_aj_kontaktmbutton:hover {
+  background: #b1a06b;
+  color: #FFFFFF; }
 
 /* Absolute Center Spinner 
 .loader {
@@ -11994,7 +12027,6 @@ hr.linje {
   height: 1px;
   margin-top: 0rem;
   margin-bottom: 1rem;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
 
 /* line 207, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
@@ -12065,11 +12097,11 @@ input[type=radio] + label {
 
 /* line 265, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent h1 {
-  color: #f77136; }
+  color: #000000; }
 
 /* line 266, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent h2 {
-  color: #f77136; }
+  color: #000000; }
 
 /* line 267, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent .arrmainfoto {
@@ -12088,24 +12120,28 @@ input[type=radio] + label {
 
 /* line 283, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artsidecontainer {
-  padding-bottom: 1rem;
-  padding-left: 0.7rem;
-  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 0rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis; }
-  /* line 291, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  @media only screen and (max-width: 40em) {
+    /* line 283, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer {
+      padding-left: 0rem; } }
+  /* line 294, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer h3 {
-    font-weight: 100;
-    color: #f77136; }
-  /* line 295, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    font-weight: 500;
+    color: #000000; }
+  /* line 298, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer .faktalabel {
     font-weight: bold;
-    font-size: .85rem;
+    font-size: .95rem;
     overflow: hidden;
     text-overflow: ellipsis; }
-  /* line 302, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 305, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer #share-buttons img {
     width: 35px;
     padding: 5px;
@@ -12113,72 +12149,80 @@ input[type=radio] + label {
     -webkit-box-shadow: 0;
             box-shadow: 0;
     display: inline; }
+  @media only screen and (max-width: 40em) {
+    /* line 313, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer .granska_Utovare_epost {
+      float: left !important; } }
+  @media only screen and (max-width: 40em) {
+    /* line 318, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer .granska_Utovare_hemsida {
+      float: left !important; } }
 
-/* line 313, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 327, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .arrpressentationbild {
   background-color: #F9F9F9;
   border-top: 1px solid #F5F5F5;
   padding-top: 1rem;
   padding: .5rem;
   margin-bottom: 0rem; }
-  /* line 314, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 328, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .arrpressentationbild legend {
     margin-left: -.8rem; }
 
-/* line 323, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 337, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .granska_pressentationsbild {
   max-height: 400px; }
 
-/* line 324, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 338, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .infotext {
   display: none;
   background-color: #008CBA;
   color: #FFFFFF;
   padding: 4px;
   margin-bottom: 2px; }
-  /* line 330, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 344, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .infotext a {
     color: #FFFFFF;
     text-decoration: underline; }
 
-/* line 335, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 349, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_exempelblock {
   /*display:none;*/ }
 
-/* line 336, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 350, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .medverkandeblock {
   margin-bottom: 2rem; }
 
-/* line 340, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 354, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_form_Arrangemang #kk_aj_speltid {
   margin-top: .5rem;
   margin-bottom: 1rem; }
 
-/* line 344, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 358, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_form_Arrangemang #kk_aj_yearspan {
   margin-top: .5rem;
   margin-bottom: 1rem; }
 
-/* line 350, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 364, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 #addarrtab-2 fieldset {
   border-top: 1px solid #666;
   margin-bottom: 2rem; }
 
-/* line 354, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 368, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .exempleblock {
   /*.exempleblockbg{
         background-color: #F9F9F9;
     }*/ }
-  /* line 359, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 373, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .exempleblock fieldset {
     padding-bottom: 0rem !important;
     margin-bottom: 0px !important; }
 
-/* line 366, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 380, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .arrexempel_block fieldset {
   margin-bottom: 0px !important; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker {
   display: none;
   position: absolute;
@@ -12186,7 +12230,7 @@ input[type=radio] + label {
   margin-top: 1px;
   direction: ltr; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.dropdown-menu {
   position: absolute;
   top: 100%;
@@ -12207,17 +12251,17 @@ input[type=radio] + label {
   font-size: 13px;
   line-height: 18px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
   padding: 4px 5px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker table {
   border: 0;
   margin: 0;
   width: auto; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker table tr td span {
   display: block;
   width: 23%;
@@ -12227,7 +12271,7 @@ input[type=radio] + label {
   margin: 1%;
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td, .datepicker th {
   text-align: center;
   width: 20px;
@@ -12237,82 +12281,82 @@ input[type=radio] + label {
   padding: 4px 8px;
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td {
   background: #fff; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td span.active, .datepicker td.active.day, .datepicker td.active.year {
   background: #2ba6cb; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td.new, .datepicker td.old {
   color: #999; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td span.month.disabled, .datepicker td span.year.disabled, .datepicker td.day.disabled {
   color: #eee; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th {
   background: #fff; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th span.active, .datepicker th.active.day, .datepicker th.active.year {
   background: #2ba6cb; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th.date-switch {
   width: 145px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker .cw {
   font-size: 10px;
   width: 12px;
   padding: 0 2px 0 5px;
   vertical-align: middle; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.days div.datepicker-days, .datepicker.months div.datepicker-months, .datepicker.years div.datepicker-years {
   display: block; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:after, .datepicker-dropdown:before {
   content: '';
   display: inline-block;
   position: absolute; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker thead tr:first-child th {
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker thead tr:first-child th.cw {
   cursor: default;
   background-color: transparent; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker tfoot tr:first-child th {
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-inline {
   width: 220px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-rtl {
   direction: rtl; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-rtl table tr td span {
   float: right; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown {
   top: 0;
   left: 0; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:before {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -12321,7 +12365,7 @@ input[type=radio] + label {
   top: -7px;
   left: 6px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:after {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
@@ -12329,11 +12373,11 @@ input[type=radio] + label {
   top: -6px;
   left: 7px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown::after, .datepicker-dropdown::before, .datepicker > div {
   display: none; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-close {
   position: absolute;
   top: -30px;
@@ -12343,28 +12387,29 @@ input[type=radio] + label {
   padding: 0;
   display: none; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .table-striped .datepicker table tr td, .table-striped .datepicker table tr th {
   background-color: transparent; }
 
-/* line 374, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 388, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_ajuseravtalblock div {
   font-style: italic; }
 
 @media only screen and (max-width: 40em) {
   /* line 1, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .columns {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem; } }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; } }
 
-@media only screen and (max-width: 40em) {
-  /* line 7, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-  .column {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem; } }
+/* line 7, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.column {
+  /*@media only screen and (max-width: 40em) {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }*/ }
 
 /* line 14, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.jplist-select_Stilmall, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
+.jplist-select_Stilmall, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_filterRubrikBlock .jplist-ios-button, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
   padding-left: .5rem;
   padding-top: 0px;
   font-size: 1rem;
@@ -12381,15 +12426,22 @@ input[type=radio] + label {
 
 /* line 29, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainLogoheaderblock {
-  height: 289px; }
-  /* line 32, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /*height:289px;*/ }
+  @media only screen and (max-width: 40em) {
+    /* line 29, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainLogoheaderblock {
+      height: 189px; } }
+  /* line 34, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainLogoheaderblock .kk_aj_searchHeader {
-    margin-top: 60px; }
-    /* line 34, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /*margin-top:20px;*/ }
+    @media only screen and (max-width: 40em) {
+      /* line 34, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_mainLogoheaderblock .kk_aj_searchHeader {
+        /*margin-top:30px;*/ } }
+    /* line 39, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainLogoheaderblock .kk_aj_searchHeader h1 {
-      font-size: 5.5rem;
       font-weight: 500; }
-  /* line 42, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 44, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainLogoheaderblock ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12405,89 +12457,96 @@ input[type=radio] + label {
             flex-wrap: wrap;
     list-style: none;
     margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     color: #000000; }
-    /* line 49, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 53, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainLogoheaderblock ul li {
       margin-right: 1rem; }
-      /* line 51, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 55, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainLogoheaderblock ul li a {
         color: #000000 !important;
         font-weight: 600; }
 
-/* line 60, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 64, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader {
   margin-top: 3rem;
   margin-bottom: 2rem; }
-  /* line 62, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 66, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader h1 {
     font-size: 3.5rem;
     padding-bottom: 1.5rem; }
   @media only screen and (max-width: 40em) {
-    /* line 64, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 68, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader h1 {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       padding-bottom: 1.5rem; } }
-  /* line 66, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 70, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader p {
     padding-left: 1.6rem;
     padding-right: 1.6rem; }
     @media only screen and (min-width: 40.0625em) {
-      /* line 66, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 70, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader p {
         padding-left: 2.6rem;
         padding-right: 2.6rem; } }
   @media only screen and (min-width: 40.0625em) {
-    /* line 60, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 64, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainFreetextSearchblock .kk_aj_searchHeader {
       margin-top: 6rem;
       margin-bottom: 2rem; } }
 
-/* line 83, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 87, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainFreetextSearchblock .kk_aj_freetextSearch {
   -webkit-border-radius: 10px 0px 0px 10px !important;
           border-radius: 10px 0px 0px 10px !important;
   margin-right: 0px;
   padding-right: 0px; }
 
-/* line 89, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny {
-  color: #FFFFFF; }
+/* line 92, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch {
+  color: #000000; }
+  /* line 94, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny {
+    /**/ }
 
-/* line 96, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 102, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainInfotextblock {
   background: #3a8280;
-  color: #fff;
+  color: #FFFFFF;
   padding-bottom: 70px; }
-  /* line 100, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  @media only screen and (max-width: 40em) {
+    /* line 102, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainInfotextblock {
+      padding-bottom: 35px; } }
+  /* line 109, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainInfotextblock h2 {
-    font-size: 2.2rem;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold; }
 
-/* line 109, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 117, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainFreetextSearchblock {
   background: #ebeae6;
   padding-bottom: 70px; }
-  /* line 110, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 118, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch {
-    background: #b1a06b; }
-  /* line 115, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    background: #bcdc62; }
+  @media only screen and (max-width: 40em) {
+    /* line 117, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainFreetextSearchblock {
+      /*padding-bottom:35px;*/ } }
+  /* line 126, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainFreetextSearchblock h2 {
-    font-size: 2.2rem;
-    margin-top: 60px;
-    margin-bottom: 40px; }
+    font-size: 2.2rem; }
 
-/* line 121, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 132, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainsearchblock {
-  background: #b1a06b;
+  background: #585661;
   padding-bottom: 70px; }
-  /* line 124, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-  .kk_aj_mainsearchblock h2 {
-    font-size: 2.2rem;
-    margin-top: 60px;
-    margin-bottom: 40px; }
+  @media only screen and (max-width: 40em) {
+    /* line 132, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainsearchblock {
+      padding-bottom: 35px; } }
 
 /*.kk_aj_superProductListBlock{*/
 /*background: url(http://kulturkatalog.kivdev.se/portals/0/kulturkatalogenArrImages/kulturkatalogen/bak_kulturkatalogen.jpg);
@@ -12495,47 +12554,52 @@ input[type=radio] + label {
     background-repeat:no-repeat;*/
 /*.row{margin:0rem!important;}*/
 /* Superblock globals */
-/* line 138, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 151, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_coloredblocks {
   margin-top: 2rem;
   background: #f77136; }
-  /* line 141, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 154, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_coloredblocks h2 {
     color: #FFFFFF; }
 
 /*Sök form --------------------------------------*/
-/* line 147, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 160, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+#kk_aj_yearspan2 {
+  color: #FFFFFF !important; }
+
+/* line 163, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainsearchblock {
-  padding-bottom: 2rem; }
-  /* line 148, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  padding-bottom: 0rem; }
+  /* line 164, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock h3 {
     font-weight: 600; }
-  /* line 152, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 168, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .ui-state-active {
-    background: #fff !important;
+    background: #FFFFFF !important;
     border-color: #f77136 !important; }
-  /* line 154, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 170, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .ui-slider-handle.ui-state-default {
     -webkit-border-radius: 8px;
             border-radius: 8px;
-    background: #585661;
-    border-color: #585661; }
-  /* line 161, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    background: #ed6d04;
+    border-color: #ed6d04; }
+  /* line 177, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .searchformblock {
     margin-top: 1rem;
     /* mainblock globals */ }
-    /* line 163, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 179, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainsearchblock .searchformblock #kk_aj_slider-range2 {
       margin: 1rem !important; }
-    /* line 164, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 180, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainsearchblock .searchformblock #kk_aj_yearspan2 {
       padding-top: .4rem;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      color: #FFFFFF !important; }
     @media only screen and (min-width: 64.0625em) {
-      /* line 161, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 177, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainsearchblock .searchformblock {
         margin-top: 4rem; } }
-  /* line 172, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 190, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .searchformbutton {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -12562,37 +12626,41 @@ input[type=radio] + label {
             flex-direction: column;
     text-align: left;
     padding: .5rem; }
-  /* line 185, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 203, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .kk_aj_searchRensaformbutton {
-    background: #585661; }
-  /* line 188, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    background: #ebeae6;
+    color: #000000; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 203, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_mainsearchblock .kk_aj_searchRensaformbutton {
+        float: left; } }
+  /* line 211, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainsearchblock .kk_aj_searchformbutton {
     color: #000000;
-    background: #ebeae6; }
+    background: #bcdc62; }
+    @media only screen and (min-width: 40.0625em) {
+      /* line 211, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_mainsearchblock .kk_aj_searchformbutton {
+        float: right; } }
 
 /* END Sök form ---------------------------------*/
-/* line 195, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 223, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_searchbuttonblock {
   margin-top: 2rem;
   margin-bottom: 4rem; }
 
 /*produktlista ----------------------------------*/
-/* line 207, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 235, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 #kk_aj_masterproductlistblock .hittaarrHeader {
   padding-left: 0rem; }
-  /* line 208, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-  #kk_aj_masterproductlistblock .hittaarrHeader h2 {
-    font-size: 2.2rem;
-    margin-top: 60px;
-    margin-bottom: 40px; }
 
 @media only screen and (max-width: 40em) {
-  /* line 219, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 243, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_filterRubrikBlock h3 {
     font-size: 0.9375rem;
     font-weight: bold; } }
 
-/* line 223, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 247, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_filterRubrikBlock .jplist-drop-down {
   font-size: 14px;
   line-height: 1;
@@ -12603,79 +12671,88 @@ input[type=radio] + label {
   border-style: solid;
   height: 30px; }
 
-/* line 232, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 256, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_filterRubrikBlock .jplist-select {
   margin: 0px;
   padding: 0px; }
 
-/* line 238, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 265, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_mainproductlistblock {
   /*START Produktlistningen sökresultat-----------*/
   /*STOPP Produktlistningen sökresultat ----------*/ }
-  /* line 239, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 266, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .ui-state-active {
-    background: #fff !important;
+    background: #FFFFFF !important;
     border-color: #f77136 !important; }
-  /* line 241, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 272, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .ui-slider-handle.ui-state-default {
     -webkit-border-radius: 8px;
             border-radius: 8px;
     background: #585661;
     border-color: #585661; }
-  /* line 248, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 279, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .kk_aj_filterblock {
     /*margin-bottom: 1rem;
             padding-right:2.5rem!important;*/
     /* START Filter tillvänster --------------------*/
     /* STOPP Filter tillvänster -------------------*/ }
-    /* line 249, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 281, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_filterblock h3 {
       font-weight: 600;
       margin-top: 1rem;
       margin-bottom: .2rem; }
-    /* line 256, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 289, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock {
       margin-bottom: 1rem; }
-      /* line 261, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 292, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock .jplist-range-slider {
         width: 95%;
         margin-top: 0px;
         margin-left: .5rem; }
-        /* line 266, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 297, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_filterblock .spellangdblock .jplist-range-slider .value {
           margin: 0px;
           margin-top: .5rem;
           font-size: 1rem; }
-    /* line 273, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 305, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_filterblock .kk_aj_searchfilterblock {
       margin-left: .5rem; }
-    /* line 276, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 309, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_filterblock .resetbox {
       margin-top: 1rem; }
-    /* line 280, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 317, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_filterblock .kk_aj_searchRensaformbutton {
       background: #585661;
       color: #FFFFFF;
       width: 100%;
       font-size: .8rem;
       text-transform: uppercase; }
-  /* line 288, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+      /* line 279, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_mainproductlistblock .kk_aj_filterblock {
+        margin-bottom: 35px; } }
+  /* line 331, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .like {
     display: none; }
-  /* line 291, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 336, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
     margin: 0px;
     padding: 0px;
     padding-left: .5rem; }
-  /* line 300, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 344, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_mainproductlistblock .kk_aj_productlistblock {
     margin-bottom: 70px; }
-    /* line 302, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    @media only screen and (max-width: 40em) {
+      /* line 344, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      .kk_aj_mainproductlistblock .kk_aj_productlistblock {
+        padding-bottom: 35px; } }
+    /* line 351, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock #Sorterafilter {
-      width: 12rem;
+      min-width: 115px;
+      width: auto !important;
+      /*width: 246px;*/
       font-size: 1.0rem;
-      -webkit-border-radius: 14px;
-              border-radius: 14px;
+      ___border-radius: 14px;
       text-transform: uppercase;
       height: 32px;
       background-color: #ebeae6;
@@ -12683,11 +12760,20 @@ input[type=radio] + label {
       background: url(/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Arrowdown.png) no-repeat right #ebeae6 !important;
       background-position-x: 95% !important;
       -webkit-appearance: none;
-      padding-left: 1rem; }
-    /* line 315, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      __padding-left: 1rem; }
+    /* line 367, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_mainproductlistblock .kk_aj_productlistblock #kk_aj_pagers {
+      min-width: 115px;
+      width: auto !important;
+      height: 32px; }
+      @media only screen and (min-width: 40.0625em) {
+        /* line 367, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        .kk_aj_mainproductlistblock .kk_aj_productlistblock #kk_aj_pagers {
+          margin-left: 1rem; } }
+    /* line 377, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .bildtestbox {
       position: relative; }
-    /* line 317, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 381, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_visaminneslistan {
       width: 15rem;
       font-size: 1.0rem;
@@ -12696,138 +12782,151 @@ input[type=radio] + label {
       text-transform: uppercase;
       background: #585661;
       padding: 0px;
-      line-height: 30px; }
-      /* line 325, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      __line-height: 30px; }
+      /* line 390, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_visaminneslistan img {
         float: right; }
-    /* line 329, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 397, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_arr_item_minneslista {
       position: absolute;
       top: 40%;
       right: 0;
       margin-right: 4px; }
-    /* line 336, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      @media only screen and (max-width: 40em) {
+        /* line 397, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_arr_item_minneslista {
+          display: none; } }
+    /* line 409, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_filtervalues {
       display: none; }
-    /* line 337, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 413, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .S_KO {
       display: none; }
-    /* line 338, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 417, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem {
       border: 1px solid transparent;
       border-top: 1px solid #ebeae6;
       padding-top: 1rem;
       margin-bottom: 1rem !important;
       text-align: left; }
-      /* line 345, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 424, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem:hover {
         /*background-color:$white;                                    
                          border-color: $orange;*/
         background-color: #f9f9f9;
         border-top-color: #585661;
-        background: -webkit-linear-gradient(326deg, #f6f6f6, #f8f8f8, #f9f9f9, #fff, #e9e9e9, #e6e6e6, #e9e9e9, #fefefe, #e3e3e3);
-        background: linear-gradient(124deg, #f6f6f6, #f8f8f8, #f9f9f9, #fff, #e9e9e9, #e6e6e6, #e9e9e9, #fefefe, #e3e3e3);
+        background: linear-gradient(124deg, #f6f6f6, #f8f8f8, #f9f9f9, #FFFFFF, #e9e9e9, #e6e6e6, #e9e9e9, #fefefe, #e3e3e3);
         background-size: 1800% 1800%;
         -webkit-animation: rainbow 18s ease infinite;
         -z-animation: rainbow 18s ease infinite;
         animation: rainbow 18s ease infinite; }
-      /* line 362, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 438, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail {
         display: block;
         min-height: 100%;
         padding: .5rem;
         text-align: center; }
-        /* line 367, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 442, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .bildtestbox {
-          min-height: 180px; }
+          min-height: 137px; }
         @media only screen and (min-width: 40.0625em) {
-          /* line 362, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 438, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail {
             __padding-right: 0px;
             text-align: center; } }
-        /* line 376, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 454, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail img {
-          max-height: 180px; }
-        /* line 377, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          max-height: 137px; }
+          @media only screen and (max-width: 40em) {
+            /* line 454, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+            .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail img {
+              max-height: 350px; } }
+        /* line 462, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_thumbnail_color {
           background-color: #ebeae6;
           /*background-color:transparent;*/ }
-        /* line 381, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 467, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_thumbnail_img {
           width: 100%;
           height: 100%; }
-        /* line 386, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 472, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista {
           text-decoration: none;
           color: #888888;
           font-size: small; }
-          /* line 389, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 477, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista.minnesadded {
             color: #43AC6A; }
-          /* line 392, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 481, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_thumbnail .kk_aj_arr_item_minneslista:hover {
             text-decoration: underline; }
-      /* line 397, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 487, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock {
-        min-height: 8.2rem; }
-        /* line 402, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        min-height: 8.2rem;
+        min-height: 120px; }
+        @media only screen and (max-width: 40em) {
+          /* line 487, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock {
+            min-height: 60px; } }
+        /* line 495, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock h2 {
           font-size: 1.25rem;
           color: #000000; }
-        /* line 407, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 500, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock h3 {
           font-size: 1.0625rem;
           font-weight: 500; }
-        /* line 412, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        /* line 505, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_contentblock .kk_aj_title {
-          color: #b1a06b;
-          font-weight: 500;
-          text-transform: uppercase; }
-      /* line 419, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /*color:#222;*/
+          font-weight: 600;
+          /*text-transform: uppercase;*/ }
+      /* line 513, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_utovareblock h3 {
+        color: #b1a06b;
         font-size: 1.0625rem;
         font-weight: 600 !important;
         text-transform: uppercase; }
-      /* line 425, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 521, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock {
         position: absolute;
         top: 40%;
         right: 0;
         margin-right: 4px; }
-        /* line 431, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+        @media only screen and (max-width: 40em) {
+          /* line 521, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock {
+            top: 10%; } }
+        /* line 531, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
         .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .readmorebutton {
           position: relative;
           height: 32px; }
           @media only screen and (max-width: 40em) {
-            /* line 431, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+            /* line 531, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
             .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .readmorebutton {
               float: right;
               margin-right: .5rem; } }
-          /* line 439, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+          /* line 540, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
           .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .kk_aj_arr_item_buttonblock .readmorebutton:hover {
             opacity: .7; }
-      /* line 447, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-      .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productlist .kk_aj_arritem .inminneslist {
-        color: #43AC6A !important; }
-    /* line 454, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 549, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productPagerblock {
-      border-top: 1px solid #EEEEEE;
+      border-top: 1px solid #ebeae6;
       padding-bottom: 1rem; }
-      /* line 457, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+      /* line 553, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
       .kk_aj_mainproductlistblock .kk_aj_productlistblock .kk_aj_productPagerblock .jplist-panel {
         display: table;
         margin: 0 auto; }
 
-/* line 466, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 562, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kk_aj_omkulturkatalogenblock {
   padding-bottom: 70px;
   background: #ebeae6; }
-  /* line 467, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-  .kk_aj_omkulturkatalogenblock h2 {
-    font-size: 2.2rem;
-    margin-top: 60px;
-    margin-bottom: 40px; }
-  /* line 475, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  @media only screen and (max-width: 40em) {
+    /* line 562, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .kk_aj_omkulturkatalogenblock {
+      padding-bottom: 35px; } }
+  /* line 571, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .kk_aj_omkulturkatalogenblock .kk_aj_kontaktmbutton {
     background: #585661; }
 
@@ -12849,77 +12948,89 @@ input[type=radio] + label {
     background-position: 0% 82%; } }
 
 /*Multifunktioner*/
-/* line 505, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 602, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .centerfields {
   text-align: center; }
 
-/* line 510, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 607, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .ArrangemangtypBlock .vald {
   color: #FFFFFF !important;
-  background: #3a8280 !important; }
+  background: #109569 !important; }
 
-/* line 516, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 613, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .kontformBlock .vald {
   color: #FFFFFF !important;
-  background: #585661 !important; }
+  background: #ed6d04 !important; }
 
-/* line 525, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 622, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .valbaraRadiobuttons label > input, .ArrangemangtypBlock label > input, .kontformBlock label > input {
   visibility: hidden;
   /* Makes input not-clickable */
   position: absolute; }
-  /* line 529, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 626, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .valbaraRadiobuttons label > input:checked + span, .ArrangemangtypBlock label > input:checked + span, .kontformBlock label > input:checked + span {
     color: #FFFFFF;
     background: #3a8280 !important; }
 
-/* line 537, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 634, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .valbaraRadiobuttons label + button, .ArrangemangtypBlock label + button, .kontformBlock label + button {
   /* IMAGE STYLES */
   cursor: pointer;
   border: 2px solid transparent; }
 
-/* line 543, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
-.buttonmall, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny, .kk_aj_searchbuttonblock button.tiny {
-  width: 16rem !important;
-  font-size: .8rem; }
-
-/* line 555, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 646, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 .jplist-panel .jplist-pagination button {
   font-family: "acumin-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   text-shadow: none;
   font-weight: normal;
   color: #666666 !important;
   background: #ebeae6; }
-  /* line 562, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 653, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .jplist-panel .jplist-pagination button.jplist-current {
     font-weight: normal;
     color: #FFFFFF !important;
     background: #585661; }
-    /* line 566, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    /* line 657, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
     .jplist-panel .jplist-pagination button.jplist-current:hover {
       opacity: 1;
       color: inherit;
       background: #585661; }
-  /* line 571, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 662, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   .jplist-panel .jplist-pagination button:hover {
     color: #FFFFFF !important;
     opacity: 0.5;
     color: inherit;
     background: #585661; }
 
-/* line 581, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 672, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 #kk_aj_valdsokning ul {
   font-size: 0.8rem; }
 
-/* line 584, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+/* line 675, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
 #kk_aj_valdsokning #kk_aj_valdsokord {
   margin-left: 0px;
   list-style: none; }
-  /* line 587, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+  /* line 678, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
   #kk_aj_valdsokning #kk_aj_valdsokord li {
     float: left;
     margin-right: 1rem; }
+
+/* line 684, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.default_h2, .kk_aj_mainInfotextblock h2, .kk_aj_mainFreetextSearchblock h2, .kk_aj_mainsearchblock h2, #kk_aj_masterproductlistblock .hittaarrHeader h2, .kk_aj_omkulturkatalogenblock h2 {
+  font-size: 2.2rem;
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 40em) {
+    /* line 684, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+    .default_h2, .kk_aj_mainInfotextblock h2, .kk_aj_mainFreetextSearchblock h2, .kk_aj_mainsearchblock h2, #kk_aj_masterproductlistblock .hittaarrHeader h2, .kk_aj_omkulturkatalogenblock h2 {
+      margin-top: 30px;
+      margin-bottom: 20px; } }
+
+/* line 694, _dev/devsass/devScss/kulturkatalogen/_produktlistsearch.scss */
+.kiv-new-header .searchMainWrapper {
+  min-height: 50px;
+  height: auto !important;
+  overflow: hidden; }
 
 /* line 1, _dev/devsass/devScss/kulturkatalogen/_kulturkatalog_Mainmeny.scss */
 .mega-menu {
@@ -13092,6 +13203,10 @@ input[type=radio] + label {
   padding-bottom: 0.3rem;
   border-bottom: 0.5rem solid #000; }
 
+/* line 20, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogenArtikel.scss */
+.artikelSuperBlock .Dela_mainblock {
+  display: none; }
+
 /* END artikelSuperBlock */
 /* line 1, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
 #myBtn {
@@ -13224,143 +13339,353 @@ input[type=radio] + label {
 /*.top-level-menu a.godkandlabel{color:#00a65a;}
 .top-level-menu a.nekalabel{color:#dd4b39;}
 .top-level-menu a.ovrigtlabel{color:#f39c12;}*/
-/* line 3, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
-.detailblock .artikelwrapper .artsidecontainer {
-  font-size: .9rem;
-  line-height: 1.2rem; }
+/* line 118, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_bg_beige {
+  background: #b1a06b;
+  padding-bottom: 70px; }
+  /* line 122, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .kk_aj_bg_beige h2 {
+    font-size: 2.2rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #FFFFFF; }
+  /* line 128, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .kk_aj_bg_beige h3 {
+    font-weight: 600;
+    color: #FFFFFF; }
+  /* line 132, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .kk_aj_bg_beige p {
+    color: #FFFFFF; }
+  /* line 133, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .kk_aj_bg_beige .kk_aj_kontaktmbutton {
+    background: #ebeae6;
+    color: #000000;
+    text-transform: uppercase; }
 
-/* line 8, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* Thomas fixar ------------------------------------------------------------------- */
+/*110px med font-sizebas 16px; acumin light*/
+/* line 162, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainInfotextblock h2, .kk_aj_omkulturkatalogenblock h2 {
+  font-weight: 800 !important; }
+
+/* line 172, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainFreetextSearchblock h2 {
+  font-weight: 300 !important; }
+
+/* line 176, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainFreetextSearchblock input {
+  height: 3rem;
+  border: 0px; }
+
+/* line 180, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainFreetextSearchblock .button {
+  margin-top: .5rem; }
+
+/* line 185, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainKontaktblock h2 {
+  font-weight: 300 !important; }
+
+@media only screen and (max-width: 40em) {
+  /* line 190, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .kk_aj_mainKontaktblock h3 {
+    font-size: 1rem !important; } }
+
+@media only screen and (min-width: 64.0625em) {
+  /* line 196, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .searchformbutton {
+    max-width: 246px; } }
+
+/* line 202, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainsearchblock h2 {
+  color: #FFFFFF;
+  font-weight: 300 !important; }
+
+/* line 207, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_mainsearchblock h3 {
+  color: #FFFFFF; }
+
+/* line 214, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.hittaarrHeader h2 {
+  font-weight: 300 !important; }
+
+/* line 18, _dev/devsass/devScss/Komponenter/_kivbuttons.scss */
+/* line 220, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.buttonmall, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny, .kk_aj_searchbuttonblock button.tiny, .kk_aj_bg_beige .kk_aj_kontaktmbutton, .kk_aj_mainFreetextSearchblock #kk_aj_btnfreetextSearch.tiny, .kk_aj_searchbuttonblock button.tiny, .kk_aj_kontaktmbutton, .kk_aj_visaminneslistan, .kk_aj_searchRensaformbutton, .kk_aj_bg_beige .kk_aj_kontaktmbutton {
+  width: 16rem !important;
+  font-size: 16px !important;
+  height: 28px !important;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+  padding: 1px !important; }
+
+/* line 227, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+#kk_aj_btnfreetextSearch {
+  margin-top: 2rem !important;
+  margin-bottom: 0px !important; }
+
+/* line 231, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_kontaktmbutton {
+  width: 20rem !important; }
+
+/* line 235, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.kk_aj_visaminneslistan img {
+  max-height: 27px !important;
+  margin-right: -1px; }
+
+/* line 241, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.jplist-select_Stilmall, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_filterRubrikBlock .jplist-ios-button, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
+  width: 246px !important; }
+  @media only screen and (max-width: 40em) {
+    /* line 241, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .jplist-select_Stilmall, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_filterRubrikBlock .jplist-ios-button, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
+      width: 100% !important; } }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    /* line 241, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .jplist-select_Stilmall, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_filterRubrikBlock .jplist-ios-button, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select, .kk_aj_filterRubrikBlock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_filterblock .jplist-select, .kk_aj_mainproductlistblock .kk_aj_sort .jplist-select {
+      width: 100% !important; } }
+
+/* line 250, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.jplist-range-slider {
+  width: 234px !important; }
+  @media only screen and (max-width: 40em) {
+    /* line 250, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .jplist-range-slider {
+      width: 96% !important; } }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    /* line 250, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .jplist-range-slider {
+      width: 98% !important; } }
+
+/* line 259, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+#kk_aj_slider-range2 {
+  margin-left: .5rem;
+  margin-bottom: .5rem;
+  width: 97% !important; }
+
+/* line 265, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.blockavstand, .kk_aj_searchHeader {
+  padding-top: 15px;
+  padding-bottom: 50px; }
+  @media only screen and (max-width: 40em) {
+    /* line 265, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .blockavstand, .kk_aj_searchHeader {
+      padding-top: 30px;
+      padding-bottom: 35px; } }
+
+/* line 274, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.t_h1, h1 {
+  font-size: 6.875rem;
+  /*110px*/
+  font-size: 5.8rem;
+  /*100px*/
+  font-style: normal;
+  font-weight: 200 !important;
+  margin-left: -6px;
+  margin-right: -8px; }
+  /* line 278, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+  .t_h1.granska_rubrik, h1.granska_rubrik {
+    font-size: 3.5rem;
+    /*56px*/ }
+    @media only screen and (max-width: 40em) {
+      /* line 278, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+      .t_h1.granska_rubrik, h1.granska_rubrik {
+        font-size: 10vw;
+        /*36px*/ } }
+  @media only screen and (max-width: 40em) {
+    /* line 274, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_h1, h1 {
+      font-size: 10vw;
+      /*50px*/ } }
+  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+    /* line 274, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_h1, h1 {
+      font-size: 10vw;
+      /*36px*/ } }
+
+/* line 295, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.t_h2, .kk_aj_mainInfotextblock h2, .kk_aj_omkulturkatalogenblock h2, .kk_aj_mainFreetextSearchblock h2, .kk_aj_mainKontaktblock h2, .kk_aj_mainsearchblock h2, .hittaarrHeader h2 {
+  font-size: 3rem !important;
+  /*48px*/
+  line-height: 48px;
+  font-style: normal; }
+  @media only screen and (max-width: 40em) {
+    /* line 295, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_h2, .kk_aj_mainInfotextblock h2, .kk_aj_omkulturkatalogenblock h2, .kk_aj_mainFreetextSearchblock h2, .kk_aj_mainKontaktblock h2, .kk_aj_mainsearchblock h2, .hittaarrHeader h2 {
+      font-size: 1.5rem !important;
+      line-height: 24px; } }
+
+/* line 304, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.t_h2_allt {
+  font-size: 2.5rem !important;
+  /*48px*/
+  line-height: 48px;
+  font-style: normal; }
+  @media only screen and (max-width: 40em) {
+    /* line 304, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_h2_allt {
+      font-size: 1.375rem !important;
+      line-height: 24px; } }
+
+/* line 313, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.t_h3, .kk_aj_mainLogoheaderblock ul li a, .kk_aj_mainsearchblock h3 {
+  font-size: 1.125rem;
+  /*22px*/
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 600; }
+  @media only screen and (max-width: 40em) {
+    /* line 313, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_h3, .kk_aj_mainLogoheaderblock ul li a, .kk_aj_mainsearchblock h3 {
+      font-size: 1rem !important;
+      line-height: 15px; } }
+
+/* line 323, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+.t_p, .kk_aj_mainInfotextblock p, .kk_aj_omkulturkatalogenblock p {
+  font-size: 1.375rem;
+  line-height: 30,8px;
+  font-style: normal; }
+  @media only screen and (max-width: 40em) {
+    /* line 323, _dev/devsass/devScss/kulturkatalogen/_kulturkatalogMain.scss */
+    .t_p, .kk_aj_mainInfotextblock p, .kk_aj_omkulturkatalogenblock p {
+      font-size: 0.85rem !important;
+      line-height: 16px; } }
+
+/* line 2, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+.detailblock .artikelwrapper {
+  margin-top: 60px; }
+  /* line 4, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  .detailblock .artikelwrapper .artsidecontainer {
+    font-size: 1rem;
+    line-height: 1.2rem; }
+
+/* line 9, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 .detailblock .granska_rubrik {
-  border-bottom: 10px solid #000000;
-  color: #f77136;
-  font-weight: 100;
+  font-weight: 500;
   padding-bottom: .5rem; }
 
-/* line 14, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* line 15, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 .detailblock .arrRubrikblock {
   margin-top: 3rem;
   margin-bottom: 1rem; }
-  /* line 17, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 18, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .detailblock .arrRubrikblock h2 {
     font-size: 1.3rem;
     margin-left: .5rem; }
 
-/* line 24, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* line 25, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 .kk_aj_granskablock {
   background-color: #F9F9F9;
   padding: 1rem; }
-  /* line 27, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 28, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .kk_aj_granskablock #kk_aj_arrangorstod {
     background-color: #FFFFFF; }
-  /* line 30, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 31, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .kk_aj_granskablock .errorborder {
     border: 1px solid #f04124; }
 
-/* line 35, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* line 36, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 .top-bar-section .dropdown li ul li {
   width: 300px; }
-  /* line 37, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 38, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .top-bar-section .dropdown li ul li a {
     max-width: 300px;
     white-space: normal;
     overflow-wrap: break-word !important;
     word-wrap: break-word !important; }
 
-/* line 46, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* line 47, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 #addarrtab-3 .granska_rubrik {
-  border-bottom: 10px solid #000000;
-  color: #f77136;
-  font-weight: 100;
+  font-weight: 500;
   padding-bottom: .5rem; }
 
-/* line 52, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+/* line 51, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
 #addarrtab-3 .arrRubrikblock {
   margin-top: 3rem;
   margin-bottom: 1rem; }
-  /* line 55, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 54, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   #addarrtab-3 .arrRubrikblock h2 {
     font-size: 1.3rem;
     margin-left: .5rem; }
 
 @media print {
-  /* line 64, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 63, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .kk_aj_mainFreetextSearchblock, .kk_aj_mainsearchblock, .kk_aj_filterblock, .kk_aj_filterRubrikBlock, .kk_aj_arr_item_buttonblock {
     display: none !important; }
-  /* line 65, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 64, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .kk_aj_superProductListBlock {
     background: none; }
-  /* line 66, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 65, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .kk_aj_arr_item_contentblock {
     min-height: 0px !important; }
-  /* line 69, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 68, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .menybreadcrumb, .footencol, .granska_Dela, #myBtn, nav {
     display: none !important; }
-  /* line 70, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 69, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .granskaFaktaMainblock {
     float: right; }
-  /* line 71, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 70, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .artsidecontainer {
     padding-bottom: 0px;
     margin-bottom: 0px !important; }
-  /* line 72, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 71, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .detailblock, .arrRubrikblock {
     padding-top: 0rem;
     margin-top: 0rem !important; }
-  /* line 73, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 72, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   h3 {
     margin: 0px; }
-  /* line 74, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 73, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .right {
     float: left !important; }
-  /* line 75, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 74, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   a[href]:after {
     content: none !important; }
-  /* line 78, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 77, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-1 {
     width: 8.33333%; }
-  /* line 82, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 81, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-2 {
     width: 16.66667%; }
-  /* line 86, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 85, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .small-3 {
     width: 25%; }
-  /* line 90, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 89, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .medium-4 {
     width: 33.33333%; }
-  /* line 94, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 93, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-5 {
     width: 41.66667%; }
-  /* line 98, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 97, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-6 {
     width: 50%; }
-  /* line 102, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 101, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-7 {
     width: 58.33333%; }
-  /* line 106, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 105, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .medium-8 {
     width: 66.66667%; }
-  /* line 110, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 109, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .small-9 {
     width: 75%; }
-  /* line 114, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 113, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-10 {
     width: 83.33333%; }
-  /* line 118, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 117, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .large-11 {
     width: 91.66667%; }
-  /* line 122, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 121, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .small-12 {
     width: 100%; }
-  /* line 125, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+  /* line 124, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
   .ModDnnmodulekkajPublikproductlistC {
     font-size: 0.8rem !important; }
-    /* line 127, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+    /* line 126, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
     .ModDnnmodulekkajPublikproductlistC h1 {
       font-size: 1.5rem !important; }
-    /* line 128, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+    /* line 127, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
     .ModDnnmodulekkajPublikproductlistC h2 {
       font-size: 1.3rem !important; }
-    /* line 129, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
+    /* line 128, _dev/devsass/devScss/kulturkatalogen/_arrPublicDetails.scss */
     .ModDnnmodulekkajPublikproductlistC h3 {
       font-size: 1.1rem !important; } }
 
@@ -13412,7 +13737,7 @@ input[type=radio] + label {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 13, _dev/devsass/css/main.css */
+/* line 13, _dev/devsass/css/main.scss */
 html,
 button,
 input,
@@ -13420,7 +13745,7 @@ select,
 textarea {
   color: #222; }
 
-/* line 21, _dev/devsass/css/main.css */
+/* line 21, _dev/devsass/css/main.scss */
 body {
   font-size: 1em;
   line-height: 1.4; }
@@ -13430,23 +13755,26 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, _dev/devsass/css/main.css */
+/* line 32, _dev/devsass/css/main.scss */
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #ebeae6;
+  /*background: $kk_aj_lightgrey;*/
   text-shadow: none; }
 
-/* line 37, _dev/devsass/css/main.css */
+/* line 38, _dev/devsass/css/main.scss */
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #ebeae6;
+  /*background: $kk_aj_lightgrey;*/
   text-shadow: none; }
 ::selection {
-  background: #b3d4fc;
+  background: #ebeae6;
+  /*background: $kk_aj_lightgrey;*/
   text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-/* line 46, _dev/devsass/css/main.css */
+/* line 48, _dev/devsass/css/main.scss */
 hr {
   display: block;
   height: 1px;
@@ -13458,14 +13786,14 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, _dev/devsass/css/main.css */
+/* line 61, _dev/devsass/css/main.scss */
 img {
   vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
  */
-/* line 67, _dev/devsass/css/main.css */
+/* line 69, _dev/devsass/css/main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -13474,14 +13802,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, _dev/devsass/css/main.css */
+/* line 79, _dev/devsass/css/main.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, _dev/devsass/css/main.css */
+/* line 87, _dev/devsass/css/main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -13497,7 +13825,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 120, _dev/devsass/css/main.css */
+/* line 122, _dev/devsass/css/main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -13505,7 +13833,7 @@ textarea {
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
 
-/* line 128, _dev/devsass/css/main.css */
+/* line 130, _dev/devsass/css/main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -13515,7 +13843,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 139, _dev/devsass/css/main.css */
+/* line 141, _dev/devsass/css/main.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -13523,7 +13851,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 148, _dev/devsass/css/main.css */
+/* line 150, _dev/devsass/css/main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -13538,7 +13866,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 164, _dev/devsass/css/main.css */
+/* line 166, _dev/devsass/css/main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -13551,7 +13879,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 178, _dev/devsass/css/main.css */
+/* line 180, _dev/devsass/css/main.scss */
 .invisible {
   visibility: hidden; }
 
@@ -13566,15 +13894,14 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 194, _dev/devsass/css/main.css */
-.clearfix:before,
-.clearfix:after {
+/* line 196, _dev/devsass/css/main.scss */
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-/* line 200, _dev/devsass/css/main.css */
+/* line 202, _dev/devsass/css/main.scss */
 .clearfix:after {
   clear: both; }
 
@@ -13582,7 +13909,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 209, _dev/devsass/css/main.css */
+/* line 211, _dev/devsass/css/main.scss */
 .clearfix {
   *zoom: 1; }
 
@@ -13602,7 +13929,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 236, _dev/devsass/css/main.css */
+  /* line 238, _dev/devsass/css/main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -13610,94 +13937,94 @@ textarea {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 243, _dev/devsass/css/main.css */
+  /* line 245, _dev/devsass/css/main.scss */
   a,
   a:visited {
     text-decoration: underline; }
-  /* line 248, _dev/devsass/css/main.css */
+  /* line 250, _dev/devsass/css/main.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 252, _dev/devsass/css/main.css */
+  /* line 254, _dev/devsass/css/main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
      * Don't show links for images, or javascript/internal links
      */
-  /* line 260, _dev/devsass/css/main.css */
+  /* line 262, _dev/devsass/css/main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-  /* line 266, _dev/devsass/css/main.css */
+  /* line 268, _dev/devsass/css/main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-  /* line 272, _dev/devsass/css/main.css */
+  /* line 274, _dev/devsass/css/main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-  /* line 276, _dev/devsass/css/main.css */
+  /* line 278, _dev/devsass/css/main.scss */
   tr,
   img {
     page-break-inside: avoid; }
-  /* line 281, _dev/devsass/css/main.css */
+  /* line 283, _dev/devsass/css/main.scss */
   img {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
-  /* line 289, _dev/devsass/css/main.css */
+  /* line 291, _dev/devsass/css/main.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-  /* line 296, _dev/devsass/css/main.css */
+  /* line 298, _dev/devsass/css/main.scss */
   h2,
   h3 {
     page-break-after: avoid; } }
 
-/* line 1, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 1, _dev/devsass/css/kiv/kiv.footer.scss */
 footer.footer {
   background: #000;
   padding-bottom: 38px; }
 
-/* line 6, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 6, _dev/devsass/css/kiv/kiv.footer.scss */
 .footer .annonsrow img {
   min-width: 220px;
   max-width: 220px; }
 
-/* line 11, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 11, _dev/devsass/css/kiv/kiv.footer.scss */
 footer.footer.annonsfot {
   background: #fff;
   margin: 0 !important;
   padding: 0; }
 
-/* line 17, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 17, _dev/devsass/css/kiv/kiv.footer.scss */
 .footer .footdelare {
   margin-top: 5rem; }
 
-/* line 21, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 21, _dev/devsass/css/kiv/kiv.footer.scss */
 .footer .footdelare .foot-kivlogo-container img {
   max-width: 160px; }
 
-/* line 25, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 25, _dev/devsass/css/kiv/kiv.footer.scss */
 .footer .footdelare .foot-kivlogo-container {
   height: 83px; }
 
-/* line 29, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 29, _dev/devsass/css/kiv/kiv.footer.scss */
 .footer .footdelare .socialiconlist img {
   max-width: 48px; }
 
-/* line 33, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 33, _dev/devsass/css/kiv/kiv.footer.scss */
 .foot-lank {
   text-align: left; }
 
-/* line 37, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 37, _dev/devsass/css/kiv/kiv.footer.scss */
 .foot-lank.last {
   margin-bottom: 35px; }
 
-/* line 41, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 41, _dev/devsass/css/kiv/kiv.footer.scss */
 .foot-lank a {
   font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
   font-style: normal;
@@ -13708,11 +14035,11 @@ footer.footer.annonsfot {
   display: inline-block;
   width: 330px; }
 
-/* line 52, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 52, _dev/devsass/css/kiv/kiv.footer.scss */
 .foot-lank a:hover {
   text-decoration: underline; }
 
-/* line 56, _dev/devsass/css/kiv/kiv.footer.css */
+/* line 56, _dev/devsass/css/kiv/kiv.footer.scss */
 .foot-lank-pil {
   float: right;
   margin-left: 10px;
@@ -13723,44 +14050,48 @@ footer.footer.annonsfot {
   background-repeat: repeat-x; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 67, _dev/devsass/css/kiv/kiv.footer.css */
+  /* line 67, _dev/devsass/css/kiv/kiv.footer.scss */
   .foot-lank-pil {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-/* line 1, _dev/devsass/css/kiv/kiv.header.css */
+/* line 1, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper > .columns:first-child {
+  padding: 0; }
+
+/* line 5, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper {
   min-height: 50px;
   height: 50px;
   overflow: hidden; }
 
 @media (min-width: 40em) {
-  /* line 8, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 12, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper {
     min-height: 200px; } }
 
-/* line 13, _dev/devsass/css/kiv/kiv.header.css */
+/* line 17, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper #contentfilterblock {
   margin-top: 0px;
   margin-bottom: 0px; }
 
 @media (min-width: 40em) {
-  /* line 19, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 23, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper #contentfilterblock {
     margin-top: 0.5rem;
     margin-bottom: 1em; } }
 
-/* line 25, _dev/devsass/css/kiv/kiv.header.css */
+/* line 29, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper #contentfilterblock input {
   background: none;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  font-size: 1.2rem; }
+  font-size: 18px !important; }
 
 @media (min-width: 40em) {
-  /* line 35, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 39, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper #contentfilterblock input {
     background: #fff;
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -13769,16 +14100,53 @@ footer.footer.annonsfot {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     font-size: 1.5rem; } }
 
-/* line 45, _dev/devsass/css/kiv/kiv.header.css */
+/* line 49, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 54, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 59, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 64, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-moz-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1; }
+.kiv-new-header .searchMainWrapper #contentfilterblock input::placeholder {
+  color: #000000;
+  opacity: 1; }
+
+/* line 69, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input:-ms-input-placeholder {
+  color: #000000; }
+
+/* line 73, _dev/devsass/css/kiv/kiv.header.scss */
+.kiv-new-header .searchMainWrapper #contentfilterblock input::-ms-input-placeholder {
+  color: #000000; }
+
+/* line 77, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
   text-transform: uppercase; }
 
 @media (min-width: 40em) {
-  /* line 50, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 82, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper #contentfilterblock input:placeholder-shown {
     text-transform: initial; } }
 
-/* line 55, _dev/devsass/css/kiv/kiv.header.css */
+/* line 87, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper #edit-submit {
   position: absolute;
   top: 0;
@@ -13795,13 +14163,13 @@ footer.footer.annonsfot {
   background-repeat: repeat-x; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 72, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 104, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper #edit-submit {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
 @media (min-width: 40em) {
-  /* line 79, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 111, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper #edit-submit {
     position: relative;
     height: auto;
@@ -13813,32 +14181,32 @@ footer.footer.annonsfot {
     padding: 1rem 2rem 1.0625rem 2rem;
     background-image: none; } }
 
-/* line 92, _dev/devsass/css/kiv/kiv.header.css */
+/* line 124, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .searchMainWrapper {
   display: block !important; }
 
 @media (min-width: 40em) {
-  /* line 97, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 129, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper {
     display: none !important; } }
 
 @media (min-width: 40em) {
-  /* line 103, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 135, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .searchMainWrapper.sok-open {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: -webkit-flex !important;
     display: flex !important; } }
 
-/* line 110, _dev/devsass/css/kiv/kiv.header.css */
+/* line 142, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .tab-bar {
-  height: 45px;
+  height: 47px;
   background: #ebeae6; }
 
-/* line 115, _dev/devsass/css/kiv/kiv.header.css */
+/* line 147, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .left-small {
-  height: 45px;
-  line-height: 45px;
+  height: 47px;
+  line-height: 47px;
   background: none;
   border: none;
   background-image: url("../images/kiv-elements.png");
@@ -13851,17 +14219,17 @@ footer.footer.annonsfot {
   background-position: -1px -3px; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 131, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 163, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .left-small {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
 @media (min-width: 40em) {
-  /* line 138, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 170, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .left-small {
     width: 150px; } }
 
-/* line 143, _dev/devsass/css/kiv/kiv.header.css */
+/* line 175, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .left-small span {
   color: #000;
   font-size: 18px !important;
@@ -13869,21 +14237,21 @@ footer.footer.annonsfot {
   visibility: hidden; }
 
 @media (min-width: 40em) {
-  /* line 151, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 183, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .left-small span {
     visibility: visible; } }
 
-/* line 156, _dev/devsass/css/kiv/kiv.header.css */
+/* line 188, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .left-small:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); }
 
-/* line 161, _dev/devsass/css/kiv/kiv.header.css */
+/* line 193, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .right-small {
   right: 350px;
-  height: 45px;
+  height: 47px;
   width: 120px;
-  line-height: 45px;
+  line-height: 47px;
   background: none;
   border: none;
   background-image: url("../images/kiv-elements.png");
@@ -13896,31 +14264,31 @@ footer.footer.annonsfot {
   display: none !important; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 179, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 211, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .right-small {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
 @media (min-width: 40em) {
-  /* line 186, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 218, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .right-small {
     display: block !important; } }
 
-/* line 191, _dev/devsass/css/kiv/kiv.header.css */
+/* line 223, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .right-small span {
   color: #000;
   font-size: 18px !important;
   padding-left: 48px; }
 
-/* line 197, _dev/devsass/css/kiv/kiv.header.css */
+/* line 229, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .left-small:hover {
   opacity: 0.7;
   filter: alpha(opacity=70); }
 
-/* line 202, _dev/devsass/css/kiv/kiv.header.css */
+/* line 234, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .tab-bar-logosection {
-  height: 45px;
-  line-height: 45px;
+  height: 47px;
+  line-height: 47px;
   border: none;
   background: none;
   margin: 0;
@@ -13929,9 +14297,9 @@ footer.footer.annonsfot {
   padding-right: 0;
   width: 285px; }
 
-/* line 214, _dev/devsass/css/kiv/kiv.header.css */
+/* line 246, _dev/devsass/css/kiv/kiv.header.scss */
 .kiv-new-header .logo-img a {
-  height: 45px;
+  height: 47px;
   width: 275px;
   line-height: 2000px;
   display: block;
@@ -13941,971 +14309,127 @@ footer.footer.annonsfot {
   background-position: -12px -168px; }
 
 @media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 226, _dev/devsass/css/kiv/kiv.header.css */
+  /* line 258, _dev/devsass/css/kiv/kiv.header.scss */
   .kiv-new-header .logo-img a {
     background-image: url("../images/kiv-elements@2x.png");
     background-size: 500px 700px; } }
 
-/* line 1, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items-field-main-content {
-  line-height: 0; }
-
-/* line 5, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .field-type-paragraphs .entity-paragraphs-item {
-  float: none; }
-
-/* line 9, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .video-filter iframe {
-  max-width: 100%; }
-
-/* line 13, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view {
-  background: #505050;
-  padding-top: 30px;
-  padding-bottom: 35px;
-  min-height: 600px; }
-
-@media (min-width: 40em) {
-  /* line 21, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view {
-    padding-bottom: 110px; } }
-
-/* line 26, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images {
-  display: block !important; }
-
-@media (min-width: 40em) {
-  /* line 31, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .stacked-images {
-    display: none !important; } }
-
-/* line 36, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 40px; }
-
-/* line 42, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row.views-row-last {
-  margin-bottom: 10px; }
-
-/* line 46, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel {
-  display: block; }
-
-/* line 50, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .views-field-field-bild-bildspel img {
-  width: 100%; }
-
-/* line 54, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1;
-  color: #fff;
-  padding-top: 10px; }
-
-@media (min-width: 40em) {
-  /* line 65, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .stacked-images .views-field-body {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 71, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1;
-  color: #fff; }
-
-@media (min-width: 40em) {
-  /* line 81, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 87, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 a {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1;
-  color: #fff; }
-
-@media (min-width: 40em) {
-  /* line 97, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row h1 a {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 103, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .stacked-images .mobile-flex-row a:hover {
-  text-decoration: underline; }
-
-/* line 107, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel {
-  display: none !important; }
-
-@media (min-width: 40em) {
-  /* line 112, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel {
-    display: block !important; } }
-
-/* line 117, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flexslider {
-  background: #505050; }
-
-/* line 121, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
-  overflow: visible;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem; }
-
-@media (min-width: 40em) {
-  /* line 128, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; } }
-
-/* line 134, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-nav {
-  bottom: 10px;
-  z-index: 100; }
-
-/* line 139, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-paging li a {
-  background: rgba(255, 255, 255, 0.5); }
-
-/* line 143, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-control-paging li a.flex-active {
-  background: white; }
-
-/* line 147, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text {
-  bottom: -80px;
-  margin: 0; }
-
-/* line 152, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
-  color: #fff;
-  max-height: 80px;
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 163, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-@media (min-width: 40em) {
-  /* line 170, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
-    font-size: 2rem; } }
-
-@media (min-width: 64em) {
-  /* line 176, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
-    font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.4rem;
-    line-height: 1.1; } }
-
-@media (min-width: 64em) and (min-width: 40em) {
-  /* line 186, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 192, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-  color: #fff;
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 202, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; } }
-
-@media (min-width: 40em) {
-  /* line 209, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-@media (min-width: 40em) {
-  /* line 216, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-    font-size: 2rem; } }
-
-@media (min-width: 64em) {
-  /* line 222, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-    font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 2.4rem;
-    line-height: 1.1; } }
-
-@media (min-width: 64em) and (min-width: 40em) {
-  /* line 232, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text h1 a {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 238, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel .flex-slider .flex-text a:hover {
-  text-decoration: underline; }
-
-/* line 242, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-prev {
-  background: url("../images/PilMenyV28_vit.png") no-repeat center center; }
-
-/* line 246, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-flex-slider-view .flex-bildspel a.flex-next {
-  background: url("../images/PilMeny28_vit.png") no-repeat center center; }
-
-/* line 250, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph {
-  overflow: hidden;
-  clear: both;
-  padding-top: 30px;
-  padding-bottom: 35px; }
-
-@media (min-width: 40em) {
-  /* line 258, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph {
-    padding-top: 60px;
-    padding-bottom: 70px; } }
-
-/* line 264, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-view-title {
-  padding-bottom: 10px; }
-
-/* line 268, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1;
-  color: #000; }
-
-@media (min-width: 40em) {
-  /* line 278, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .aktuellt-view-title h2 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 284, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuelltbox a {
-  height: 115px;
-  display: block;
-  overflow: hidden; }
-
-/* line 290, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-wrapper {
-  position: relative;
-  border-bottom: 1px solid #000;
-  height: 115px;
-  padding-top: 15px;
-  background: #fff;
-  -webkit-transition-property: background, color;
-  transition-property: background, color;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s; }
-
-/* line 302, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper {
-  border-bottom: 1px solid #000; }
-
-@media (min-width: 40em) {
-  /* line 307, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .views-row-last .aktuellt-wrapper {
-    border-bottom: 1px solid #000; } }
-
-/* line 312, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-wrapper:hover {
-  background: #e7e7e8; }
-
-/* line 316, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .views-row-1 .aktuellt-wrapper {
-  border-top: 1px solid #000; }
-
-@media (min-width: 40em) {
-  /* line 321, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .views-row-2 .aktuellt-wrapper,
-  .paragraphs-items .view-front-news-paragraph .views-row-3 .aktuellt-wrapper {
-    border-top: 1px solid #000; } }
-
-/* line 327, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-left {
-  float: left;
-  padding-left: 15px;
-  padding-right: 40px; }
-
-@media (min-width: 40em) {
-  /* line 334, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .aktuellt-left {
-    padding-right: 40px; } }
-
-/* line 339, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuellt-right {
-  position: absolute;
-  right: 5px;
-  top: 40px;
-  width: 33px;
-  height: 33px;
-  background-image: url("../images/kiv-elements.png");
-  background-position: -19px -120px;
-  background-repeat: repeat-x; }
-
-@media (min--moz-device-pixel-ratio: 1.3), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 351, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .aktuellt-right {
-    background-image: url("../images/kiv-elements@2x.png");
-    background-size: 500px 700px; } }
-
-/* line 357, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuelltbox h4 {
-  color: #a38f5a;
-  text-transform: uppercase;
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 0.2rem; }
-
-@media (min-width: 40em) {
-  /* line 370, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .aktuelltbox h4 {
-    font-size: 1rem;
-    line-height: 1.4; } }
-
-/* line 376, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .view-front-news-paragraph .aktuelltbox h5 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.12rem;
-  line-height: 1.25;
-  color: #000;
-  margin-bottom: 0;
-  margin-top: 0; }
-
-@media (min-width: 40em) {
-  /* line 388, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .view-front-news-paragraph .aktuelltbox h5 {
-    font-size: 1.12rem;
-    line-height: 1.25; } }
-
-/* line 394, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-bg-row {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-
-/* line 400, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik {
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 20px; }
-
-@media (min-width: 40em) {
-  /* line 407, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik {
-    padding-bottom: 20px; } }
-
-/* line 412, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h1 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 421, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h1 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 427, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h2 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 436, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h2 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 442, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h3 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.12rem;
-  line-height: 1.25; }
-
-@media (min-width: 40em) {
-  /* line 451, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h3 {
-    font-size: 1.12rem;
-    line-height: 1.25; } }
-
-/* line 457, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h4 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.4; }
-
-@media (min-width: 40em) {
-  /* line 466, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h4 {
-    font-size: 1rem;
-    line-height: 1.4; } }
-
-/* line 472, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h5 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.12rem;
-  line-height: 1.25; }
-
-@media (min-width: 40em) {
-  /* line 481, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h5 {
-    font-size: 1.12rem;
-    line-height: 1.25; } }
-
-/* line 487, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraph-rubrik h6 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 1.4; }
-
-@media (min-width: 40em) {
-  /* line 496, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraph-rubrik h6 {
-    font-size: 1.375rem;
-    line-height: 1.4; } }
-
-/* line 502, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.4; }
-
-/* line 511, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h1 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 520, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h1 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 526, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h2 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 1.1; }
-
-@media (min-width: 40em) {
-  /* line 535, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h2 {
-    font-size: 3rem;
-    line-height: 1.1; } }
-
-/* line 541, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h3 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.12rem;
-  line-height: 1.25; }
-
-@media (min-width: 40em) {
-  /* line 550, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h3 {
-    font-size: 1.12rem;
-    line-height: 1.25; } }
-
-/* line 556, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h4 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.4; }
-
-@media (min-width: 40em) {
-  /* line 565, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h4 {
-    font-size: 1rem;
-    line-height: 1.4; } }
-
-/* line 571, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h5 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.12rem;
-  line-height: 1.25; }
-
-@media (min-width: 40em) {
-  /* line 580, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h5 {
-    font-size: 1.12rem;
-    line-height: 1.25; } }
-
-/* line 586, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .para-text-block h6 {
-  font-family: "acumin-pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 1.4; }
-
-@media (min-width: 40em) {
-  /* line 595, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .para-text-block h6 {
-    font-size: 1.375rem;
-    line-height: 1.4; } }
-
-/* line 601, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns {
-  padding-top: 30px;
-  padding-bottom: 35px; }
-
-@media (min-width: 40em) {
-  /* line 607, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-four-columns {
-    padding-top: 60px;
-    padding-bottom: 70px; } }
-
-/* line 613, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .columns {
-  position: relative; }
-
-/* line 617, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .spalt-wrapper {
-  position: relative; }
-
-/* line 621, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns a.para-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-/* line 629, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 633, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik a {
-  color: inherit; }
-
-/* line 637, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .paragraph-rubrik a:hover {
-  text-decoration: underline; }
-
-/* line 641, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper {
-  display: block; }
-
-/* line 645, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-img-wrapper img {
-  width: 100%; }
-
-/* line 649, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
-  pointer-events: none;
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-@media (min-width: 40em) {
-  /* line 658, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block {
-    padding-bottom: 0; } }
-
-/* line 663, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link:hover .para-text-block {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #ffffff;
-  text-decoration-color: #ffffff; }
-
-/* line 669, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a {
-  color: inherit;
-  pointer-events: all; }
-
-/* line 674, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 678, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-four-columns .para-has-link .para-text-block a:hover {
-  -webkit-text-decoration-color: #f77136;
-  text-decoration-color: #f77136;
-  color: #f77136; }
-
-/* line 684, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns {
-  padding-top: 30px;
-  padding-bottom: 35px; }
-
-@media (min-width: 40em) {
-  /* line 690, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-three-columns {
-    padding-top: 60px;
-    padding-bottom: 70px; } }
-
-/* line 696, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .columns {
-  position: relative; }
-
-/* line 700, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .spalt-wrapper {
-  position: relative; }
-
-/* line 704, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns a.para-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-/* line 712, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 716, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik a {
-  color: inherit; }
-
-/* line 720, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .paragraph-rubrik a:hover {
-  text-decoration: underline; }
-
-/* line 724, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper {
-  display: block; }
-
-/* line 728, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-img-wrapper img {
-  width: 100%; }
-
-/* line 732, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
-  pointer-events: none;
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-@media (min-width: 40em) {
-  /* line 741, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block {
-    padding-bottom: 0; } }
-
-/* line 746, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link:hover .para-text-block {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #ffffff;
-  text-decoration-color: #ffffff; }
-
-/* line 752, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a {
-  color: inherit;
-  pointer-events: all; }
-
-/* line 757, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 761, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-three-columns .para-has-link .para-text-block a:hover {
-  -webkit-text-decoration-color: #f77136;
-  text-decoration-color: #f77136;
-  color: #f77136; }
-
-/* line 767, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns {
-  padding-top: 30px;
-  padding-bottom: 35px; }
-
-@media (min-width: 40em) {
-  /* line 773, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-two-columns {
-    padding-top: 60px;
-    padding-bottom: 70px; } }
-
-/* line 779, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .columns {
-  position: relative; }
-
-/* line 783, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .spalt-wrapper {
-  position: relative; }
-
-/* line 787, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns a.para-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-/* line 795, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 799, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
-  pointer-events: none;
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-@media (min-width: 40em) {
-  /* line 808, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block {
-    padding-bottom: 0; } }
-
-/* line 813, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link:hover .para-text-block {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #ffffff;
-  text-decoration-color: #ffffff; }
-
-/* line 819, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a {
-  color: inherit;
-  pointer-events: all; }
-
-/* line 824, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 828, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-two-columns .para-has-link .para-text-block a:hover {
-  -webkit-text-decoration-color: #f77136;
-  text-decoration-color: #f77136;
-  color: #f77136; }
-
-/* line 834, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column {
-  padding-top: 30px;
-  padding-bottom: 35px; }
-
-@media (min-width: 40em) {
-  /* line 840, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-one-column {
-    padding-top: 60px;
-    padding-bottom: 70px; } }
-
-/* line 846, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .columns {
-  position: relative; }
-
-/* line 850, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .spalt-wrapper {
-  position: relative; }
-
-/* line 854, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
-  text-decoration: underline; }
-
-/* line 858, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik a {
-  color: inherit; }
-
-/* line 862, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .paragraph-rubrik a:hover {
-  text-decoration: underline; }
-
-/* line 866, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
-  pointer-events: none;
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-@media (min-width: 40em) {
-  /* line 875, _dev/devsass/css/kiv/kiv.frontpage.css */
-  .paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block {
-    padding-bottom: 0; } }
-
-/* line 880, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a {
-  color: inherit;
-  pointer-events: all; }
-
-/* line 885, _dev/devsass/css/kiv/kiv.frontpage.css */
-.paragraphs-items .paragraphs-item-paragraph-one-column .para-text-block a:hover {
-  text-decoration: underline; }
-
 /* New design menu */
-/* line 2, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 2, _dev/devsass/css/kiv/kiv.menu.scss */
 .move-right .exit-off-canvas {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-/* line 7, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 7, _dev/devsass/css/kiv/kiv.menu.scss */
 .left-off-canvas-menu {
   background: #58595b; }
 
-/* line 11, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 11, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-submenu.multiColumn {
   margin-bottom: 0; }
 
-/* line 15, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 15, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list {
   margin: 0;
   font-size: 0.9rem; }
 
-/* line 20, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 20, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li {
   background: #58595b;
   border-bottom: 1px solid #808184;
   line-height: 1.7; }
 
-/* line 26, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 26, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li:hover {
   background: #3f4041; }
 
-/* line 30, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 30, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li a {
   font-weight: 600;
   background: none; }
 
-/* line 35, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 35, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li a:before {
   background: none;
   width: 0; }
 
-/* line 40, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 40, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li a:hover,
 .menu-name-menu-2015-meny ul.off-canvas-list li a:active {
   color: #f77136; }
 
-/* line 45, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 45, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.first {
   background: #e6e7e7;
   border-bottom: 1px solid #929496; }
 
-/* line 50, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 50, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.first a {
   color: #000; }
 
-/* line 54, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 54, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first {
   background: #a6a8aa; }
 
-/* line 58, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 58, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first:hover {
   background: #66686b; }
 
-/* line 62, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 62, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first a {
   background: #a6a8aa;
   color: #fff; }
 
-/* line 67, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 67, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li {
   background: #a6a8aa; }
 
-/* line 71, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 71, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li:hover {
   background: #66686b; }
 
-/* line 75, _dev/devsass/css/kiv/kiv.menu.css */
+/* line 75, _dev/devsass/css/kiv/kiv.menu.scss */
 .menu-name-menu-2015-meny ul.off-canvas-list li.expanded li a {
   font-weight: 600;
   color: #fff;
-  text-transform: capitalize;
   font-size: 0.9rem; }
 
 /*
     Common 
 */
-/* line 5, _dev/devsass/css/jquery.steps.css */
+/* line 5, _dev/devsass/css/jquery.steps.scss */
 .wizard,
 .tabcontrol {
   display: block;
   width: 100%;
   overflow: hidden; }
 
-/* line 13, _dev/devsass/css/jquery.steps.css */
+/* line 13, _dev/devsass/css/jquery.steps.scss */
 .wizard a,
 .tabcontrol a {
   outline: 0; }
 
-/* line 19, _dev/devsass/css/jquery.steps.css */
+/* line 19, _dev/devsass/css/jquery.steps.scss */
 .wizard ul,
 .tabcontrol ul {
   list-style: none !important;
   padding: 0;
   margin: 0; }
 
-/* line 27, _dev/devsass/css/jquery.steps.css */
+/* line 27, _dev/devsass/css/jquery.steps.scss */
 .wizard ul > li,
 .tabcontrol ul > li {
   display: block;
   padding: 0; }
 
 /* Accessibility */
-/* line 35, _dev/devsass/css/jquery.steps.css */
+/* line 35, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .current-info,
 .tabcontrol > .steps .current-info {
   position: absolute;
   left: -999em; }
 
-/* line 42, _dev/devsass/css/jquery.steps.css */
+/* line 42, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .title,
 .tabcontrol > .content > .title {
   position: absolute;
@@ -14914,37 +14438,37 @@ footer.footer.annonsfot {
 /*
     Wizard
 */
-/* line 55, _dev/devsass/css/jquery.steps.css */
+/* line 55, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps {
   position: relative;
   display: block;
   width: 100%; }
 
-/* line 62, _dev/devsass/css/jquery.steps.css */
+/* line 62, _dev/devsass/css/jquery.steps.scss */
 .wizard.vertical > .steps {
   display: inline;
   float: left;
   width: 30%; }
 
-/* line 69, _dev/devsass/css/jquery.steps.css */
+/* line 69, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .number {
   font-size: 1.429em; }
 
-/* line 74, _dev/devsass/css/jquery.steps.css */
+/* line 74, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps > ul > li {
   width: 25%; }
 
-/* line 79, _dev/devsass/css/jquery.steps.css */
+/* line 79, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps > ul > li,
 .wizard > .actions > ul > li {
   float: left; }
 
-/* line 85, _dev/devsass/css/jquery.steps.css */
+/* line 85, _dev/devsass/css/jquery.steps.scss */
 .wizard.vertical > .steps > ul > li {
   float: none;
   width: 100%; }
 
-/* line 91, _dev/devsass/css/jquery.steps.css */
+/* line 91, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps a,
 .wizard > .steps a:hover,
 .wizard > .steps a:active {
@@ -14956,7 +14480,7 @@ footer.footer.annonsfot {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 106, _dev/devsass/css/jquery.steps.css */
+/* line 106, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .disabled a,
 .wizard > .steps .disabled a:hover,
 .wizard > .steps .disabled a:active {
@@ -14964,7 +14488,7 @@ footer.footer.annonsfot {
   color: #aaa;
   cursor: default; }
 
-/* line 115, _dev/devsass/css/jquery.steps.css */
+/* line 115, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .current a,
 .wizard > .steps .current a:hover,
 .wizard > .steps .current a:active {
@@ -14972,21 +14496,21 @@ footer.footer.annonsfot {
   color: #fff;
   cursor: default; }
 
-/* line 124, _dev/devsass/css/jquery.steps.css */
+/* line 124, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .done a,
 .wizard > .steps .done a:hover,
 .wizard > .steps .done a:active {
   background: #9dc8e2;
   color: #fff; }
 
-/* line 132, _dev/devsass/css/jquery.steps.css */
+/* line 132, _dev/devsass/css/jquery.steps.scss */
 .wizard > .steps .error a,
 .wizard > .steps .error a:hover,
 .wizard > .steps .error a:active {
   background: #ff3111;
   color: #fff; }
 
-/* line 140, _dev/devsass/css/jquery.steps.css */
+/* line 140, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content {
   background: #eee;
   display: block;
@@ -14998,14 +14522,14 @@ footer.footer.annonsfot {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 155, _dev/devsass/css/jquery.steps.css */
+/* line 155, _dev/devsass/css/jquery.steps.scss */
 .wizard.vertical > .content {
   display: inline;
   float: left;
   margin: 0 2.5% 0.5em 2.5%;
   width: 65%; }
 
-/* line 163, _dev/devsass/css/jquery.steps.css */
+/* line 163, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body {
   float: left;
   position: absolute;
@@ -15013,74 +14537,74 @@ footer.footer.annonsfot {
   height: 95%;
   padding: 2.5%; }
 
-/* line 172, _dev/devsass/css/jquery.steps.css */
+/* line 172, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body ul {
   list-style: disc !important; }
 
-/* line 177, _dev/devsass/css/jquery.steps.css */
+/* line 177, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body ul > li {
   display: list-item; }
 
-/* line 182, _dev/devsass/css/jquery.steps.css */
+/* line 182, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body > iframe {
   border: 0 none;
   width: 100%;
   height: 100%; }
 
-/* line 189, _dev/devsass/css/jquery.steps.css */
+/* line 189, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body input {
   display: block;
   border: 1px solid #ccc; }
 
-/* line 195, _dev/devsass/css/jquery.steps.css */
+/* line 195, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body input[type="checkbox"] {
   display: inline-block; }
 
-/* line 200, _dev/devsass/css/jquery.steps.css */
+/* line 200, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body input.error {
   background: #fbe3e4;
   border: 1px solid #fbc2c4;
   color: #8a1f11; }
 
-/* line 207, _dev/devsass/css/jquery.steps.css */
+/* line 207, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body label {
   display: inline-block;
   margin-bottom: 0.5em; }
 
-/* line 213, _dev/devsass/css/jquery.steps.css */
+/* line 213, _dev/devsass/css/jquery.steps.scss */
 .wizard > .content > .body label.error {
   color: #8a1f11;
   display: inline-block;
   margin-left: 1.5em; }
 
-/* line 220, _dev/devsass/css/jquery.steps.css */
+/* line 220, _dev/devsass/css/jquery.steps.scss */
 .wizard > .actions {
   position: relative;
   display: block;
   text-align: right;
   width: 100%; }
 
-/* line 228, _dev/devsass/css/jquery.steps.css */
+/* line 228, _dev/devsass/css/jquery.steps.scss */
 .wizard.vertical > .actions {
   display: inline;
   float: right;
   margin: 0 2.5%;
   width: 95%; }
 
-/* line 236, _dev/devsass/css/jquery.steps.css */
+/* line 236, _dev/devsass/css/jquery.steps.scss */
 .wizard > .actions > ul {
   display: inline-block;
   text-align: right; }
 
-/* line 242, _dev/devsass/css/jquery.steps.css */
+/* line 242, _dev/devsass/css/jquery.steps.scss */
 .wizard > .actions > ul > li {
   margin: 0 0.5em; }
 
-/* line 247, _dev/devsass/css/jquery.steps.css */
+/* line 247, _dev/devsass/css/jquery.steps.scss */
 .wizard.vertical > .actions > ul > li {
   margin: 0 0 0 1em; }
 
-/* line 252, _dev/devsass/css/jquery.steps.css */
+/* line 252, _dev/devsass/css/jquery.steps.scss */
 .wizard > .actions a,
 .wizard > .actions a:hover,
 .wizard > .actions a:active {
@@ -15092,7 +14616,7 @@ footer.footer.annonsfot {
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 
-/* line 267, _dev/devsass/css/jquery.steps.css */
+/* line 267, _dev/devsass/css/jquery.steps.scss */
 .wizard > .actions .disabled a,
 .wizard > .actions .disabled a:hover,
 .wizard > .actions .disabled a:active {
@@ -15102,20 +14626,20 @@ footer.footer.annonsfot {
 /*
     Tabcontrol
 */
-/* line 289, _dev/devsass/css/jquery.steps.css */
+/* line 289, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps {
   position: relative;
   display: block;
   width: 100%; }
 
-/* line 296, _dev/devsass/css/jquery.steps.css */
+/* line 296, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul {
   position: relative;
   margin: 6px 0 0 0;
   top: 1px;
   z-index: 1; }
 
-/* line 304, _dev/devsass/css/jquery.steps.css */
+/* line 304, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li {
   float: left;
   margin: 5px 2px 0 0;
@@ -15127,13 +14651,13 @@ footer.footer.annonsfot {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
-/* line 318, _dev/devsass/css/jquery.steps.css */
+/* line 318, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li:hover {
   background: #edecec;
   border: 1px solid #bbb;
   padding: 0; }
 
-/* line 325, _dev/devsass/css/jquery.steps.css */
+/* line 325, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li.current {
   background: #fff;
   border: 1px solid #bbb;
@@ -15141,7 +14665,7 @@ footer.footer.annonsfot {
   padding: 0 0 1px 0;
   margin-top: 0; }
 
-/* line 334, _dev/devsass/css/jquery.steps.css */
+/* line 334, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li > a {
   color: #5f5f5f;
   display: inline-block;
@@ -15150,15 +14674,15 @@ footer.footer.annonsfot {
   padding: 10px 30px;
   text-decoration: none; }
 
-/* line 344, _dev/devsass/css/jquery.steps.css */
+/* line 344, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li > a:hover {
   text-decoration: none; }
 
-/* line 349, _dev/devsass/css/jquery.steps.css */
+/* line 349, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .steps > ul > li.current > a {
   padding: 15px 30px 10px 30px; }
 
-/* line 354, _dev/devsass/css/jquery.steps.css */
+/* line 354, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .content {
   position: relative;
   display: inline-block;
@@ -15168,7 +14692,7 @@ footer.footer.annonsfot {
   border-top: 1px solid #bbb;
   padding-top: 20px; }
 
-/* line 365, _dev/devsass/css/jquery.steps.css */
+/* line 365, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .content > .body {
   float: left;
   position: absolute;
@@ -15176,11 +14700,11 @@ footer.footer.annonsfot {
   height: 95%;
   padding: 2.5%; }
 
-/* line 374, _dev/devsass/css/jquery.steps.css */
+/* line 374, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .content > .body ul {
   list-style: disc !important; }
 
-/* line 379, _dev/devsass/css/jquery.steps.css */
+/* line 379, _dev/devsass/css/jquery.steps.scss */
 .tabcontrol > .content > .body ul > li {
   display: list-item; }
 
@@ -15375,7 +14899,6 @@ hr.linje {
   height: 1px;
   margin-top: 0rem;
   margin-bottom: 1rem;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
 
 /* line 207, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
@@ -15446,11 +14969,11 @@ input[type=radio] + label {
 
 /* line 265, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent h1 {
-  color: #f77136; }
+  color: #000000; }
 
 /* line 266, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent h2 {
-  color: #f77136; }
+  color: #000000; }
 
 /* line 267, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artmaincontent .arrmainfoto {
@@ -15469,24 +14992,28 @@ input[type=radio] + label {
 
 /* line 283, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .artikelwrapper .artsidecontainer {
-  padding-bottom: 1rem;
-  padding-left: 0.7rem;
-  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 0rem;
   padding-top: 0.5rem;
   margin-bottom: 1rem;
   overflow: hidden;
   text-overflow: ellipsis; }
-  /* line 291, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  @media only screen and (max-width: 40em) {
+    /* line 283, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer {
+      padding-left: 0rem; } }
+  /* line 294, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer h3 {
-    font-weight: 100;
-    color: #f77136; }
-  /* line 295, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    font-weight: 500;
+    color: #000000; }
+  /* line 298, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer .faktalabel {
     font-weight: bold;
-    font-size: .85rem;
+    font-size: .95rem;
     overflow: hidden;
     text-overflow: ellipsis; }
-  /* line 302, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 305, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .artikelwrapper .artsidecontainer #share-buttons img {
     width: 35px;
     padding: 5px;
@@ -15494,72 +15021,80 @@ input[type=radio] + label {
     -webkit-box-shadow: 0;
             box-shadow: 0;
     display: inline; }
+  @media only screen and (max-width: 40em) {
+    /* line 313, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer .granska_Utovare_epost {
+      float: left !important; } }
+  @media only screen and (max-width: 40em) {
+    /* line 318, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+    .artikelwrapper .artsidecontainer .granska_Utovare_hemsida {
+      float: left !important; } }
 
-/* line 313, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 327, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .arrpressentationbild {
   background-color: #F9F9F9;
   border-top: 1px solid #F5F5F5;
   padding-top: 1rem;
   padding: .5rem;
   margin-bottom: 0rem; }
-  /* line 314, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 328, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .arrpressentationbild legend {
     margin-left: -.8rem; }
 
-/* line 323, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 337, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .granska_pressentationsbild {
   max-height: 400px; }
 
-/* line 324, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 338, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .infotext {
   display: none;
   background-color: #008CBA;
   color: #FFFFFF;
   padding: 4px;
   margin-bottom: 2px; }
-  /* line 330, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 344, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .infotext a {
     color: #FFFFFF;
     text-decoration: underline; }
 
-/* line 335, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 349, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_exempelblock {
   /*display:none;*/ }
 
-/* line 336, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 350, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .medverkandeblock {
   margin-bottom: 2rem; }
 
-/* line 340, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 354, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_form_Arrangemang #kk_aj_speltid {
   margin-top: .5rem;
   margin-bottom: 1rem; }
 
-/* line 344, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 358, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_aj_form_Arrangemang #kk_aj_yearspan {
   margin-top: .5rem;
   margin-bottom: 1rem; }
 
-/* line 350, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 364, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 #addarrtab-2 fieldset {
   border-top: 1px solid #666;
   margin-bottom: 2rem; }
 
-/* line 354, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 368, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .exempleblock {
   /*.exempleblockbg{
         background-color: #F9F9F9;
     }*/ }
-  /* line 359, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+  /* line 373, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
   .exempleblock fieldset {
     padding-bottom: 0rem !important;
     margin-bottom: 0px !important; }
 
-/* line 366, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 380, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .arrexempel_block fieldset {
   margin-bottom: 0px !important; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker {
   display: none;
   position: absolute;
@@ -15567,7 +15102,7 @@ input[type=radio] + label {
   margin-top: 1px;
   direction: ltr; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.dropdown-menu {
   position: absolute;
   top: 100%;
@@ -15588,17 +15123,17 @@ input[type=radio] + label {
   font-size: 13px;
   line-height: 18px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
   padding: 4px 5px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker table {
   border: 0;
   margin: 0;
   width: auto; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker table tr td span {
   display: block;
   width: 23%;
@@ -15608,7 +15143,7 @@ input[type=radio] + label {
   margin: 1%;
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td, .datepicker th {
   text-align: center;
   width: 20px;
@@ -15618,82 +15153,82 @@ input[type=radio] + label {
   padding: 4px 8px;
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td {
   background: #fff; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td span.active, .datepicker td.active.day, .datepicker td.active.year {
   background: #2ba6cb; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td.new, .datepicker td.old {
   color: #999; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker td span.month.disabled, .datepicker td span.year.disabled, .datepicker td.day.disabled {
   color: #eee; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th {
   background: #fff; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th span.active, .datepicker th.active.day, .datepicker th.active.year {
   background: #2ba6cb; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker th.date-switch {
   width: 145px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker .cw {
   font-size: 10px;
   width: 12px;
   padding: 0 2px 0 5px;
   vertical-align: middle; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker.days div.datepicker-days, .datepicker.months div.datepicker-months, .datepicker.years div.datepicker-years {
   display: block; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:after, .datepicker-dropdown:before {
   content: '';
   display: inline-block;
   position: absolute; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker thead tr:first-child th {
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker thead tr:first-child th.cw {
   cursor: default;
   background-color: transparent; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker tfoot tr:first-child th {
   cursor: pointer; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-inline {
   width: 220px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-rtl {
   direction: rtl; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-rtl table tr td span {
   float: right; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown {
   top: 0;
   left: 0; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:before {
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
@@ -15702,7 +15237,7 @@ input[type=radio] + label {
   top: -7px;
   left: 6px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown:after {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
@@ -15710,11 +15245,11 @@ input[type=radio] + label {
   top: -6px;
   left: 7px; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-dropdown::after, .datepicker-dropdown::before, .datepicker > div {
   display: none; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .datepicker-close {
   position: absolute;
   top: -30px;
@@ -15724,11 +15259,11 @@ input[type=radio] + label {
   padding: 0;
   display: none; }
 
-/* line 372, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 386, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .table-striped .datepicker table tr td, .table-striped .datepicker table tr th {
   background-color: transparent; }
 
-/* line 374, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
+/* line 388, _dev/devsass/devScss/kulturkatalogen/_arrangemangsteps.scss */
 .kk_ajuseravtalblock div {
   font-style: italic; }
 
@@ -15818,8 +15353,7 @@ body {
   clear: both; }
 
 /* line 183, _dev/devsass/kk_aj_PublicCSS.scss */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: "";
   display: table; }
 
@@ -16053,8 +15587,6 @@ color:transparent!important;
   text-shadow: 1px 1px 1px #fff;
   color: #27252a;
   background: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
-  background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
   background: linear-gradient(to bottom, #fff 0, #efefef 100%);
   margin: 10px 10px 0 0; }
@@ -16063,8 +15595,6 @@ color:transparent!important;
 .jplist-panel button:hover {
   color: #0381bb;
   background: #f2f2f2;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(100%, #ededed));
-  background: -webkit-linear-gradient(top, #fafafa 0, #ededed 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), to(#ededed));
   background: linear-gradient(to bottom, #fafafa 0, #ededed 100%); }
 
@@ -16175,8 +15705,6 @@ color:transparent!important;
   padding: 0 10px;
   margin: 10px 10px 0 0;
   background: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
-  background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
   background: linear-gradient(to bottom, #fff 0, #efefef 100%); }
 
@@ -16235,8 +15763,6 @@ color:transparent!important;
   color: #27252a;
   width: 150px;
   background: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
-  background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
   background: linear-gradient(to bottom, #fff 0, #efefef 100%);
   margin: 10px 10px 0 0;
@@ -16355,15 +15881,11 @@ color:transparent!important;
     text-shadow: 1px 1px 1px #fff;
     color: #27252a;
     background: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
-    background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), to(#efefef));
     background: linear-gradient(to bottom, #fff 0, #efefef 100%); }
   /* line 681, _dev/devsass/kk_aj_PublicCSS.scss */
   .jplist-ios-button:hover {
     background: #f2f2f2;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(100%, #ededed));
-    background: -webkit-linear-gradient(top, #fafafa 0, #ededed 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), to(#ededed));
     background: linear-gradient(to bottom, #fafafa 0, #ededed 100%); }
   /* line 688, _dev/devsass/kk_aj_PublicCSS.scss */

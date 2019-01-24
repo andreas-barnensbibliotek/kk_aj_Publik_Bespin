@@ -1,0 +1,79 @@
+/* New design menu */
+/* line 2, _dev/devsass/css/kiv/kiv.menu.scss */
+.move-right .exit-off-canvas {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* line 7, _dev/devsass/css/kiv/kiv.menu.scss */
+.left-off-canvas-menu {
+  background: #58595b; }
+
+/* line 11, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-submenu.multiColumn {
+  margin-bottom: 0; }
+
+/* line 15, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list {
+  margin: 0;
+  font-size: 0.9rem; }
+
+/* line 20, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li {
+  background: #58595b;
+  border-bottom: 1px solid #808184;
+  line-height: 1.7; }
+
+/* line 26, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li:hover {
+  background: #3f4041; }
+
+/* line 30, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li a {
+  font-weight: 600;
+  background: none; }
+
+/* line 35, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li a:before {
+  background: none;
+  width: 0; }
+
+/* line 40, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li a:hover,
+.menu-name-menu-2015-meny ul.off-canvas-list li a:active {
+  color: #f77136; }
+
+/* line 45, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.first {
+  background: #e6e7e7;
+  border-bottom: 1px solid #929496; }
+
+/* line 50, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.first a {
+  color: #000; }
+
+/* line 54, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first {
+  background: #a6a8aa; }
+
+/* line 58, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first:hover {
+  background: #66686b; }
+
+/* line 62, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li.first a {
+  background: #a6a8aa;
+  color: #fff; }
+
+/* line 67, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li {
+  background: #a6a8aa; }
+
+/* line 71, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li:hover {
+  background: #66686b; }
+
+/* line 75, _dev/devsass/css/kiv/kiv.menu.scss */
+.menu-name-menu-2015-meny ul.off-canvas-list li.expanded li a {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.9rem; }

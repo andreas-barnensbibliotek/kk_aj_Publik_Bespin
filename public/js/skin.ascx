@@ -242,7 +242,7 @@
 
 <dnn:jQuery ID="dnnjQuery" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER5" AddJsFile="public/js/tinymce/tinymce.min.js" runat="server" />
-<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.3.0.5.js" runat="server" />
+<fortyfingers:STYLEHELPER ID="STYLEHELPER1" AddJsFile="public/js/kk_aj_publicbundle.3.0.8.min.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER4" AddJsFile="public/js/modernizr.js" runat="server" />
 <fortyfingers:STYLEHELPER ID="STYLEHELPER6" AddJsFile="public/js/jquery.adaptive-backgrounds.js" runat="server" />
 

@@ -510,9 +510,9 @@ module.exports = {
           kostnadSlider: function ($slider, $prev, $next) {
               $slider.slider({
                   min: 0
-                 , max: 50000
+                 , max: 60000
                  , range: true
-                 , values: [0, 50000]
+                 , values: [0, 60000]
                  , slide: function (event, ui) {
                      $prev.text(ui.values[0] + ' kr');
                      $next.text(ui.values[1] + ' kr');                     

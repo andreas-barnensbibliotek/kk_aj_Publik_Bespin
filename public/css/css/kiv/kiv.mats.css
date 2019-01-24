@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Orange H1 sidtitel till Svart */
+/* line 3, _dev/devsass/css/kiv/kiv.mats.scss */
+.artikelMainContainer h1,
+.omossspace h1 {
+  color: #000000; }
+
+/* Annan farg på info rutorna */
+/* line 9, _dev/devsass/css/kiv/kiv.mats.scss */
+.artsidecontainer {
+  background-color: #ebeae6; }
+
+/* Startsida bilder vit bg istallet for konfiguerbar */
+/* line 14, _dev/devsass/css/kiv/kiv.mats.scss */
+.row.view-frontpage {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+
+/* line 19, _dev/devsass/css/kiv/kiv.mats.scss */
+.view-frontpage .themebildajcover {
+  background: #fff !important;
+  margin-bottom: 30px; }
+
+/* line 24, _dev/devsass/css/kiv/kiv.mats.scss */
+.view-frontpage .themebildajcover .itemcontainer.row {
+  width: 100%;
+  margin: 0; }
+
+/* Exponerat sokblock med autocomplete */
+/* line 30, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper .views-exposed-widget.views-widget-filter-search_api_views_fulltext {
+  float: none;
+  padding: 0; }
+
+/* line 35, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper .views-exposed-widget.views-widget-filter-search_api_views_fulltext #contentfilterblock input.form-autocomplete {
+  background-position: 99% center; }
+
+/* line 39, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button {
+  margin: 0;
+  float: none; }
+
+/* line 44, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #views-exposed-form-search-page-page-1 .views-exposed-widget.views-submit-button .ajax-progress {
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  left: 100px; }
+
+/* line 51, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper button#edit-submit-search-page {
+  margin-left: 0.1rem !important;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 1.25rem;
+  padding: 0;
+  min-width: initial;
+  height: 50px;
+  line-height: 13px;
+  background-color: #999999;
+  border-color: #b9b9b9;
+  color: #333333;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 1rem 2rem 1.0625rem 2rem;
+  font-size: 1rem;
+  margin: 0 0 1.25rem;
+  font-family: "acumin-pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 70, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #autocomplete {
+  border: 1px solid #ccc;
+  margin-top: 5px; }
+
+/* line 75, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #autocomplete li {
+  height: 35px;
+  line-height: 35px;
+  cursor: pointer; }
+
+/* line 81, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #autocomplete li.selected {
+  background: #f77136;
+  color: #fff;
+  -webkit-transition-property: background, color;
+  transition-property: background, color;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
+
+/* line 94, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion {
+  padding-left: 0.5rem; }
+
+/* line 98, _dev/devsass/css/kiv/kiv.mats.scss */
+.searchMainWrapper #autocomplete .search-api-autocomplete-suggestion span {
+  display: inline;
+  float: none;
+  margin: 0;
+  padding: 0; }
+
+/* Fix for att lankar i listor och punklistor ska ha samma formatering som for de utan */
+/* line 114, _dev/devsass/css/kiv/kiv.mats.scss */
+.artikelMainContainer .artikelwrapper li a {
+  text-decoration: underline; }
+
+/* line 118, _dev/devsass/css/kiv/kiv.mats.scss */
+.artikelMainContainer .artikelwrapper li a:hover {
+  color: #000 !important; }
+
+/* line 122, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .omossspace h1 {
+  color: transparent;
+  margin-bottom: 0px; }
+
+/* line 127, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .main-background, .page-taxonomy-term-2406 .footencol {
+  background-color: #000 !important; }
+
+/* line 131, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .breadcrumb-BG {
+  background-color: #fff; }
+
+/* line 135, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .top-bild-wrapper {
+  margin-bottom: 0px !important; }
+
+/* line 139, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .ajimage-omrade-nod img {
+  -o-object-fit: contain;
+  object-fit: contain; }
+
+/* line 144, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .top-bild-wrapper {
+  margin-bottom: -100px !important; }
+
+/* line 148, _dev/devsass/css/kiv/kiv.mats.scss */
+.page-taxonomy-term-2406 .footencol, .page-taxonomy-term-980 .footencol {
+  background-color: #000; }
