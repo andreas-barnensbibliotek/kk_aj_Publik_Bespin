@@ -164,7 +164,7 @@ $(function () {
       
 
         scrolltotop();
-        console.log('STORE: ' + localStorage.getItem('kk_aj_storage'));
+        console.log(' init STORE: ' + localStorage.getItem('kk_aj_storage'));
         if (appsetting.currentpage == "Dnn_module_kk_aj_Publik_detail") {
             //if (urlParams.arrid > 0) {
             //    pagehandler.pageloader(appsetting.currentpage, urlParams.arrid);

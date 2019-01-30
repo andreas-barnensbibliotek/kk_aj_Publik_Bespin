@@ -9,7 +9,7 @@
  * Project home:
  * https://github.com/julien-maurel/js-storage
  *
- * Version: 1.0.2
+ * Version: 1.0.4
  */
 (function (factory) {
     var registeredInModuleLoader = false;
@@ -240,14 +240,14 @@
                 var v = _get.apply(this, arguments);
                 // Convert result to an object (if last argument is an array, _get return already an object) and test each item
                 if (!Array.isArray(a[l - 1])) {
-                    v = {'totest': v};
+                    v = { 'totest': v };
                 }
                 for (i in v) {
                     if (v.hasOwnProperty(i) && !(
-                            (_isPlainObject(v[i]) && _isEmptyObject(v[i])) ||
-                            (Array.isArray(v[i]) && !v[i].length) ||
-                            (typeof v[i] !== 'boolean' && !v[i])
-                        )) {
+                        (_isPlainObject(v[i]) && _isEmptyObject(v[i])) ||
+                        (Array.isArray(v[i]) && !v[i].length) ||
+                        (typeof v[i] !== 'boolean' && !v[i])
+                    )) {
                         return false;
                     }
                 }
@@ -278,7 +278,7 @@
                 var v = _get.apply(this, arguments);
                 // Convert result to an object (if last argument is an array, _get return already an object) and test each item
                 if (!Array.isArray(a[l - 1])) {
-                    v = {'totest': v};
+                    v = { 'totest': v };
                 }
                 for (i in v) {
                     if (v.hasOwnProperty(i) && !(v[i] !== undefined && v[i] !== null)) {
@@ -341,14 +341,14 @@
             }
         }
         var ns = {
-            localStorage: _extend({}, apis.localStorage, {_ns: name}),
-            sessionStorage: _extend({}, apis.sessionStorage, {_ns: name})
+            localStorage: _extend({}, apis.localStorage, { _ns: name }),
+            sessionStorage: _extend({}, apis.sessionStorage, { _ns: name })
         };
-        if (typeof Cookies !== 'undefined') {
+        if (cookies_available) {
             if (!window.cookieStorage.getItem(name)) {
                 window.cookieStorage.setItem(name, '{}');
             }
-            ns.cookieStorage = _extend({}, apis.cookieStorage, {_ns: name});
+            ns.cookieStorage = _extend({}, apis.cookieStorage, { _ns: name });
         }
         apis.namespaceStorages[name] = ns;
         return ns;
@@ -416,8 +416,9 @@
         return result;
     }
 
-    // Check if storages are natively available on browser
+    // Check if storages are natively available on browser and check is js-cookie is present
     var storage_available = _testStorage('localStorage');
+    var cookies_available = typeof Cookies !== 'undefined';
 
     // Namespace object
     var storage = {
@@ -426,7 +427,6 @@
         _callMethod: function (f, a) {
             a = Array.prototype.slice.call(a);
             var p = [], a0 = a[0];
-
             if (this._ns) {
                 p.push(this._ns);
             }
@@ -441,6 +441,9 @@
         alwaysUseJson: false,
         // Get items. If no parameters and storage have a namespace, return all namespace
         get: function () {
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             return this._callMethod(_get, arguments);
         },
         // Set items
@@ -448,6 +451,9 @@
             var l = arguments.length, a = arguments, a0 = a[0];
             if (l < 1 || !_isPlainObject(a0) && l < 2) {
                 throw new Error('Minimum 2 arguments must be given or first parameter must be an object');
+            }
+            if (!storage_available && !cookies_available) {
+                return null;
             }
             // If first argument is an object and storage is a namespace storage, set values individually
             if (_isPlainObject(a0) && this._ns) {
@@ -471,10 +477,16 @@
             if (arguments.length < 1) {
                 throw new Error('Minimum 1 argument must be given');
             }
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             return this._callMethod(_remove, arguments);
         },
         // Delete all items
         removeAll: function (reinit_ns) {
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             if (this._ns) {
                 this._callMethod(_set, [{}]);
                 return true;
@@ -484,6 +496,9 @@
         },
         // Items empty
         isEmpty: function () {
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             return this._callMethod(_isEmpty, arguments);
         },
         // Items exists
@@ -491,16 +506,22 @@
             if (arguments.length < 1) {
                 throw new Error('Minimum 1 argument must be given');
             }
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             return this._callMethod(_isSet, arguments);
         },
         // Get keys of items
         keys: function () {
+            if (!storage_available && !cookies_available) {
+                return null;
+            }
             return this._callMethod(_keys, arguments);
         }
     };
 
     // Use js-cookie for compatibility with old browsers and give access to cookieStorage
-    if (typeof Cookies !== 'undefined') {
+    if (cookies_available) {
         // sessionStorage is valid for one window/tab. To simulate that with cookie, we set a name for the window and use it for the name of the cookie
         if (!window.name) {
             window.name = Math.floor(Math.random() * 100000000);
@@ -512,13 +533,13 @@
             _path: null,
             _domain: null,
             setItem: function (n, v) {
-                Cookies.set(this._prefix + n, v, {expires: this._expires, path: this._path, domain: this._domain});
+                Cookies.set(this._prefix + n, v, { expires: this._expires, path: this._path, domain: this._domain });
             },
             getItem: function (n) {
                 return Cookies.get(this._prefix + n);
             },
             removeItem: function (n) {
-                return Cookies.remove(this._prefix + n, {path: this._path});
+                return Cookies.remove(this._prefix + n, { path: this._path });
             },
             clear: function () {
                 var cookies = Cookies.get();
@@ -563,7 +584,7 @@
                 _prefix: cookie_local_prefix,
                 _expires: 365 * 10
             });
-            window.sessionCookieStorage = _extend({}, cookie_storage, {_prefix: cookie_session_prefix + window.name + '_'});
+            window.sessionCookieStorage = _extend({}, cookie_storage, { _prefix: cookie_session_prefix + window.name + '_' });
         }
         window.cookieStorage = _extend({}, cookie_storage);
         // cookieStorage API
@@ -597,20 +618,15 @@
         return _createNamespace(ns);
     };
     if (storage_available) {
-        // About alwaysUseJson
-        // By default, all values are string on html storages and the plugin don't use json to store simple values (strings, int, float...)
-        // So by default, if you do storage.setItem('test',2), value in storage will be "2", not 2
-        // If you set this property to true, all values set with the plugin will be stored as json to have typed values in any cases
-
         // localStorage API
-        apis.localStorage = _extend({}, storage, {_type: 'localStorage'});
+        apis.localStorage = _extend({}, storage, { _type: 'localStorage' });
         // sessionStorage API
-        apis.sessionStorage = _extend({}, storage, {_type: 'sessionStorage'});
+        apis.sessionStorage = _extend({}, storage, { _type: 'sessionStorage' });
     } else {
         // localStorage API
-        apis.localStorage = _extend({}, storage, {_type: 'localCookieStorage'});
+        apis.localStorage = _extend({}, storage, { _type: 'localCookieStorage' });
         // sessionStorage API
-        apis.sessionStorage = _extend({}, storage, {_type: 'sessionCookieStorage'});
+        apis.sessionStorage = _extend({}, storage, { _type: 'sessionCookieStorage' });
     }
     // List of all namespace storage
     apis.namespaceStorages = {};
@@ -625,6 +641,10 @@
             apis.namespaceStorages = {};
         }
     };
+    // About alwaysUseJson
+    // By default, all values are string on html storages and the plugin don't use json to store simple values (strings, int, float...)
+    // So by default, if you do storage.setItem('test',2), value in storage will be "2", not 2
+    // If you set this property to true, all values set with the plugin will be stored as json to have typed values in any cases
     apis.alwaysUseJsonInStorage = function (value) {
         storage.alwaysUseJson = value;
         apis.localStorage.alwaysUseJson = value;

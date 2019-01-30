@@ -1,7 +1,6 @@
 ﻿var $ = require("jquery");
 require('jquery-ui-dist/jquery-ui.js');
 var jplists = require("./externaljs/jplist_moduleexport.js");
-var handlebarTemplethandler = require("./HandlebarTemplethandler.js");
 var minneslistaHandler = require("./minneslistaHandler.js");
 
 var appsettingsobject = require("./appSettings.js");
@@ -17,6 +16,7 @@ var searchdataContainer = {
 }
 // använder : https://github.com/julien-maurel/js-storage
 var storage = Storages.localStorage;
+console.log('storage: ' + storage);
 var session = Storages.sessionStorage
  module.exports = {
      search: function () {

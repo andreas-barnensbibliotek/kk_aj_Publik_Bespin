@@ -210,7 +210,7 @@
 	      
 
 	        scrolltotop();
-	        console.log('STORE: ' + localStorage.getItem('kk_aj_storage'));
+	        console.log(' init STORE: ' + localStorage.getItem('kk_aj_storage'));
 	        if (appsetting.currentpage == "Dnn_module_kk_aj_Publik_detail") {
 	            //if (urlParams.arrid > 0) {
 	            //    pagehandler.pageloader(appsetting.currentpage, urlParams.arrid);
@@ -13880,7 +13880,6 @@
 	var $ = __webpack_require__(4);
 	__webpack_require__(14);
 	var jplists = __webpack_require__(15);
-	var handlebarTemplethandler = __webpack_require__(7);
 	var minneslistaHandler = __webpack_require__(16);
 
 	var appsettingsobject = __webpack_require__(1);
@@ -13896,6 +13895,7 @@
 	}
 	// använder : https://github.com/julien-maurel/js-storage
 	var storage = Storages.localStorage;
+	console.log('storage: ' + storage);
 	var session = Storages.sessionStorage
 	 module.exports = {
 	     search: function () {
